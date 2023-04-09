@@ -234,3 +234,22 @@ Traceback (most recent call last):
 KeyError: 'overUnder'
 INFO:__main__:17.729537649949393 minutes to download 4285 game play-by-plays.
 INFO:__main__:Finished MBB PBP for 2021...
+INFO:__main__:Scraping MBB schedules for year 2022...
+INFO:__main__:1.9764851530392964 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping MBB PBP for 2022...
+INFO:__main__:Number of Games: 5976
+ERROR:__main__:KeyError: game_id =  game_id = 401381713
+ Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 104, in helper_mbb_pbp
+    awayTeamAbbrev = str(pbp_txt['header']['competitions'][0]['competitors'][1]['team']['abbreviation'])
+KeyError: 'abbreviation'
+Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 104, in helper_mbb_pbp
+    awayTeamAbbrev = str(pbp_txt['header']['competitions'][0]['competitors'][1]['team']['abbreviation'])
+KeyError: 'abbreviation'
+INFO:__main__:25.22629640897115 minutes to download 5976 game play-by-plays.
+INFO:__main__:Finished MBB PBP for 2022...
