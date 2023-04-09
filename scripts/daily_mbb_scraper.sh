@@ -19,7 +19,7 @@ do
     git add .
     git pull  >> /dev/null
     git add mbb/* >> /dev/null
-    git pull --rebase  >> /dev/null
+    git pull  >> /dev/null
     git commit -m "MBB Raw Updated (Start: $i End: $i)" || echo "No changes to commit"
     git pull --rebase  >> /dev/null
     git push --quiet
