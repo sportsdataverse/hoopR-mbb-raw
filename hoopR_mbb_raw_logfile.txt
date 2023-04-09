@@ -169,3 +169,26 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: 'mbb/json/raw/401020008.json'
 INFO:__main__:24.717882895469664 minutes to download 6003 game play-by-plays.
 INFO:__main__:Finished MBB PBP for 2018...
+INFO:__main__:Scraping MBB schedules for year 2019...
+INFO:__main__:2.99137814839681 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping MBB PBP for 2019...
+INFO:__main__:Number of Games: 6049
+ERROR:__main__:KeyError: game_id =  game_id = 401100713
+ Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 79, in helper_mbb_pbp
+    gameSpread, overUnder, homeFavorite, gameSpreadAvailable = helper_mbb_pickcenter(pbp_txt)
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 163, in helper_mbb_pickcenter
+    overUnder = pbp_txt["pickcenter"][1]["overUnder"]
+KeyError: 'overUnder'
+Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 79, in helper_mbb_pbp
+    gameSpread, overUnder, homeFavorite, gameSpreadAvailable = helper_mbb_pickcenter(pbp_txt)
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 163, in helper_mbb_pickcenter
+    overUnder = pbp_txt["pickcenter"][1]["overUnder"]
+KeyError: 'overUnder'
+INFO:__main__:25.12741400003433 minutes to download 6049 game play-by-plays.
+INFO:__main__:Finished MBB PBP for 2019...
