@@ -211,3 +211,26 @@ Traceback (most recent call last):
 KeyError: 'abbreviation'
 INFO:__main__:23.707561882336936 minutes to download 5767 game play-by-plays.
 INFO:__main__:Finished MBB PBP for 2020...
+INFO:__main__:Scraping MBB schedules for year 2021...
+INFO:__main__:2.0038674314816793 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping MBB PBP for 2021...
+INFO:__main__:Number of Games: 4285
+ERROR:__main__:KeyError: game_id =  game_id = 401283390
+ Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 79, in helper_mbb_pbp
+    gameSpread, overUnder, homeFavorite, gameSpreadAvailable = helper_mbb_pickcenter(pbp_txt)
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 163, in helper_mbb_pickcenter
+    overUnder = pbp_txt["pickcenter"][1]["overUnder"]
+KeyError: 'overUnder'
+Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 79, in helper_mbb_pbp
+    gameSpread, overUnder, homeFavorite, gameSpreadAvailable = helper_mbb_pickcenter(pbp_txt)
+  File "/usr/local/lib/python3.8/dist-packages/sportsdataverse/mbb/mbb_pbp.py", line 163, in helper_mbb_pickcenter
+    overUnder = pbp_txt["pickcenter"][1]["overUnder"]
+KeyError: 'overUnder'
+INFO:__main__:17.729537649949393 minutes to download 4285 game play-by-plays.
+INFO:__main__:Finished MBB PBP for 2021...
