@@ -10011,3 +10011,22 @@ INFO:__main__:Scraping MBB PBP for 2019...
 INFO:__main__:Number of Games: 6049
 INFO:__main__:25.352209067344667 minutes to download 6049 game play-by-plays.
 INFO:__main__:Finished MBB PBP for 2019...
+INFO:__main__:Scraping MBB schedules for year 2020...
+INFO:__main__:2.915254561106364 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping MBB PBP for 2020...
+INFO:__main__:Number of Games: 5767
+ERROR:__main__:KeyError: game_id =  game_id = 401172814
+ Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 104, in helper_mbb_pbp
+    awayTeamAbbrev = str(pbp_txt['header']['competitions'][0]['competitors'][1]['team']['abbreviation'])
+KeyError: 'abbreviation'
+Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 75, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 104, in helper_mbb_pbp
+    awayTeamAbbrev = str(pbp_txt['header']['competitions'][0]['competitors'][1]['team']['abbreviation'])
+KeyError: 'abbreviation'
+INFO:__main__:24.82506018082301 minutes to download 5767 game play-by-plays.
+INFO:__main__:Finished MBB PBP for 2020...
