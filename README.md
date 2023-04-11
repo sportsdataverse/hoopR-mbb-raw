@@ -26,7 +26,7 @@ flowchart TB;
         direction TB;
         C1[espn_mens_college_basketball_pbp];
         C2[espn_mens_college_basketball_team_boxscores];
-        C3[espn__mens_college_basketball_player_boxscores];
+        C3[espn_mens_college_basketball_player_boxscores];
     end;
 
     A-->B;
