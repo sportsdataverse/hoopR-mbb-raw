@@ -35,14 +35,13 @@ def download_game_schedules(seasons, path_to_schedules):
 
 def download_schedule(season, path_to_schedules = None):
     logger.info(f"Scraping MBB schedules for year {season}...")
-    df = sdv.mbb.espn_mbb_calendar(season, ondays = True)
+    df = sdv.mbb.espn_mbb_calendar(season, ondays = True, return_as_pandas = True)
     calendar = df["dateURL"].tolist()
     ev = pd.DataFrame()
     for d in calendar:
-        date_schedule = sdv.mbb.espn_mbb_schedule(dates = d)
+        date_schedule = sdv.mbb.espn_mbb_schedule(dates = d, return_as_pandas = True)
         ev = pd.concat([ev, date_schedule], axis = 0, ignore_index = True)
     ev = ev[ev["season_type"].isin([2, 3])]
-    ev = ev.drop("competitors", axis = 1)
     ev = ev.drop_duplicates(subset=["game_id"], ignore_index = True)
 
     Path(f"{path_to_schedules}/parquet").mkdir(parents = True, exist_ok = True)
