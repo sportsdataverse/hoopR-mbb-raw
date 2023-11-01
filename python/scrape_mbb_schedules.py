@@ -36,7 +36,7 @@ def download_game_schedules(seasons, path_to_schedules):
 def download_schedule(season, path_to_schedules = None):
     logger.info(f"Scraping MBB schedules for year {season}...")
     df = sdv.mbb.espn_mbb_calendar(season, ondays = True, return_as_pandas = True)
-    calendar = df["dateURL"].tolist()
+    calendar = df["dateURL"].str.replace("-","").tolist()
     ev = pd.DataFrame()
     for d in calendar:
         date_schedule = sdv.mbb.espn_mbb_schedule(dates = d, return_as_pandas = True)
