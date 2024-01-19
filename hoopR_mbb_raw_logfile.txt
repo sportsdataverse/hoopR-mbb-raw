@@ -18207,3 +18207,26 @@ INFO:__main__:Scraping MBB PBP for 2024...
 INFO:__main__:Number of Games: 3379
 INFO:__main__:7.799862579504649 minutes to download 3379 game play-by-plays.
 INFO:__main__:Finished MBB PBP for 2024...
+INFO:__main__:Scraping MBB schedules for year 2024...
+INFO:__main__:2.193420612812042 minutes to download 1 years of season schedules.
+INFO:__main__:Scraping MBB PBP for 2024...
+INFO:__main__:Number of Games: 3437
+ERROR:__main__:TypeError: game_id = 401593939
+ Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 78, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 101, in helper_mbb_pbp
+    pbp_txt, init = helper_mbb_game_data(pbp_txt, init)
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 139, in helper_mbb_game_data
+    pbp_txt["teamInfo"] = pbp_txt["header"]["competitions"][0]
+TypeError: list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "python/scrape_mbb_json.py", line 78, in download_game
+    result = sdv.mbb.helper_mbb_pbp(
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 101, in helper_mbb_pbp
+    pbp_txt, init = helper_mbb_game_data(pbp_txt, init)
+  File "/mnt/sdv_repos/sdv-py/sportsdataverse/mbb/mbb_pbp.py", line 139, in helper_mbb_game_data
+    pbp_txt["teamInfo"] = pbp_txt["header"]["competitions"][0]
+TypeError: list indices must be integers or slices, not str
+INFO:__main__:7.688398396968841 minutes to download 3437 game play-by-plays.
+INFO:__main__:Finished MBB PBP for 2024...
