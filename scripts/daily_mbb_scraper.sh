@@ -22,6 +22,6 @@ do
     git pull  >> /dev/null
     git add . >> /dev/null
     git commit -m "MBB Raw Updated (Start: $i End: $i)" || echo "No changes to commit"
-    git pull --rebase  >> /dev/null
+    git pull >> /dev/null
     git push --quiet
 done
