@@ -23,7 +23,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "50.0",
+"displayValue": "50",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -34,7 +34,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "45.5",
+"displayValue": "45",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -45,7 +45,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "80.0",
+"displayValue": "80",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -177,7 +177,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "40.0",
+"displayValue": "40",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -188,7 +188,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "28.6",
+"displayValue": "29",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -199,7 +199,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "72.7",
+"displayValue": "73",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -329,116 +329,66 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
-"athlete": {
-"id": "5242967",
-"uid": "s:40~l:41~a:5242967",
-"guid": "c9dea01b-f3a4-36b0-9b84-1e58e379401c",
-"displayName": "Ring Malith",
-"shortName": "R. Malith",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5242967/ring-malith",
-"text": "Player Card"
-}
-],
-"headshot": {
-"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5242967.png",
-"alt": "Ring Malith"
-},
-"jersey": "0",
-"position": {
-"name": "Forward",
-"displayName": "Forward",
-"abbreviation": "F"
-}
-},
-"starter": true,
-"didNotPlay": false,
-"ejected": false,
-"stats": [
-"18",
-"2-4",
-"1-1",
-"0-0",
-"0",
-"2",
-"2",
-"0",
-"1",
-"0",
-"1",
-"2",
-"5"
-]
-},
-{
-"active": false,
 "athlete": {
 "id": "5107655",
 "uid": "s:40~l:41~a:5107655",
@@ -472,22 +422,69 @@
 "ejected": false,
 "stats": [
 "16",
+"0",
 "0-3",
 "0-0",
 "0-0",
-"3",
-"1",
 "4",
 "0",
+"3",
 "0",
 "1",
 "3",
-"0",
+"1",
 "0"
 ]
 },
 {
-"active": false,
+"athlete": {
+"id": "5242967",
+"uid": "s:40~l:41~a:5242967",
+"guid": "c9dea01b-f3a4-36b0-9b84-1e58e379401c",
+"displayName": "Ring Malith",
+"shortName": "R. Malith",
+"links": [
+{
+"rel": [
+"playercard",
+"desktop",
+"athlete"
+],
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5242967/ring-malith",
+"text": "Player Card"
+}
+],
+"headshot": {
+"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5242967.png",
+"alt": "Ring Malith"
+},
+"jersey": "0",
+"position": {
+"name": "Guard",
+"displayName": "Guard",
+"abbreviation": "G"
+}
+},
+"starter": true,
+"didNotPlay": false,
+"ejected": false,
+"stats": [
+"18",
+"5",
+"2-4",
+"1-1",
+"0-0",
+"2",
+"0",
+"1",
+"1",
+"0",
+"0",
+"2",
+"2"
+]
+},
+{
 "athlete": {
 "id": "5106766",
 "uid": "s:40~l:41~a:5106766",
@@ -521,22 +518,21 @@
 "ejected": false,
 "stats": [
 "33",
+"23",
 "8-9",
 "1-2",
 "6-6",
-"2",
-"4",
 "6",
 "4",
+"2",
 "1",
 "0",
 "2",
-"2",
-"23"
+"4",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4703380",
 "uid": "s:40~l:41~a:4703380",
@@ -570,22 +566,21 @@
 "ejected": false,
 "stats": [
 "30",
+"11",
 "4-12",
 "3-8",
 "0-0",
-"0",
-"5",
 "5",
 "7",
-"0",
-"0",
 "1",
-"3",
-"11"
+"0",
+"0",
+"0",
+"5",
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4432527",
 "uid": "s:40~l:41~a:4432527",
@@ -619,22 +614,21 @@
 "ejected": false,
 "stats": [
 "30",
+"15",
 "5-10",
 "5-10",
 "0-0",
-"0",
-"1",
 "1",
 "3",
-"0",
-"0",
 "4",
+"0",
+"0",
+"0",
 "1",
-"15"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5242970",
 "uid": "s:40~l:41~a:5242970",
@@ -668,22 +662,21 @@
 "ejected": false,
 "stats": [
 "21",
+"8",
 "4-9",
 "0-0",
 "0-2",
-"0",
-"5",
 "5",
 "1",
+"0",
 "1",
 "0",
 "0",
-"1",
-"8"
+"5",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5176137",
 "uid": "s:40~l:41~a:5176137",
@@ -717,22 +710,21 @@
 "ejected": false,
 "stats": [
 "22",
+"12",
 "5-6",
 "0-0",
 "2-2",
-"1",
-"6",
 "7",
+"2",
 "2",
 "0",
 "2",
-"2",
-"2",
-"12"
+"1",
+"6",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5242969",
 "uid": "s:40~l:41~a:5242969",
@@ -766,10 +758,10 @@
 "ejected": false,
 "stats": [
 "2",
+"0",
 "0-1",
 "0-1",
 "0-0",
-"0",
 "0",
 "0",
 "0",
@@ -781,7 +773,6 @@
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5242968",
 "uid": "s:40~l:41~a:5242968",
@@ -815,22 +806,21 @@
 "ejected": false,
 "stats": [
 "11",
+"2",
 "1-3",
 "0-0",
 "0-0",
-"3",
-"2",
 "5",
 "3",
 "0",
 "0",
 "0",
+"3",
 "2",
 "2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177366",
 "uid": "s:40~l:41~a:5177366",
@@ -864,22 +854,21 @@
 "ejected": false,
 "stats": [
 "2",
+"0",
 "0-0",
 "0-0",
 "0-0",
-"0",
-"1",
-"1",
-"0",
 "1",
 "0",
 "0",
+"1",
 "0",
+"0",
+"1",
 "0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177364",
 "uid": "s:40~l:41~a:5177364",
@@ -913,22 +902,21 @@
 "ejected": false,
 "stats": [
 "14",
+"0",
 "0-1",
 "0-0",
 "0-0",
-"0",
-"1",
 "1",
 "0",
 "0",
 "0",
 "0",
+"0",
 "1",
-"0"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5107693",
 "uid": "s:40~l:41~a:5107693",
@@ -958,10 +946,10 @@
 "ejected": false,
 "stats": [
 "1",
-"0-0",
-"0-0",
-"0-0",
 "0",
+"0-0",
+"0-0",
+"0-0",
 "0",
 "0",
 "0",
@@ -973,7 +961,6 @@
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5182713",
 "uid": "s:40~l:41~a:5182713",
@@ -1008,7 +995,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5107708",
 "uid": "s:40~l:41~a:5107708",
@@ -1043,7 +1029,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5242971",
 "uid": "s:40~l:41~a:5242971",
@@ -1080,18 +1065,18 @@
 ],
 "totals": [
 "",
+"76",
 "29-58",
 "10-22",
 "8-10",
-"10",
-"28",
 "38",
 "20",
+"14",
 "4",
 "3",
-"14",
-"14",
-"76"
+"10",
+"28",
+"14"
 ]
 }
 ],
@@ -1115,67 +1100,66 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
 "athlete": {
 "id": "5241460",
 "uid": "s:40~l:41~a:5241460",
@@ -1209,22 +1193,21 @@
 "ejected": false,
 "stats": [
 "21",
+"2",
 "1-5",
 "0-2",
 "0-0",
-"0",
-"1",
-"1",
 "1",
 "1",
 "0",
+"1",
+"0",
 "0",
 "1",
-"2"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5176146",
 "uid": "s:40~l:41~a:5176146",
@@ -1258,22 +1241,21 @@
 "ejected": false,
 "stats": [
 "25",
+"4",
 "2-4",
 "0-2",
 "0-0",
-"0",
-"1",
 "1",
 "2",
-"1",
-"0",
 "5",
-"2",
-"4"
+"1",
+"0",
+"0",
+"1",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5106659",
 "uid": "s:40~l:41~a:5106659",
@@ -1307,22 +1289,21 @@
 "ejected": false,
 "stats": [
 "33",
+"18",
 "7-12",
 "2-4",
 "2-5",
-"0",
-"3",
 "3",
 "2",
-"0",
-"0",
 "1",
 "0",
-"18"
+"0",
+"0",
+"3",
+"0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4900686",
 "uid": "s:40~l:41~a:4900686",
@@ -1356,27 +1337,26 @@
 "ejected": false,
 "stats": [
 "31",
+"12",
 "5-10",
 "2-6",
 "0-0",
-"0",
 "2",
-"2",
-"0",
-"1",
 "0",
 "2",
 "1",
-"12"
+"0",
+"0",
+"2",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4897484",
 "uid": "s:40~l:41~a:4897484",
 "guid": "3b467e41-c6cd-33e7-982e-d737880cf0e5",
-"displayName": "Cam Palesse",
+"displayName": "Cameron Palesse",
 "shortName": "C. Palesse",
 "links": [
 {
@@ -1385,13 +1365,13 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897484/cam-palesse",
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897484/cameron-palesse",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4897484.png",
-"alt": "Cam Palesse"
+"alt": "Cameron Palesse"
 },
 "jersey": "1",
 "position": {
@@ -1405,22 +1385,21 @@
 "ejected": false,
 "stats": [
 "25",
+"8",
 "2-3",
 "0-0",
 "4-4",
-"2",
-"3",
 "5",
 "0",
 "1",
+"1",
 "0",
-"1",
-"1",
-"8"
+"2",
+"3",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5241463",
 "uid": "s:40~l:41~a:5241463",
@@ -1454,6 +1433,7 @@
 "ejected": false,
 "stats": [
 "3",
+"0",
 "0-0",
 "0-0",
 "0-0",
@@ -1464,12 +1444,10 @@
 "0",
 "0",
 "0",
-"1",
-"0"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177092",
 "uid": "s:40~l:41~a:5177092",
@@ -1503,22 +1481,21 @@
 "ejected": false,
 "stats": [
 "1",
+"0",
 "0-1",
 "0-0",
 "0-0",
 "1",
 "0",
+"0",
+"0",
+"0",
 "1",
-"0",
-"0",
-"0",
-"0",
 "0",
 "0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5106036",
 "uid": "s:40~l:41~a:5106036",
@@ -1552,22 +1529,21 @@
 "ejected": false,
 "stats": [
 "13",
+"4",
 "2-7",
 "0-2",
 "0-0",
-"2",
-"3",
 "5",
 "0",
 "1",
+"1",
 "0",
-"1",
-"1",
-"4"
+"2",
+"3",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4897297",
 "uid": "s:40~l:41~a:4897297",
@@ -1601,22 +1577,21 @@
 "ejected": false,
 "stats": [
 "18",
+"5",
 "2-9",
 "1-2",
 "0-0",
+"2",
+"1",
+"2",
+"1",
+"1",
 "0",
 "2",
-"2",
-"1",
-"1",
-"1",
-"2",
-"2",
-"5"
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5241462",
 "uid": "s:40~l:41~a:5241462",
@@ -1640,9 +1615,9 @@
 },
 "jersey": "9",
 "position": {
-"name": "Guard",
-"displayName": "Guard",
-"abbreviation": "G"
+"name": "Forward",
+"displayName": "Forward",
+"abbreviation": "F"
 }
 },
 "starter": false,
@@ -1650,22 +1625,21 @@
 "ejected": false,
 "stats": [
 "17",
+"3",
 "1-2",
 "1-2",
 "0-0",
-"1",
-"2",
 "3",
+"1",
 "1",
 "2",
 "0",
 "1",
 "2",
-"3"
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5241459",
 "uid": "s:40~l:41~a:5241459",
@@ -1699,22 +1673,21 @@
 "ejected": false,
 "stats": [
 "12",
+"2",
 "0-2",
 "0-1",
 "2-2",
-"0",
-"2",
 "2",
 "1",
 "0",
 "0",
 "0",
 "0",
-"2"
+"2",
+"0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177093",
 "uid": "s:40~l:41~a:5177093",
@@ -1748,10 +1721,10 @@
 "ejected": false,
 "stats": [
 "1",
-"0-0",
-"0-0",
-"0-0",
 "0",
+"0-0",
+"0-0",
+"0-0",
 "0",
 "0",
 "0",
@@ -1763,7 +1736,6 @@
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5241458",
 "uid": "s:40~l:41~a:5241458",
@@ -1798,7 +1770,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5177090",
 "uid": "s:40~l:41~a:5177090",
@@ -1833,7 +1804,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5241461",
 "uid": "s:40~l:41~a:5241461",
@@ -1870,18 +1840,18 @@
 ],
 "totals": [
 "",
+"58",
 "22-55",
 "6-21",
 "8-11",
-"7",
-"20",
 "27",
 "8",
+"14",
 "8",
 "1",
-"14",
-"11",
-"58"
+"7",
+"20",
+"11"
 ]
 }
 ],
@@ -1903,6 +1873,7 @@
 "gameInfo": {
 "venue": {
 "id": "1972",
+"guid": "37166dce-c86b-3998-86d0-3e0573f5100a",
 "fullName": "University Arena (MI)",
 "address": {
 "city": "Kalamazoo",
@@ -2023,10 +1994,10 @@
 "abbreviation": "G"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2057,7 +2028,12 @@
 "value": 0.4,
 "displayValue": "2/5"
 }
-]
+],
+"mainStat": {
+"value": "18",
+"label": "PTS"
+},
+"summary": "7/12 FG, 2/5 FT"
 }
 ]
 },
@@ -2095,10 +2071,10 @@
 "abbreviation": "G"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2138,7 +2114,12 @@
 "value": 2.0,
 "displayValue": "2.0"
 }
-]
+],
+"mainStat": {
+"value": "2",
+"label": "AST"
+},
+"summary": "1 TO, 33 MIN"
 }
 ]
 },
@@ -2153,8 +2134,8 @@
 "uid": "s:40~l:41~a:4897484",
 "guid": "3b467e41-c6cd-33e7-982e-d737880cf0e5",
 "lastName": "Palesse",
-"fullName": "Cam Palesse",
-"displayName": "Cam Palesse",
+"fullName": "Cameron Palesse",
+"displayName": "Cameron Palesse",
 "shortName": "C. Palesse",
 "links": [
 {
@@ -2163,15 +2144,15 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897484/cam-palesse",
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897484/cameron-palesse",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4897484.png",
-"alt": "Cam Palesse"
+"alt": "Cameron Palesse"
 },
-"jersey": "1",
+"jersey": "11",
 "position": {
 "abbreviation": "G"
 },
@@ -2210,7 +2191,12 @@
 "value": 2.0,
 "displayValue": "2"
 }
-]
+],
+"mainStat": {
+"value": "5",
+"label": "REB"
+},
+"summary": "3 DREB, 2 OREB"
 }
 ]
 }
@@ -2243,7 +2229,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-24T18:01Z"
+"lastUpdated": "2025-09-26T17:00Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2565.png",
@@ -2254,7 +2240,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-24T18:03Z"
+"lastUpdated": "2025-09-26T17:01Z"
 }
 ]
 },
@@ -2327,7 +2313,12 @@
 "value": 1.0,
 "displayValue": "6/6"
 }
-]
+],
+"mainStat": {
+"value": "23",
+"label": "PTS"
+},
+"summary": "8/9 FG, 6/6 FT"
 }
 ]
 },
@@ -2365,10 +2356,10 @@
 "abbreviation": "G"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2408,7 +2399,12 @@
 "value": 7.0,
 "displayValue": "7.0"
 }
-]
+],
+"mainStat": {
+"value": "7",
+"label": "AST"
+},
+"summary": "1 TO, 30 MIN"
 }
 ]
 },
@@ -2480,7 +2476,12 @@
 "value": 1.0,
 "displayValue": "1"
 }
-]
+],
+"mainStat": {
+"value": "7",
+"label": "REB"
+},
+"summary": "6 DREB, 1 OREB"
 }
 ]
 }
@@ -2540,7 +2541,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-24T18:01Z"
+"lastUpdated": "2025-09-26T17:00Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2565.png",
@@ -2551,7 +2552,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-24T18:03Z"
+"lastUpdated": "2025-09-26T17:01Z"
 }
 ]
 },
@@ -4045,6 +4046,7 @@
 "uid": "s:40~l:41~e:401706160",
 "season": {
 "year": 2025,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -4075,6 +4077,7 @@
 "winner": false,
 "team": {
 "id": "2099",
+"guid": "81171a16-24f9-f91d-eb86-4d305ac2111c",
 "uid": "s:40~l:41~t:2099",
 "location": "Canisius",
 "name": "Golden Griffins",
@@ -4253,6 +4256,7 @@
 "winner": true,
 "team": {
 "id": "2565",
+"guid": "5ebd6144-39b3-a5fc-5be1-7b2463cf099b",
 "uid": "s:40~l:41~t:2565",
 "location": "SIU Edwardsville",
 "name": "Cougars",
@@ -4271,7 +4275,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-24T18:01Z"
+"lastUpdated": "2025-09-26T17:00Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2565.png",
@@ -4282,7 +4286,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-24T18:03Z"
+"lastUpdated": "2025-09-26T17:01Z"
 },
 {
 "href": "https://a.espncdn.com/guid/5ebd6144-39b3-a5fc-5be1-7b2463cf099b/logos/primary_logo_on_white_color.png",
@@ -4701,6 +4705,22 @@
 "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/tournament",
 "text": "Tournament"
 }
+],
+"logos": [
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"default"
+]
+},
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"dark"
+]
+}
 ]
 },
 "gameNote": "Bronco Classic"
@@ -4736,7 +4756,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:01:42Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101804702",
@@ -4768,7 +4790,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:01:42Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101807001",
@@ -4800,7 +4824,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:02:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101807301",
@@ -4832,7 +4858,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:02:17Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101807302",
@@ -4864,7 +4892,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:02:17Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101807303",
@@ -4896,7 +4926,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:02:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160101807304",
@@ -4928,7 +4960,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:02:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160101809101",
@@ -4960,7 +4994,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:03:20Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101809102",
@@ -4992,7 +5028,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:03:20Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101809901",
@@ -5024,7 +5062,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:03:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101814101",
@@ -5056,7 +5096,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:03:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101814102",
@@ -5088,7 +5130,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:03:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101815801",
@@ -5120,7 +5164,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:04:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101816201",
@@ -5152,7 +5198,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:04:09Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101816301",
@@ -5184,7 +5232,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:04:09Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101818001",
@@ -5216,7 +5266,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:04:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101824601",
@@ -5248,7 +5300,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:05:08Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101826701",
@@ -5280,7 +5334,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:05:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101826702",
@@ -5312,7 +5368,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:05:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101828401",
@@ -5349,7 +5407,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:06Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101834201",
@@ -5381,7 +5441,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101834202",
@@ -5413,7 +5475,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101834801",
@@ -5445,7 +5509,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:28Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101836401",
@@ -5477,7 +5543,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:45Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101836701",
@@ -5509,7 +5577,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101837701",
@@ -5541,7 +5611,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:06:48Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101838401",
@@ -5566,7 +5638,9 @@
 "id": "2565"
 },
 "wallclock": "2024-11-16T20:07:05Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101838402",
@@ -5588,7 +5662,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T20:07:05Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101839501",
@@ -5620,7 +5696,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:09:55Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101839502",
@@ -5652,7 +5730,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:09:55Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101844701",
@@ -5684,7 +5764,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:10:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101847201",
@@ -5716,7 +5798,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:10:32Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101849401",
@@ -5748,7 +5832,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:10:32Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101849601",
@@ -5780,7 +5866,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:10:55Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101854501",
@@ -5812,7 +5900,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:11:04Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101856201",
@@ -5844,7 +5934,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:11:04Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101856501",
@@ -5876,7 +5968,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:11:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101858601",
@@ -5908,7 +6002,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:11:45Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101865201",
@@ -5940,7 +6036,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:12:11Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101865202",
@@ -5972,7 +6070,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:12:11Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101866301",
@@ -6009,7 +6109,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:12:24Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101866501",
@@ -6034,7 +6136,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T20:12:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101868901",
@@ -6066,7 +6170,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:14:00Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101869201",
@@ -6098,7 +6204,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:14:31Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101869701",
@@ -6130,7 +6238,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:14:36Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101875801",
@@ -6162,7 +6272,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:15:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101876501",
@@ -6199,7 +6311,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:15:54Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101879401",
@@ -6231,7 +6345,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:16:22Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101879402",
@@ -6263,7 +6379,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:16:22Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401706160101879801",
@@ -6295,7 +6413,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:16:22Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101884101",
@@ -6332,7 +6452,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:16:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101886301",
@@ -6364,7 +6486,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:16:51Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101886302",
@@ -6386,7 +6510,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T20:16:51Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101887901",
@@ -6418,7 +6544,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:19:40Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101889901",
@@ -6450,7 +6578,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:20:07Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101896301",
@@ -6487,7 +6617,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:20:47Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101899101",
@@ -6519,7 +6651,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:14Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101899102",
@@ -6551,7 +6685,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:14Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101905401",
@@ -6583,7 +6719,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:37Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101905701",
@@ -6615,7 +6753,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:39Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101905702",
@@ -6647,7 +6787,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:39Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101906901",
@@ -6679,7 +6821,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:21:51Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101908101",
@@ -6711,7 +6855,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:26Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101908401",
@@ -6743,7 +6889,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:28Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101909001",
@@ -6775,7 +6923,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:35Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101909401",
@@ -6807,7 +6957,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:38Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101914101",
@@ -6839,7 +6991,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:46Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101914102",
@@ -6871,7 +7025,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:46Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101914701",
@@ -6903,7 +7059,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:22:51Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101916601",
@@ -6935,7 +7093,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:23:34Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101916602",
@@ -6967,7 +7127,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:23:34Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401706160101916801",
@@ -6999,7 +7161,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:23:34Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101917901",
@@ -7031,7 +7195,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:24:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101918201",
@@ -7063,7 +7229,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:24:10Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101919401",
@@ -7095,7 +7263,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:24:23Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101919402",
@@ -7127,7 +7297,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:24:23Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160101919403",
@@ -7159,7 +7331,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:24:23Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160101925201",
@@ -7191,7 +7365,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:25:42Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101925301",
@@ -7223,7 +7399,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:25:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101925302",
@@ -7255,7 +7433,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:25:45Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101925401",
@@ -7287,7 +7467,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:25:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101925402",
@@ -7309,7 +7491,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T20:25:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101926801",
@@ -7341,7 +7525,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:28:33Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101927001",
@@ -7373,7 +7559,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:28:33Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101927002",
@@ -7405,7 +7593,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:28:33Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101927101",
@@ -7437,7 +7627,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:29:09Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101929201",
@@ -7474,7 +7666,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:29:42Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101934401",
@@ -7506,7 +7700,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:29:53Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101934801",
@@ -7538,7 +7734,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:29:56Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101935901",
@@ -7570,7 +7768,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:30:08Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101937201",
@@ -7602,7 +7802,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:30:22Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101938701",
@@ -7634,7 +7836,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:30:58Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101944101",
@@ -7666,7 +7870,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:31:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101944401",
@@ -7698,7 +7904,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:31:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101945101",
@@ -7735,7 +7943,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:31:42Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101945501",
@@ -7760,7 +7970,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T20:31:44Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101946801",
@@ -7797,7 +8009,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:11Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101949101",
@@ -7829,7 +8043,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:11Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101955201",
@@ -7861,7 +8077,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:54Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101955202",
@@ -7893,7 +8111,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:54Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160101955203",
@@ -7925,7 +8145,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:54Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160101955301",
@@ -7957,7 +8179,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:33:54Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101957101",
@@ -7994,7 +8218,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:35:04Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101958301",
@@ -8026,7 +8252,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:35:18Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101958701",
@@ -8058,7 +8286,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:35:20Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101959101",
@@ -8095,7 +8325,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:35:24Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101966301",
@@ -8127,7 +8359,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:35:56Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101968401",
@@ -8164,7 +8398,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:36:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101974301",
@@ -8201,7 +8437,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:36:36Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101975401",
@@ -8238,7 +8476,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:36:48Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101976801",
@@ -8270,7 +8510,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:37:02Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101977701",
@@ -8302,7 +8544,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:37:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101977801",
@@ -8327,7 +8571,9 @@
 "id": "2565"
 },
 "wallclock": "2024-11-16T20:37:10Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101977802",
@@ -8349,7 +8595,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T20:37:10Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160101978601",
@@ -8381,7 +8629,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:05Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101978901",
@@ -8413,7 +8663,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:07Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101979401",
@@ -8445,7 +8697,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:13Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101979801",
@@ -8477,7 +8731,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:16Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101985501",
@@ -8509,7 +8765,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:33Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101985801",
@@ -8541,7 +8799,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:35Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101985802",
@@ -8573,7 +8833,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:35Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101987301",
@@ -8605,7 +8867,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:51Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101987302",
@@ -8637,7 +8901,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:53Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401706160101987701",
@@ -8669,7 +8935,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:40:53Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101988401",
@@ -8701,7 +8969,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:41:02Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101988402",
@@ -8733,7 +9003,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:41:02Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101989801",
@@ -8765,7 +9037,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:41:45Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160101994101",
@@ -8797,7 +9071,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:41:47Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101995201",
@@ -8829,7 +9105,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:41:56Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160101996601",
@@ -8861,7 +9139,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:42:40Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101997001",
@@ -8893,7 +9173,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:42:42Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101999601",
@@ -8925,7 +9207,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:43:10Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160101999901",
@@ -8957,7 +9241,9 @@
 }
 ],
 "wallclock": "2024-11-16T20:43:12Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160101999902",
@@ -8979,7 +9265,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T20:43:12Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Halftime"
 },
 {
 "id": "401706160102805301",
@@ -9011,7 +9299,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:00:09Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102805501",
@@ -9043,7 +9333,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:00:24Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102805601",
@@ -9075,7 +9367,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:00:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102805602",
@@ -9107,7 +9401,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:00:24Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102805801",
@@ -9144,7 +9440,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:00:43Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102808101",
@@ -9176,7 +9474,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:05Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102809001",
@@ -9208,7 +9508,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:21Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102809002",
@@ -9240,7 +9542,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:25Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102809401",
@@ -9277,7 +9581,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:25Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102815701",
@@ -9309,7 +9615,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:50Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102816101",
@@ -9341,7 +9649,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:01:52Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102816401",
@@ -9373,7 +9683,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:02:07Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102818101",
@@ -9405,7 +9717,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:02:36Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102824901",
@@ -9437,7 +9751,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:04Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102824902",
@@ -9469,7 +9785,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:04Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102826401",
@@ -9501,7 +9819,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:34Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102826701",
@@ -9533,7 +9853,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:37Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102827401",
@@ -9570,7 +9892,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:46Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102828801",
@@ -9602,7 +9926,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:03:59Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102829101",
@@ -9634,7 +9960,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:04:02Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102829401",
@@ -9671,7 +9999,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:04:05Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102829501",
@@ -9696,7 +10026,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T21:04:05Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102829502",
@@ -9718,7 +10050,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:04:05Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102836001",
@@ -9750,7 +10084,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:07:36Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102837101",
@@ -9782,7 +10118,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102837401",
@@ -9814,7 +10152,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:11Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102838101",
@@ -9851,7 +10191,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102839601",
@@ -9883,7 +10225,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:31Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102839602",
@@ -9915,7 +10259,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:31Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102844101",
@@ -9947,7 +10293,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:08:37Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102844201",
@@ -9972,7 +10320,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T21:08:37Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102844202",
@@ -9994,7 +10344,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:08:37Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102844203",
@@ -10019,7 +10371,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T21:08:37Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102846001",
@@ -10051,7 +10405,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:11:37Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102846401",
@@ -10083,7 +10439,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:11:40Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102848001",
@@ -10115,7 +10473,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:11:58Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102848301",
@@ -10147,7 +10507,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:11:58Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102849301",
@@ -10179,7 +10541,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:12:10Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102855401",
@@ -10211,7 +10575,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:12:44Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102855402",
@@ -10243,7 +10609,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:12:44Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102855403",
@@ -10275,7 +10643,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:12:44Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102857701",
@@ -10312,7 +10682,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:13:52Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102858801",
@@ -10344,7 +10716,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:03Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102858802",
@@ -10376,7 +10750,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:06Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401706160102859301",
@@ -10408,7 +10784,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:06Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102859601",
@@ -10440,7 +10818,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:12Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102859602",
@@ -10472,7 +10852,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:12Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102859603",
@@ -10504,7 +10886,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:14:12Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102865801",
@@ -10536,7 +10920,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102866901",
@@ -10568,7 +10954,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:40Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102867201",
@@ -10600,7 +10988,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:40Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102867301",
@@ -10632,7 +11022,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102867302",
@@ -10664,7 +11056,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:43Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102867303",
@@ -10689,7 +11083,9 @@
 "id": "2565"
 },
 "wallclock": "2024-11-16T21:15:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102867304",
@@ -10721,7 +11117,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:43Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102867401",
@@ -10753,7 +11151,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:15:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102868301",
@@ -10785,7 +11185,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:16:37Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102868501",
@@ -10817,7 +11219,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:16:39Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102874101",
@@ -10849,7 +11253,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:16:55Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102875601",
@@ -10886,7 +11292,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:17:11Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102878701",
@@ -10923,7 +11331,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:17:41Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102884601",
@@ -10955,7 +11365,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:17:59Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102884901",
@@ -10987,7 +11399,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:03Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102885301",
@@ -11024,7 +11438,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:06Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102887501",
@@ -11056,7 +11472,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102887901",
@@ -11088,7 +11506,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:31Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102887902",
@@ -11120,7 +11540,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:31Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102889701",
@@ -11152,7 +11574,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:18:50Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102889702",
@@ -11174,7 +11598,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:18:50Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102895801",
@@ -11206,7 +11632,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:21:52Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102896101",
@@ -11238,7 +11666,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:21:55Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102896601",
@@ -11270,7 +11700,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:21:57Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102898001",
@@ -11302,7 +11734,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:23Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102898002",
@@ -11334,7 +11768,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:23Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102898501",
@@ -11366,7 +11802,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:30Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102898701",
@@ -11398,7 +11836,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:30Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102899601",
@@ -11430,7 +11870,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:39Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102899901",
@@ -11462,7 +11904,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102905501",
@@ -11499,7 +11943,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:22:58Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102907701",
@@ -11536,7 +11982,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:20Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102908701",
@@ -11568,7 +12016,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:31Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102909001",
@@ -11600,7 +12050,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:35Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102909401",
@@ -11632,7 +12084,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:40Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102914001",
@@ -11664,7 +12118,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102915101",
@@ -11696,7 +12152,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:54Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102915501",
@@ -11728,7 +12186,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:57Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102915502",
@@ -11760,7 +12220,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:23:57Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102917901",
@@ -11792,7 +12254,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:24:22Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102918001",
@@ -11824,7 +12288,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:24:22Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102918101",
@@ -11856,7 +12322,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:24:26Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102924801",
@@ -11888,7 +12356,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:27Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102925001",
@@ -11920,7 +12390,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:31Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102926401",
@@ -11952,7 +12424,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:44Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102926701",
@@ -11984,7 +12458,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:47Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102926901",
@@ -12016,7 +12492,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:51Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102927301",
@@ -12048,7 +12526,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:25:53Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102929801",
@@ -12080,7 +12560,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:26:17Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102934001",
@@ -12112,7 +12594,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:26:17Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102934002",
@@ -12144,7 +12628,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:26:40Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102934003",
@@ -12166,7 +12652,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:26:40Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102934501",
@@ -12198,7 +12686,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:28:58Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102934801",
@@ -12230,7 +12720,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:28:58Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102936401",
@@ -12262,7 +12754,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:29:17Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102936601",
@@ -12294,7 +12788,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:29:42Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102936901",
@@ -12326,7 +12822,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:29:45Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102938301",
@@ -12363,7 +12861,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:29:59Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102945301",
@@ -12395,7 +12895,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:29Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102946301",
@@ -12427,7 +12929,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:40Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102946701",
@@ -12459,7 +12963,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:44Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102948101",
@@ -12491,7 +12997,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:57Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102948102",
@@ -12523,7 +13031,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:57Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102948103",
@@ -12555,7 +13065,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:30:57Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102954001",
@@ -12592,7 +13104,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:32:11Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102955501",
@@ -12629,7 +13143,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:32:26Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102956801",
@@ -12661,7 +13177,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:32:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102956802",
@@ -12686,7 +13204,9 @@
 "id": "2565"
 },
 "wallclock": "2024-11-16T21:32:43Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102956803",
@@ -12718,7 +13238,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:32:43Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102956804",
@@ -12750,7 +13272,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:32:43Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102958601",
@@ -12782,7 +13306,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:35:53Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102958901",
@@ -12814,7 +13340,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:35:56Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102965401",
@@ -12846,7 +13374,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:36:22Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102965801",
@@ -12878,7 +13408,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:36:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102966201",
@@ -12910,7 +13442,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:36:30Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102968601",
@@ -12942,7 +13476,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:36:53Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102968901",
@@ -12974,7 +13510,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:36:57Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102969401",
@@ -13006,7 +13544,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:02Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102969901",
@@ -13038,7 +13578,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:06Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102975701",
@@ -13075,7 +13617,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:25Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102977301",
@@ -13107,7 +13651,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:47Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102977302",
@@ -13129,7 +13675,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:37:47Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401706160102977303",
@@ -13161,7 +13709,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:47Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102977304",
@@ -13186,7 +13736,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T21:37:47Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102977305",
@@ -13218,7 +13770,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:37:47Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102977401",
@@ -13250,7 +13804,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:40:49Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102979201",
@@ -13282,7 +13838,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:41:07Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102979202",
@@ -13314,7 +13872,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:41:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102979203",
@@ -13346,7 +13906,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:41:07Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102984701",
@@ -13378,7 +13940,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:42:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102984702",
@@ -13410,7 +13974,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:42:29Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102987401",
@@ -13442,7 +14008,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:42:58Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102987701",
@@ -13467,7 +14035,9 @@
 "id": "2099"
 },
 "wallclock": "2024-11-16T21:43:08Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102988801",
@@ -13499,7 +14069,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:43:41Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401706160102988802",
@@ -13531,7 +14103,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:43:41Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102988803",
@@ -13563,7 +14137,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:43:41Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401706160102995801",
@@ -13595,7 +14171,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:05Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102996201",
@@ -13627,7 +14205,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:09Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102998201",
@@ -13652,7 +14232,9 @@
 "id": "2565"
 },
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401706160102999501",
@@ -13684,7 +14266,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401706160102999801",
@@ -13716,7 +14300,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102999802",
@@ -13748,7 +14334,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": true
+"shootingPlay": true,
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401706160102999902",
@@ -13780,7 +14368,9 @@
 }
 ],
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401706160102999901",
@@ -13802,7 +14392,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "End of 2nd"
 },
 {
 "id": "401706160102999903",
@@ -13824,7 +14416,9 @@
 "scoringPlay": false,
 "scoreValue": 0,
 "wallclock": "2024-11-16T21:45:27Z",
-"shootingPlay": false
+"shootingPlay": false,
+"pointsAttempted": 0,
+"shortDescription": "End of Game"
 }
 ],
 "article": [],
@@ -13834,16 +14428,16 @@
 "text": "Full Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings"
 },
-"header": "2025 Standings",
+"header": "2025-26 Standings",
 "groups": [
 {
 "standings": {
 "entries": [
 {
-"team": "Southeast Missouri State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2546/southeast-missouri-state-redhawks",
-"id": "2546",
-"uid": "s:40~l:41~t:2546",
+"team": "UT Martin",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2630/ut-martin-skyhawks",
+"id": "2630",
+"uid": "s:40~l:41~t:2630",
 "stats": [
 {
 "id": "0",
@@ -13853,8 +14447,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "21-12",
-"displayValue": "21-12"
+"summary": "6-2",
+"displayValue": "6-2"
 },
 {
 "name": "gamesBehind",
@@ -13874,13 +14468,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "15-5",
-"displayValue": "15-5"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2630.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -13888,10 +14482,10 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-12-13T21:29Z"
+"lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2546.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2630.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -13899,7 +14493,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-12-13T21:30Z"
+"lastUpdated": "2018-06-05T12:08Z"
 }
 ]
 },
@@ -13917,8 +14511,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "22-12",
-"displayValue": "22-12"
+"summary": "6-4",
+"displayValue": "6-4"
 },
 {
 "name": "gamesBehind",
@@ -13927,8 +14521,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 2.0,
-"displayValue": "2"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -13938,8 +14532,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "13-7",
-"displayValue": "13-7"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -13952,7 +14546,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-24T18:01Z"
+"lastUpdated": "2025-09-26T17:00Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2565.png",
@@ -13963,71 +14557,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-24T18:03Z"
-}
-]
-},
-{
-"team": "Little Rock",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2031/little-rock-trojans",
-"id": "2031",
-"uid": "s:40~l:41~t:2031",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "19-14",
-"displayValue": "19-14"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "12-8",
-"displayValue": "12-8"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2025-09-26T17:01Z"
 }
 ]
 },
@@ -14045,8 +14575,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "17-16",
-"displayValue": "17-16"
+"summary": "5-4",
+"displayValue": "5-4"
 },
 {
 "name": "gamesBehind",
@@ -14055,8 +14585,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14066,8 +14596,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "12-8",
-"displayValue": "12-8"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -14109,8 +14639,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "16-17",
-"displayValue": "16-17"
+"summary": "4-4",
+"displayValue": "4-4"
 },
 {
 "name": "gamesBehind",
@@ -14119,8 +14649,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14130,8 +14660,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "10-10",
-"displayValue": "10-10"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -14160,6 +14690,70 @@
 ]
 },
 {
+"team": "Southeast Missouri State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2546/southeast-missouri-state-redhawks",
+"id": "2546",
+"uid": "s:40~l:41~t:2546",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-6",
+"displayValue": "4-6"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2546.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-12-13T21:29Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2546.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-12-13T21:30Z"
+}
+]
+},
+{
 "team": "Tennessee Tech",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2635/tennessee-tech-golden-eagles",
 "id": "2635",
@@ -14173,8 +14767,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "15-17",
-"displayValue": "15-17"
+"summary": "4-6",
+"displayValue": "4-6"
 },
 {
 "name": "gamesBehind",
@@ -14183,8 +14777,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14194,8 +14788,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "10-10",
-"displayValue": "10-10"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -14224,6 +14818,70 @@
 ]
 },
 {
+"team": "Southern Indiana",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/88/southern-indiana-screaming-eagles",
+"id": "88",
+"uid": "s:40~l:41~t:88",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-6",
+"displayValue": "3-6"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/88.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-01-24T18:01Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/88.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-01-24T18:03Z"
+}
+]
+},
+{
 "team": "Morehead State",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2413/morehead-state-eagles",
 "id": "2413",
@@ -14237,8 +14895,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "15-17",
-"displayValue": "15-17"
+"summary": "3-7",
+"displayValue": "3-7"
 },
 {
 "name": "gamesBehind",
@@ -14247,8 +14905,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14258,8 +14916,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "10-10",
-"displayValue": "10-10"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -14288,134 +14946,6 @@
 ]
 },
 {
-"team": "UT Martin",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2630/ut-martin-skyhawks",
-"id": "2630",
-"uid": "s:40~l:41~t:2630",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "14-19",
-"displayValue": "14-19"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 6.0,
-"displayValue": "6"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "9-11",
-"displayValue": "9-11"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2630.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2630.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Eastern Illinois",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2197/eastern-illinois-panthers",
-"id": "2197",
-"uid": "s:40~l:41~t:2197",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "12-19",
-"displayValue": "12-19"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "8-12",
-"displayValue": "8-12"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2197.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2197.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
 "team": "Western Illinois",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2710/western-illinois-leathernecks",
 "id": "2710",
@@ -14429,8 +14959,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "12-19",
-"displayValue": "12-19"
+"summary": "3-7",
+"displayValue": "3-7"
 },
 {
 "name": "gamesBehind",
@@ -14439,8 +14969,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14450,8 +14980,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "6-14",
-"displayValue": "6-14"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -14480,10 +15010,10 @@
 ]
 },
 {
-"team": "Southern Indiana",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/88/southern-indiana-screaming-eagles",
-"id": "88",
-"uid": "s:40~l:41~t:88",
+"team": "Eastern Illinois",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2197/eastern-illinois-panthers",
+"id": "2197",
+"uid": "s:40~l:41~t:2197",
 "stats": [
 {
 "id": "0",
@@ -14493,80 +15023,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "10-20",
-"displayValue": "10-20"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 10.0,
-"displayValue": "10"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "5-15",
-"displayValue": "5-15"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/88.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-01-24T18:01Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/88.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-01-24T18:03Z"
-}
-]
-}
-]
-},
-"header": "2024-25 Ohio Valley Conference Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings/_/group/20"
-},
-{
-"standings": {
-"entries": [
-{
-"team": "Quinnipiac",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2514/quinnipiac-bobcats",
-"id": "2514",
-"uid": "s:40~l:41~t:2514",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "20-13",
-"displayValue": "20-13"
+"summary": "2-5",
+"displayValue": "2-5"
 },
 {
 "name": "gamesBehind",
@@ -14586,13 +15044,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "15-5",
-"displayValue": "15-5"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2197.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -14603,135 +15061,7 @@
 "lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2514.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Merrimack",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2771/merrimack-warriors",
-"id": "2771",
-"uid": "s:40~l:41~t:2771",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "18-15",
-"displayValue": "18-15"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "14-6",
-"displayValue": "14-6"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2771.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-01-25T21:34Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2771.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-01-25T21:35Z"
-}
-]
-},
-{
-"team": "Marist",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2368/marist-red-foxes",
-"id": "2368",
-"uid": "s:40~l:41~t:2368",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "20-10",
-"displayValue": "20-10"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 2.0,
-"displayValue": "2"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "13-7",
-"displayValue": "13-7"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2368.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2368.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2197.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -14744,10 +15074,10 @@
 ]
 },
 {
-"team": "Mount St. Mary's",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/116/mount-st-marys-mountaineers",
-"id": "116",
-"uid": "s:40~l:41~t:116",
+"team": "Little Rock",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2031/little-rock-trojans",
+"id": "2031",
+"uid": "s:40~l:41~t:2031",
 "stats": [
 {
 "id": "0",
@@ -14757,8 +15087,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "23-13",
-"displayValue": "23-13"
+"summary": "2-6",
+"displayValue": "2-6"
 },
 {
 "name": "gamesBehind",
@@ -14767,8 +15097,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -14778,77 +15108,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "12-8",
-"displayValue": "12-8"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/116.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2021-02-19T15:57Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/116.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2021-02-19T15:57Z"
-}
-]
-},
-{
-"team": "Manhattan",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2363/manhattan-jaspers",
-"id": "2363",
-"uid": "s:40~l:41~t:2363",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "17-14",
-"displayValue": "17-14"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "12-8",
-"displayValue": "12-8"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2363.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -14859,7 +15125,7 @@
 "lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2363.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -14870,135 +15136,18 @@
 "lastUpdated": "2018-06-05T12:08Z"
 }
 ]
-},
-{
-"team": "Iona",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/314/iona-gaels",
-"id": "314",
-"uid": "s:40~l:41~t:314",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "17-17",
-"displayValue": "17-17"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "12-8",
-"displayValue": "12-8"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/314.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-03-16T22:10Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/314.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-03-16T22:10Z"
 }
 ]
 },
-{
-"team": "Sacred Heart",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2529/sacred-heart-pioneers",
-"id": "2529",
-"uid": "s:40~l:41~t:2529",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "15-18",
-"displayValue": "15-18"
+"header": "2025-26 Ohio Valley Conference Standings",
+"href": "https://www.espn.com/mens-college-basketball/standings/_/group/20",
+"conferenceHeader": "NCAA Division I",
+"divisionHeader": "Ohio Valley Conference",
+"shortDivisionHeader": "OVC"
 },
 {
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "10-10",
-"displayValue": "10-10"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-01-25T21:35Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2529.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-01-25T21:35Z"
-}
-]
-},
+"standings": {
+"entries": [
 {
 "team": "Siena",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2561/siena-saints",
@@ -15013,8 +15162,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "14-18",
-"displayValue": "14-18"
+"summary": "8-2",
+"displayValue": "8-2"
 },
 {
 "name": "gamesBehind",
@@ -15023,8 +15172,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 6.0,
-"displayValue": "6"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -15034,8 +15183,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "9-11",
-"displayValue": "9-11"
+"summary": "1-0",
+"displayValue": "1-0"
 }
 ],
 "logo": [
@@ -15064,10 +15213,10 @@
 ]
 },
 {
-"team": "Rider",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2520/rider-broncs",
-"id": "2520",
-"uid": "s:40~l:41~t:2520",
+"team": "Marist",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2368/marist-red-foxes",
+"id": "2368",
+"uid": "s:40~l:41~t:2368",
 "stats": [
 {
 "id": "0",
@@ -15077,8 +15226,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "14-19",
-"displayValue": "14-19"
+"summary": "5-2",
+"displayValue": "5-2"
 },
 {
 "name": "gamesBehind",
@@ -15087,8 +15236,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 6.0,
-"displayValue": "6"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -15098,13 +15247,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "9-11",
-"displayValue": "9-11"
+"summary": "1-0",
+"displayValue": "1-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2520.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2368.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15115,7 +15264,7 @@
 "lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2520.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2368.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15128,10 +15277,10 @@
 ]
 },
 {
-"team": "Fairfield",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2217/fairfield-stags",
-"id": "2217",
-"uid": "s:40~l:41~t:2217",
+"team": "Quinnipiac",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2514/quinnipiac-bobcats",
+"id": "2514",
+"uid": "s:40~l:41~t:2514",
 "stats": [
 {
 "id": "0",
@@ -15141,8 +15290,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "12-20",
-"displayValue": "12-20"
+"summary": "6-3",
+"displayValue": "6-3"
 },
 {
 "name": "gamesBehind",
@@ -15151,8 +15300,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -15162,13 +15311,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "8-12",
-"displayValue": "8-12"
+"summary": "1-0",
+"displayValue": "1-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2217.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2514.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15179,7 +15328,71 @@
 "lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2217.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2514.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Manhattan",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2363/manhattan-jaspers",
+"id": "2363",
+"uid": "s:40~l:41~t:2363",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-5",
+"displayValue": "4-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "1-0",
+"displayValue": "1-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2363.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2363.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15205,8 +15418,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "12-16",
-"displayValue": "12-16"
+"summary": "3-4",
+"displayValue": "3-4"
 },
 {
 "name": "gamesBehind",
@@ -15215,8 +15428,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -15226,8 +15439,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "7-13",
-"displayValue": "7-13"
+"summary": "1-0",
+"displayValue": "1-0"
 }
 ],
 "logo": [
@@ -15256,6 +15469,326 @@
 ]
 },
 {
+"team": "Merrimack",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2771/merrimack-warriors",
+"id": "2771",
+"uid": "s:40~l:41~t:2771",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-6",
+"displayValue": "4-6"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "1-0",
+"displayValue": "1-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2771.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-01-25T21:34Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2771.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-01-25T21:35Z"
+}
+]
+},
+{
+"team": "Sacred Heart",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2529/sacred-heart-pioneers",
+"id": "2529",
+"uid": "s:40~l:41~t:2529",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-5",
+"displayValue": "3-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "1-0",
+"displayValue": "1-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-01-25T21:35Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2529.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-01-25T21:35Z"
+}
+]
+},
+{
+"team": "Iona",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/314/iona-gaels",
+"id": "314",
+"uid": "s:40~l:41~t:314",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "6-3",
+"displayValue": "6-3"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-1",
+"displayValue": "0-1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/314.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-03-16T22:10Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/314.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-03-16T22:10Z"
+}
+]
+},
+{
+"team": "Fairfield",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2217/fairfield-stags",
+"id": "2217",
+"uid": "s:40~l:41~t:2217",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "5-4",
+"displayValue": "5-4"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-1",
+"displayValue": "0-1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2217.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2217.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Canisius",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2099/canisius-golden-griffins",
+"id": "2099",
+"uid": "s:40~l:41~t:2099",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-5",
+"displayValue": "4-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 1.0,
+"displayValue": "1"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-1",
+"displayValue": "0-1"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2099.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2099.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
 "team": "Niagara",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/315/niagara-purple-eagles",
 "id": "315",
@@ -15269,8 +15802,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "11-20",
-"displayValue": "11-20"
+"summary": "2-6",
+"displayValue": "2-6"
 },
 {
 "name": "gamesBehind",
@@ -15279,8 +15812,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 1.0,
+"displayValue": "1"
 },
 {
 "id": "9",
@@ -15290,8 +15823,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "6-14",
-"displayValue": "6-14"
+"summary": "0-1",
+"displayValue": "0-1"
 }
 ],
 "logo": [
@@ -15320,10 +15853,10 @@
 ]
 },
 {
-"team": "Canisius",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2099/canisius-golden-griffins",
-"id": "2099",
-"uid": "s:40~l:41~t:2099",
+"team": "Rider",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2520/rider-broncs",
+"id": "2520",
+"uid": "s:40~l:41~t:2520",
 "stats": [
 {
 "id": "0",
@@ -15333,8 +15866,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "3-28",
-"displayValue": "3-28"
+"summary": "1-6",
+"displayValue": "1-6"
 },
 {
 "name": "gamesBehind",
@@ -15343,8 +15876,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 12.0,
-"displayValue": "12"
+"value": 1.0,
+"displayValue": "1"
 },
 {
 "id": "9",
@@ -15354,13 +15887,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "3-17",
-"displayValue": "3-17"
+"summary": "0-1",
+"displayValue": "0-1"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2099.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2520.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15371,7 +15904,7 @@
 "lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2099.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2520.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -15382,13 +15915,81 @@
 "lastUpdated": "2018-06-05T12:08Z"
 }
 ]
+},
+{
+"team": "Mount St. Mary's",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/116/mount-st-marys-mountaineers",
+"id": "116",
+"uid": "s:40~l:41~t:116",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "2-8",
+"displayValue": "2-8"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 1.5,
+"displayValue": "1.5"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-2",
+"displayValue": "0-2"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/116.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2021-02-19T15:57Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/116.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2021-02-19T15:57Z"
+}
+]
 }
 ]
 },
-"header": "2024-25 Metro Atlantic Athletic Conference Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings/_/group/13"
+"header": "2025-26 Metro Atlantic Athletic Conference Standings",
+"href": "https://www.espn.com/mens-college-basketball/standings/_/group/13",
+"conferenceHeader": "NCAA Division I",
+"divisionHeader": "Metro Atlantic Athletic Conference",
+"shortDivisionHeader": "MAAC"
 }
-]
+],
+"isSameConference": true
 },
 "teamInfo": {},
 "espnWP": {},

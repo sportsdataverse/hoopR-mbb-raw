@@ -23,7 +23,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "44.6",
+"displayValue": "45",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -34,7 +34,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "40.0",
+"displayValue": "40",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -45,7 +45,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "90.0",
+"displayValue": "90",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -177,7 +177,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "48.0",
+"displayValue": "48",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -188,7 +188,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "42.9",
+"displayValue": "43",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -199,7 +199,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "76.7",
+"displayValue": "77",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -329,67 +329,114 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
+"athlete": {
+"id": "5105417",
+"uid": "s:40~l:41~a:5105417",
+"guid": "6d8e48cf-9719-3340-a385-8a38c888f147",
+"displayName": "Steven Jamerson II",
+"shortName": "S. Jamerson II",
+"links": [
+{
+"rel": [
+"playercard",
+"desktop",
+"athlete"
+],
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105417/steven-jamerson-ii",
+"text": "Player Card"
+}
+],
+"headshot": {
+"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105417.png",
+"alt": "Steven Jamerson II"
+},
+"jersey": "24",
+"position": {
+"name": "Forward",
+"displayName": "Forward",
+"abbreviation": "F"
+}
+},
+"starter": true,
+"didNotPlay": false,
+"ejected": false,
+"stats": [
+"29",
+"18",
+"7-10",
+"0-0",
+"4-4",
+"8",
+"2",
+"1",
+"3",
+"2",
+"5",
+"3",
+"5"
+]
+},
+{
 "athlete": {
 "id": "5176444",
 "uid": "s:40~l:41~a:5176444",
@@ -423,71 +470,21 @@
 "ejected": false,
 "stats": [
 "16",
+"0",
 "0-1",
 "0-0",
 "0-0",
-"1",
-"2",
 "3",
 "1",
+"4",
 "1",
 "0",
-"4",
-"0",
+"1",
+"2",
 "0"
 ]
 },
 {
-"active": false,
-"athlete": {
-"id": "5105417",
-"uid": "s:40~l:41~a:5105417",
-"guid": "6d8e48cf-9719-3340-a385-8a38c888f147",
-"displayName": "Steven Jamerson II",
-"shortName": "S. Jamerson II",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105417/steven-jamerson-ii",
-"text": "Player Card"
-}
-],
-"headshot": {
-"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105417.png",
-"alt": "Steven Jamerson II"
-},
-"jersey": "24",
-"position": {
-"name": "Center",
-"displayName": "Center",
-"abbreviation": "C"
-}
-},
-"starter": true,
-"didNotPlay": false,
-"ejected": false,
-"stats": [
-"29",
-"7-10",
-"0-0",
-"4-4",
-"5",
-"3",
-"8",
-"2",
-"3",
-"2",
-"1",
-"5",
-"18"
-]
-},
-{
-"active": false,
 "athlete": {
 "id": "5241001",
 "uid": "s:40~l:41~a:5241001",
@@ -521,22 +518,21 @@
 "ejected": false,
 "stats": [
 "37",
+"21",
 "7-14",
 "0-0",
 "7-8",
+"3",
+"1",
+"1",
+"1",
+"1",
 "0",
 "3",
-"3",
-"1",
-"1",
-"1",
-"1",
-"3",
-"21"
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4906515",
 "uid": "s:40~l:41~a:4906515",
@@ -570,22 +566,21 @@
 "ejected": false,
 "stats": [
 "36",
+"20",
 "4-11",
 "3-5",
 "9-9",
-"0",
-"4",
 "4",
 "3",
-"2",
-"0",
 "1",
 "2",
-"20"
+"0",
+"0",
+"4",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4703095",
 "uid": "s:40~l:41~a:4703095",
@@ -619,22 +614,69 @@
 "ejected": false,
 "stats": [
 "23",
+"7",
 "1-4",
 "1-1",
 "4-5",
-"0",
 "1",
 "1",
-"1",
+"5",
 "2",
 "0",
-"5",
-"4",
-"7"
+"0",
+"1",
+"4"
 ]
 },
 {
-"active": false,
+"athlete": {
+"id": "5241003",
+"uid": "s:40~l:41~a:5241003",
+"guid": "6165376b-6abc-3b8b-b2d5-7287a5abd393",
+"displayName": "Kean Webb",
+"shortName": "K. Webb",
+"links": [
+{
+"rel": [
+"playercard",
+"desktop",
+"athlete"
+],
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5241003/kean-webb",
+"text": "Player Card"
+}
+],
+"headshot": {
+"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241003.png",
+"alt": "Kean Webb"
+},
+"jersey": "23",
+"position": {
+"name": "Forward",
+"displayName": "Forward",
+"abbreviation": "F"
+}
+},
+"starter": false,
+"didNotPlay": false,
+"ejected": false,
+"stats": [
+"12",
+"0",
+"0-0",
+"0-0",
+"0-0",
+"1",
+"0",
+"1",
+"0",
+"0",
+"1",
+"0",
+"1"
+]
+},
+{
 "athlete": {
 "id": "5176447",
 "uid": "s:40~l:41~a:5176447",
@@ -668,22 +710,21 @@
 "ejected": false,
 "stats": [
 "19",
+"13",
 "5-8",
 "0-2",
 "3-4",
-"3",
-"4",
 "7",
 "0",
+"3",
 "0",
 "0",
 "3",
 "4",
-"13"
+"4"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5105414",
 "uid": "s:40~l:41~a:5105414",
@@ -717,6 +758,7 @@
 "ejected": false,
 "stats": [
 "7",
+"2",
 "1-3",
 "0-2",
 "0-0",
@@ -727,61 +769,10 @@
 "0",
 "0",
 "0",
-"0",
-"2"
-]
-},
-{
-"active": false,
-"athlete": {
-"id": "5241003",
-"uid": "s:40~l:41~a:5241003",
-"guid": "6165376b-6abc-3b8b-b2d5-7287a5abd393",
-"displayName": "Kean Webb",
-"shortName": "K. Webb",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5241003/kean-webb",
-"text": "Player Card"
-}
-],
-"headshot": {
-"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241003.png",
-"alt": "Kean Webb"
-},
-"jersey": "23",
-"position": {
-"name": "Center",
-"displayName": "Center",
-"abbreviation": "C"
-}
-},
-"starter": false,
-"didNotPlay": false,
-"ejected": false,
-"stats": [
-"12",
-"0-0",
-"0-0",
-"0-0",
-"1",
-"0",
-"1",
-"0",
-"0",
-"0",
-"1",
-"1",
 "0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5176449",
 "uid": "s:40~l:41~a:5176449",
@@ -815,22 +806,21 @@
 "ejected": false,
 "stats": [
 "21",
+"0",
 "0-5",
 "0-0",
 "0-0",
-"0",
-"2",
 "2",
 "1",
+"0",
 "2",
 "0",
 "0",
-"1",
-"0"
+"2",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5241002",
 "uid": "s:40~l:41~a:5241002",
@@ -865,7 +855,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4702883",
 "uid": "s:40~l:41~a:4702883",
@@ -900,7 +889,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5241005",
 "uid": "s:40~l:41~a:5241005",
@@ -935,7 +923,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5241004",
 "uid": "s:40~l:41~a:5241004",
@@ -970,7 +957,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5241000",
 "uid": "s:40~l:41~a:5241000",
@@ -1005,7 +991,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240999",
 "uid": "s:40~l:41~a:5240999",
@@ -1040,7 +1025,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5176451",
 "uid": "s:40~l:41~a:5176451",
@@ -1075,7 +1059,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5176448",
 "uid": "s:40~l:41~a:5176448",
@@ -1110,7 +1093,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5176445",
 "uid": "s:40~l:41~a:5176445",
@@ -1145,7 +1127,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5105416",
 "uid": "s:40~l:41~a:5105416",
@@ -1180,7 +1161,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5105415",
 "uid": "s:40~l:41~a:5105415",
@@ -1215,7 +1195,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4897203",
 "uid": "s:40~l:41~a:4897203",
@@ -1252,18 +1231,18 @@
 ],
 "totals": [
 "",
+"81",
 "25-56",
 "4-10",
 "27-30",
-"12",
-"20",
 "32",
 "9",
+"17",
 "11",
 "3",
-"17",
+"12",
 "20",
-"81"
+"20"
 ]
 }
 ],
@@ -1287,67 +1266,66 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
 "athlete": {
 "id": "5240903",
 "uid": "s:40~l:41~a:5240903",
@@ -1381,22 +1359,21 @@
 "ejected": false,
 "stats": [
 "39",
+"23",
 "9-16",
 "1-2",
 "4-9",
-"6",
-"5",
 "11",
 "3",
+"6",
 "1",
 "0",
 "6",
-"3",
-"23"
+"5",
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4685682",
 "uid": "s:40~l:41~a:4685682",
@@ -1430,22 +1407,21 @@
 "ejected": false,
 "stats": [
 "21",
+"7",
 "3-3",
 "0-0",
 "1-2",
-"0",
-"1",
 "1",
 "0",
+"1",
 "0",
 "3",
+"0",
 "1",
-"4",
-"7"
+"4"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5106288",
 "uid": "s:40~l:41~a:5106288",
@@ -1479,22 +1455,21 @@
 "ejected": false,
 "stats": [
 "30",
+"10",
 "2-7",
 "0-1",
 "6-6",
-"1",
-"2",
 "3",
-"0",
-"1",
 "0",
 "5",
-"3",
-"10"
+"1",
+"0",
+"1",
+"2",
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5106284",
 "uid": "s:40~l:41~a:5106284",
@@ -1528,22 +1503,21 @@
 "ejected": false,
 "stats": [
 "36",
+"14",
 "3-11",
 "0-1",
 "8-9",
-"0",
-"4",
 "4",
 "8",
+"4",
 "5",
 "0",
+"0",
 "4",
-"4",
-"14"
+"4"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4702464",
 "uid": "s:40~l:41~a:4702464",
@@ -1577,22 +1551,21 @@
 "ejected": false,
 "stats": [
 "20",
-"0-0",
-"0-0",
-"0-0",
 "0",
+"0-0",
+"0-0",
+"0-0",
 "2",
-"2",
-"0",
-"1",
 "0",
 "1",
+"1",
+"0",
+"0",
 "2",
-"0"
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5174796",
 "uid": "s:40~l:41~a:5174796",
@@ -1626,22 +1599,21 @@
 "ejected": false,
 "stats": [
 "9",
+"4",
 "1-1",
 "0-0",
 "2-2",
-"0",
-"2",
 "2",
 "0",
+"1",
 "0",
 "0",
-"1",
-"1",
-"4"
+"0",
+"2",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5240906",
 "uid": "s:40~l:41~a:5240906",
@@ -1675,22 +1647,21 @@
 "ejected": false,
 "stats": [
 "18",
+"6",
 "2-4",
 "2-3",
 "0-0",
-"0",
-"3",
-"3",
-"1",
 "3",
 "1",
 "0",
-"4",
-"6"
+"3",
+"1",
+"0",
+"3",
+"4"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4702675",
 "uid": "s:40~l:41~a:4702675",
@@ -1724,22 +1695,21 @@
 "ejected": false,
 "stats": [
 "27",
+"13",
 "4-8",
 "3-7",
 "2-2",
-"0",
-"1",
 "1",
 "2",
 "0",
 "0",
 "0",
-"3",
-"13"
+"0",
+"1",
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5240909",
 "uid": "s:40~l:41~a:5240909",
@@ -1774,7 +1744,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240907",
 "uid": "s:40~l:41~a:5240907",
@@ -1809,7 +1778,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4585612",
 "uid": "s:40~l:41~a:4585612",
@@ -1844,7 +1812,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5259590",
 "uid": "s:40~l:41~a:5259590",
@@ -1875,7 +1842,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240910",
 "uid": "s:40~l:41~a:5240910",
@@ -1910,7 +1876,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240908",
 "uid": "s:40~l:41~a:5240908",
@@ -1945,7 +1910,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240905",
 "uid": "s:40~l:41~a:5240905",
@@ -1980,24 +1944,13 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5240904",
 "uid": "s:40~l:41~a:5240904",
 "guid": "1c766aff-2c6f-3a70-ad6a-cd36e9eda8f8",
 "displayName": "Donyae May",
 "shortName": "D. May",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5240904/donyae-may",
-"text": "Player Card"
-}
-],
+"links": [],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5240904.png",
 "alt": "Donyae May"
@@ -2017,18 +1970,18 @@
 ],
 "totals": [
 "",
+"77",
 "24-50",
 "6-14",
 "23-30",
-"10",
-"20",
 "30",
 "14",
+"19",
 "11",
 "4",
-"19",
-"24",
-"77"
+"10",
+"20",
+"24"
 ]
 }
 ],
@@ -2050,6 +2003,7 @@
 "gameInfo": {
 "venue": {
 "id": "1246",
+"guid": "2cab49d1-6f6b-343c-8b5d-2d8f2dd2aca4",
 "fullName": "Orleans Arena",
 "address": {
 "city": "Las Vegas",
@@ -2204,7 +2158,12 @@
 "value": 0.444444,
 "displayValue": "4/9"
 }
-]
+],
+"mainStat": {
+"value": "23",
+"label": "PTS"
+},
+"summary": "9/16 FG, 4/9 FT"
 }
 ]
 },
@@ -2285,7 +2244,12 @@
 "value": 2.0,
 "displayValue": "2.0"
 }
-]
+],
+"mainStat": {
+"value": "8",
+"label": "AST"
+},
+"summary": "4 TO, 36 MIN"
 }
 ]
 },
@@ -2357,7 +2321,12 @@
 "value": 6.0,
 "displayValue": "6"
 }
-]
+],
+"mainStat": {
+"value": "11",
+"label": "REB"
+},
+"summary": "5 DREB, 6 OREB"
 }
 ]
 }
@@ -2435,7 +2404,7 @@
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5241001.png",
 "alt": "Tony Duckett"
 },
-"jersey": "6",
+"jersey": "2",
 "position": {
 "abbreviation": "G"
 },
@@ -2474,7 +2443,12 @@
 "value": 0.875,
 "displayValue": "7/8"
 }
-]
+],
+"mainStat": {
+"value": "21",
+"label": "PTS"
+},
+"summary": "7/14 FG, 7/8 FT"
 }
 ]
 },
@@ -2507,7 +2481,7 @@
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4906515.png",
 "alt": "Kody Clouet"
 },
-"jersey": "21",
+"jersey": "11",
 "position": {
 "abbreviation": "G"
 },
@@ -2555,7 +2529,12 @@
 "value": 3.0,
 "displayValue": "3.0"
 }
-]
+],
+"mainStat": {
+"value": "3",
+"label": "AST"
+},
+"summary": "1 TO, 36 MIN"
 }
 ]
 },
@@ -2590,7 +2569,7 @@
 },
 "jersey": "24",
 "position": {
-"abbreviation": "C"
+"abbreviation": "F"
 },
 "status": {
 "id": "1",
@@ -2627,7 +2606,12 @@
 "value": 5.0,
 "displayValue": "5"
 }
-]
+],
+"mainStat": {
+"value": "8",
+"label": "REB"
+},
+"summary": "3 DREB, 5 OREB"
 }
 ]
 }
@@ -5127,6 +5111,7 @@
 "uid": "s:40~l:41~e:401744257",
 "season": {
 "year": 2025,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5157,6 +5142,7 @@
 "winner": false,
 "team": {
 "id": "279",
+"guid": "15e521c5-0dc3-f984-a23f-d831cf8ceeae",
 "uid": "s:40~l:41~t:279",
 "location": "Pacific",
 "name": "Tigers",
@@ -5335,6 +5321,7 @@
 "winner": true,
 "team": {
 "id": "301",
+"guid": "348888a0-9706-13db-efdd-1a60d5af599e",
 "uid": "s:40~l:41~t:301",
 "location": "San Diego",
 "name": "Toreros",
@@ -5791,6 +5778,22 @@
 "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/tournament",
 "text": "Tournament"
 }
+],
+"logos": [
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"default"
+]
+},
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"dark"
+]
+}
 ]
 },
 "gameNote": "West Coast Conference Tournament - 1st Round"
@@ -5820,7 +5823,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Jump Ball"
 },
 {
 "id": "401744257112979915",
@@ -5856,7 +5861,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Jump Ball"
 },
 {
 "id": "401744257112979916",
@@ -5892,7 +5899,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Jump Ball"
 },
 {
 "id": "401744257112979918",
@@ -5928,7 +5937,9 @@
 "coordinate": {
 "x": 20,
 "y": 5
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112979923",
@@ -5964,7 +5975,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112979924",
@@ -6000,7 +6013,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112979950",
@@ -6036,7 +6051,9 @@
 "coordinate": {
 "x": 22,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112979961",
@@ -6072,7 +6089,9 @@
 "coordinate": {
 "x": 32,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112979965",
@@ -6108,7 +6127,9 @@
 "coordinate": {
 "x": 21,
 "y": 18
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980006",
@@ -6144,7 +6165,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980007",
@@ -6180,7 +6203,9 @@
 "coordinate": {
 "x": 26,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980014",
@@ -6216,7 +6241,9 @@
 "coordinate": {
 "x": 26,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980068",
@@ -6245,7 +6272,9 @@
 "coordinate": {
 "x": 41,
 "y": 10
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980075",
@@ -6286,7 +6315,9 @@
 "coordinate": {
 "x": 23,
 "y": 27
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112980081",
@@ -6322,7 +6353,9 @@
 "coordinate": {
 "x": 27,
 "y": 16
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980082",
@@ -6358,7 +6391,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980085",
@@ -6394,7 +6429,9 @@
 "coordinate": {
 "x": 28,
 "y": 17
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980168",
@@ -6430,7 +6467,9 @@
 "coordinate": {
 "x": 25,
 "y": 16
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980169",
@@ -6466,7 +6505,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980176",
@@ -6502,7 +6543,9 @@
 "coordinate": {
 "x": 10,
 "y": 24
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112980177",
@@ -6538,7 +6581,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980180",
@@ -6574,7 +6619,9 @@
 "coordinate": {
 "x": 34,
 "y": 12
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980181",
@@ -6603,7 +6650,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980185",
@@ -6639,7 +6688,9 @@
 "coordinate": {
 "x": 24,
 "y": 80
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980227",
@@ -6675,7 +6726,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980228",
@@ -6711,7 +6764,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980235",
@@ -6747,7 +6802,9 @@
 "coordinate": {
 "x": 38,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980238",
@@ -6783,7 +6840,9 @@
 "coordinate": {
 "x": 29,
 "y": 19
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980239",
@@ -6819,7 +6878,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980242",
@@ -6855,7 +6916,9 @@
 "coordinate": {
 "x": 16,
 "y": 60
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980244",
@@ -6881,7 +6944,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112980303",
@@ -6917,7 +6982,9 @@
 "coordinate": {
 "x": 27,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980304",
@@ -6953,7 +7020,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980426",
@@ -6989,7 +7058,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980427",
@@ -7025,7 +7096,9 @@
 "coordinate": {
 "x": 29,
 "y": 19
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980430",
@@ -7066,7 +7139,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980434",
@@ -7102,7 +7177,9 @@
 "coordinate": {
 "x": 26,
 "y": 16
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980435",
@@ -7138,7 +7215,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980436",
@@ -7174,7 +7253,9 @@
 "coordinate": {
 "x": 24,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980438",
@@ -7210,7 +7291,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980439",
@@ -7251,7 +7334,9 @@
 "coordinate": {
 "x": 27,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980443",
@@ -7287,7 +7372,9 @@
 "coordinate": {
 "x": 12,
 "y": 12
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980444",
@@ -7323,7 +7410,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980445",
@@ -7359,7 +7448,9 @@
 "coordinate": {
 "x": 24,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980566",
@@ -7395,7 +7486,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112980567",
@@ -7431,7 +7524,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980568",
@@ -7467,7 +7562,9 @@
 "coordinate": {
 "x": 24,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980569",
@@ -7503,7 +7600,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980572",
@@ -7544,7 +7643,9 @@
 "coordinate": {
 "x": 22,
 "y": 10
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980579",
@@ -7585,7 +7686,9 @@
 "coordinate": {
 "x": 24,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980582",
@@ -7621,7 +7724,9 @@
 "coordinate": {
 "x": 26,
 "y": 83
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980585",
@@ -7657,7 +7762,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112980651",
@@ -7693,7 +7800,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980652",
@@ -7729,7 +7838,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980653",
@@ -7765,7 +7876,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980654",
@@ -7801,7 +7914,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980655",
@@ -7837,7 +7952,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980656",
@@ -7873,7 +7990,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980662",
@@ -7909,7 +8028,9 @@
 "coordinate": {
 "x": 26,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112980690",
@@ -7950,7 +8071,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980695",
@@ -7986,7 +8109,9 @@
 "coordinate": {
 "x": 26,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980703",
@@ -8022,7 +8147,9 @@
 "coordinate": {
 "x": 25,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980730",
@@ -8058,7 +8185,9 @@
 "coordinate": {
 "x": 25,
 "y": 76
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980732",
@@ -8084,7 +8213,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112980836",
@@ -8120,7 +8251,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980837",
@@ -8156,7 +8289,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980840",
@@ -8192,7 +8327,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112980843",
@@ -8228,7 +8365,9 @@
 "coordinate": {
 "x": 11,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980844",
@@ -8264,7 +8403,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980906",
@@ -8300,7 +8441,9 @@
 "coordinate": {
 "x": 36,
 "y": 23
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112980907",
@@ -8336,7 +8479,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980908",
@@ -8372,7 +8517,9 @@
 "coordinate": {
 "x": 29,
 "y": 75
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112980911",
@@ -8408,7 +8555,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980912",
@@ -8444,7 +8593,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980913",
@@ -8480,7 +8631,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980914",
@@ -8516,7 +8669,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112980919",
@@ -8557,7 +8712,9 @@
 "coordinate": {
 "x": 12,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980922",
@@ -8598,7 +8755,9 @@
 "coordinate": {
 "x": 25,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980950",
@@ -8634,7 +8793,9 @@
 "coordinate": {
 "x": 27,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980953",
@@ -8670,7 +8831,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980954",
@@ -8706,7 +8869,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980956",
@@ -8747,7 +8912,9 @@
 "coordinate": {
 "x": 20,
 "y": 10
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980963",
@@ -8783,7 +8950,9 @@
 "coordinate": {
 "x": 26,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112980964",
@@ -8819,7 +8988,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112980989",
@@ -8860,7 +9031,9 @@
 "coordinate": {
 "x": 3,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112980997",
@@ -8896,7 +9069,9 @@
 "coordinate": {
 "x": 13,
 "y": 24
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112980998",
@@ -8932,7 +9107,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981015",
@@ -8968,7 +9145,9 @@
 "coordinate": {
 "x": 24,
 "y": 81
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112981029",
@@ -9004,7 +9183,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981030",
@@ -9033,7 +9214,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981036",
@@ -9069,7 +9252,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981037",
@@ -9105,7 +9290,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981038",
@@ -9141,7 +9328,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981039",
@@ -9177,7 +9366,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981067",
@@ -9213,7 +9404,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981068",
@@ -9249,7 +9442,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981069",
@@ -9285,7 +9480,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981079",
@@ -9321,7 +9518,9 @@
 "coordinate": {
 "x": 10,
 "y": 20
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112981082",
@@ -9357,7 +9556,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981083",
@@ -9393,7 +9594,9 @@
 "coordinate": {
 "x": 31,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981094",
@@ -9429,7 +9632,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981095",
@@ -9465,7 +9670,9 @@
 "coordinate": {
 "x": 25,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981096",
@@ -9501,7 +9708,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981097",
@@ -9537,7 +9746,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981098",
@@ -9573,7 +9784,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981101",
@@ -9609,7 +9822,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981112",
@@ -9645,7 +9860,9 @@
 "coordinate": {
 "x": 21,
 "y": 80
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112981123",
@@ -9681,7 +9898,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981125",
@@ -9717,7 +9936,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981126",
@@ -9753,7 +9974,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981133",
@@ -9789,7 +10012,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981134",
@@ -9825,7 +10050,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981137",
@@ -9861,7 +10088,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981154",
@@ -9897,7 +10126,9 @@
 "coordinate": {
 "x": 22,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981158",
@@ -9933,7 +10164,9 @@
 "coordinate": {
 "x": 13,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981159",
@@ -9969,7 +10202,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981160",
@@ -10005,7 +10240,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981164",
@@ -10041,7 +10278,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981180",
@@ -10067,7 +10306,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112981189",
@@ -10096,7 +10337,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112981366",
@@ -10132,7 +10375,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981367",
@@ -10168,7 +10413,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981368",
@@ -10204,7 +10451,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981369",
@@ -10240,7 +10489,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981371",
@@ -10276,7 +10527,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981373",
@@ -10312,7 +10565,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981426",
@@ -10348,7 +10603,9 @@
 "coordinate": {
 "x": 22,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981458",
@@ -10384,7 +10641,9 @@
 "coordinate": {
 "x": 25,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981496",
@@ -10420,7 +10679,9 @@
 "coordinate": {
 "x": 22,
 "y": 9
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981526",
@@ -10456,7 +10717,9 @@
 "coordinate": {
 "x": 33,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981539",
@@ -10492,7 +10755,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981540",
@@ -10528,7 +10793,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981545",
@@ -10564,7 +10831,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981566",
@@ -10600,7 +10869,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112981574",
@@ -10636,7 +10907,9 @@
 "coordinate": {
 "x": 29,
 "y": 9
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981582",
@@ -10672,7 +10945,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981583",
@@ -10708,7 +10983,9 @@
 "coordinate": {
 "x": 33,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112981584",
@@ -10744,7 +11021,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981654",
@@ -10780,7 +11059,9 @@
 "coordinate": {
 "x": 31,
 "y": 80
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112981734",
@@ -10816,7 +11097,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981735",
@@ -10845,7 +11128,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981745",
@@ -10881,7 +11166,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112981766",
@@ -10917,7 +11204,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981769",
@@ -10953,7 +11242,9 @@
 "coordinate": {
 "x": 42,
 "y": 71
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112981871",
@@ -10989,7 +11280,9 @@
 "coordinate": {
 "x": 22,
 "y": 9
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981873",
@@ -11025,7 +11318,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981874",
@@ -11061,7 +11356,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981875",
@@ -11097,7 +11394,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981877",
@@ -11133,7 +11432,9 @@
 "coordinate": {
 "x": 26,
 "y": 14
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981911",
@@ -11169,7 +11470,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112981916",
@@ -11205,7 +11508,9 @@
 "coordinate": {
 "x": 24,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981917",
@@ -11241,7 +11546,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112981918",
@@ -11277,7 +11584,9 @@
 "coordinate": {
 "x": 26,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112981973",
@@ -11318,7 +11627,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112982019",
@@ -11344,7 +11655,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112982343",
@@ -11380,7 +11693,9 @@
 "coordinate": {
 "x": 16,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112982345",
@@ -11416,7 +11731,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112982346",
@@ -11452,7 +11769,9 @@
 "coordinate": {
 "x": 47,
 "y": 1
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112982358",
@@ -11488,7 +11807,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112982360",
@@ -11524,7 +11845,9 @@
 "coordinate": {
 "x": 28,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112982366",
@@ -11560,7 +11883,9 @@
 "coordinate": {
 "x": 14,
 "y": 74
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982378",
@@ -11596,7 +11921,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982379",
@@ -11632,7 +11959,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982410",
@@ -11668,7 +11997,9 @@
 "coordinate": {
 "x": 39,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112982412",
@@ -11704,7 +12035,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112982413",
@@ -11733,7 +12066,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112982425",
@@ -11769,7 +12104,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982427",
@@ -11805,7 +12142,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982486",
@@ -11841,7 +12180,9 @@
 "coordinate": {
 "x": 25,
 "y": 74
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982563",
@@ -11877,7 +12218,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982564",
@@ -11906,7 +12249,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112982565",
@@ -11942,7 +12287,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982592",
@@ -11978,7 +12325,9 @@
 "coordinate": {
 "x": 23,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982652",
@@ -12014,7 +12363,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982663",
@@ -12050,7 +12401,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982665",
@@ -12086,7 +12439,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112982696",
@@ -12122,7 +12477,9 @@
 "coordinate": {
 "x": 24,
 "y": 77
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982722",
@@ -12158,7 +12515,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982761",
@@ -12194,7 +12553,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982801",
@@ -12230,7 +12591,9 @@
 "coordinate": {
 "x": 24,
 "y": 75
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982842",
@@ -12266,7 +12629,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982862",
@@ -12302,7 +12667,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982863",
@@ -12338,7 +12705,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112982897",
@@ -12374,7 +12743,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982925",
@@ -12410,7 +12781,9 @@
 "coordinate": {
 "x": 46,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112982926",
@@ -12446,7 +12819,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112982943",
@@ -12482,7 +12857,9 @@
 "coordinate": {
 "x": 25,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112982992",
@@ -12518,7 +12895,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112982994",
@@ -12547,7 +12926,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112983034",
@@ -12583,7 +12964,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983036",
@@ -12619,7 +13002,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983038",
@@ -12655,7 +13040,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983040",
@@ -12691,7 +13078,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983063",
@@ -12727,7 +13116,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112983104",
@@ -12763,7 +13154,9 @@
 "coordinate": {
 "x": 10,
 "y": 26
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112983127",
@@ -12799,7 +13192,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112983129",
@@ -12835,7 +13230,9 @@
 "coordinate": {
 "x": 23,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112983131",
@@ -12871,7 +13268,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112983134",
@@ -12907,7 +13306,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112983144",
@@ -12943,7 +13344,9 @@
 "coordinate": {
 "x": 21,
 "y": 79
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112983207",
@@ -12979,7 +13382,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112983255",
@@ -13015,7 +13420,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112983312",
@@ -13051,7 +13458,9 @@
 "coordinate": {
 "x": 27,
 "y": 0
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112983356",
@@ -13087,7 +13496,9 @@
 "coordinate": {
 "x": 22,
 "y": 6
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112983357",
@@ -13123,7 +13534,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112983358",
@@ -13159,7 +13572,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112983373",
@@ -13195,7 +13610,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112983381",
@@ -13231,7 +13648,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112983382",
@@ -13267,7 +13686,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112983383",
@@ -13303,7 +13724,9 @@
 "coordinate": {
 "x": 25,
 "y": 72
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112983413",
@@ -13339,7 +13762,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983414",
@@ -13375,7 +13800,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983425",
@@ -13411,7 +13838,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983427",
@@ -13447,7 +13876,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112983443",
@@ -13483,7 +13914,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112983463",
@@ -13519,7 +13952,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112983507",
@@ -13555,7 +13990,9 @@
 "coordinate": {
 "x": 34,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112983521",
@@ -13581,7 +14018,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Halftime"
 },
 {
 "id": "401744257112984995",
@@ -13617,7 +14056,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112984996",
@@ -13653,7 +14094,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112984997",
@@ -13689,7 +14132,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112984998",
@@ -13725,7 +14170,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112984999",
@@ -13761,7 +14208,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985000",
@@ -13797,7 +14246,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985001",
@@ -13833,7 +14284,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985002",
@@ -13869,7 +14322,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985195",
@@ -13905,7 +14360,9 @@
 "coordinate": {
 "x": 23,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985197",
@@ -13941,7 +14398,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985266",
@@ -13977,7 +14436,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985267",
@@ -14013,7 +14474,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112985272",
@@ -14049,7 +14512,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985273",
@@ -14090,7 +14555,9 @@
 "coordinate": {
 "x": 48,
 "y": 11
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112985285",
@@ -14126,7 +14593,9 @@
 "coordinate": {
 "x": 26,
 "y": 8
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985326",
@@ -14162,7 +14631,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985330",
@@ -14198,7 +14669,9 @@
 "coordinate": {
 "x": 12,
 "y": 12
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985331",
@@ -14234,7 +14707,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985336",
@@ -14270,7 +14745,9 @@
 "coordinate": {
 "x": 28,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985337",
@@ -14306,7 +14783,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985340",
@@ -14342,7 +14821,9 @@
 "coordinate": {
 "x": 28,
 "y": 11
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112985344",
@@ -14378,7 +14859,9 @@
 "coordinate": {
 "x": 18,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985345",
@@ -14414,7 +14897,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985446",
@@ -14455,7 +14940,9 @@
 "coordinate": {
 "x": 48,
 "y": 3
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112985459",
@@ -14491,7 +14978,9 @@
 "coordinate": {
 "x": 23,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985463",
@@ -14520,7 +15009,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985464",
@@ -14549,7 +15040,9 @@
 "coordinate": {
 "x": 23,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985465",
@@ -14585,7 +15078,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985526",
@@ -14621,7 +15116,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985536",
@@ -14657,7 +15154,9 @@
 "coordinate": {
 "x": 28,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985537",
@@ -14693,7 +15192,9 @@
 "coordinate": {
 "x": 38,
 "y": 11
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985544",
@@ -14729,7 +15230,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985608",
@@ -14765,7 +15268,9 @@
 "coordinate": {
 "x": 21,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112985609",
@@ -14801,7 +15306,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112985613",
@@ -14837,7 +15344,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985614",
@@ -14873,7 +15382,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985621",
@@ -14909,7 +15420,9 @@
 "coordinate": {
 "x": 25,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985624",
@@ -14945,7 +15458,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Block Shot"
 },
 {
 "id": "401744257112985625",
@@ -14981,7 +15496,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985728",
@@ -15017,7 +15534,9 @@
 "coordinate": {
 "x": 24,
 "y": 81
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112985737",
@@ -15053,7 +15572,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112985808",
@@ -15089,7 +15610,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985809",
@@ -15125,7 +15648,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112985813",
@@ -15161,7 +15686,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112985824",
@@ -15197,7 +15724,9 @@
 "coordinate": {
 "x": 47,
 "y": 10
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112985886",
@@ -15233,7 +15762,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985892",
@@ -15269,7 +15800,9 @@
 "coordinate": {
 "x": 26,
 "y": 7
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985897",
@@ -15305,7 +15838,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112985898",
@@ -15341,7 +15876,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985904",
@@ -15382,7 +15919,9 @@
 "coordinate": {
 "x": 26,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112985992",
@@ -15423,7 +15962,9 @@
 "coordinate": {
 "x": 9,
 "y": 22
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112986068",
@@ -15459,7 +16000,9 @@
 "coordinate": {
 "x": 23,
 "y": 2
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986069",
@@ -15485,7 +16028,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112986397",
@@ -15521,7 +16066,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986399",
@@ -15557,7 +16104,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986522",
@@ -15593,7 +16142,9 @@
 "coordinate": {
 "x": 28,
 "y": 12
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112986587",
@@ -15629,7 +16180,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112986588",
@@ -15665,7 +16218,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112986594",
@@ -15701,7 +16256,9 @@
 "coordinate": {
 "x": 25,
 "y": 83
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112986595",
@@ -15737,7 +16294,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986603",
@@ -15773,7 +16332,9 @@
 "coordinate": {
 "x": 23,
 "y": 78
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112986670",
@@ -15809,7 +16370,9 @@
 "coordinate": {
 "x": 25,
 "y": 10
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112986671",
@@ -15845,7 +16408,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112986677",
@@ -15881,7 +16446,9 @@
 "coordinate": {
 "x": 27,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112986744",
@@ -15917,7 +16484,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112986791",
@@ -15953,7 +16522,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112986851",
@@ -15989,7 +16560,9 @@
 "coordinate": {
 "x": 2,
 "y": 5
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112986852",
@@ -16018,7 +16591,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112986859",
@@ -16054,7 +16629,9 @@
 "coordinate": {
 "x": 21,
 "y": 81
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112986861",
@@ -16090,7 +16667,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986862",
@@ -16126,7 +16705,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986894",
@@ -16162,7 +16743,9 @@
 "coordinate": {
 "x": 23,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112986948",
@@ -16198,7 +16781,9 @@
 "coordinate": {
 "x": 32,
 "y": 78
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986949",
@@ -16234,7 +16819,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986950",
@@ -16270,7 +16857,9 @@
 "coordinate": {
 "x": 34,
 "y": 13
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986962",
@@ -16306,7 +16895,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112986967",
@@ -16342,7 +16933,9 @@
 "coordinate": {
 "x": 39,
 "y": 67
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112986971",
@@ -16378,7 +16971,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986972",
@@ -16414,7 +17009,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112986976",
@@ -16450,7 +17047,9 @@
 "coordinate": {
 "x": 25,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112986977",
@@ -16486,7 +17085,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112987037",
@@ -16527,7 +17128,9 @@
 "coordinate": {
 "x": 25,
 "y": 2
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112987043",
@@ -16568,7 +17171,9 @@
 "coordinate": {
 "x": 24,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112987126",
@@ -16604,7 +17209,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987127",
@@ -16640,7 +17247,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987128",
@@ -16676,7 +17285,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987129",
@@ -16712,7 +17323,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987142",
@@ -16748,7 +17361,9 @@
 "coordinate": {
 "x": 26,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112987288",
@@ -16784,7 +17399,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112987291",
@@ -16820,7 +17437,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112987409",
@@ -16856,7 +17475,9 @@
 "coordinate": {
 "x": 29,
 "y": 80
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112987447",
@@ -16892,7 +17513,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112987448",
@@ -16928,7 +17551,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987449",
@@ -16964,7 +17589,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112987458",
@@ -17000,7 +17627,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112987605",
@@ -17026,7 +17655,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112987883",
@@ -17062,7 +17693,9 @@
 "coordinate": {
 "x": 9,
 "y": 63
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112987926",
@@ -17098,7 +17731,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112987993",
@@ -17134,7 +17769,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112988081",
@@ -17170,7 +17807,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112988082",
@@ -17206,7 +17845,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112988083",
@@ -17242,7 +17883,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112988103",
@@ -17278,7 +17921,9 @@
 "coordinate": {
 "x": 21,
 "y": 69
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112988203",
@@ -17314,7 +17959,9 @@
 "coordinate": {
 "x": 19,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112988274",
@@ -17350,7 +17997,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112988275",
@@ -17386,7 +18035,9 @@
 "coordinate": {
 "x": 36,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112988276",
@@ -17422,7 +18073,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112988347",
@@ -17463,7 +18116,9 @@
 "coordinate": {
 "x": 2,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112988355",
@@ -17499,7 +18154,9 @@
 "coordinate": {
 "x": 25,
 "y": 17
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112988553",
@@ -17535,7 +18192,9 @@
 "coordinate": {
 "x": 31,
 "y": 25
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112988554",
@@ -17571,7 +18230,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112988555",
@@ -17607,7 +18268,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112988556",
@@ -17643,7 +18306,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112988611",
@@ -17679,7 +18344,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112988720",
@@ -17715,7 +18382,9 @@
 "coordinate": {
 "x": 11,
 "y": 22
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112988721",
@@ -17751,7 +18420,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112988809",
@@ -17787,7 +18458,9 @@
 "coordinate": {
 "x": 13,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112988810",
@@ -17823,7 +18496,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112988855",
@@ -17864,7 +18539,9 @@
 "coordinate": {
 "x": 3,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112989018",
@@ -17900,7 +18577,9 @@
 "coordinate": {
 "x": 12,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112989019",
@@ -17936,7 +18615,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112989130",
@@ -17972,7 +18653,9 @@
 "coordinate": {
 "x": 26,
 "y": 79
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112989224",
@@ -18008,7 +18691,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112989297",
@@ -18044,7 +18729,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989301",
@@ -18080,7 +18767,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989304",
@@ -18116,7 +18805,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989307",
@@ -18152,7 +18843,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989310",
@@ -18188,7 +18881,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989311",
@@ -18224,7 +18919,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112989342",
@@ -18260,7 +18957,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112989491",
@@ -18296,7 +18995,9 @@
 "coordinate": {
 "x": 28,
 "y": 18
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112989492",
@@ -18332,7 +19033,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112989563",
@@ -18373,7 +19076,9 @@
 "coordinate": {
 "x": 7,
 "y": 18
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112989690",
@@ -18409,7 +19114,9 @@
 "coordinate": {
 "x": 25,
 "y": 20
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112989724",
@@ -18445,7 +19152,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112989729",
@@ -18471,7 +19180,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112990860",
@@ -18507,7 +19218,9 @@
 "coordinate": {
 "x": 13,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112990862",
@@ -18543,7 +19256,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112990864",
@@ -18579,7 +19294,9 @@
 "coordinate": {
 "x": 34,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112990865",
@@ -18615,7 +19332,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112990931",
@@ -18651,7 +19370,9 @@
 "coordinate": {
 "x": 7,
 "y": 19
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112990934",
@@ -18687,7 +19408,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112990937",
@@ -18723,7 +19446,9 @@
 "coordinate": {
 "x": 30,
 "y": 8
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112990995",
@@ -18759,7 +19484,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112991082",
@@ -18795,7 +19522,9 @@
 "coordinate": {
 "x": 25,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112991187",
@@ -18831,7 +19560,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112991241",
@@ -18867,7 +19598,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112991244",
@@ -18903,7 +19636,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112991308",
@@ -18939,7 +19674,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112991500",
@@ -18975,7 +19712,9 @@
 "coordinate": {
 "x": 30,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112991501",
@@ -19004,7 +19743,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112991559",
@@ -19033,7 +19774,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112991563",
@@ -19059,7 +19802,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112992303",
@@ -19095,7 +19840,9 @@
 "coordinate": {
 "x": 14,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112992305",
@@ -19131,7 +19878,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112992418",
@@ -19167,7 +19916,9 @@
 "coordinate": {
 "x": 22,
 "y": 81
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112992556",
@@ -19203,7 +19954,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112992638",
@@ -19239,7 +19992,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112992767",
@@ -19275,7 +20030,9 @@
 "coordinate": {
 "x": 29,
 "y": 4
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112992769",
@@ -19311,7 +20068,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112992773",
@@ -19347,7 +20106,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112992858",
@@ -19388,7 +20149,9 @@
 "coordinate": {
 "x": 23,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112992983",
@@ -19424,7 +20187,9 @@
 "coordinate": {
 "x": 28,
 "y": 12
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112992985",
@@ -19460,7 +20225,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112993036",
@@ -19496,7 +20263,9 @@
 "coordinate": {
 "x": 11,
 "y": 15
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112993170",
@@ -19532,7 +20301,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112993171",
@@ -19568,7 +20339,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112993172",
@@ -19604,7 +20377,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112993174",
@@ -19640,7 +20415,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112993176",
@@ -19676,7 +20453,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112993229",
@@ -19712,7 +20491,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112993368",
@@ -19748,7 +20529,9 @@
 "coordinate": {
 "x": 28,
 "y": 81
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112993562",
@@ -19784,7 +20567,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112993617",
@@ -19820,7 +20605,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112993692",
@@ -19856,7 +20643,9 @@
 "coordinate": {
 "x": 21,
 "y": 9
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112993696",
@@ -19892,7 +20681,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112993698",
@@ -19928,7 +20719,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112993864",
@@ -19964,7 +20757,9 @@
 "coordinate": {
 "x": 22,
 "y": 78
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112993940",
@@ -20000,7 +20795,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112993999",
@@ -20036,7 +20833,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112994084",
@@ -20072,7 +20871,9 @@
 "coordinate": {
 "x": 26,
 "y": 79
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112994187",
@@ -20108,7 +20909,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112994235",
@@ -20144,7 +20947,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112994237",
@@ -20180,7 +20985,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112994322",
@@ -20216,7 +21023,9 @@
 "coordinate": {
 "x": 27,
 "y": 83
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112994449",
@@ -20252,7 +21061,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112994573",
@@ -20288,7 +21099,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112994598",
@@ -20329,7 +21142,9 @@
 "coordinate": {
 "x": 24,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112994751",
@@ -20365,7 +21180,9 @@
 "coordinate": {
 "x": 28,
 "y": 7
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112994752",
@@ -20401,7 +21218,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112994776",
@@ -20437,7 +21256,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112994822",
@@ -20473,7 +21294,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112994852",
@@ -20509,7 +21332,9 @@
 "coordinate": {
 "x": 26,
 "y": 6
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112994855",
@@ -20535,7 +21360,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112995555",
@@ -20571,7 +21398,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112995557",
@@ -20607,7 +21436,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112995638",
@@ -20643,7 +21474,9 @@
 "coordinate": {
 "x": 40,
 "y": 21
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112995723",
@@ -20679,7 +21512,9 @@
 "coordinate": {
 "x": 22,
 "y": 80
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112995976",
@@ -20708,7 +21543,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112996495",
@@ -20744,7 +21581,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996497",
@@ -20780,7 +21619,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996499",
@@ -20816,7 +21657,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996501",
@@ -20852,7 +21695,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996572",
@@ -20888,7 +21733,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112996582",
@@ -20924,7 +21771,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996583",
@@ -20960,7 +21809,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996674",
@@ -20996,7 +21847,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112996675",
@@ -21032,7 +21885,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112996755",
@@ -21068,7 +21923,9 @@
 "coordinate": {
 "x": 29,
 "y": 70
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257112996891",
@@ -21104,7 +21961,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112996899",
@@ -21140,7 +21999,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112996900",
@@ -21176,7 +22037,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112997048",
@@ -21212,7 +22075,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257112997212",
@@ -21253,7 +22118,9 @@
 "coordinate": {
 "x": 48,
 "y": 4
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112997222",
@@ -21289,7 +22156,9 @@
 "coordinate": {
 "x": 4,
 "y": 16
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257112997223",
@@ -21325,7 +22194,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112997398",
@@ -21361,7 +22232,9 @@
 "coordinate": {
 "x": 26,
 "y": 4
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257112998325",
@@ -21397,7 +22270,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112998386",
@@ -21433,7 +22308,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112998647",
@@ -21462,7 +22339,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257112998893",
@@ -21498,7 +22377,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112998894",
@@ -21534,7 +22415,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112999013",
@@ -21570,7 +22453,9 @@
 "coordinate": {
 "x": 28,
 "y": 5
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257112999014",
@@ -21599,7 +22484,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257112999793",
@@ -21635,7 +22522,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112999795",
@@ -21671,7 +22560,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112999796",
@@ -21707,7 +22598,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112999798",
@@ -21743,7 +22636,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257112999861",
@@ -21779,7 +22674,9 @@
 "coordinate": {
 "x": 25,
 "y": 78
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257113000007",
@@ -21815,7 +22712,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113000069",
@@ -21851,7 +22750,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113000070",
@@ -21887,7 +22788,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113000082",
@@ -21923,7 +22826,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113000083",
@@ -21959,7 +22864,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257113000154",
@@ -21995,7 +22902,9 @@
 "coordinate": {
 "x": 25,
 "y": 3
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257113000155",
@@ -22031,7 +22940,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257113000156",
@@ -22067,7 +22978,9 @@
 "coordinate": {
 "x": 25,
 "y": 1
-}
+},
+"pointsAttempted": 2,
+"shortDescription": "+2 Points"
 },
 {
 "id": "401744257113000210",
@@ -22096,7 +23009,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257113000732",
@@ -22132,7 +23047,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113000733",
@@ -22168,7 +23085,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113000843",
@@ -22204,7 +23123,9 @@
 "coordinate": {
 "x": 25,
 "y": 82
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257113000950",
@@ -22240,7 +23161,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113001006",
@@ -22276,7 +23199,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113001007",
@@ -22312,7 +23237,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113001110",
@@ -22348,7 +23275,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113001120",
@@ -22377,7 +23306,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Timeout"
 },
 {
 "id": "401744257113001478",
@@ -22413,7 +23344,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113001479",
@@ -22449,7 +23382,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Substitution"
 },
 {
 "id": "401744257113001605",
@@ -22485,7 +23420,9 @@
 "coordinate": {
 "x": 11,
 "y": 88
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257113001647",
@@ -22521,7 +23458,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Turnover"
 },
 {
 "id": "401744257113001649",
@@ -22557,7 +23496,9 @@
 "coordinate": {
 "x": 21,
 "y": 16
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Foul"
 },
 {
 "id": "401744257113001686",
@@ -22593,7 +23534,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113001700",
@@ -22629,7 +23572,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 1,
+"shortDescription": "+1 Point"
 },
 {
 "id": "401744257113001766",
@@ -22665,7 +23610,9 @@
 "coordinate": {
 "x": 35,
 "y": 50
-}
+},
+"pointsAttempted": 3,
+"shortDescription": "+3 Points"
 },
 {
 "id": "401744257113001773",
@@ -22694,7 +23641,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "Rebound"
 },
 {
 "id": "401744257113001779",
@@ -22720,7 +23669,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of 2nd"
 },
 {
 "id": "401744257113001780",
@@ -22746,7 +23697,9 @@
 "coordinate": {
 "x": 25,
 "y": 0
-}
+},
+"pointsAttempted": 0,
+"shortDescription": "End of Game"
 }
 ],
 "article": [],
@@ -22756,16 +23709,16 @@
 "text": "Full Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings"
 },
-"header": "2025 Standings",
+"header": "2025-26 Standings",
 "groups": [
 {
 "standings": {
 "entries": [
 {
-"team": "Saint Mary's",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2608/saint-marys-gaels",
-"id": "2608",
-"uid": "s:40~l:41~t:2608",
+"team": "Gonzaga",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2250/gonzaga-bulldogs",
+"id": "2250",
+"uid": "s:40~l:41~t:2250",
 "stats": [
 {
 "id": "0",
@@ -22775,8 +23728,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "29-6",
-"displayValue": "29-6"
+"summary": "8-1",
+"displayValue": "8-1"
 },
 {
 "name": "gamesBehind",
@@ -22796,72 +23749,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "17-1",
-"displayValue": "17-1"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-03-15T19:32Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2608.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-03-15T19:32Z"
-}
-]
-},
-{
-"team": "Gonzaga",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2250/gonzaga-bulldogs",
-"id": "2250",
-"uid": "s:40~l:41~t:2250",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "26-9",
-"displayValue": "26-9"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "14-4",
-"displayValue": "14-4"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -22890,10 +23779,10 @@
 ]
 },
 {
-"team": "San Francisco",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2539/san-francisco-dons",
-"id": "2539",
-"uid": "s:40~l:41~t:2539",
+"team": "Saint Mary's",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2608/saint-marys-gaels",
+"id": "2608",
+"uid": "s:40~l:41~t:2608",
 "stats": [
 {
 "id": "0",
@@ -22903,8 +23792,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "25-10",
-"displayValue": "25-10"
+"summary": "8-1",
+"displayValue": "8-1"
 },
 {
 "name": "gamesBehind",
@@ -22913,8 +23802,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 4.0,
-"displayValue": "4"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -22924,13 +23813,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "13-5",
-"displayValue": "13-5"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -22938,10 +23827,10 @@
 "full",
 "default"
 ],
-"lastUpdated": "2024-11-14T19:27Z"
+"lastUpdated": "2023-03-15T19:32Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2539.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2608.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -22949,7 +23838,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2024-11-14T19:48Z"
+"lastUpdated": "2023-03-15T19:32Z"
 }
 ]
 },
@@ -22967,8 +23856,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "21-13",
-"displayValue": "21-13"
+"summary": "8-1",
+"displayValue": "8-1"
 },
 {
 "name": "gamesBehind",
@@ -22977,8 +23866,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -22988,8 +23877,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "12-6",
-"displayValue": "12-6"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -23018,10 +23907,10 @@
 ]
 },
 {
-"team": "Oregon State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/204/oregon-state-beavers",
-"id": "204",
-"uid": "s:40~l:41~t:204",
+"team": "Pacific",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/279/pacific-tigers",
+"id": "279",
+"uid": "s:40~l:41~t:279",
 "stats": [
 {
 "id": "0",
@@ -23031,8 +23920,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "20-13",
-"displayValue": "20-13"
+"summary": "7-2",
+"displayValue": "7-2"
 },
 {
 "name": "gamesBehind",
@@ -23041,8 +23930,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23052,13 +23941,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "10-8",
-"displayValue": "10-8"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/279.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23066,10 +23955,10 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-02-22T17:01Z"
+"lastUpdated": "2023-01-23T20:42Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/204.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/279.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23077,15 +23966,15 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-02-22T17:01Z"
+"lastUpdated": "2023-01-23T20:43Z"
 }
 ]
 },
 {
-"team": "Washington State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/265/washington-state-cougars",
-"id": "265",
-"uid": "s:40~l:41~t:265",
+"team": "Seattle U",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2547/seattle-u-redhawks",
+"id": "2547",
+"uid": "s:40~l:41~t:2547",
 "stats": [
 {
 "id": "0",
@@ -23095,8 +23984,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "19-15",
-"displayValue": "19-15"
+"summary": "6-2",
+"displayValue": "6-2"
 },
 {
 "name": "gamesBehind",
@@ -23105,8 +23994,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23116,13 +24005,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "8-10",
-"displayValue": "8-10"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2547.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23130,10 +24019,10 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-10-06T14:34Z"
+"lastUpdated": "2018-06-05T12:08Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/265.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2547.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23159,8 +24048,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "17-15",
-"displayValue": "17-15"
+"summary": "7-3",
+"displayValue": "7-3"
 },
 {
 "name": "gamesBehind",
@@ -23169,8 +24058,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 9.0,
-"displayValue": "9"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23180,8 +24069,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "8-10",
-"displayValue": "8-10"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -23223,8 +24112,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "12-20",
-"displayValue": "12-20"
+"summary": "6-4",
+"displayValue": "6-4"
 },
 {
 "name": "gamesBehind",
@@ -23233,8 +24122,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 10.0,
-"displayValue": "10"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23244,8 +24133,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "7-11",
-"displayValue": "7-11"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -23274,6 +24163,198 @@
 ]
 },
 {
+"team": "San Francisco",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2539/san-francisco-dons",
+"id": "2539",
+"uid": "s:40~l:41~t:2539",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "5-4",
+"displayValue": "5-4"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2025-10-23T16:32Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2539.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2025-10-23T16:32Z"
+}
+]
+},
+{
+"team": "Oregon State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/204/oregon-state-beavers",
+"id": "204",
+"uid": "s:40~l:41~t:204",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-5",
+"displayValue": "4-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/204.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-02-22T17:01Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/204.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-02-22T17:01Z"
+}
+]
+},
+{
+"team": "San Diego",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/301/san-diego-toreros",
+"id": "301",
+"uid": "s:40~l:41~t:301",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-5",
+"displayValue": "3-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-01-23T20:42Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/301.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-01-23T20:43Z"
+}
+]
+},
+{
 "team": "Pepperdine",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2492/pepperdine-waves",
 "id": "2492",
@@ -23287,8 +24368,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "13-22",
-"displayValue": "13-22"
+"summary": "3-6",
+"displayValue": "3-6"
 },
 {
 "name": "gamesBehind",
@@ -23297,8 +24378,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23308,8 +24389,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "4-14",
-"displayValue": "4-14"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -23338,10 +24419,10 @@
 ]
 },
 {
-"team": "Pacific",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/279/pacific-tigers",
-"id": "279",
-"uid": "s:40~l:41~t:279",
+"team": "Washington State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/265/washington-state-cougars",
+"id": "265",
+"uid": "s:40~l:41~t:265",
 "stats": [
 {
 "id": "0",
@@ -23351,8 +24432,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "9-24",
-"displayValue": "9-24"
+"summary": "3-6",
+"displayValue": "3-6"
 },
 {
 "name": "gamesBehind",
@@ -23361,8 +24442,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 13.0,
-"displayValue": "13"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -23372,13 +24453,13 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "4-14",
-"displayValue": "4-14"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/279.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/265.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23386,10 +24467,10 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-23T20:42Z"
+"lastUpdated": "2023-10-06T14:34Z"
 },
 {
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/279.png",
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/265.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -23397,80 +24478,20 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-23T20:43Z"
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
 }
 ]
 },
-{
-"team": "San Diego",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/301/san-diego-toreros",
-"id": "301",
-"uid": "s:40~l:41~t:301",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "6-27",
-"displayValue": "6-27"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 15.0,
-"displayValue": "15"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "2-16",
-"displayValue": "2-16"
+"header": "2025-26 West Coast Conference Standings",
+"href": "https://www.espn.com/mens-college-basketball/standings/_/group/29",
+"conferenceHeader": "NCAA Division I",
+"divisionHeader": "West Coast Conference",
+"shortDivisionHeader": "WCC"
 }
 ],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/301.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-01-23T20:42Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/301.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-01-23T20:43Z"
-}
-]
-}
-]
-},
-"header": "2024-25 West Coast Conference Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings/_/group/29"
-}
-]
+"isSameConference": true
 },
 "teamInfo": {},
 "espnWP": {},

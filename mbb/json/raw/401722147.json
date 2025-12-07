@@ -23,7 +23,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "42.6",
+"displayValue": "43",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -34,7 +34,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "52.9",
+"displayValue": "53",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -45,7 +45,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "62.5",
+"displayValue": "63",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -177,7 +177,7 @@
 },
 {
 "name": "fieldGoalPct",
-"displayValue": "41.7",
+"displayValue": "42",
 "abbreviation": "FG%",
 "label": "Field Goal %"
 },
@@ -188,7 +188,7 @@
 },
 {
 "name": "threePointFieldGoalPct",
-"displayValue": "26.3",
+"displayValue": "26",
 "abbreviation": "3P%",
 "label": "Three Point %"
 },
@@ -199,7 +199,7 @@
 },
 {
 "name": "freeThrowPct",
-"displayValue": "86.4",
+"displayValue": "86",
 "abbreviation": "FT%",
 "label": "Free Throw %"
 },
@@ -329,67 +329,114 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
+"athlete": {
+"id": "5107301",
+"uid": "s:40~l:41~a:5107301",
+"guid": "ac1c2fe8-2e1b-34df-ac7c-1c43ac5b2d20",
+"displayName": "Dionjahe Thomas",
+"shortName": "D. Thomas",
+"links": [
+{
+"rel": [
+"playercard",
+"desktop",
+"athlete"
+],
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5107301/dionjahe-thomas",
+"text": "Player Card"
+}
+],
+"headshot": {
+"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5107301.png",
+"alt": "Dionjahe Thomas"
+},
+"jersey": "8",
+"position": {
+"name": "Forward",
+"displayName": "Forward",
+"abbreviation": "F"
+}
+},
+"starter": true,
+"didNotPlay": false,
+"ejected": false,
+"stats": [
+"11",
+"2",
+"1-3",
+"0-1",
+"0-0",
+"3",
+"0",
+"0",
+"0",
+"0",
+"0",
+"3",
+"1"
+]
+},
+{
 "athlete": {
 "id": "4905542",
 "uid": "s:40~l:41~a:4905542",
@@ -423,71 +470,21 @@
 "ejected": false,
 "stats": [
 "21",
+"4",
 "2-9",
 "0-0",
 "0-0",
-"6",
-"2",
 "8",
 "1",
+"0",
 "2",
 "0",
-"0",
-"5",
-"4"
+"6",
+"2",
+"5"
 ]
 },
 {
-"active": false,
-"athlete": {
-"id": "5107301",
-"uid": "s:40~l:41~a:5107301",
-"guid": "ac1c2fe8-2e1b-34df-ac7c-1c43ac5b2d20",
-"displayName": "Dionjahe Thomas",
-"shortName": "D. Thomas",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5107301/dionjahe-thomas",
-"text": "Player Card"
-}
-],
-"headshot": {
-"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5107301.png",
-"alt": "Dionjahe Thomas"
-},
-"jersey": "8",
-"position": {
-"name": "Center",
-"displayName": "Center",
-"abbreviation": "C"
-}
-},
-"starter": true,
-"didNotPlay": false,
-"ejected": false,
-"stats": [
-"11",
-"1-3",
-"0-1",
-"0-0",
-"0",
-"3",
-"3",
-"0",
-"0",
-"0",
-"0",
-"1",
-"2"
-]
-},
-{
-"active": false,
 "athlete": {
 "id": "5243368",
 "uid": "s:40~l:41~a:5243368",
@@ -521,22 +518,21 @@
 "ejected": false,
 "stats": [
 "15",
+"7",
 "3-6",
 "1-3",
 "0-0",
 "0",
-"0",
-"0",
 "1",
-"0",
-"0",
 "2",
-"1",
-"7"
+"0",
+"0",
+"0",
+"0",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177605",
 "uid": "s:40~l:41~a:5177605",
@@ -570,6 +566,7 @@
 "ejected": false,
 "stats": [
 "25",
+"22",
 "8-12",
 "6-8",
 "0-0",
@@ -580,12 +577,10 @@
 "0",
 "0",
 "0",
-"1",
-"22"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177597",
 "uid": "s:40~l:41~a:5177597",
@@ -619,22 +614,69 @@
 "ejected": false,
 "stats": [
 "17",
+"0",
 "0-1",
 "0-0",
 "0-0",
-"0",
-"2",
 "2",
 "0",
 "0",
 "0",
 "0",
+"0",
 "2",
-"0"
+"2"
 ]
 },
 {
-"active": false,
+"athlete": {
+"id": "5177603",
+"uid": "s:40~l:41~a:5177603",
+"guid": "f09dc788-939c-329b-9e56-eada682faef1",
+"displayName": "Brentay Noel",
+"shortName": "B. Noel",
+"links": [
+{
+"rel": [
+"playercard",
+"desktop",
+"athlete"
+],
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5177603/brentay-noel",
+"text": "Player Card"
+}
+],
+"headshot": {
+"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5177603.png",
+"alt": "Brentay Noel"
+},
+"jersey": "0",
+"position": {
+"name": "Forward",
+"displayName": "Forward",
+"abbreviation": "F"
+}
+},
+"starter": false,
+"didNotPlay": false,
+"ejected": false,
+"stats": [
+"22",
+"7",
+"1-1",
+"0-0",
+"5-7",
+"7",
+"1",
+"0",
+"0",
+"2",
+"0",
+"7",
+"4"
+]
+},
+{
 "athlete": {
 "id": "5243371",
 "uid": "s:40~l:41~a:5243371",
@@ -668,22 +710,21 @@
 "ejected": false,
 "stats": [
 "15",
+"2",
 "0-3",
 "0-0",
 "2-2",
-"3",
-"1",
 "4",
 "1",
 "1",
-"0",
 "1",
 "0",
-"2"
+"3",
+"1",
+"0"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243369",
 "uid": "s:40~l:41~a:5243369",
@@ -717,10 +758,10 @@
 "ejected": false,
 "stats": [
 "5",
+"0",
 "0-1",
 "0-1",
 "0-0",
-"0",
 "0",
 "0",
 "0",
@@ -732,7 +773,6 @@
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4896946",
 "uid": "s:40~l:41~a:4896946",
@@ -766,71 +806,21 @@
 "ejected": false,
 "stats": [
 "18",
+"2",
 "1-4",
 "0-0",
 "0-1",
-"2",
-"1",
 "3",
 "0",
-"1",
 "0",
-"0",
-"1",
-"2"
-]
-},
-{
-"active": false,
-"athlete": {
-"id": "5177603",
-"uid": "s:40~l:41~a:5177603",
-"guid": "f09dc788-939c-329b-9e56-eada682faef1",
-"displayName": "Brentay Noel",
-"shortName": "B. Noel",
-"links": [
-{
-"rel": [
-"playercard",
-"desktop",
-"athlete"
-],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5177603/brentay-noel",
-"text": "Player Card"
-}
-],
-"headshot": {
-"href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5177603.png",
-"alt": "Brentay Noel"
-},
-"jersey": "0",
-"position": {
-"name": "Center",
-"displayName": "Center",
-"abbreviation": "C"
-}
-},
-"starter": false,
-"didNotPlay": false,
-"ejected": false,
-"stats": [
-"22",
-"1-1",
-"0-0",
-"5-7",
-"0",
-"7",
-"7",
 "1",
 "0",
 "2",
-"0",
-"4",
-"7"
+"1",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243366",
 "uid": "s:40~l:41~a:5243366",
@@ -864,22 +854,21 @@
 "ejected": false,
 "stats": [
 "23",
+"12",
 "4-10",
 "1-1",
 "3-5",
-"1",
-"1",
 "2",
 "1",
 "0",
 "0",
 "0",
-"2",
-"12"
+"1",
+"1",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177595",
 "uid": "s:40~l:41~a:5177595",
@@ -913,6 +902,7 @@
 "ejected": false,
 "stats": [
 "2",
+"0",
 "0-0",
 "0-0",
 "0-0",
@@ -923,12 +913,10 @@
 "0",
 "0",
 "0",
-"1",
-"0"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5108073",
 "uid": "s:40~l:41~a:5108073",
@@ -962,22 +950,21 @@
 "ejected": false,
 "stats": [
 "26",
+"13",
 "6-11",
 "1-3",
 "0-1",
-"1",
-"3",
 "4",
 "1",
-"1",
-"0",
 "2",
 "1",
-"13"
+"0",
+"1",
+"3",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243370",
 "uid": "s:40~l:41~a:5243370",
@@ -1012,7 +999,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5177607",
 "uid": "s:40~l:41~a:5177607",
@@ -1047,7 +1033,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5243367",
 "uid": "s:40~l:41~a:5243367",
@@ -1082,7 +1067,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5196884",
 "uid": "s:40~l:41~a:5196884",
@@ -1113,7 +1097,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "5177606",
 "uid": "s:40~l:41~a:5177606",
@@ -1150,18 +1133,18 @@
 ],
 "totals": [
 "",
+"71",
 "26-61",
 "9-17",
 "10-16",
-"14",
-"20",
 "34",
+"6",
 "6",
 "5",
 "2",
-"6",
-"19",
-"71"
+"14",
+"20",
+"19"
 ]
 }
 ],
@@ -1185,67 +1168,66 @@
 {
 "names": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "keys": [
 "minutes",
+"points",
 "fieldGoalsMade-fieldGoalsAttempted",
 "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
 "freeThrowsMade-freeThrowsAttempted",
-"offensiveRebounds",
-"defensiveRebounds",
 "rebounds",
 "assists",
+"turnovers",
 "steals",
 "blocks",
-"turnovers",
-"fouls",
-"points"
+"offensiveRebounds",
+"defensiveRebounds",
+"fouls"
 ],
 "labels": [
 "MIN",
+"PTS",
 "FG",
 "3PT",
 "FT",
-"OREB",
-"DREB",
 "REB",
 "AST",
+"TO",
 "STL",
 "BLK",
-"TO",
-"PF",
-"PTS"
+"OREB",
+"DREB",
+"PF"
 ],
 "descriptions": [
 "Minutes",
+"Points",
 "Field Goals Made/Attempted",
 "3-Point Field Goals Made/Attempted",
 "Free Throws Made/Attempted",
-"Offensive Rebounds",
-"Defensive Rebounds",
 "Rebounds",
 "Assists",
+"Turnovers",
 "Steals",
 "Blocks",
-"Turnovers",
-"Personal Fouls",
-"Points"
+"Offensive Rebounds",
+"Defensive Rebounds",
+"Personal Fouls"
 ],
 "athletes": [
 {
-"active": false,
 "athlete": {
 "id": "5243342",
 "uid": "s:40~l:41~a:5243342",
@@ -1279,27 +1261,26 @@
 "ejected": false,
 "stats": [
 "16",
+"6",
 "2-3",
 "0-0",
 "2-2",
 "2",
+"1",
+"3",
+"0",
 "0",
 "2",
-"1",
 "0",
-"0",
-"3",
-"1",
-"6"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243339",
 "uid": "s:40~l:41~a:5243339",
 "guid": "5e07c0bc-984b-3f90-afaf-c7dd513cae18",
-"displayName": "P.J. Eason",
+"displayName": "PJ Eason",
 "shortName": "P.J. Eason",
 "links": [
 {
@@ -1314,7 +1295,7 @@
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5243339.png",
-"alt": "P.J. Eason"
+"alt": "PJ Eason"
 },
 "jersey": "10",
 "position": {
@@ -1328,27 +1309,26 @@
 "ejected": false,
 "stats": [
 "32",
+"6",
 "1-6",
 "0-0",
 "4-4",
-"1",
-"5",
 "6",
 "2",
+"0",
 "2",
 "3",
-"0",
-"3",
-"6"
+"1",
+"5",
+"3"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177575",
 "uid": "s:40~l:41~a:5177575",
 "guid": "1d8fe823-edf7-3368-8c9a-e716289ec2c6",
-"displayName": "Chilaydrien Newton",
+"displayName": "Cbo Newton",
 "shortName": "C. Newton",
 "links": [
 {
@@ -1357,13 +1337,13 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5177575/chilaydrien-newton",
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5177575/cbo-newton",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5177575.png",
-"alt": "Chilaydrien Newton"
+"alt": "Cbo Newton"
 },
 "jersey": "5",
 "position": {
@@ -1377,22 +1357,21 @@
 "ejected": false,
 "stats": [
 "33",
+"13",
 "4-7",
 "2-4",
 "3-4",
-"0",
-"3",
 "3",
 "2",
+"1",
 "0",
 "1",
-"1",
-"1",
-"13"
+"0",
+"3",
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177573",
 "uid": "s:40~l:41~a:5177573",
@@ -1426,22 +1405,21 @@
 "ejected": false,
 "stats": [
 "30",
+"11",
 "4-8",
 "0-3",
 "3-3",
-"0",
-"1",
 "1",
 "6",
-"0",
-"0",
 "3",
+"0",
+"0",
+"0",
 "1",
-"11"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5177572",
 "uid": "s:40~l:41~a:5177572",
@@ -1475,22 +1453,21 @@
 "ejected": false,
 "stats": [
 "35",
+"14",
 "5-10",
 "2-7",
 "2-2",
-"0",
-"3",
 "3",
 "0",
 "1",
-"0",
 "1",
-"2",
-"14"
+"0",
+"0",
+"3",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243341",
 "uid": "s:40~l:41~a:5243341",
@@ -1524,22 +1501,21 @@
 "ejected": false,
 "stats": [
 "7",
+"0",
 "0-1",
 "0-0",
 "0-0",
-"0",
-"1",
 "1",
 "0",
 "0",
+"0",
 "1",
 "0",
 "1",
-"0"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4683542",
 "uid": "s:40~l:41~a:4683542",
@@ -1573,22 +1549,21 @@
 "ejected": false,
 "stats": [
 "17",
+"5",
 "1-3",
 "0-0",
 "3-5",
-"1",
-"5",
 "6",
+"1",
 "1",
 "0",
 "1",
 "1",
-"2",
-"5"
+"5",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243338",
 "uid": "s:40~l:41~a:5243338",
@@ -1622,27 +1597,26 @@
 "ejected": false,
 "stats": [
 "7",
+"0",
 "0-0",
 "0-0",
 "0-0",
-"2",
-"1",
 "3",
 "0",
+"1",
 "0",
 "1",
-"1",
 "2",
-"0"
+"1",
+"2"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5105972",
 "uid": "s:40~l:41~a:5105972",
 "guid": "4504e026-86fe-3c3d-92ac-44c7ee0a698b",
-"displayName": "Louis Hutchinson",
+"displayName": "Lou Hutchinson",
 "shortName": "L. Hutchinson",
 "links": [
 {
@@ -1651,13 +1625,13 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105972/louis-hutchinson",
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105972/lou-hutchinson",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5105972.png",
-"alt": "Louis Hutchinson"
+"alt": "Lou Hutchinson"
 },
 "jersey": "24",
 "position": {
@@ -1671,22 +1645,21 @@
 "ejected": false,
 "stats": [
 "18",
+"9",
 "3-8",
 "1-3",
 "2-2",
-"2",
-"1",
 "3",
 "0",
 "0",
 "0",
 "0",
-"4",
-"9"
+"2",
+"1",
+"4"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "4897315",
 "uid": "s:40~l:41~a:4897315",
@@ -1720,6 +1693,7 @@
 "ejected": false,
 "stats": [
 "5",
+"0",
 "0-2",
 "0-2",
 "0-0",
@@ -1730,12 +1704,10 @@
 "0",
 "0",
 "0",
-"1",
-"0"
+"1"
 ]
 },
 {
-"active": false,
 "athlete": {
 "id": "5243340",
 "uid": "s:40~l:41~a:5243340",
@@ -1770,7 +1742,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4897072",
 "uid": "s:40~l:41~a:4897072",
@@ -1805,7 +1776,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4897847",
 "uid": "s:40~l:41~a:4897847",
@@ -1840,12 +1810,11 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4711691",
 "uid": "s:40~l:41~a:4711691",
 "guid": "8423fc99-0474-3e66-9138-f5f63aef06d8",
-"displayName": "James Graham",
+"displayName": "James Graham III",
 "shortName": "J. Graham",
 "links": [
 {
@@ -1854,13 +1823,13 @@
 "desktop",
 "athlete"
 ],
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4711691/james-graham",
+"href": "https://www.espn.com/mens-college-basketball/player/_/id/4711691/james-graham-iii",
 "text": "Player Card"
 }
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/4711691.png",
-"alt": "James Graham"
+"alt": "James Graham III"
 },
 "jersey": "21",
 "position": {
@@ -1875,7 +1844,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4710427",
 "uid": "s:40~l:41~a:4710427",
@@ -1910,7 +1878,6 @@
 "stats": []
 },
 {
-"active": false,
 "athlete": {
 "id": "4433185",
 "uid": "s:40~l:41~a:4433185",
@@ -1947,18 +1914,18 @@
 ],
 "totals": [
 "",
+"64",
 "20-48",
 "5-19",
 "19-22",
-"8",
-"20",
 "28",
 "12",
+"10",
 "3",
 "7",
-"10",
-"18",
-"64"
+"8",
+"20",
+"18"
 ]
 }
 ],
@@ -1980,6 +1947,7 @@
 "gameInfo": {
 "venue": {
 "id": "1928",
+"guid": "e2091e22-4c81-38c6-919d-187a7f3ccee5",
 "fullName": "Fredrick C. Hobdy Assembly Center",
 "address": {
 "city": "Grambling",
@@ -2102,7 +2070,12 @@
 "value": 1.0,
 "displayValue": "2/2"
 }
-]
+],
+"mainStat": {
+"value": "14",
+"label": "PTS"
+},
+"summary": "5/10 FG, 2/2 FT"
 }
 ]
 },
@@ -2183,7 +2156,12 @@
 "value": 2.0,
 "displayValue": "2.0"
 }
-]
+],
+"mainStat": {
+"value": "6",
+"label": "AST"
+},
+"summary": "3 TO, 30 MIN"
 }
 ]
 },
@@ -2198,9 +2176,9 @@
 "uid": "s:40~l:41~a:5243339",
 "guid": "5e07c0bc-984b-3f90-afaf-c7dd513cae18",
 "lastName": "Eason",
-"fullName": "P.J. Eason",
-"displayName": "P.J. Eason",
-"shortName": "P.J. Eason",
+"fullName": "PJ Eason",
+"displayName": "PJ Eason",
+"shortName": "P. Eason",
 "links": [
 {
 "rel": [
@@ -2214,7 +2192,7 @@
 ],
 "headshot": {
 "href": "https://a.espncdn.com/i/headshots/mens-college-basketball/players/full/5243339.png",
-"alt": "P.J. Eason"
+"alt": "PJ Eason"
 },
 "jersey": "10",
 "position": {
@@ -2255,7 +2233,12 @@
 "value": 1.0,
 "displayValue": "1"
 }
-]
+],
+"mainStat": {
+"value": "6",
+"label": "REB"
+},
+"summary": "5 DREB, 1 OREB"
 }
 ]
 }
@@ -2372,7 +2355,12 @@
 "value": 0.0,
 "displayValue": "0/0"
 }
-]
+],
+"mainStat": {
+"value": "22",
+"label": "PTS"
+},
+"summary": "8/12 FG, 0/0 FT"
 }
 ]
 },
@@ -2453,7 +2441,12 @@
 "value": 0.5,
 "displayValue": "0.5"
 }
-]
+],
+"mainStat": {
+"value": "1",
+"label": "AST"
+},
+"summary": "2 TO, 26 MIN"
 }
 ]
 },
@@ -2525,7 +2518,12 @@
 "value": 6.0,
 "displayValue": "6"
 }
-]
+],
+"mainStat": {
+"value": "8",
+"label": "REB"
+},
+"summary": "2 DREB, 6 OREB"
 }
 ]
 }
@@ -2632,6 +2630,7 @@
 "uid": "s:40~l:41~e:401722147",
 "season": {
 "year": 2025,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -2662,6 +2661,7 @@
 "winner": false,
 "team": {
 "id": "2755",
+"guid": "abd6af3d-a20f-e919-19c9-eb1047c128a8",
 "uid": "s:40~l:41~t:2755",
 "location": "Grambling",
 "name": "Tigers",
@@ -2840,6 +2840,7 @@
 "winner": true,
 "team": {
 "id": "2582",
+"guid": "28f10daa-f9d0-775e-aaa1-76e4315eb2c7",
 "uid": "s:40~l:41~t:2582",
 "location": "Southern",
 "name": "Jaguars",
@@ -3278,6 +3279,22 @@
 "href": "https://www.espn.com/mens-college-basketball/bpi/_/view/tournament",
 "text": "Tournament"
 }
+],
+"logos": [
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"default"
+]
+},
+{
+"href": "https://a.espncdn.com/redesign/assets/img/icons/ESPN-icon-basketball.png",
+"rel": [
+"full",
+"dark"
+]
+}
 ]
 }
 },
@@ -3287,12 +3304,13 @@
 "nowId": "1-43973075",
 "contentKey": "43973075-1-21-1",
 "dataSourceIdentifier": "767de4dcb7e5f",
+"publishedkey": "ncb401722147",
 "type": "Recap",
 "gameId": "401722147",
 "headline": "Johnson's 22 help Southern beat Grambling 71-64",
 "description": "\u2014 Jordan Johnson's 22 points helped Southern defeat Grambling 71-64 on Saturday.",
 "linkText": "Johnson's 22 help Southern beat Grambling 71-64",
-"categorized": "2025-02-23T01:07:10Z",
+"categorized": "2025-07-22T20:31:57Z",
 "originallyPosted": "2025-02-23T01:07:12Z",
 "lastModified": "2025-02-23T01:07:10Z",
 "published": "2025-02-23T01:07:12Z",
@@ -3378,6 +3396,19 @@
 }
 },
 {
+"type": "event",
+"uid": "s:40~l:41~e:401722147",
+"guid": "a1cfe5c9-9f6a-3e3d-ab62-f172cde8c594",
+"description": "Southern Jaguars @ Grambling Tigers",
+"eventId": 401722147,
+"event": {
+"id": 401722147,
+"sport": "basketball",
+"league": "mens-college-basketball",
+"description": "Southern Jaguars @ Grambling Tigers"
+}
+},
+{
 "type": "guid",
 "guid": "abd6af3d-a20f-e919-19c9-eb1047c128a8"
 },
@@ -3401,10 +3432,12 @@
 "keywords": [
 "Grambling Tigers",
 "Southern Jaguars",
-"NCAA Men's Basketball"
+"NCAA Men's Basketball",
+"Southern Jaguars @ Grambling Tigers"
 ],
 "story": "GRAMBLING, La. -- \u2014 <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/68279/jordan-johnson\">Jordan Johnson</a>'s 22 points helped Southern defeat Grambling 71-64 on Saturday.\n\n\r\n              Johnson shot 8 for 12, including 6 for 7 from beyond the arc for the Jaguars (18-9, 13-1 Southwestern Athletic Conference). <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5108073/cam-amboree\">Cam Amboree</a> scored 13 points, shooting 6 for 11, including 1 for 3 from beyond the arc. <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5243366/michael-jacobs\">Michael Jacobs</a> had 12 points and shot 4 of 11 from the field and 3 of 5 from the free-throw line.\n\n\r\n              The Tigers (9-18, 6-8) were led by <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5177575/chilaydrien-newton\">Chilaydrien Newton</a>, who posted 13 points. <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5177572/kintavious-dozier\">Kintavious Dozier</a> added 11 points for Grambling. <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5177573/mikale-stevenson\">Mikale Stevenson</a> had 11 points and four assists.\n\n\r\n              ------\n\n\r\n              The Associated Press created this story using technology provided by <a href=\"https://www.dataskrive.com/\">Data Skrive</a> and data from <a href=\"https://www.sportradar.com\">Sportradar</a>.",
 "premium": false,
+"isLiveBlog": false,
 "links": {
 "web": {
 "href": "http://www.espn.com/ncb/recap?gameId=401722147"
@@ -3433,16 +3466,16 @@
 "text": "Full Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings"
 },
-"header": "2025 Standings",
+"header": "2025-26 Standings",
 "groups": [
 {
 "standings": {
 "entries": [
 {
-"team": "Southern",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2582/southern-jaguars",
-"id": "2582",
-"uid": "s:40~l:41~t:2582",
+"team": "Alabama A&M",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2010/alabama-am-bulldogs",
+"id": "2010",
+"uid": "s:40~l:41~t:2010",
 "stats": [
 {
 "id": "0",
@@ -3452,8 +3485,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "20-12",
-"displayValue": "20-12"
+"summary": "4-3",
+"displayValue": "4-3"
 },
 {
 "name": "gamesBehind",
@@ -3473,520 +3506,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "15-3",
-"displayValue": "15-3"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2582.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Jackson State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2296/jackson-state-tigers",
-"id": "2296",
-"uid": "s:40~l:41~t:2296",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "16-18",
-"displayValue": "16-18"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 1.0,
-"displayValue": "1"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "14-4",
-"displayValue": "14-4"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2296.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Bethune-Cookman",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2065/bethune-cookman-wildcats",
-"id": "2065",
-"uid": "s:40~l:41~t:2065",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "17-16",
-"displayValue": "17-16"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 2.0,
-"displayValue": "2"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "13-5",
-"displayValue": "13-5"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2065.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Alabama State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2011/alabama-state-hornets",
-"id": "2011",
-"uid": "s:40~l:41~t:2011",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "20-16",
-"displayValue": "20-16"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "12-6",
-"displayValue": "12-6"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2011.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2011.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Texas Southern",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2640/texas-southern-tigers",
-"id": "2640",
-"uid": "s:40~l:41~t:2640",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "15-17",
-"displayValue": "15-17"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 3.0,
-"displayValue": "3"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "12-6",
-"displayValue": "12-6"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2023-12-13T21:29Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2640.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2023-12-13T21:30Z"
-}
-]
-},
-{
-"team": "Alcorn State",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2016/alcorn-state-braves",
-"id": "2016",
-"uid": "s:40~l:41~t:2016",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "11-21",
-"displayValue": "11-21"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 4.0,
-"displayValue": "4"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "11-7",
-"displayValue": "11-7"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2024-08-21T18:58Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2016.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2024-08-21T18:58Z"
-}
-]
-},
-{
-"team": "Florida A&M",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/50/florida-am-rattlers",
-"id": "50",
-"uid": "s:40~l:41~t:50",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "14-17",
-"displayValue": "14-17"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 5.0,
-"displayValue": "5"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "10-8",
-"displayValue": "10-8"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/50.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Grambling",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2755/grambling-tigers",
-"id": "2755",
-"uid": "s:40~l:41~t:2755",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "12-22",
-"displayValue": "12-22"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 8.0,
-"displayValue": "8"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "7-11",
-"displayValue": "7-11"
-}
-],
-"logo": [
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"default"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-},
-{
-"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2755.png",
-"width": 500,
-"height": 500,
-"alt": "",
-"rel": [
-"full",
-"dark"
-],
-"lastUpdated": "2018-06-05T12:08Z"
-}
-]
-},
-{
-"team": "Alabama A&M",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2010/alabama-am-bulldogs",
-"id": "2010",
-"uid": "s:40~l:41~t:2010",
-"stats": [
-{
-"id": "0",
-"name": "overall",
-"abbreviation": "Season",
-"displayName": "Team Season Record",
-"shortDisplayName": "Season",
-"description": "Overall Record",
-"type": "total",
-"summary": "10-22",
-"displayValue": "10-22"
-},
-{
-"name": "gamesBehind",
-"displayName": "Games Back",
-"shortDisplayName": "GB",
-"description": "Games Back",
-"abbreviation": "GB",
-"type": "vsconf_gamesbehind",
-"value": 9.0,
-"displayValue": "9"
-},
-{
-"id": "9",
-"name": "vs. Conf.",
-"abbreviation": "VS CONF",
-"displayName": "CONF",
-"shortDisplayName": "CONF",
-"description": "Conference Record",
-"type": "vsconf",
-"summary": "6-12",
-"displayValue": "6-12"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -4015,6 +3536,198 @@
 ]
 },
 {
+"team": "Southern",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2582/southern-jaguars",
+"id": "2582",
+"uid": "s:40~l:41~t:2582",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "4-4",
+"displayValue": "4-4"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2582.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2582.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Alabama State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2011/alabama-state-hornets",
+"id": "2011",
+"uid": "s:40~l:41~t:2011",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-5",
+"displayValue": "3-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2011.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2011.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Grambling",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2755/grambling-tigers",
+"id": "2755",
+"uid": "s:40~l:41~t:2755",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-5",
+"displayValue": "3-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2755.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2755.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
 "team": "Prairie View A&M",
 "link": "https://www.espn.com/mens-college-basketball/team/_/id/2504/prairie-view-am-panthers",
 "id": "2504",
@@ -4028,8 +3741,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "5-27",
-"displayValue": "5-27"
+"summary": "3-5",
+"displayValue": "3-5"
 },
 {
 "name": "gamesBehind",
@@ -4038,8 +3751,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 11.0,
-"displayValue": "11"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -4049,8 +3762,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "4-14",
-"displayValue": "4-14"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -4063,10 +3776,202 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2025-12-06T01:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2504.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Bethune-Cookman",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2065/bethune-cookman-wildcats",
+"id": "2065",
+"uid": "s:40~l:41~t:2065",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "3-6",
+"displayValue": "3-6"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2065.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2065.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+}
+]
+},
+{
+"team": "Texas Southern",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2640/texas-southern-tigers",
+"id": "2640",
+"uid": "s:40~l:41~t:2640",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "1-5",
+"displayValue": "1-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2640.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2023-12-13T21:29Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2640.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2023-12-13T21:30Z"
+}
+]
+},
+{
+"team": "Jackson State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2296/jackson-state-tigers",
+"id": "2296",
+"uid": "s:40~l:41~t:2296",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "1-7",
+"displayValue": "1-7"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2296.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2296.png",
 "width": 500,
 "height": 500,
 "alt": "",
@@ -4092,8 +3997,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "6-25",
-"displayValue": "6-25"
+"summary": "1-8",
+"displayValue": "1-8"
 },
 {
 "name": "gamesBehind",
@@ -4102,8 +4007,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 12.0,
-"displayValue": "12"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -4113,8 +4018,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "3-15",
-"displayValue": "3-15"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -4156,8 +4061,8 @@
 "shortDisplayName": "Season",
 "description": "Overall Record",
 "type": "total",
-"summary": "3-28",
-"displayValue": "3-28"
+"summary": "1-8",
+"displayValue": "1-8"
 },
 {
 "name": "gamesBehind",
@@ -4166,8 +4071,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 0.0,
+"displayValue": "-"
 },
 {
 "id": "9",
@@ -4177,8 +4082,8 @@
 "shortDisplayName": "CONF",
 "description": "Conference Record",
 "type": "vsconf",
-"summary": "1-17",
-"displayValue": "1-17"
+"summary": "0-0",
+"displayValue": "0-0"
 }
 ],
 "logo": [
@@ -4205,13 +4110,145 @@
 "lastUpdated": "2018-06-05T12:08Z"
 }
 ]
+},
+{
+"team": "Alcorn State",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/2016/alcorn-state-braves",
+"id": "2016",
+"uid": "s:40~l:41~t:2016",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "1-9",
+"displayValue": "1-9"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/2016.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2024-08-21T18:58Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2016.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2024-08-21T18:58Z"
 }
 ]
 },
-"header": "2024-25 Southwestern Athletic Conference Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings/_/group/26"
+{
+"team": "Florida A&M",
+"link": "https://www.espn.com/mens-college-basketball/team/_/id/50/florida-am-rattlers",
+"id": "50",
+"uid": "s:40~l:41~t:50",
+"stats": [
+{
+"id": "0",
+"name": "overall",
+"abbreviation": "Season",
+"displayName": "Team Season Record",
+"shortDisplayName": "Season",
+"description": "Overall Record",
+"type": "total",
+"summary": "0-5",
+"displayValue": "0-5"
+},
+{
+"name": "gamesBehind",
+"displayName": "Games Back",
+"shortDisplayName": "GB",
+"description": "Games Back",
+"abbreviation": "GB",
+"type": "vsconf_gamesbehind",
+"value": 0.0,
+"displayValue": "-"
+},
+{
+"id": "9",
+"name": "vs. Conf.",
+"abbreviation": "VS CONF",
+"displayName": "CONF",
+"shortDisplayName": "CONF",
+"description": "Conference Record",
+"type": "vsconf",
+"summary": "0-0",
+"displayValue": "0-0"
+}
+],
+"logo": [
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500/50.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"default"
+],
+"lastUpdated": "2018-06-05T12:08Z"
+},
+{
+"href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/50.png",
+"width": 500,
+"height": 500,
+"alt": "",
+"rel": [
+"full",
+"dark"
+],
+"lastUpdated": "2018-06-05T12:08Z"
 }
 ]
+}
+]
+},
+"header": "2025-26 Southwestern Athletic Conference Standings",
+"href": "https://www.espn.com/mens-college-basketball/standings/_/group/26",
+"conferenceHeader": "NCAA Division I",
+"divisionHeader": "Southwestern Athletic Conference",
+"shortDivisionHeader": "SWAC"
+}
+],
+"isSameConference": true
 },
 "teamInfo": {},
 "espnWP": {},
