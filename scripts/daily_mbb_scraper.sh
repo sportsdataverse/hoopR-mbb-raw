@@ -15,6 +15,11 @@ do
     git pull
     python3 python/scrape_mbb_schedules.py -s $i -e $i -r $RESCRAPE
     python3 python/scrape_mbb_json.py -s $i -e $i -r $RESCRAPE
+    python3 python/scrape_mbb_standings.py -s $i -e $i -r $RESCRAPE
+    python3 python/scrape_mbb_game_rosters.py -s $i -e $i -r $RESCRAPE
+    python3 python/scrape_mbb_player_stats.py -s $i -e $i -r $RESCRAPE
+    python3 python/scrape_mbb_team_stats.py -s $i -e $i -r $RESCRAPE
+    python3 python/scrape_mbb_team_rosters.py -s $i -e $i -r $RESCRAPE
     git pull
     git add .
     git pull  >> /dev/null
