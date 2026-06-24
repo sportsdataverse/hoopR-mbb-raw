@@ -28,31 +28,42 @@ fires `repository_dispatch` event-type `daily_mbb_data` against
 
 ## Build & Development Commands
 
-The repo is driven by `scripts/daily_mbb_scraper.sh`, which sequences
-schedule scraping then per-game JSON scraping, then commits + pushes.
-Seasons are integer end-years (e.g. the 2024–25 NCAA MBB season is `2025`).
+The repo is driven by `scripts/daily_mbb_scraper.sh`, which loops the
+season range and runs **seven** scrapers per season (schedules, json,
+standings, game_rosters, player_stats, team_stats, team_rosters), then
+commits + pushes. Seasons are integer end-years (e.g. the 2024–25 NCAA MBB
+season is `2025`).
 
 ```sh
 # Full daily flow for one or more seasons (CI entry point)
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
 
-# Or call the scrapers directly when iterating
-python3 python/scrape_mbb_schedules.py -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_json.py      -s 2025 -e 2025 -r false
+# Or call any scraper directly when iterating
+python3 python/scrape_mbb_schedules.py    -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_json.py         -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_standings.py    -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_game_rosters.py -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_player_stats.py -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_team_stats.py   -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_team_rosters.py -s 2025 -e 2025 -r false
 
-# Helpers
+# Helpers (not part of the daily flow)
 python3 python/process_mbb_schedules.py
 python3 python/add_game_links_to_schedule.py
 ```
 
 `-r true` forces re-scrape of games already on disk; `-r false` skips
-existing files. Output paths the scrapers write under:
+existing files. **The `-r` flag defaults to `TRUE`** when unset
+(`RESCRAPE=${RESCRAPE:-TRUE}`), so CI always passes `-r false` explicitly.
+Output paths the scrapers write under:
 
-- `mbb/schedules/{rds,csv,parquet}/mbb_schedule_{year}.{ext}`
+- `mbb/schedules/{rds,parquet}/mbb_schedule_{year}.{ext}`
 - `mbb/mbb_schedule_master.parquet` — concatenated cross-season master schedule
 - `mbb/json/final/{game_id}.json` — clean payload, consumed by `hoopR-mbb-data`
 - `mbb/json/raw/{game_id}.json`   — raw ESPN response (kept for forensics)
-- `mbb/errors/`                   — failed-game records
+- `mbb/errors/`                   — failed-game records (`path_to_errors` in `scrape_mbb_json.py`)
+- `mbb/{standings,game_rosters,player_season_stats,team_stats,team_rosters}/` — per-dataset payloads
+- `logs/hoopR_mbb_raw_logfile_{year}.log` — per-season run log, committed separately
 
 ## Project Structure
 
@@ -60,10 +71,15 @@ existing files. Output paths the scrapers write under:
 python/
   scrape_mbb_schedules.py      # ESPN schedule scrape -> mbb/schedules/
   scrape_mbb_json.py           # Per-game JSON scrape -> mbb/json/final/{game_id}.json
-  process_mbb_schedules.py     # Schedule post-processing -> mbb_schedule_master.parquet
+  scrape_mbb_standings.py      # -> mbb/standings/
+  scrape_mbb_game_rosters.py   # -> mbb/game_rosters/
+  scrape_mbb_player_stats.py   # -> mbb/player_season_stats/
+  scrape_mbb_team_stats.py     # -> mbb/team_stats/
+  scrape_mbb_team_rosters.py   # -> mbb/team_rosters/
+  process_mbb_schedules.py     # Schedule post-processing (helper, not in daily flow)
   add_game_links_to_schedule.py
 scripts/
-  daily_mbb_scraper.sh         # CI entry point
+  daily_mbb_scraper.sh         # CI entry point — per-season loop over 7 scrapers
 mbb/                           # Committed scraped output (consumed downstream)
 .github/workflows/
   hoopR_mbb_data_trigger.yaml  # Fires repository_dispatch on push
@@ -72,10 +88,10 @@ mbb/                           # Committed scraped output (consumed downstream)
 ## Daily Workflow
 
 The shell entry point `scripts/daily_mbb_scraper.sh` loops over the
-requested year range and, for each season, runs the two scrapers
-sequentially then commits + pushes a single time. Each push fires
-`hoopR_mbb_data_trigger.yaml`, which dispatches `daily_mbb_data` to
-`hoopR-mbb-data`.
+requested year range and, for each season, runs the seven scrapers
+sequentially then commits + pushes (a second commit pushes the per-season
+log under `logs/`). Each push fires `hoopR_mbb_data_trigger.yaml`, which
+dispatches `daily_mbb_data` to `hoopR-mbb-data`.
 
 - **Commit message format**: the script emits
   `"MBB Raw Updated (Start: $i End: $i)"`. The downstream
