@@ -2056,10 +2056,10 @@
 "id": "2116"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5162,7 +5162,7 @@
 "uid": "s:40~l:41~e:401824825",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5744,6 +5744,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5788,30 +5789,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5840,6 +5832,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5878,6 +5880,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -25471,6 +25492,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/eb9ee838-0b1d-40cd-a5f7-c7c41c31b98a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46935600",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1112/462a18fa-fad5-4552-92bf-8c60b5b853fa/462a18fa-fad5-4552-92bf-8c60b5b853fa.mp4"
 },
@@ -25636,26 +25658,14 @@
 {
 "id": 568566,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105529",
+"uid": "s:40~l:63~a:5105529",
 "guid": "2f3d3066-c885-33b3-8f75-b9108e5be29d",
 "description": "Riley Kugel",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5105529,
 "athlete": {
 "id": 5105529,
-"description": "Riley Kugel",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105529/riley-kugel"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105529/riley-kugel"
-}
-}
-}
+"description": "Riley Kugel"
 }
 },
 {
@@ -25720,6 +25730,8 @@
 "team": {
 "id": 50,
 "description": "Florida A&M Rattlers",
+"abbreviation": "FAMU",
+"shortDisplayName": "Florida A&M",
 "links": {
 "web": {
 "teams": {
@@ -25749,7 +25761,9 @@
 "teamId": 2116,
 "team": {
 "id": 2116,
-"description": "University of Central Florida"
+"description": "University of Central Florida",
+"abbreviation": "UCF",
+"shortDisplayName": "UCF"
 }
 },
 {
@@ -25763,6 +25777,8 @@
 "team": {
 "id": 2116,
 "description": "UCF Knights",
+"abbreviation": "UCF",
+"shortDisplayName": "UCF",
 "links": {
 "web": {
 "teams": {
@@ -25798,7 +25814,9 @@
 "teamId": 50,
 "team": {
 "id": 50,
-"description": "Florida A&M University"
+"description": "Florida A&M University",
+"abbreviation": "Florida A&M",
+"shortDisplayName": "Florida A&M"
 }
 },
 {
@@ -25918,6 +25936,8 @@
 "team": {
 "id": 2116,
 "description": "UCF Knights",
+"abbreviation": "UCF",
+"shortDisplayName": "UCF",
 "links": {
 "web": {
 "teams": {
@@ -25969,6 +25989,8 @@
 "team": {
 "id": 50,
 "description": "Florida A&M Rattlers",
+"abbreviation": "FAMU",
+"shortDisplayName": "Florida A&M",
 "links": {
 "web": {
 "teams": {
@@ -26078,6 +26100,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3c871ce7-0f9b-464d-a5e2-f296c8fa2854/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46933967",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1112/0f2b4095-3932-4536-85b3-88d6190ccad0/0f2b4095-3932-4536-85b3-88d6190ccad0.mp4"
 },
@@ -26189,6 +26212,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/31910520-6916-4696-832e-93d13067f38e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46934763",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1112/8b437fcb-cb29-41bc-aaeb-717aef37e0b5/8b437fcb-cb29-41bc-aaeb-717aef37e0b5.mp4"
 },
@@ -26300,6 +26324,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/22c9ea90-2a69-4be5-aa43-1c5082d3962c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46934788",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1112/b26756f7-2304-4408-977a-3704157d41c4/b26756f7-2304-4408-977a-3704157d41c4.mp4"
 },
@@ -26411,6 +26436,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a29d76e6-3d2e-48be-851c-9efec65c9e4b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46935147",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1112/f2b96837-8cff-4298-aaf7-02957d054f0c/f2b96837-8cff-4298-aaf7-02957d054f0c.mp4"
 },
@@ -26487,8 +26513,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -26736,7 +26761,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2010.png",
@@ -26747,7 +26772,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27579,7 +27604,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -27590,7 +27615,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

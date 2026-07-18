@@ -2146,10 +2146,10 @@
 "id": "24"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2230,10 +2230,10 @@
 "id": "24"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2323,10 +2323,10 @@
 "id": "24"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5593,7 +5593,7 @@
 "uid": "s:40~l:41~e:401817464",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6175,6 +6175,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6219,30 +6220,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6271,6 +6263,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6309,6 +6311,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -27635,6 +27656,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/85dacc15-8c3b-4604-adbb-c24a76ebd04a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46854537",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/d1443599-6bee-417b-a6b0-733db680230c/d1443599-6bee-417b-a6b0-733db680230c.mp4"
 },
@@ -27731,7 +27753,9 @@
 "teamId": 24,
 "team": {
 "id": 24,
-"description": "Stanford University"
+"description": "Stanford University",
+"abbreviation": "Stanford",
+"shortDisplayName": "Stanford"
 }
 },
 {
@@ -27796,6 +27820,8 @@
 "team": {
 "id": 2502,
 "description": "Portland State Vikings",
+"abbreviation": "PRST",
+"shortDisplayName": "Portland St",
 "links": {
 "web": {
 "teams": {
@@ -27852,6 +27878,8 @@
 "team": {
 "id": 24,
 "description": "Stanford Cardinal",
+"abbreviation": "STAN",
+"shortDisplayName": "Stanford",
 "links": {
 "web": {
 "teams": {
@@ -27881,10 +27909,10 @@
 {
 "id": 738352,
 "type": "athlete",
-"uid": "s:40~l:41~a:5258459",
+"uid": "s:40~l:46~a:5258459",
 "guid": "9eb6bcb2-1665-3856-ad1e-cf8c5e1bd25d",
 "description": "Ebuka Okorie",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5258459,
 "athlete": {
 "id": 5258459,
@@ -27892,12 +27920,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5258459/ebuka-okorie"
+"href": "https://www.espn.com/nba/player/_/id/5258459/ebuka-okorie"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5258459/ebuka-okorie"
+"href": "https://www.espn.com/nba/player/_/id/5258459/ebuka-okorie"
 }
 }
 }
@@ -27937,7 +27965,9 @@
 "teamId": 2502,
 "team": {
 "id": 2502,
-"description": "Portland State University"
+"description": "Portland State University",
+"abbreviation": "Portland State",
+"shortDisplayName": "Portland State"
 }
 },
 {
@@ -28028,6 +28058,8 @@
 "team": {
 "id": 24,
 "description": "Stanford Cardinal",
+"abbreviation": "STAN",
+"shortDisplayName": "Stanford",
 "links": {
 "web": {
 "teams": {
@@ -28053,6 +28085,8 @@
 "team": {
 "id": 2502,
 "description": "Portland State Vikings",
+"abbreviation": "PRST",
+"shortDisplayName": "Portland St",
 "links": {
 "web": {
 "teams": {
@@ -28213,6 +28247,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ddbc158e-db30-4461-b882-ed726815e583/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46853209",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/7afdf134-0d5b-499a-89c4-f47832179488/7afdf134-0d5b-499a-89c4-f47832179488.mp4"
 },
@@ -28324,6 +28359,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/71337615-7c3b-428e-ad4e-cc90010ec4d7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46853223",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/2d20983c-d956-49ae-9250-88a7f4770204/2d20983c-d956-49ae-9250-88a7f4770204.mp4"
 },
@@ -28435,6 +28471,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/83f0b39b-86f4-49ea-884f-295465e78f3b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46853270",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/322792f2-7e20-45a7-9731-1a507b3cb1b4/322792f2-7e20-45a7-9731-1a507b3cb1b4.mp4"
 },
@@ -28546,6 +28583,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/66f0db19-9611-4eb0-a0b4-eef892c5d58f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46854194",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/d78dee77-3f28-4a5b-88a9-f5659dd16707/d78dee77-3f28-4a5b-88a9-f5659dd16707.mp4"
 },
@@ -28657,6 +28695,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3a763663-f2ec-4694-99c7-89685d188346/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46854250",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/9f77f444-3070-4a26-a742-9b918715b1d4/9f77f444-3070-4a26-a742-9b918715b1d4.mp4"
 },
@@ -28768,6 +28807,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/818c4143-f8fe-447b-aaa2-b874001e464a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46854278",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1105/f690fb07-b69c-463a-88e8-9199b3ea9ab8/f690fb07-b69c-463a-88e8-9199b3ea9ab8.mp4"
 },
@@ -28844,8 +28884,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -29157,7 +29196,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/149.png",
@@ -29168,7 +29207,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -29221,7 +29260,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2692.png",
@@ -29232,7 +29271,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -29324,8 +29363,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "id": "9",

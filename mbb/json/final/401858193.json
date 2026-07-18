@@ -23191,7 +23191,7 @@
 "uid": "s:40~l:41~e:401858193",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 3
 },
 "timeValid": true,
@@ -24151,6 +24151,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -24195,30 +24196,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -24247,6 +24239,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -24285,6 +24287,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24410,6 +24431,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/57d5a1d1-a032-40c4-b04f-39670bd1c83e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48239723",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0318/f85b1ad3-4ea1-41b3-8f0f-eaaa591bb5db/f85b1ad3-4ea1-41b3-8f0f-eaaa591bb5db.mp4"
 },
@@ -24519,6 +24541,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/de67f440-e815-4120-a964-29af0eeb5bdd/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48239730",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0318/9260969c-231a-41f4-a1c3-0b4edd714a22/9260969c-231a-41f4-a1c3-0b4edd714a22.mp4"
 },
@@ -24597,8 +24620,7 @@
 "playByPlaySource": "full",
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24654,7 +24676,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2653.png",
@@ -24665,7 +24687,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26658,6 +26680,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/18cf1fd8-20d8-40bd-a1f4-898b61f10b5f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48239774",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0318/af8c6723-4d20-4a64-b5a4-912f1f7775ee/af8c6723-4d20-4a64-b5a4-912f1f7775ee.mp4"
 },
@@ -26756,6 +26779,8 @@
 "team": {
 "id": 6,
 "description": "South Alabama Jaguars",
+"abbreviation": "USA",
+"shortDisplayName": "South Alabama",
 "links": {
 "web": {
 "teams": {
@@ -26779,7 +26804,9 @@
 "teamId": 6,
 "team": {
 "id": 6,
-"description": "University of South Alabama"
+"description": "University of South Alabama",
+"abbreviation": "South Alabama",
+"shortDisplayName": "South Alabama"
 }
 },
 {
@@ -26793,6 +26820,8 @@
 "team": {
 "id": 2,
 "description": "Auburn Tigers",
+"abbreviation": "AUB",
+"shortDisplayName": "Auburn",
 "links": {
 "web": {
 "teams": {
@@ -26816,7 +26845,9 @@
 "teamId": 2,
 "team": {
 "id": 2,
-"description": "Auburn"
+"description": "Auburn",
+"abbreviation": "Auburn",
+"shortDisplayName": "Auburn"
 }
 },
 {
@@ -26990,6 +27021,8 @@
 "team": {
 "id": 2,
 "description": "Auburn Tigers",
+"abbreviation": "AUB",
+"shortDisplayName": "Auburn",
 "links": {
 "web": {
 "teams": {
@@ -27013,7 +27046,9 @@
 "teamId": 2,
 "team": {
 "id": 2,
-"description": "Auburn"
+"description": "Auburn",
+"abbreviation": "Auburn",
+"shortDisplayName": "Auburn"
 }
 },
 {
@@ -27027,6 +27062,8 @@
 "team": {
 "id": 6,
 "description": "South Alabama Jaguars",
+"abbreviation": "USA",
+"shortDisplayName": "South Alabama",
 "links": {
 "web": {
 "teams": {
@@ -27050,7 +27087,9 @@
 "teamId": 6,
 "team": {
 "id": 6,
-"description": "University of South Alabama"
+"description": "University of South Alabama",
+"abbreviation": "South Alabama",
+"shortDisplayName": "South Alabama"
 }
 },
 {
@@ -27779,7 +27818,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -27830,7 +27869,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33829453%3Foutcomes%3D0ML83901699_1",
 "text": "Home Bet",
@@ -27844,7 +27883,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33829453%3Foutcomes%3D0ML83901699_3",
 "text": "Away Bet",
@@ -28008,7 +28047,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -29039,7 +29078,7 @@
 },
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 3
 }
 }

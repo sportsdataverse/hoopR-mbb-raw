@@ -4229,7 +4229,7 @@
 "uid": "s:40~l:41~e:401813383",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -4628,6 +4628,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -4672,30 +4673,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -4724,6 +4716,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -4762,6 +4764,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -19671,6 +19692,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/be9a0f91-b70f-4d1d-b0ea-73a91bf3bc86/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47369833",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1220/81356e6b-1aec-4820-a3de-aca64cf786ba/81356e6b-1aec-4820-a3de-aca64cf786ba.mp4"
 },
@@ -19769,6 +19791,8 @@
 "team": {
 "id": 315,
 "description": "Niagara Purple Eagles",
+"abbreviation": "NIA",
+"shortDisplayName": "Niagara",
 "links": {
 "web": {
 "teams": {
@@ -19949,7 +19973,9 @@
 "teamId": 315,
 "team": {
 "id": 315,
-"description": "Niagara University"
+"description": "Niagara University",
+"abbreviation": "Niagara",
+"shortDisplayName": "Niagara"
 }
 },
 {
@@ -20071,6 +20097,8 @@
 "team": {
 "id": 315,
 "description": "Niagara Purple Eagles",
+"abbreviation": "NIA",
+"shortDisplayName": "Niagara",
 "links": {
 "web": {
 "teams": {
@@ -20095,7 +20123,9 @@
 "teamId": 538,
 "team": {
 "id": 538,
-"description": "Houghton Highlanders"
+"description": "Houghton Highlanders",
+"abbreviation": "HOUG",
+"shortDisplayName": "Houghton"
 }
 },
 {
@@ -20214,6 +20244,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b54d0e1f-b6bf-4b4a-905f-2d18b329d66a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47368867",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1220/d6a66f39-f28a-45fe-97d4-a5d5906ebff5/d6a66f39-f28a-45fe-97d4-a5d5906ebff5.mp4"
 },
@@ -20291,8 +20322,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

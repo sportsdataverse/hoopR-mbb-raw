@@ -2105,10 +2105,10 @@
 "id": "2633"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2189,10 +2189,10 @@
 "id": "2633"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5242,7 +5242,7 @@
 "uid": "s:40~l:41~e:401823483",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5781,6 +5781,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5825,30 +5826,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5877,6 +5869,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5915,6 +5917,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24919,6 +24940,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5ae5d2f1-7a9e-4bf7-b722-0c9a18065ec9/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46839765",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/1a5eff53-9edb-4aea-bf05-cd7a3db8119d/1a5eff53-9edb-4aea-bf05-cd7a3db8119d.mp4"
 },
@@ -25017,6 +25039,8 @@
 "team": {
 "id": 2382,
 "description": "Mercer Bears",
+"abbreviation": "MER",
+"shortDisplayName": "Mercer",
 "links": {
 "web": {
 "teams": {
@@ -25084,10 +25108,10 @@
 {
 "id": 737445,
 "type": "athlete",
-"uid": "s:40~l:41~a:5164559",
+"uid": "s:40~l:46~a:5164559",
 "guid": "4a23fcbf-7a87-35d2-97af-f80b753e159c",
 "description": "Nate Ament",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5164559,
 "athlete": {
 "id": 5164559,
@@ -25095,12 +25119,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5164559/nate-ament"
+"href": "https://www.espn.com/nba/player/_/id/5164559/nate-ament"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5164559/nate-ament"
+"href": "https://www.espn.com/nba/player/_/id/5164559/nate-ament"
 }
 }
 }
@@ -25141,7 +25165,9 @@
 "teamId": 2382,
 "team": {
 "id": 2382,
-"description": "Mercer University"
+"description": "Mercer University",
+"abbreviation": "Mercer",
+"shortDisplayName": "Mercer"
 }
 },
 {
@@ -25153,7 +25179,9 @@
 "teamId": 2633,
 "team": {
 "id": 2633,
-"description": "University of Tennessee"
+"description": "University of Tennessee",
+"abbreviation": "Tennessee",
+"shortDisplayName": "Tennessee"
 }
 },
 {
@@ -25198,6 +25226,8 @@
 "team": {
 "id": 2633,
 "description": "Tennessee Volunteers",
+"abbreviation": "TENN",
+"shortDisplayName": "Tennessee",
 "links": {
 "web": {
 "teams": {
@@ -25370,6 +25400,8 @@
 "team": {
 "id": 2382,
 "description": "Mercer Bears",
+"abbreviation": "MER",
+"shortDisplayName": "Mercer",
 "links": {
 "web": {
 "teams": {
@@ -25395,6 +25427,8 @@
 "team": {
 "id": 2633,
 "description": "Tennessee Volunteers",
+"abbreviation": "TENN",
+"shortDisplayName": "Tennessee",
 "links": {
 "web": {
 "teams": {
@@ -25555,6 +25589,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/15d2cff7-2fb4-4e75-9c57-1cf817b15a7b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46838774",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/d686ddb5-ec9a-4ca5-ad03-503888384de8/d686ddb5-ec9a-4ca5-ad03-503888384de8.mp4"
 },
@@ -25631,8 +25666,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25944,7 +25978,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-03-16T14:51Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/231.png",
@@ -25955,7 +25989,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-03-16T14:50Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

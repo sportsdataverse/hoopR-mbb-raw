@@ -1974,10 +1974,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2058,10 +2058,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2151,10 +2151,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -4989,7 +4989,7 @@
 "uid": "s:40~l:41~e:401824809",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5572,6 +5572,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5616,30 +5617,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5668,6 +5660,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5706,6 +5708,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23917,6 +23938,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/03d54682-d19e-4eb2-b811-5563b6bb0318/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46841272",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/4252a6a3-30e1-4a95-b5d6-8dcbdbcacedf/4252a6a3-30e1-4a95-b5d6-8dcbdbcacedf.mp4"
 },
@@ -23982,10 +24004,10 @@
 {
 "id": 569049,
 "type": "athlete",
-"uid": "s:40~l:41~a:5106058",
+"uid": "s:40~l:46~a:5106058",
 "guid": "7c1ed5bf-7a04-305b-830c-9e62bd7d6feb",
 "description": "Emanuel Sharp",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5106058,
 "athlete": {
 "id": 5106058,
@@ -23993,12 +24015,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5106058/emanuel-sharp"
+"href": "https://www.espn.com/nba/player/_/id/5106058/emanuel-sharp"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5106058/emanuel-sharp"
+"href": "https://www.espn.com/nba/player/_/id/5106058/emanuel-sharp"
 }
 }
 }
@@ -24038,7 +24060,9 @@
 "teamId": 248,
 "team": {
 "id": 248,
-"description": "University of Houston"
+"description": "University of Houston",
+"abbreviation": "Houston",
+"shortDisplayName": "Houston"
 }
 },
 {
@@ -24052,6 +24076,8 @@
 "team": {
 "id": 2329,
 "description": "Lehigh Mountain Hawks",
+"abbreviation": "LEH",
+"shortDisplayName": "Lehigh",
 "links": {
 "web": {
 "teams": {
@@ -24107,7 +24133,9 @@
 "teamId": 2329,
 "team": {
 "id": 2329,
-"description": "Lehigh University"
+"description": "Lehigh University",
+"abbreviation": "Lehigh",
+"shortDisplayName": "Lehigh"
 }
 },
 {
@@ -24127,6 +24155,8 @@
 "team": {
 "id": 248,
 "description": "Houston Cougars",
+"abbreviation": "HOU",
+"shortDisplayName": "Houston",
 "links": {
 "web": {
 "teams": {
@@ -24238,6 +24268,8 @@
 "team": {
 "id": 2329,
 "description": "Lehigh Mountain Hawks",
+"abbreviation": "LEH",
+"shortDisplayName": "Lehigh",
 "links": {
 "web": {
 "teams": {
@@ -24263,6 +24295,8 @@
 "team": {
 "id": 248,
 "description": "Houston Cougars",
+"abbreviation": "HOU",
+"shortDisplayName": "Houston",
 "links": {
 "web": {
 "teams": {
@@ -24398,6 +24432,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d0866776-1f1c-4f85-908f-4b570ffb9d22/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46841090",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/ff9b8551-f623-448b-b67a-3c0509c80328/ff9b8551-f623-448b-b67a-3c0509c80328.mp4"
 },
@@ -24474,8 +24509,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24915,7 +24949,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/322.png",
@@ -24926,7 +24960,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25438,7 +25472,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -25449,7 +25483,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

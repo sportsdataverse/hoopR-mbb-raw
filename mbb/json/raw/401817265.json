@@ -2149,10 +2149,10 @@
 "id": "153"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2326,10 +2326,10 @@
 "id": "153"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5059,7 +5059,7 @@
 "uid": "s:40~l:41~e:401817265",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5642,6 +5642,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5686,30 +5687,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5738,6 +5730,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5776,6 +5778,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23225,6 +23246,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/33a21cc3-d079-413a-bd82-b84c634206aa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46971158",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/c0db6ded-7f2d-42dd-a3d2-20857697b1a5/c0db6ded-7f2d-42dd-a3d2-20857697b1a5.mp4"
 },
@@ -23349,6 +23371,8 @@
 "team": {
 "id": 2428,
 "description": "North Carolina Central Eagles",
+"abbreviation": "NCCU",
+"shortDisplayName": "NC Central",
 "links": {
 "web": {
 "teams": {
@@ -23430,6 +23454,8 @@
 "team": {
 "id": 153,
 "description": "North Carolina Tar Heels",
+"abbreviation": "UNC",
+"shortDisplayName": "North Carolina",
 "links": {
 "web": {
 "teams": {
@@ -23447,10 +23473,10 @@
 {
 "id": 737951,
 "type": "athlete",
-"uid": "s:40~l:41~a:5095151",
+"uid": "s:40~l:46~a:5095151",
 "guid": "69d193b9-51f6-3971-aaca-b223be886f21",
 "description": "Caleb Wilson",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5095151,
 "athlete": {
 "id": 5095151,
@@ -23458,12 +23484,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5095151/caleb-wilson"
+"href": "https://www.espn.com/nba/player/_/id/5095151/caleb-wilson"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5095151/caleb-wilson"
+"href": "https://www.espn.com/nba/player/_/id/5095151/caleb-wilson"
 }
 }
 }
@@ -23478,7 +23504,9 @@
 "teamId": 2428,
 "team": {
 "id": 2428,
-"description": "North Carolina Central University"
+"description": "North Carolina Central University",
+"abbreviation": "North Carolina Central",
+"shortDisplayName": "North Carolina Central"
 }
 },
 {
@@ -23527,7 +23555,9 @@
 "teamId": 153,
 "team": {
 "id": 153,
-"description": "University of North Carolina"
+"description": "University of North Carolina",
+"abbreviation": "North Carolina",
+"shortDisplayName": "North Carolina"
 }
 },
 {
@@ -23643,6 +23673,8 @@
 "team": {
 "id": 2428,
 "description": "North Carolina Central Eagles",
+"abbreviation": "NCCU",
+"shortDisplayName": "NC Central",
 "links": {
 "web": {
 "teams": {
@@ -23668,6 +23700,8 @@
 "team": {
 "id": 153,
 "description": "North Carolina Tar Heels",
+"abbreviation": "UNC",
+"shortDisplayName": "North Carolina",
 "links": {
 "web": {
 "teams": {
@@ -23803,6 +23837,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9029277a-dd95-4e11-821b-a49111ac652c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46969861",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/22fae247-b3bc-4021-808b-8de24f93d866/22fae247-b3bc-4021-808b-8de24f93d866.mp4"
 },
@@ -23914,6 +23949,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7485011c-6409-467d-9233-f200b0a48e82/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46970068",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/1266a1f8-bb25-42ad-9868-0fdbe31c832e/1266a1f8-bb25-42ad-9868-0fdbe31c832e.mp4"
 },
@@ -24025,6 +24061,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c2527abe-3a4b-4a70-9733-37ca09b29eed/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46970111",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/d27081e1-ed8e-4eff-be76-3b1ca2548152/d27081e1-ed8e-4eff-be76-3b1ca2548152.mp4"
 },
@@ -24101,8 +24138,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24158,7 +24194,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-03-15T19:32Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/47.png",
@@ -24169,7 +24205,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-03-15T19:32Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

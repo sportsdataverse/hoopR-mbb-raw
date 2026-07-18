@@ -2009,10 +2009,10 @@
 "id": "2579"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2093,10 +2093,10 @@
 "id": "2579"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2186,10 +2186,10 @@
 "id": "2579"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2492,10 +2492,10 @@
 "id": "2086"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5139,7 +5139,7 @@
 "uid": "s:40~l:41~e:401820825",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5721,6 +5721,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5765,30 +5766,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5817,6 +5809,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5855,6 +5857,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24882,6 +24903,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a0ab0f11-e904-4c40-b835-25fd1d2e67da/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47051325",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/f5ae8706-4e23-4d02-881b-c3aaeca1e38f/f5ae8706-4e23-4d02-881b-c3aaeca1e38f.mp4"
 },
@@ -24978,7 +25000,9 @@
 "teamId": 2579,
 "team": {
 "id": 2579,
-"description": "University of South Carolina"
+"description": "University of South Carolina",
+"abbreviation": "South Carolina",
+"shortDisplayName": "South Carolina"
 }
 },
 {
@@ -24992,6 +25016,8 @@
 "team": {
 "id": 2086,
 "description": "Butler Bulldogs",
+"abbreviation": "BUT",
+"shortDisplayName": "Butler",
 "links": {
 "web": {
 "teams": {
@@ -25043,6 +25069,8 @@
 "team": {
 "id": 2579,
 "description": "South Carolina Gamecocks",
+"abbreviation": "SC",
+"shortDisplayName": "South Carolina",
 "links": {
 "web": {
 "teams": {
@@ -25066,7 +25094,9 @@
 "teamId": 2086,
 "team": {
 "id": 2086,
-"description": "Butler University"
+"description": "Butler University",
+"abbreviation": "Butler",
+"shortDisplayName": "Butler"
 }
 },
 {
@@ -25195,6 +25225,8 @@
 "team": {
 "id": 2579,
 "description": "South Carolina Gamecocks",
+"abbreviation": "SC",
+"shortDisplayName": "South Carolina",
 "links": {
 "web": {
 "teams": {
@@ -25220,6 +25252,8 @@
 "team": {
 "id": 2086,
 "description": "Butler Bulldogs",
+"abbreviation": "BUT",
+"shortDisplayName": "Butler",
 "links": {
 "web": {
 "teams": {
@@ -25354,6 +25388,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7354204e-7cb2-42b5-9798-c14525b90b41/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47051125",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/5eac2e38-48e7-4f20-9d48-233c2063b4db/5eac2e38-48e7-4f20-9d48-233c2063b4db.mp4"
 },
@@ -25466,6 +25501,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f59cd10c-9e88-4b05-9ddf-6ba2cdbe0bbc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47051320",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/422b60ed-5ec9-4fc2-b563-0178f585b465/422b60ed-5ec9-4fc2-b563-0178f585b465.mp4"
 },
@@ -25578,6 +25614,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f0da1386-68c6-4ad0-b13c-b1a02f826939/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47051323",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/460e9e98-ea84-4872-8355-759010253394/460e9e98-ea84-4872-8355-759010253394.mp4"
 },
@@ -25687,6 +25724,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/97789233-b12c-46c2-ae6e-a47a162b6e4d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47051405",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/8d5053c9-2777-4927-ac7b-74337aec7e5b/8d5053c9-2777-4927-ac7b-74337aec7e5b.mp4"
 },
@@ -25764,8 +25802,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

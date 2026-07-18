@@ -2100,10 +2100,10 @@
 "id": "251"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5527,7 +5527,7 @@
 "uid": "s:40~l:41~e:401812284",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6109,6 +6109,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6153,30 +6154,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6205,6 +6197,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6243,6 +6245,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -27373,6 +27394,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f46bd9ff-3be5-4771-b890-5306d053d313/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46949160",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/f0cf379d-f1f1-429a-b9f3-1f612be215e1/f0cf379d-f1f1-429a-b9f3-1f612be215e1.mp4"
 },
@@ -27444,7 +27466,9 @@
 "teamId": 161,
 "team": {
 "id": 161,
-"description": "Fairleigh Dickinson University"
+"description": "Fairleigh Dickinson University",
+"abbreviation": "Fairleigh Dickinson",
+"shortDisplayName": "Fairleigh Dickinson"
 }
 },
 {
@@ -27509,6 +27533,8 @@
 "team": {
 "id": 161,
 "description": "Fairleigh Dickinson Knights",
+"abbreviation": "FDU",
+"shortDisplayName": "FDU",
 "links": {
 "web": {
 "teams": {
@@ -27532,26 +27558,14 @@
 {
 "id": 453348,
 "type": "athlete",
-"uid": "s:40~l:41~a:4432243",
+"uid": "s:40~l:63~a:4432243",
 "guid": "7f84324f-e4f7-3e5f-9dae-ba44ade2362d",
 "description": "Tramon Mark",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4432243,
 "athlete": {
 "id": 4432243,
-"description": "Tramon Mark",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4432243/tramon-mark"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4432243/tramon-mark"
-}
-}
-}
+"description": "Tramon Mark"
 }
 },
 {
@@ -27563,7 +27577,9 @@
 "teamId": 251,
 "team": {
 "id": 251,
-"description": "University of Texas"
+"description": "University of Texas",
+"abbreviation": "Texas",
+"shortDisplayName": "Texas"
 }
 },
 {
@@ -27577,6 +27593,8 @@
 "team": {
 "id": 251,
 "description": "Texas Longhorns",
+"abbreviation": "TEX",
+"shortDisplayName": "Texas",
 "links": {
 "web": {
 "teams": {
@@ -27708,6 +27726,8 @@
 "team": {
 "id": 161,
 "description": "Fairleigh Dickinson Knights",
+"abbreviation": "FDU",
+"shortDisplayName": "FDU",
 "links": {
 "web": {
 "teams": {
@@ -27733,6 +27753,8 @@
 "team": {
 "id": 251,
 "description": "Texas Longhorns",
+"abbreviation": "TEX",
+"shortDisplayName": "Texas",
 "links": {
 "web": {
 "teams": {
@@ -27893,6 +27915,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/0222e244-9f58-4c27-80ed-4137932dd9a0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46947867",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/f73fd3e1-75a3-4e7d-b285-ea08236088de/f73fd3e1-75a3-4e7d-b285-ea08236088de.mp4"
 },
@@ -28004,6 +28027,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d249ef3a-5ff2-4539-92a4-83cebf3ad5f5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46947926",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/76907acc-d50b-4710-9bc5-0b6092eeb5bd/76907acc-d50b-4710-9bc5-0b6092eeb5bd.mp4"
 },
@@ -28115,6 +28139,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/0cccd1c3-fd31-47e2-b753-198bc1d02bd6/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948034",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/a9a16c2b-ba03-4069-8fa4-93f9e2360392/a9a16c2b-ba03-4069-8fa4-93f9e2360392.mp4"
 },
@@ -28226,6 +28251,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ee920bfa-8324-4077-bea1-c255624083d7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948146",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/8d80165b-0272-4d3c-bf4c-f10235ec7ac4/8d80165b-0272-4d3c-bf4c-f10235ec7ac4.mp4"
 },
@@ -28337,6 +28363,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/35f0687f-05af-4b50-8ca5-88aa1329d1c7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948308",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/d5c50e95-1f92-4ae0-abb5-5c9f9211bd05/d5c50e95-1f92-4ae0-abb5-5c9f9211bd05.mp4"
 },
@@ -28448,6 +28475,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4d07b9fa-faf1-4de1-965d-09ed35396f4e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948347",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/02293c92-bec1-4cdd-b43c-c61fcc66e438/02293c92-bec1-4cdd-b43c-c61fcc66e438.mp4"
 },
@@ -28559,6 +28587,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a9724db4-3351-4510-8db6-e37549f3ebcb/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948809",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/65650ecb-4f0c-4390-83c7-2818ae04f01c/65650ecb-4f0c-4390-83c7-2818ae04f01c.mp4"
 },
@@ -28670,6 +28699,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/882594cd-b01a-4844-8382-a7ab8aa9ef36/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46949059",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/9bfcafe2-de0a-4268-b027-52bb9aca2439/9bfcafe2-de0a-4268-b027-52bb9aca2439.mp4"
 },
@@ -28746,8 +28776,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -28803,7 +28832,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-25T21:34Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/112358.png",
@@ -28814,7 +28843,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-25T21:35Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -29059,7 +29088,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-09-05T19:03Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2441.png",
@@ -29070,7 +29099,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-09-05T19:03Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -29268,7 +29297,6 @@
 },
 {
 "team": "Saint Francis",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2598/saint-francis-red-flash",
 "id": "2598",
 "uid": "s:40~l:41~t:2598",
 "stats": [

@@ -1783,8 +1783,8 @@
 "order": 2
 },
 {
-"fullName": "Clare Aubry",
-"displayName": "Clare Aubry",
+"fullName": "Clare Simmons",
+"displayName": "Clare Simmons",
 "position": {
 "name": "Referee",
 "displayName": "Referee",
@@ -1879,10 +1879,10 @@
 "id": "59"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2414,7 +2414,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2465,7 +2465,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33516268%3Foutcomes%3D0ML83116635_1",
 "text": "Home Bet",
@@ -2479,7 +2479,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33516268%3Foutcomes%3D0ML83116635_3",
 "text": "Away Bet",
@@ -2643,7 +2643,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4805,7 +4805,7 @@
 "uid": "s:40~l:41~e:401820690",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5395,6 +5395,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5439,30 +5440,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5491,6 +5483,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5529,6 +5531,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21304,6 +21325,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7b80c822-1d4c-4306-a873-ce1bd95cb24c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715991",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/5df834a0-8c9d-4dbb-8f47-c5c94ab29f0c/5df834a0-8c9d-4dbb-8f47-c5c94ab29f0c.mp4"
 },
@@ -21402,6 +21424,8 @@
 "team": {
 "id": 59,
 "description": "Georgia Tech Yellow Jackets",
+"abbreviation": "GT",
+"shortDisplayName": "Georgia Tech",
 "links": {
 "web": {
 "teams": {
@@ -21452,6 +21476,8 @@
 "team": {
 "id": 228,
 "description": "Clemson Tigers",
+"abbreviation": "CLEM",
+"shortDisplayName": "Clemson",
 "links": {
 "web": {
 "teams": {
@@ -21538,26 +21564,14 @@
 {
 "id": 507913,
 "type": "athlete",
-"uid": "s:40~l:41~a:4683757",
+"uid": "s:40~l:63~a:4683757",
 "guid": "baf81155-6049-3e52-b780-d00c1273342c",
 "description": "Kowacie Reeves Jr",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4683757,
 "athlete": {
 "id": 4683757,
-"description": "Kowacie Reeves Jr",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4683757/kowacie-reeves-jr"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4683757/kowacie-reeves-jr"
-}
-}
-}
+"description": "Kowacie Reeves Jr"
 }
 },
 {
@@ -21594,7 +21608,9 @@
 "teamId": 59,
 "team": {
 "id": 59,
-"description": "Georgia Tech"
+"description": "Georgia Tech",
+"abbreviation": "Georgia Tech",
+"shortDisplayName": "Georgia Tech"
 }
 },
 {
@@ -21606,7 +21622,9 @@
 "teamId": 228,
 "team": {
 "id": 228,
-"description": "Clemson University"
+"description": "Clemson University",
+"abbreviation": "Clemson",
+"shortDisplayName": "Clemson"
 }
 },
 {
@@ -21749,6 +21767,8 @@
 "team": {
 "id": 59,
 "description": "Georgia Tech Yellow Jackets",
+"abbreviation": "GT",
+"shortDisplayName": "Georgia Tech",
 "links": {
 "web": {
 "teams": {
@@ -21774,6 +21794,8 @@
 "team": {
 "id": 228,
 "description": "Clemson Tigers",
+"abbreviation": "CLEM",
+"shortDisplayName": "Clemson",
 "links": {
 "web": {
 "teams": {
@@ -21901,6 +21923,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/71bfbce1-67ed-4203-a4a5-6fac5767899e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715266",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/99b7c4fd-e7f7-4f45-9c5d-9a3be7f5b454/99b7c4fd-e7f7-4f45-9c5d-9a3be7f5b454.mp4"
 },
@@ -22010,6 +22033,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2845a10b-9c71-40a4-a3c1-bb579f0f2831/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715270",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/eb671bda-b17f-4a10-abf1-a967274491a6/eb671bda-b17f-4a10-abf1-a967274491a6.mp4"
 },
@@ -22119,6 +22143,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dddc6f77-1983-4a9c-a972-178a29641511/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715306",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/8744ecb4-f320-4f87-ac82-e64b528f369a/8744ecb4-f320-4f87-ac82-e64b528f369a.mp4"
 },
@@ -22228,6 +22253,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ed080688-d6c8-42a0-bafc-97657337489b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715440",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/691e175f-49e6-45e8-9212-82f0295da3e7/691e175f-49e6-45e8-9212-82f0295da3e7.mp4"
 },
@@ -22337,6 +22363,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/eb8f4ce2-1ffd-4d76-96d1-21896862d7ed/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715625",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/5352fd95-6d5a-473a-992d-85fd206ef774/5352fd95-6d5a-473a-992d-85fd206ef774.mp4"
 },
@@ -22446,6 +22473,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/64e13333-c0ac-41c5-8cd6-87479f46c0a7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715666",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/272393bc-30ed-41f3-bfc8-27300f264ec7/272393bc-30ed-41f3-bfc8-27300f264ec7.mp4"
 },
@@ -22555,6 +22583,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8a70f86a-feda-4c7d-b98b-2e16eee98f19/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715706",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/682fd3c6-c11c-4326-a230-70fbba81bcc9/682fd3c6-c11c-4326-a230-70fbba81bcc9.mp4"
 },
@@ -22664,6 +22693,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/67dc0b86-cca6-4a73-b0d8-ce0ed2970a00/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47715880",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0124/51910c33-fc62-406a-8c36-f888e68d15b2/51910c33-fc62-406a-8c36-f888e68d15b2.mp4"
 },
@@ -22741,8 +22771,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

@@ -2033,10 +2033,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2117,10 +2117,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2210,10 +2210,10 @@
 "id": "248"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2568,7 +2568,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2619,7 +2619,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33823605%3Foutcomes%3D0ML83888584_1",
 "text": "Home Bet",
@@ -2633,7 +2633,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33823605%3Foutcomes%3D0ML83888584_3",
 "text": "Away Bet",
@@ -2797,7 +2797,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5109,7 +5109,7 @@
 "uid": "s:40~l:41~e:401856493",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 3
 },
 "timeValid": true,
@@ -5677,18 +5677,6 @@
 },
 {
 "rel": [
-"videos",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/mens-college-basketball/video?gameId=401856493",
-"text": "Videos",
-"shortText": "Videos",
-"isExternal": false,
-"isPremium": false
-},
-{
-"rel": [
 "bracket",
 "desktop",
 "event"
@@ -5705,6 +5693,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5749,30 +5738,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5801,6 +5781,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5839,6 +5829,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -22629,163 +22638,7 @@
 "url": "https://a.espncdn.com/media/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.jpg"
 }
 ],
-"video": [
-{
-"id": 48255090,
-"dataSourceIdentifier": "667b36ec6c823",
-"cerebroId": "69bcba08c61ac63f90125a65",
-"pccId": "449cde45-21c1-40a0-8c51-5546de5343e5",
-"source": "espn",
-"headline": "Mercy Miller gets the and-1 to fall for Houston",
-"shortHeadline": "Mercy Miller gets the and-1 to fall for Houston",
-"caption": "Mercy Miller drives to the rim and gets the and-1 to fall vs. Idaho.",
-"title": "Mercy Miller gets the and-1 to fall for Houston",
-"description": "Mercy Miller drives to the rim and gets the and-1 to fall vs. Idaho.",
-"shortDescription": "Mercy Miller drives to the rim and gets the and-1 to fall vs. Idaho.",
-"lastModified": "2026-03-20T04:47:15Z",
-"originalPublishDate": "2026-03-20T03:07:52Z",
-"premium": false,
-"syndicatable": true,
-"duration": 22,
-"videoRatio": "16:9,9:16",
-"timeRestrictions": {
-"embargoDate": "2026-03-20T03:07:50Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"gameId": 401856493,
-"plays": [
-{
-"id": 401856493120317557
-}
-],
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.jpg",
-"images": [
-{
-"name": "Poster Image",
-"caption": "",
-"alt": "",
-"credit": "",
-"height": 324,
-"width": 576,
-"url": "https://media.video-cdn.espn.com/images/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.jpg"
-}
-],
-"posterImages": {
-"default": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_default.jpg",
-"width": 576,
-"height": 324
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.jpg"
-},
-"wide": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_5x2.jpg"
-},
-"square": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_1x1.jpg"
-},
-"vertical": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_9x16.jpg"
-},
-"verticalFirstFrame": {
-"href": "https://service-pkgespn.akamaized.net/opp/img/espn/9x16/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/thumb-1-w406-h720-f4.jpg"
-}
-},
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48255090",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48255090",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=667b36ec6c823"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48255090"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/449cde45-21c1-40a0-8c51-5546de5343e5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255090"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/449cde45-21c1-40a0-8c51-5546de5343e5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255090"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48255090"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/449cde45-21c1-40a0-8c51-5546de5343e5"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/449cde45-21c1-40a0-8c51-5546de5343e5/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/31c08d4a-ccd2-43c8-807e-155edc29265a/31c08d4a-ccd2-43c8-807e-155edc29265a_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48255090&videoDSI=667b36ec6c823"
-}
-},
+"video": [],
 "categories": [
 {
 "id": 9576,
@@ -22824,6 +22677,8 @@
 "team": {
 "id": 248,
 "description": "Houston Cougars",
+"abbreviation": "HOU",
+"shortDisplayName": "Houston",
 "links": {
 "web": {
 "teams": {
@@ -22847,231 +22702,9 @@
 "teamId": 248,
 "team": {
 "id": 248,
-"description": "University of Houston"
-}
-},
-{
-"id": 711827,
-"type": "editorialindicator",
-"guid": "26380a67-7938-32a0-9c82-33abab9f7ad4",
-"description": "3 Star Rating"
-},
-{
-"id": 3229,
-"type": "team",
-"uid": "s:40~l:41~t:70",
-"guid": "168cce9c-f6f9-b492-b6cf-fd19d8e13428",
-"description": "Idaho Vandals",
-"sportId": 41,
-"teamId": 70,
-"team": {
-"id": 70,
-"description": "Idaho Vandals",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/70/idaho-vandals"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/70/idaho-vandals"
-}
-}
-}
-}
-},
-{
-"id": 70,
-"type": "team",
-"guid": "ea6e4384-0567-3590-a9e6-3e06521b74bb",
-"description": "University of Idaho",
-"sportId": 3170,
-"teamId": 70,
-"team": {
-"id": 70,
-"description": "University of Idaho"
-}
-},
-{
-"id": 689093,
-"type": "athlete",
-"uid": "s:40~l:41~a:4873086",
-"guid": "208fdcea-d69a-31f2-b792-347e817f8a9b",
-"description": "Mercy Miller",
-"sportId": 41,
-"athleteId": 4873086,
-"athlete": {
-"id": 4873086,
-"description": "Mercy Miller",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4873086/mercy-miller"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4873086/mercy-miller"
-}
-}
-}
-}
-},
-{
-"id": 664674,
-"type": "editorialindicator",
-"guid": "467e5496-7942-3006-b2f4-a6ef95021dce",
-"description": "Team Boost"
-},
-{
-"type": "event",
-"uid": "s:40~l:41~e:401856493",
-"guid": "fbde1cc5-b317-32e9-ba56-05e38131b32a",
-"description": "Idaho Vandals @ Houston Cougars",
-"eventId": 401856493,
-"event": {
-"id": 401856493,
-"sport": "basketball",
-"league": "mens-college-basketball",
-"description": "Idaho Vandals @ Houston Cougars",
-"links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401856493"
-}
-},
-"mobile": {
-"event": {
-"href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401856493"
-}
-}
-}
-}
-},
-{
-"type": "guid",
-"guid": "11965179-4504-3b99-983e-83ea0e36d5f3"
-},
-{
-"type": "guid",
-"guid": "54bdd306-18e1-1f5b-179e-07fed4ac64bd"
-},
-{
-"type": "guid",
-"guid": "d83140d8-5eea-3ad9-8b11-ecd39a25a078"
-},
-{
-"type": "guid",
-"guid": "83a95936-1b57-32f2-a56f-9397336f5486"
-},
-{
-"type": "guid",
-"guid": "26380a67-7938-32a0-9c82-33abab9f7ad4"
-},
-{
-"type": "guid",
-"guid": "168cce9c-f6f9-b492-b6cf-fd19d8e13428"
-},
-{
-"type": "guid",
-"guid": "3365a846-8e90-363a-898c-f4c1c757072b"
-},
-{
-"type": "guid",
-"guid": "ea6e4384-0567-3590-a9e6-3e06521b74bb"
-},
-{
-"type": "guid",
-"guid": "208fdcea-d69a-31f2-b792-347e817f8a9b"
-},
-{
-"type": "guid",
-"guid": "467e5496-7942-3006-b2f4-a6ef95021dce"
-},
-{
-"type": "guid",
-"guid": "fbde1cc5-b317-32e9-ba56-05e38131b32a"
-}
-],
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Mercy Miller gets the and-1 to fall for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_20260320_NCB_mercy_miller_and1_vert",
-"program": "NCAA Mens Basketball"
-},
-"contributingPartner": "wsc",
-"contributingSystem": "wsc"
-}
-],
-"categories": [
-{
-"id": 9576,
-"type": "league",
-"uid": "s:40~l:41",
-"guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
-"description": "NCAA Men's Basketball",
-"sportId": 41,
-"leagueId": 41,
-"league": {
-"id": 41,
-"description": "NCAA Men's Basketball",
-"abbreviation": "NCAAM",
-"links": {
-"web": {
-"leagues": {
-"href": "https://www.espn.com/mens-college-basketball/"
-}
-},
-"mobile": {
-"leagues": {
-"href": "https://www.espn.com/mens-college-basketball/"
-}
-}
-}
-}
-},
-{
-"id": 3257,
-"type": "team",
-"uid": "s:40~l:41~t:248",
-"guid": "54bdd306-18e1-1f5b-179e-07fed4ac64bd",
-"description": "Houston Cougars",
-"sportId": 41,
-"teamId": 248,
-"team": {
-"id": 248,
-"description": "Houston Cougars",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/248/houston-cougars"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/248/houston-cougars"
-}
-}
-}
-}
-},
-{
-"id": 248,
-"type": "team",
-"guid": "83a95936-1b57-32f2-a56f-9397336f5486",
 "description": "University of Houston",
-"sportId": 3170,
-"teamId": 248,
-"team": {
-"id": 248,
-"description": "University of Houston"
+"abbreviation": "Houston",
+"shortDisplayName": "Houston"
 }
 },
 {
@@ -23085,6 +22718,8 @@
 "team": {
 "id": 70,
 "description": "Idaho Vandals",
+"abbreviation": "IDHO",
+"shortDisplayName": "Idaho",
 "links": {
 "web": {
 "teams": {
@@ -23108,7 +22743,9 @@
 "teamId": 70,
 "team": {
 "id": 70,
-"description": "University of Idaho"
+"description": "University of Idaho",
+"abbreviation": "Idaho",
+"shortDisplayName": "Idaho"
 }
 },
 {
@@ -23202,605 +22839,10 @@
 "allowSearch": true,
 "allowContentReactions": false
 },
-"videos": [
-{
-"id": 48255538,
-"cerebroId": "69bcc769a5f2843bf6bb43e3",
-"source": "espn",
-"headline": "Joseph Tugler stuns announcers with a huge slam dunk for Houston",
-"description": "Joseph Tugler drives to the rim and has a major slam dunk in the second half vs. Idaho.",
-"lastModified": "2026-03-20T04:44:32Z",
-"originalPublishDate": "2026-03-20T04:04:57Z",
-"duration": 23,
-"timeRestrictions": {
-"embargoDate": "2026-03-20T04:04:56Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48255538",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48255538",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=e33e319f45c5c"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48255538"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/27aa905b-ffec-4583-809f-cbbffe9b7c90/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255538"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/27aa905b-ffec-4583-809f-cbbffe9b7c90/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255538"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48255538"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/27aa905b-ffec-4583-809f-cbbffe9b7c90"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/27aa905b-ffec-4583-809f-cbbffe9b7c90/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/62a199e2-abb0-402d-ad50-08cc83fcc577/62a199e2-abb0-402d-ad50-08cc83fcc577_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48255538&videoDSI=e33e319f45c5c"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "Final Game Highlight",
-"trackingName": "NCB_One-Play (Joseph Tugler stuns announcers with a huge slam dunk for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_NCB_tugler_big_slam",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48254825,
-"cerebroId": "69bcb447dbad3347c50c799f",
-"source": "espn",
-"headline": "Emanuel Sharp knocks down a pair of 3-pointers for Houston",
-"description": "Emanuel Sharp hits back-to-back 3-pointers in the first half vs. Idaho.",
-"lastModified": "2026-03-20T04:27:04Z",
-"originalPublishDate": "2026-03-20T02:43:19Z",
-"duration": 20,
-"timeRestrictions": {
-"embargoDate": "2026-03-20T02:43:19Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48254825",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48254825",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=03a614d6ddf6e"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48254825"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/951157e3-87b9-4e14-9230-3d9bd83cf68d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48254825"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/951157e3-87b9-4e14-9230-3d9bd83cf68d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48254825"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48254825"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/951157e3-87b9-4e14-9230-3d9bd83cf68d"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/951157e3-87b9-4e14-9230-3d9bd83cf68d/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/dd851ed8-3def-4702-a5eb-c5a157e260be/dd851ed8-3def-4702-a5eb-c5a157e260be_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48254825&videoDSI=03a614d6ddf6e"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Emanuel Sharp knocks down a pair of 3-pointers for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_NCB_sharp_threes",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48255156,
-"cerebroId": "69bcbb71dbad3347c50c7e3f",
-"source": "espn",
-"headline": "Chris Cenac Jr. makes the bucket for Houston",
-"description": "Chris Cenac Jr. gets the 2-pointer in the first half vs. Idaho.",
-"lastModified": "2026-03-20T04:27:45Z",
-"originalPublishDate": "2026-03-20T03:13:54Z",
-"duration": 16,
-"timeRestrictions": {
-"embargoDate": "2026-03-20T03:13:51Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48255156",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48255156",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=496ff547cb310"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48255156"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/88bd8431-3ec7-449d-b545-54cc6edd2a09/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255156"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/88bd8431-3ec7-449d-b545-54cc6edd2a09/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255156"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48255156"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/88bd8431-3ec7-449d-b545-54cc6edd2a09"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/88bd8431-3ec7-449d-b545-54cc6edd2a09/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0319/ss_20260319_231357437_3450237/ss_20260319_231357437_3450237_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48255156&videoDSI=496ff547cb310"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Chris Cenac Jr. makes the bucket for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_20260320_NCB_chris_shot",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48255386,
-"cerebroId": "69bcc29ac61ac63f90125edb",
-"source": "espn",
-"headline": "Joseph Tugler rocks the rim with a slam dunk for Houston",
-"description": "Joseph Tugler has a slam dunk in the second half vs. Idaho.",
-"lastModified": "2026-03-20T04:46:33Z",
-"originalPublishDate": "2026-03-20T03:44:27Z",
-"duration": 16,
-"timeRestrictions": {
-"embargoDate": "2026-03-20T03:44:26Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48255386",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48255386",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=43d78ba3eaf26"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48255386"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b6ba422e-f81b-4c1f-99b8-8b3a2072c520/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255386"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b6ba422e-f81b-4c1f-99b8-8b3a2072c520/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255386"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48255386"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/b6ba422e-f81b-4c1f-99b8-8b3a2072c520"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/b6ba422e-f81b-4c1f-99b8-8b3a2072c520/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0320/1c5a1140-624f-41d8-8829-d2c321efccd1/1c5a1140-624f-41d8-8829-d2c321efccd1_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48255386&videoDSI=43d78ba3eaf26"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Joseph Tugler rocks the rim with a slam dunk for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_NCB_joseph_tugler_slam_dunk_vert",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48255606,
-"cerebroId": "69bcc8e6c61ac63f901263ed",
-"source": "espn",
-"headline": "Milos Uzan drains a deep 3-pointer for Houston",
-"description": "Milos Uzan sinks a deep 3-pointer in the second half vs. Idaho.",
-"lastModified": "2026-03-20T04:28:50Z",
-"originalPublishDate": "2026-03-20T04:11:18Z",
-"duration": 23,
-"timeRestrictions": {
-"embargoDate": "2026-03-20T04:11:15Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48255606",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48255606",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=8e0dd55228d78"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48255606"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4a10289a-0cde-4d02-a0c4-79c4b49f156c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255606"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4a10289a-0cde-4d02-a0c4-79c4b49f156c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48255606"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48255606"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/4a10289a-0cde-4d02-a0c4-79c4b49f156c"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/4a10289a-0cde-4d02-a0c4-79c4b49f156c/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0320/ss_20260320_001121455_3450360/ss_20260320_001121455_3450360_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48255606&videoDSI=8e0dd55228d78"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Milos Uzan drains a deep 3-pointer for Houston) 2026/03/20 ESHEET",
-"trackingId": "dm_20260320_NCB_milos_uzan_three",
-"program": "NCAA Mens Basketball"
-}
-}
-],
+"videos": [],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24112,7 +23154,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/149.png",
@@ -24123,7 +23165,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -24176,7 +23218,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2692.png",
@@ -24187,7 +23229,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -24279,8 +23321,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "id": "9",
@@ -24763,7 +23805,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -24774,7 +23816,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

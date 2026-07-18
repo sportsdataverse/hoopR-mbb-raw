@@ -1986,10 +1986,10 @@
 "id": "145"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2163,10 +2163,10 @@
 "id": "145"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5073,7 +5073,7 @@
 "uid": "s:40~l:41~e:401828493",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5499,7 +5499,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -5654,6 +5654,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5698,30 +5699,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5750,6 +5742,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5788,6 +5790,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24489,6 +24510,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cf19ed2c-edd6-43bb-a2bf-15dd2b925070/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47017185",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/00199ccd-0c5c-4960-b949-27cdd94e0f29/00199ccd-0c5c-4960-b949-27cdd94e0f29.mp4"
 },
@@ -24560,7 +24582,9 @@
 "teamId": 145,
 "team": {
 "id": 145,
-"description": "University of Mississippi"
+"description": "University of Mississippi",
+"abbreviation": "Ole Miss",
+"shortDisplayName": "Ole Miss"
 }
 },
 {
@@ -24624,6 +24648,8 @@
 "team": {
 "id": 145,
 "description": "Ole Miss Rebels",
+"abbreviation": "MISS",
+"shortDisplayName": "Ole Miss",
 "links": {
 "web": {
 "teams": {
@@ -24704,7 +24730,9 @@
 "teamId": 2046,
 "team": {
 "id": 2046,
-"description": "Austin Peay State University"
+"description": "Austin Peay State University",
+"abbreviation": "Austin Peay",
+"shortDisplayName": "Austin Peay"
 }
 },
 {
@@ -24718,6 +24746,8 @@
 "team": {
 "id": 2046,
 "description": "Austin Peay Governors",
+"abbreviation": "APSU",
+"shortDisplayName": "Austin Peay",
 "links": {
 "web": {
 "teams": {
@@ -24853,6 +24883,8 @@
 "team": {
 "id": 145,
 "description": "Ole Miss Rebels",
+"abbreviation": "MISS",
+"shortDisplayName": "Ole Miss",
 "links": {
 "web": {
 "teams": {
@@ -24878,6 +24910,8 @@
 "team": {
 "id": 2046,
 "description": "Austin Peay Governors",
+"abbreviation": "APSU",
+"shortDisplayName": "Austin Peay",
 "links": {
 "web": {
 "teams": {
@@ -25038,6 +25072,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/426d2309-8af3-43a2-8019-e662d19f4d48/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016086",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/bca57d1e-83eb-4c45-9676-5b6dc1010830/bca57d1e-83eb-4c45-9676-5b6dc1010830.mp4"
 },
@@ -25150,6 +25185,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4e9a4d06-c8f2-4c77-8e63-6840bab82547/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016591",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/6bbf5f76-2d1c-4707-940b-3554f2bd623c/6bbf5f76-2d1c-4707-940b-3554f2bd623c.mp4"
 },
@@ -25262,6 +25298,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/94e06ba6-ab79-4556-afdd-78536101bf27/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016696",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/68822009-8494-430f-bd14-12eaea8630de/68822009-8494-430f-bd14-12eaea8630de.mp4"
 },
@@ -25374,6 +25411,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4b2104c4-2dd3-4a72-8813-5f955055d9de/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016742",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/baadb137-4005-4ad1-8db2-f0e475fe3c84/baadb137-4005-4ad1-8db2-f0e475fe3c84.mp4"
 },
@@ -25486,6 +25524,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3d3a995b-91b8-4a55-b2c9-f30f2cc3899c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016783",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/d5209c41-1b58-421d-8f3d-435986ba07d1/d5209c41-1b58-421d-8f3d-435986ba07d1.mp4"
 },
@@ -25598,6 +25637,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/66be0f8e-60c9-4300-82d4-529159ba8931/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016875",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/0068cfe6-f944-4a06-98fa-02ff41e44018/0068cfe6-f944-4a06-98fa-02ff41e44018.mp4"
 },
@@ -25675,8 +25715,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25707,8 +25746,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -25771,8 +25810,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -26027,8 +26066,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -26283,8 +26322,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "id": "9",
@@ -26411,8 +26450,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 11.0,
-"displayValue": "11"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",
@@ -26453,11 +26492,11 @@
 }
 ]
 },
-"header": "2025-26 ASUN Conference Standings",
+"header": "2025-26 Atlantic Sun Conference Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings/_/group/46",
 "conferenceHeader": "NCAA Division I",
-"divisionHeader": "ASUN Conference",
-"shortDivisionHeader": "ASUN"
+"divisionHeader": "Atlantic Sun Conference",
+"shortDivisionHeader": "Atlantic Sun"
 },
 {
 "standings": {

@@ -1914,10 +1914,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -1998,10 +1998,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2091,10 +2091,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2449,7 +2449,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2500,7 +2500,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33852882%3Foutcomes%3D0ML83964057_1",
 "text": "Home Bet",
@@ -2514,7 +2514,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33852882%3Foutcomes%3D0ML83964057_3",
 "text": "Away Bet",
@@ -2678,7 +2678,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4605,7 +4605,7 @@
 "uid": "s:40~l:41~e:401856564",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 3
 },
 "timeValid": true,
@@ -5173,18 +5173,6 @@
 },
 {
 "rel": [
-"videos",
-"desktop",
-"event"
-],
-"href": "https://www.espn.com/mens-college-basketball/video?gameId=401856564",
-"text": "Videos",
-"shortText": "Videos",
-"isExternal": false,
-"isPremium": false
-},
-{
-"rel": [
 "bracket",
 "desktop",
 "event"
@@ -5201,6 +5189,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5245,30 +5234,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5297,6 +5277,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5335,6 +5325,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -19246,372 +19255,7 @@
 "url": "https://a.espncdn.com/media/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.jpg"
 }
 ],
-"video": [
-{
-"id": 48279207,
-"dataSourceIdentifier": "cba45f2865f62",
-"cerebroId": "69c02067a5f2843bf6beaba8",
-"pccId": "ccd2b0a4-d008-4bb8-b570-7dedd55fda2c",
-"source": "espn",
-"headline": "Braden Smith jumps to make sweet behind-the-back pass for Purdue",
-"shortHeadline": "Braden Smith jumps to make sweet behind-the-back pass for Purdue",
-"caption": "Braden Smith feeds Oscar Cluff with a smooth behind-the-back pass for a Purdue bucket vs. Miami.",
-"title": "Braden Smith jumps to make sweet behind-the-back pass for Purdue",
-"description": "Braden Smith feeds Oscar Cluff with a smooth behind-the-back pass for a Purdue bucket vs. Miami.",
-"shortDescription": "Braden Smith feeds Oscar Cluff with a smooth behind-the-back pass for a Purdue bucket vs. Miami.",
-"lastModified": "2026-03-22T22:40:13Z",
-"originalPublishDate": "2026-03-22T17:01:28Z",
-"premium": false,
-"syndicatable": true,
-"duration": 23,
-"videoRatio": "16:9,9:16",
-"timeRestrictions": {
-"embargoDate": "2026-03-22T17:01:27Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"gameId": 401856564,
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.jpg",
-"images": [
-{
-"name": "Poster Image",
-"caption": "",
-"alt": "",
-"credit": "",
-"height": 324,
-"width": 576,
-"url": "https://media.video-cdn.espn.com/images/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.jpg"
-}
-],
-"posterImages": {
-"default": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_default.jpg",
-"width": 576,
-"height": 324
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.jpg"
-},
-"wide": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_5x2.jpg"
-},
-"square": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_1x1.jpg"
-},
-"vertical": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_9x16.jpg"
-},
-"verticalFirstFrame": {
-"href": "https://service-pkgespn.akamaized.net/opp/img/espn/9x16/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/thumb-1-w406-h720-f4.jpg"
-}
-},
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48279207",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48279207",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=cba45f2865f62"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48279207"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ccd2b0a4-d008-4bb8-b570-7dedd55fda2c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279207"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ccd2b0a4-d008-4bb8-b570-7dedd55fda2c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279207"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48279207"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/ccd2b0a4-d008-4bb8-b570-7dedd55fda2c"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/ccd2b0a4-d008-4bb8-b570-7dedd55fda2c/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/fb053665-4527-4057-8593-835482010480/fb053665-4527-4057-8593-835482010480_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48279207&videoDSI=cba45f2865f62"
-}
-},
-"categories": [
-{
-"id": 9576,
-"type": "league",
-"uid": "s:40~l:41",
-"guid": "11965179-4504-3b99-983e-83ea0e36d5f3",
-"description": "NCAA Men's Basketball",
-"sportId": 41,
-"leagueId": 41,
-"league": {
-"id": 41,
-"description": "NCAA Men's Basketball",
-"abbreviation": "NCAAM",
-"links": {
-"web": {
-"leagues": {
-"href": "https://www.espn.com/mens-college-basketball/"
-}
-},
-"mobile": {
-"leagues": {
-"href": "https://www.espn.com/mens-college-basketball/"
-}
-}
-}
-}
-},
-{
-"id": 568707,
-"type": "athlete",
-"uid": "s:40~l:41~a:5105854",
-"guid": "a609551a-802c-382d-bbdb-4bbe1d8d556e",
-"description": "Braden Smith",
-"sportId": 41,
-"athleteId": 5105854,
-"athlete": {
-"id": 5105854,
-"description": "Braden Smith",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105854/braden-smith"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105854/braden-smith"
-}
-}
-}
-}
-},
-{
-"id": 3214,
-"type": "team",
-"uid": "s:40~l:41~t:2509",
-"guid": "0abd1640-6f95-275f-418a-652659452398",
-"description": "Purdue Boilermakers",
-"sportId": 41,
-"teamId": 2509,
-"team": {
-"id": 2509,
-"description": "Purdue Boilermakers",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/2509/purdue-boilermakers"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/2509/purdue-boilermakers"
-}
-}
-}
-}
-},
-{
-"id": 2509,
-"type": "team",
-"guid": "0d9a5e6f-690c-3af8-80d5-3894b04106e9",
-"description": "Purdue University",
-"sportId": 3170,
-"teamId": 2509,
-"team": {
-"id": 2509,
-"description": "Purdue University"
-}
-},
-{
-"id": 3177,
-"type": "team",
-"uid": "s:40~l:41~t:2390",
-"guid": "6c260eaf-10dd-3213-105a-5259a36a899b",
-"description": "Miami Hurricanes",
-"sportId": 41,
-"teamId": 2390,
-"team": {
-"id": 2390,
-"description": "Miami Hurricanes",
-"links": {
-"web": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/2390/miami-hurricanes"
-}
-},
-"mobile": {
-"teams": {
-"href": "https://www.espn.com/mens-college-basketball/team/_/id/2390/miami-hurricanes"
-}
-}
-}
-}
-},
-{
-"id": 2390,
-"type": "team",
-"guid": "6a9f5d5f-db5f-3a43-94b0-da8376403a1b",
-"description": "University of Miami",
-"sportId": 3170,
-"teamId": 2390,
-"team": {
-"id": 2390,
-"description": "University of Miami"
-}
-},
-{
-"id": 664676,
-"type": "editorialindicator",
-"guid": "4d71b783-6916-3446-9c19-fab94dc60c1e",
-"description": "Big Boost"
-},
-{
-"type": "event",
-"uid": "s:40~l:41~e:401856564",
-"guid": "ece3f71c-3f47-342a-bd59-e75a0ec506eb",
-"description": "Miami Hurricanes @ Purdue Boilermakers",
-"eventId": 401856564,
-"event": {
-"id": 401856564,
-"sport": "basketball",
-"league": "mens-college-basketball",
-"description": "Miami Hurricanes @ Purdue Boilermakers",
-"links": {
-"web": {
-"event": {
-"href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401856564"
-}
-},
-"mobile": {
-"event": {
-"href": "https://www.espn.com/mens-college-basketball/game/_/gameId/401856564"
-}
-}
-}
-}
-},
-{
-"type": "guid",
-"guid": "11965179-4504-3b99-983e-83ea0e36d5f3"
-},
-{
-"type": "guid",
-"guid": "a609551a-802c-382d-bbdb-4bbe1d8d556e"
-},
-{
-"type": "guid",
-"guid": "0abd1640-6f95-275f-418a-652659452398"
-},
-{
-"type": "guid",
-"guid": "2a530fde-e79b-3772-90a9-df2c1e75cc5e"
-},
-{
-"type": "guid",
-"guid": "0d9a5e6f-690c-3af8-80d5-3894b04106e9"
-},
-{
-"type": "guid",
-"guid": "6c260eaf-10dd-3213-105a-5259a36a899b"
-},
-{
-"type": "guid",
-"guid": "1b1b66a7-672b-3451-9bb6-4086e6f00e5d"
-},
-{
-"type": "guid",
-"guid": "6a9f5d5f-db5f-3a43-94b0-da8376403a1b"
-},
-{
-"type": "guid",
-"guid": "4d71b783-6916-3446-9c19-fab94dc60c1e"
-},
-{
-"type": "guid",
-"guid": "ece3f71c-3f47-342a-bd59-e75a0ec506eb"
-}
-],
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "Final Game Highlight",
-"trackingName": "NCB_One-Play (Braden Smith jumps to make a sweet behind-the-back for Purdue) 2026/03/22 ESHEET",
-"trackingId": "dm_NCB_braden_smith_jumps_to_make_a_sweet_behindtheback_for_purdue",
-"program": "NCAA Mens Basketball"
-},
-"contributingPartner": "wsc",
-"contributingSystem": "wsc"
-}
-],
+"video": [],
 "categories": [
 {
 "id": 9576,
@@ -19650,6 +19294,8 @@
 "team": {
 "id": 2509,
 "description": "Purdue Boilermakers",
+"abbreviation": "PUR",
+"shortDisplayName": "Purdue",
 "links": {
 "web": {
 "teams": {
@@ -19673,7 +19319,9 @@
 "teamId": 2509,
 "team": {
 "id": 2509,
-"description": "Purdue University"
+"description": "Purdue University",
+"abbreviation": "Purdue",
+"shortDisplayName": "Purdue"
 }
 },
 {
@@ -19687,6 +19335,8 @@
 "team": {
 "id": 2390,
 "description": "Miami Hurricanes",
+"abbreviation": "MIA",
+"shortDisplayName": "Miami",
 "links": {
 "web": {
 "teams": {
@@ -19710,7 +19360,9 @@
 "teamId": 2390,
 "team": {
 "id": 2390,
-"description": "University of Miami"
+"description": "University of Miami",
+"abbreviation": "Miami",
+"shortDisplayName": "Miami"
 }
 },
 {
@@ -19804,478 +19456,10 @@
 "allowSearch": true,
 "allowContentReactions": false
 },
-"videos": [
-{
-"id": 48279267,
-"cerebroId": "69c02147a5f2843bf6beabec",
-"source": "espn",
-"headline": "Tre Donaldson gets tough layup to fall for Miami",
-"description": "Tre Donaldson powers to the rim and lays it in for Miami vs. Purdue.",
-"lastModified": "2026-03-22T18:31:05Z",
-"originalPublishDate": "2026-03-22T17:05:12Z",
-"duration": 17,
-"timeRestrictions": {
-"embargoDate": "2026-03-22T17:05:09Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48279267",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48279267",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=7e8583c6f56af"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48279267"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9f23cd1a-5cf9-4947-baf4-0a4d7a7d359d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279267"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9f23cd1a-5cf9-4947-baf4-0a4d7a7d359d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279267"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48279267"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/9f23cd1a-5cf9-4947-baf4-0a4d7a7d359d"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/9f23cd1a-5cf9-4947-baf4-0a4d7a7d359d/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_130515574_3455574/ss_20260322_130515574_3455574_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48279267&videoDSI=7e8583c6f56af"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Tre Donaldson gets tough layup to fall for Miami) 2026/03/22 ESHEET",
-"trackingId": "dm_20260322_NCB_tre_donaldson_gets_tough_layup_to_fall_for_miami",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48279469,
-"cerebroId": "69c028f5a5f2843bf6beaf41",
-"source": "espn",
-"headline": "Oscar Cluff tips it back in for Purdue",
-"description": "Oscar Cluff tips in a second-chance bucket for Purdue vs. Miami.",
-"lastModified": "2026-03-22T18:31:06Z",
-"originalPublishDate": "2026-03-22T17:37:58Z",
-"duration": 19,
-"timeRestrictions": {
-"embargoDate": "2026-03-22T17:37:54Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48279469",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48279469",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=e73be6c27b591"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48279469"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/761bcd27-cd7d-4afc-96d9-31c7e64666de/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279469"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/761bcd27-cd7d-4afc-96d9-31c7e64666de/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279469"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48279469"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/761bcd27-cd7d-4afc-96d9-31c7e64666de"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/761bcd27-cd7d-4afc-96d9-31c7e64666de/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_133800726_3455641/ss_20260322_133800726_3455641_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48279469&videoDSI=e73be6c27b591"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Oscar Cluff tips it back in for Purdue) 2026/03/22 ESHEET",
-"trackingId": "dm_20260322_NCB_oscar_cluff_tips_it_back_in_for_purdue",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48279634,
-"cerebroId": "69c02d2adbad3347c50fe2c4",
-"source": "espn",
-"headline": "C.J. Cox limps off for Purdue after apparent knee injury",
-"description": "C.J. Cox appears to injure his knee and limps off the court for Purdue.",
-"lastModified": "2026-03-22T18:31:08Z",
-"originalPublishDate": "2026-03-22T17:55:54Z",
-"duration": 34,
-"timeRestrictions": {
-"embargoDate": "2026-03-22T17:55:52Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48279634",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48279634",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=6ee1738693a27"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48279634"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c3e48fa1-cae6-4fd7-8a4f-84816e9d4a64/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279634"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c3e48fa1-cae6-4fd7-8a4f-84816e9d4a64/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279634"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48279634"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/c3e48fa1-cae6-4fd7-8a4f-84816e9d4a64"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79/playlist.m3u8",
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/9x16/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79/playlist.m3u8"
-}
-},
-"9x16": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/9x16/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/c3e48fa1-cae6-4fd7-8a4f-84816e9d4a64/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/wsc/2026/0322/a8474b50-66f2-4509-907d-4bd14a3dbd79/a8474b50-66f2-4509-907d-4bd14a3dbd79_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48279634&videoDSI=6ee1738693a27"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (C.J. Cox limps off for Purdue after apparent knee injury) 2026/03/22 ESHEET",
-"trackingId": "dm_NCB_cj_cox_limps_off_for_purdue_after_apparent_knee_injury",
-"program": "NCAA Mens Basketball"
-}
-},
-{
-"id": 48279838,
-"cerebroId": "69c032e7c61ac63f9015cdbf",
-"source": "espn",
-"headline": "Braden Smith lays it in for Purdue in transition",
-"description": "Braden Smith gets out on the fast break for a Purdue layup vs. Miami.",
-"lastModified": "2026-03-22T18:31:09Z",
-"originalPublishDate": "2026-03-22T18:20:23Z",
-"duration": 25,
-"timeRestrictions": {
-"embargoDate": "2026-03-22T18:20:20Z",
-"expirationDate": "2026-06-30T04:00:00Z"
-},
-"deviceRestrictions": {
-"type": "whitelist",
-"devices": [
-"settop",
-"tablet",
-"handset",
-"ipad",
-"desktop"
-]
-},
-"geoRestrictions": {
-"type": "whitelist",
-"countries": [
-"AS",
-"PR",
-"MP",
-"VI",
-"UM",
-"US",
-"GU"
-]
-},
-"thumbnail": "https://a.espncdn.com/media/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745.jpg",
-"links": {
-"web": {
-"href": "https://www.espn.com/video/clip?id=48279838",
-"self": {
-"href": "https://www.espn.com/video/clip?id=48279838",
-"dsi": {
-"href": "https://www.espn.com/video/clip?id=92a5ecb56b6d4"
-}
-}
-},
-"mobile": {
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745.mp4"
-},
-"alert": {
-"href": "https://m.espn.com/general/video/videoAlert?vid=48279838"
-},
-"streaming": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/30e1243c-f112-4414-9b2b-6c3d89876aa9/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279838"
-},
-"progressiveDownload": {
-"href": "https://watch.auth.api.espn.com/video/auth/brightcove/30e1243c-f112-4414-9b2b-6c3d89876aa9/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48279838"
-}
-},
-"api": {
-"self": {
-"href": "https://content.core.api.espn.com/v1/video/clips/48279838"
-},
-"artwork": {
-"href": "https://artwork.api.espn.com/artwork/collections/media/30e1243c-f112-4414-9b2b-6c3d89876aa9"
-}
-},
-"source": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745_360p30_1464k.mp4",
-"mezzanine": {
-"href": "https://media.video-origin.espn.com/espnvideo/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745.mp4"
-},
-"flash": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745.smil"
-},
-"hds": {
-"href": "https://hds.video-cdn.espn.com/z/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745_rel.smil/manifest.f4m"
-},
-"HLS": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745/playlist.m3u8",
-"HD": {
-"href": "https://service-pkgespn.akamaized.net/opp/hls/espn/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745/playlist.m3u8"
-},
-"cmaf": {
-"href": "https://service-pkgespn.akamaized.net/opp/cmaf/espn/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745/playlist.m3u8"
-},
-"shield": {
-"href": "https://watch.auth.api.espn.com/video/auth/media/30e1243c-f112-4414-9b2b-6c3d89876aa9/asset"
-}
-},
-"HD": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745_720p30_2896k.mp4"
-},
-"full": {
-"href": "https://media.video-cdn.espn.com/motion/2026/0322/ss_20260322_142026616_3455745/ss_20260322_142026616_3455745_360p30_1464k.mp4"
-}
-},
-"sportscenter": {
-"href": "sportscenter://x-callback-url/showVideo?videoID=48279838&videoDSI=92a5ecb56b6d4"
-}
-},
-"ad": {
-"sport": "ncb",
-"bundle": "sportscenter"
-},
-"tracking": {
-"sportName": "basketball",
-"leagueName": "NCAA Men's Basketball",
-"coverageType": "OnePlay",
-"trackingName": "NCB_One-Play (Braden Smith lays it in for Purdue in transition) 2026/03/22 ESHEET",
-"trackingId": "dm_20260322_NCB_braden_smith_lays_it_in_for_purdue_in_transition",
-"program": "NCAA Mens Basketball"
-}
-}
-],
+"videos": [],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -21750,7 +20934,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -21761,7 +20945,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -22326,7 +21510,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -22337,7 +21521,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -22390,7 +21574,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -22401,7 +21585,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

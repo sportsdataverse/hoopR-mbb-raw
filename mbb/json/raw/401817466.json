@@ -2048,10 +2048,10 @@
 "id": "24"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2132,10 +2132,10 @@
 "id": "24"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -4915,7 +4915,7 @@
 "uid": "s:40~l:41~e:401817466",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5497,6 +5497,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5541,30 +5542,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5593,6 +5585,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5631,6 +5633,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -22569,6 +22590,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/638e2449-cfe4-4bda-a227-5b3dc9b1da92/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46950198",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/d7db06b4-a72e-443f-87ae-fd14eea9e3ea/d7db06b4-a72e-443f-87ae-fd14eea9e3ea.mp4"
 },
@@ -22640,7 +22662,9 @@
 "teamId": 147,
 "team": {
 "id": 147,
-"description": "Montana State University"
+"description": "Montana State University",
+"abbreviation": "Montana State",
+"shortDisplayName": "Montana State"
 }
 },
 {
@@ -22677,7 +22701,9 @@
 "teamId": 24,
 "team": {
 "id": 24,
-"description": "Stanford University"
+"description": "Stanford University",
+"abbreviation": "Stanford",
+"shortDisplayName": "Stanford"
 }
 },
 {
@@ -22691,6 +22717,8 @@
 "team": {
 "id": 147,
 "description": "Montana State Bobcats",
+"abbreviation": "MTST",
+"shortDisplayName": "Montana St",
 "links": {
 "web": {
 "teams": {
@@ -22848,6 +22876,8 @@
 "team": {
 "id": 24,
 "description": "Stanford Cardinal",
+"abbreviation": "STAN",
+"shortDisplayName": "Stanford",
 "links": {
 "web": {
 "teams": {
@@ -22902,10 +22932,10 @@
 {
 "id": 738352,
 "type": "athlete",
-"uid": "s:40~l:41~a:5258459",
+"uid": "s:40~l:46~a:5258459",
 "guid": "9eb6bcb2-1665-3856-ad1e-cf8c5e1bd25d",
 "description": "Ebuka Okorie",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5258459,
 "athlete": {
 "id": 5258459,
@@ -22913,12 +22943,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5258459/ebuka-okorie"
+"href": "https://www.espn.com/nba/player/_/id/5258459/ebuka-okorie"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5258459/ebuka-okorie"
+"href": "https://www.espn.com/nba/player/_/id/5258459/ebuka-okorie"
 }
 }
 }
@@ -23020,6 +23050,8 @@
 "team": {
 "id": 24,
 "description": "Stanford Cardinal",
+"abbreviation": "STAN",
+"shortDisplayName": "Stanford",
 "links": {
 "web": {
 "teams": {
@@ -23045,6 +23077,8 @@
 "team": {
 "id": 147,
 "description": "Montana State Bobcats",
+"abbreviation": "MTST",
+"shortDisplayName": "Montana St",
 "links": {
 "web": {
 "teams": {
@@ -23205,6 +23239,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8d96de41-fc02-4e6d-8644-a53e050cde1a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46949235",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/303ec2e8-5af9-484d-ab4e-8d3159e0e23d/303ec2e8-5af9-484d-ab4e-8d3159e0e23d.mp4"
 },
@@ -23316,6 +23351,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f15502ea-1ca4-4d96-8fab-cce4fa2e380e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46950036",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/10f493d3-2d46-4b3c-b8e1-02d88fa430a8/10f493d3-2d46-4b3c-b8e1-02d88fa430a8.mp4"
 },
@@ -23392,8 +23428,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -23705,7 +23740,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/149.png",
@@ -23716,7 +23751,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23769,7 +23804,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2692.png",
@@ -23780,7 +23815,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23872,8 +23907,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "id": "9",

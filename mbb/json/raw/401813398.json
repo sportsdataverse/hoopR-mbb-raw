@@ -2027,10 +2027,10 @@
 "id": "2132"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2111,10 +2111,10 @@
 "id": "2132"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2204,10 +2204,10 @@
 "id": "2132"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5149,7 +5149,7 @@
 "uid": "s:40~l:41~e:401813398",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5731,6 +5731,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5775,30 +5776,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5827,6 +5819,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5865,6 +5867,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24754,6 +24775,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dfe9ae0e-43e3-42a4-8747-74e25f6ddef2/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993709",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/c05357f3-1d94-40b4-a975-2c36735575da/c05357f3-1d94-40b4-a975-2c36735575da.mp4"
 },
@@ -24878,6 +24900,8 @@
 "team": {
 "id": 2132,
 "description": "Cincinnati Bearcats",
+"abbreviation": "CIN",
+"shortDisplayName": "Cincinnati",
 "links": {
 "web": {
 "teams": {
@@ -24907,32 +24931,22 @@
 "teamId": 2132,
 "team": {
 "id": 2132,
-"description": "University of Cincinnati"
+"description": "University of Cincinnati",
+"abbreviation": "Cincinnati",
+"shortDisplayName": "Cincinnati"
 }
 },
 {
 "id": 633324,
 "type": "athlete",
-"uid": "s:40~l:41~a:5175032",
+"uid": "s:40~l:63~a:5175032",
 "guid": "918c25eb-8665-3487-b36c-310ee921c6cb",
 "description": "Day Day Thomas",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5175032,
 "athlete": {
 "id": 5175032,
-"description": "Day Day Thomas",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5175032/day-day-thomas"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5175032/day-day-thomas"
-}
-}
-}
+"description": "Day Day Thomas"
 }
 },
 {
@@ -24944,7 +24958,9 @@
 "teamId": 116,
 "team": {
 "id": 116,
-"description": "Mount St. Mary's College"
+"description": "Mount St. Mary's College",
+"abbreviation": "Mount St. Mary's",
+"shortDisplayName": "Mount St. Mary's"
 }
 },
 {
@@ -25020,6 +25036,8 @@
 "team": {
 "id": 116,
 "description": "Mount St. Mary's Mountaineers",
+"abbreviation": "MSM",
+"shortDisplayName": "Mount St Marys",
 "links": {
 "web": {
 "teams": {
@@ -25118,6 +25136,8 @@
 "team": {
 "id": 2132,
 "description": "Cincinnati Bearcats",
+"abbreviation": "CIN",
+"shortDisplayName": "Cincinnati",
 "links": {
 "web": {
 "teams": {
@@ -25194,6 +25214,8 @@
 "team": {
 "id": 116,
 "description": "Mount St. Mary's Mountaineers",
+"abbreviation": "MSM",
+"shortDisplayName": "Mount St Marys",
 "links": {
 "web": {
 "teams": {
@@ -25303,6 +25325,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/bc1becfe-0539-42ad-992b-4b1b124afed9/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46992241",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1116/d1a813ea-08ff-439e-ac25-9a758d883e92/d1a813ea-08ff-439e-ac25-9a758d883e92.mp4"
 },
@@ -25414,6 +25437,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cbf84508-42fc-4993-b474-7498f02f1fa7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46992391",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1116/8a2fbdc8-630f-4369-b491-7a6c91d83603/8a2fbdc8-630f-4369-b491-7a6c91d83603.mp4"
 },
@@ -25525,6 +25549,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9afe9a4a-a3aa-4169-8282-fd110c640869/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46992404",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1116/e9a6c035-c91b-4af4-875d-a5f1b19c5bfb/e9a6c035-c91b-4af4-875d-a5f1b19c5bfb.mp4"
 },
@@ -25636,6 +25661,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/589d566a-7f47-4402-b829-75d23438d8ef/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993166",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/e1c190b4-ce93-474b-9ffa-7334f1215a9b/e1c190b4-ce93-474b-9ffa-7334f1215a9b.mp4"
 },
@@ -25747,6 +25773,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c7e7b8cd-0c7a-48b6-b825-80eb361887eb/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993355",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/e5a3d6b5-10e9-41fa-b2c2-206452bc5232/e5a3d6b5-10e9-41fa-b2c2-206452bc5232.mp4"
 },
@@ -25858,6 +25885,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e7c3ff00-54a0-4de0-b077-d6809bdce721/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993401",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/b8118163-5fbf-4b7d-adf3-db38bee312af/b8118163-5fbf-4b7d-adf3-db38bee312af.mp4"
 },
@@ -25969,6 +25997,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/29e959a6-728c-4ed2-a08d-bfecf5847e23/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993478",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/0bfea077-c53f-4896-9599-7e8b8578f153/0bfea077-c53f-4896-9599-7e8b8578f153.mp4"
 },
@@ -26080,6 +26109,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3c79a007-c791-4255-b050-8bca9682047c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993517",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/c4031b40-c6b5-4510-8cb7-bb25e208e1ad/c4031b40-c6b5-4510-8cb7-bb25e208e1ad.mp4"
 },
@@ -26191,6 +26221,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/24f68479-c129-4301-b431-e673c1706ce1/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993646",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/ed19a6c1-1d06-4620-a020-36cd2b7f2a31/ed19a6c1-1d06-4620-a020-36cd2b7f2a31.mp4"
 },
@@ -26267,8 +26298,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -27423,7 +27453,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -27434,7 +27464,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

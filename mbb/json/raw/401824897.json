@@ -2114,10 +2114,10 @@
 "id": "62"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2291,10 +2291,10 @@
 "id": "62"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5121,7 +5121,7 @@
 "uid": "s:40~l:41~e:401824897",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5720,6 +5720,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5764,30 +5765,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5816,6 +5808,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5854,6 +5856,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23822,6 +23843,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d5492013-d6f7-4b01-b02f-d68971a95aaa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972463",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/51b7f7e6-4a7d-47fe-ad40-5c14533436b3/51b7f7e6-4a7d-47fe-ad40-5c14533436b3.mp4"
 },
@@ -23920,6 +23942,8 @@
 "team": {
 "id": 62,
 "description": "Hawai'i Rainbow Warriors",
+"abbreviation": "HAW",
+"shortDisplayName": "Hawai'i",
 "links": {
 "web": {
 "teams": {
@@ -23994,7 +24018,9 @@
 "teamId": 2363,
 "team": {
 "id": 2363,
-"description": "Manhattan College"
+"description": "Manhattan College",
+"abbreviation": "Manhattan",
+"shortDisplayName": "Manhattan"
 }
 },
 {
@@ -24006,26 +24032,14 @@
 {
 "id": 509625,
 "type": "athlete",
-"uid": "s:40~l:41~a:4898118",
+"uid": "s:40~l:63~a:4898118",
 "guid": "3aa64741-d7c9-319c-8bcc-a531a112162f",
 "description": "Isaac Johnson",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4898118,
 "athlete": {
 "id": 4898118,
-"description": "Isaac Johnson",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4898118/isaac-johnson"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4898118/isaac-johnson"
-}
-}
-}
+"description": "Isaac Johnson"
 }
 },
 {
@@ -24037,7 +24051,9 @@
 "teamId": 62,
 "team": {
 "id": 62,
-"description": "University of Hawai'i"
+"description": "University of Hawai'i",
+"abbreviation": "Hawai'i",
+"shortDisplayName": "Hawai'i"
 }
 },
 {
@@ -24051,6 +24067,8 @@
 "team": {
 "id": 2363,
 "description": "Manhattan Jaspers",
+"abbreviation": "MAN",
+"shortDisplayName": "Manhattan",
 "links": {
 "web": {
 "teams": {
@@ -24157,6 +24175,8 @@
 "team": {
 "id": 62,
 "description": "Hawai'i Rainbow Warriors",
+"abbreviation": "HAW",
+"shortDisplayName": "Hawai'i",
 "links": {
 "web": {
 "teams": {
@@ -24182,6 +24202,8 @@
 "team": {
 "id": 2363,
 "description": "Manhattan Jaspers",
+"abbreviation": "MAN",
+"shortDisplayName": "Manhattan",
 "links": {
 "web": {
 "teams": {
@@ -24339,6 +24361,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/253733d6-cb12-43bf-bf14-a92a2d7b09fc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46971800",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/9543a828-45e1-450a-bf97-f0ba31709dc0/9543a828-45e1-450a-bf97-f0ba31709dc0.mp4"
 },
@@ -24450,6 +24473,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b3ec5a34-6e25-4d91-8272-5bfa304275b2/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46971803",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/d018d47c-9998-4623-81e1-51b9ecdc9b8a/d018d47c-9998-4623-81e1-51b9ecdc9b8a.mp4"
 },
@@ -24561,6 +24585,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3229e557-f7d6-4b6b-b5a1-8e89abbd404c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46971905",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/a12b87f9-099b-474e-b4eb-14e58539fe7a/a12b87f9-099b-474e-b4eb-14e58539fe7a.mp4"
 },
@@ -24672,6 +24697,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/91a9a22e-a880-4862-9227-0685a796ab7f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972059",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/e83135a3-430b-4a88-b415-1fe483fcbbf2/e83135a3-430b-4a88-b415-1fe483fcbbf2.mp4"
 },
@@ -24783,6 +24809,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/762549ec-5f40-4b74-a717-3c21f0be2483/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972331",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/3771f5a2-7bda-457e-af93-e993ef272b33/3771f5a2-7bda-457e-af93-e993ef272b33.mp4"
 },
@@ -24894,6 +24921,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/90b3f217-c6e8-4594-81de-32d783d34e93/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972361",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/228700e0-6567-469b-af9a-e03c74bbceff/228700e0-6567-469b-af9a-e03c74bbceff.mp4"
 },
@@ -25005,6 +25033,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/94b05746-2df6-404c-b2e8-d4d120d431fc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972370",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/baa30a0d-6e93-4e7f-a289-430b8ce33899/baa30a0d-6e93-4e7f-a289-430b8ce33899.mp4"
 },
@@ -25116,6 +25145,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/133ee68e-b11b-4dfd-8a07-2aba9092ca38/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46972426",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/dd64f239-06d5-439e-b7cc-cadc7a321523/dd64f239-06d5-439e-b7cc-cadc7a321523.mp4"
 },
@@ -25192,8 +25222,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

@@ -28337,7 +28337,7 @@
 "uid": "s:40~l:41~e:401813758",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -28765,7 +28765,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -29202,7 +29202,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -29298,6 +29298,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -29342,30 +29343,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -29394,6 +29386,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -29432,6 +29434,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -29581,6 +29602,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/901a6540-5fa6-458d-bee9-b80671254138/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46923387",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1111/1c62607d-f12e-4ba1-9c6e-4db4fa14fa8f/1c62607d-f12e-4ba1-9c6e-4db4fa14fa8f.mp4"
 },
@@ -29692,6 +29714,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/fdf9cd0e-31e1-4b7f-a1a0-11de869d2168/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46923698",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1111/8b537350-b402-4879-ac2a-f926cb3f4859/8b537350-b402-4879-ac2a-f926cb3f4859.mp4"
 },
@@ -29803,6 +29826,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e4b7fee9-f01a-464a-b35e-0faf3bfc7065/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46924096",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1111/137068b2-8f9f-4491-94d2-25d82e3ddb5a/137068b2-8f9f-4491-94d2-25d82e3ddb5a.mp4"
 },
@@ -29914,6 +29938,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e04c2f91-d9c9-4ab0-8b58-2baee5878363/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46924458",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1111/be0d5576-cadd-4732-806a-c4dfe5e749c9/be0d5576-cadd-4732-806a-c4dfe5e749c9.mp4"
 },
@@ -29991,8 +30016,7 @@
 "playByPlaySource": "full",
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -30023,8 +30047,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -30087,8 +30111,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -30343,8 +30367,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -30599,8 +30623,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "id": "9",
@@ -30727,8 +30751,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 11.0,
-"displayValue": "11"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",
@@ -30769,11 +30793,11 @@
 }
 ]
 },
-"header": "2025-26 ASUN Conference Standings",
+"header": "2025-26 Atlantic Sun Conference Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings/_/group/46",
 "conferenceHeader": "NCAA Division I",
-"divisionHeader": "ASUN Conference",
-"shortDivisionHeader": "ASUN"
+"divisionHeader": "Atlantic Sun Conference",
+"shortDivisionHeader": "Atlantic Sun"
 },
 {
 "standings": {
@@ -31083,7 +31107,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -31094,7 +31118,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -31659,7 +31683,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -31670,7 +31694,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -31723,7 +31747,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -31734,7 +31758,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -32053,6 +32077,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2aeffdad-e853-432f-8910-7f41724a360b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46924600",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1111/16286fc4-3ff1-4045-bf44-222ac4a3bc4d/16286fc4-3ff1-4045-bf44-222ac4a3bc4d.mp4"
 },
@@ -32124,7 +32149,9 @@
 "teamId": 26,
 "team": {
 "id": 26,
-"description": "University of California at Los Angeles"
+"description": "University of California at Los Angeles",
+"abbreviation": "UCLA",
+"shortDisplayName": "UCLA"
 }
 },
 {
@@ -32163,6 +32190,8 @@
 "team": {
 "id": 2698,
 "description": "West Georgia Wolves",
+"abbreviation": "WGA",
+"shortDisplayName": "West Georgia",
 "links": {
 "web": {
 "teams": {
@@ -32239,6 +32268,8 @@
 "team": {
 "id": 26,
 "description": "UCLA Bruins",
+"abbreviation": "UCLA",
+"shortDisplayName": "UCLA",
 "links": {
 "web": {
 "teams": {
@@ -32287,7 +32318,9 @@
 "teamId": 2698,
 "team": {
 "id": 2698,
-"description": "West Georgia College"
+"description": "West Georgia College",
+"abbreviation": "West Georgia",
+"shortDisplayName": "West Georgia"
 }
 },
 {
@@ -32299,10 +32332,10 @@
 {
 "id": 568450,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105626",
+"uid": "s:40~l:46~a:5105626",
 "guid": "36f0beb9-4399-3183-aa43-b5bcea2e79ff",
 "description": "Tyler Bilodeau",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5105626,
 "athlete": {
 "id": 5105626,
@@ -32310,12 +32343,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105626/tyler-bilodeau"
+"href": "https://www.espn.com/nba/player/_/id/5105626/tyler-bilodeau"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105626/tyler-bilodeau"
+"href": "https://www.espn.com/nba/player/_/id/5105626/tyler-bilodeau"
 }
 }
 }
@@ -32446,6 +32479,8 @@
 "team": {
 "id": 26,
 "description": "UCLA Bruins",
+"abbreviation": "UCLA",
+"shortDisplayName": "UCLA",
 "links": {
 "web": {
 "teams": {
@@ -32471,6 +32506,8 @@
 "team": {
 "id": 2698,
 "description": "West Georgia Wolves",
+"abbreviation": "WGA",
+"shortDisplayName": "West Georgia",
 "links": {
 "web": {
 "teams": {
@@ -32677,10 +32714,10 @@
 "id": "26"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -33796,7 +33833,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -34233,7 +34270,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -34250,7 +34287,7 @@
 },
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 }
 }

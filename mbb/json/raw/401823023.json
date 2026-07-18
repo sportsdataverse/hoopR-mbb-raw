@@ -2099,10 +2099,10 @@
 "id": "269"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2183,10 +2183,10 @@
 "id": "269"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2348,7 +2348,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -2359,7 +2359,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -2681,7 +2681,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -2692,7 +2692,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -5166,7 +5166,7 @@
 "uid": "s:40~l:41~e:401823023",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5439,7 +5439,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -5450,7 +5450,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 },
 {
 "href": "https://a.espncdn.com/guid/441e2a8b-e553-2550-0b23-ced7996449d8/logos/primary_logo_on_white_color.png",
@@ -5748,6 +5748,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5792,30 +5793,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5844,6 +5836,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5882,6 +5884,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24410,6 +24431,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/65f20d63-ee6a-41e7-844c-9c89ffb0e2d7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46949113",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/fd6c38f9-a0b3-4f08-9d49-2774108dac70/fd6c38f9-a0b3-4f08-9d49-2774108dac70.mp4"
 },
@@ -24483,6 +24505,8 @@
 "team": {
 "id": 2031,
 "description": "Little Rock Trojans",
+"abbreviation": "LR",
+"shortDisplayName": "Little Rock",
 "links": {
 "web": {
 "teams": {
@@ -24531,7 +24555,9 @@
 "teamId": 269,
 "team": {
 "id": 269,
-"description": "Marquette University"
+"description": "Marquette University",
+"abbreviation": "Marquette",
+"shortDisplayName": "Marquette"
 }
 },
 {
@@ -24543,7 +24569,9 @@
 "teamId": 2031,
 "team": {
 "id": 2031,
-"description": "University of Arkansas at Little Rock"
+"description": "University of Arkansas at Little Rock",
+"abbreviation": "Little Rock",
+"shortDisplayName": "Little Rock"
 }
 },
 {
@@ -24557,6 +24585,8 @@
 "team": {
 "id": 269,
 "description": "Marquette Golden Eagles",
+"abbreviation": "MARQ",
+"shortDisplayName": "Marquette",
 "links": {
 "web": {
 "teams": {
@@ -24600,26 +24630,14 @@
 {
 "id": 568624,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105598",
+"uid": "s:40~l:23170~a:5105598",
 "guid": "bef99ff0-64c7-3f57-971c-43f69f9fca6f",
 "description": "Chase Ross",
-"sportId": 41,
+"sportId": 23170,
 "athleteId": 5105598,
 "athlete": {
 "id": 5105598,
-"description": "Chase Ross",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105598/chase-ross"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105598/chase-ross"
-}
-}
-}
+"description": "Chase Ross"
 }
 },
 {
@@ -24799,6 +24817,8 @@
 "team": {
 "id": 2031,
 "description": "Little Rock Trojans",
+"abbreviation": "LR",
+"shortDisplayName": "Little Rock",
 "links": {
 "web": {
 "teams": {
@@ -24824,6 +24844,8 @@
 "team": {
 "id": 269,
 "description": "Marquette Golden Eagles",
+"abbreviation": "MARQ",
+"shortDisplayName": "Marquette",
 "links": {
 "web": {
 "teams": {
@@ -24959,6 +24981,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/19df10a0-214a-4e58-a374-fd7fd5b9fa1f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948564",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/b3b53986-383f-4391-aa1c-c5b997116eed/b3b53986-383f-4391-aa1c-c5b997116eed.mp4"
 },
@@ -25070,6 +25093,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/0b4c6aa6-26a0-46b6-b90b-99cd226cede2/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948596",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/77ddf96d-9b72-49c5-8152-f0e16d824b2f/77ddf96d-9b72-49c5-8152-f0e16d824b2f.mp4"
 },
@@ -25146,8 +25170,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25587,7 +25610,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -25598,7 +25621,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -25626,8 +25649,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -25651,7 +25674,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2635.png",
@@ -25662,7 +25685,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25843,7 +25866,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2710.png",
@@ -25854,7 +25877,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }

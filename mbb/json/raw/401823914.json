@@ -2453,7 +2453,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2503,7 +2503,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33474963%3Foutcomes%3D0ML83015479_3",
 "text": "Away Bet",
@@ -2667,7 +2667,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4964,7 +4964,7 @@
 "uid": "s:40~l:41~e:401823914",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5553,6 +5553,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5597,30 +5598,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5649,6 +5641,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5687,6 +5689,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -22506,6 +22527,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8d7f6a59-8599-492b-b5cf-fb3c1c6e2f16/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47642882",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/f8e3b730-4acd-4513-8fa0-1cd2154ceabb/f8e3b730-4acd-4513-8fa0-1cd2154ceabb.mp4"
 },
@@ -22579,6 +22601,8 @@
 "team": {
 "id": 2515,
 "description": "Radford Highlanders",
+"abbreviation": "RAD",
+"shortDisplayName": "Radford",
 "links": {
 "web": {
 "teams": {
@@ -22629,6 +22653,8 @@
 "team": {
 "id": 2344,
 "description": "Longwood Lancers",
+"abbreviation": "LONG",
+"shortDisplayName": "Longwood",
 "links": {
 "web": {
 "teams": {
@@ -22771,7 +22797,9 @@
 "teamId": 2515,
 "team": {
 "id": 2515,
-"description": "Radford University"
+"description": "Radford University",
+"abbreviation": "Radford",
+"shortDisplayName": "Radford"
 }
 },
 {
@@ -22783,7 +22811,9 @@
 "teamId": 2344,
 "team": {
 "id": 2344,
-"description": "Longwood College"
+"description": "Longwood College",
+"abbreviation": "Longwood",
+"shortDisplayName": "Longwood"
 }
 },
 {
@@ -22922,6 +22952,8 @@
 "team": {
 "id": 2515,
 "description": "Radford Highlanders",
+"abbreviation": "RAD",
+"shortDisplayName": "Radford",
 "links": {
 "web": {
 "teams": {
@@ -22947,6 +22979,8 @@
 "team": {
 "id": 2344,
 "description": "Longwood Lancers",
+"abbreviation": "LONG",
+"shortDisplayName": "Longwood",
 "links": {
 "web": {
 "teams": {
@@ -23074,6 +23108,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/96ccec55-61f8-4aa1-8624-c0f57fb221ce/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47641463",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/548b6980-435b-499f-b646-1a6a9f021056/548b6980-435b-499f-b646-1a6a9f021056.mp4"
 },
@@ -23183,6 +23218,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/24ce0933-db0b-4fbe-b521-0cc0cb8bdd67/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47641502",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/b6a33cbb-5ec0-467c-b7b9-0405c3008de4/b6a33cbb-5ec0-467c-b7b9-0405c3008de4.mp4"
 },
@@ -23292,6 +23328,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b2579298-de42-4e5a-82bd-337118cdd8ad/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47641512",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/b51e6d0e-00a5-476f-90ba-ee7b50c38ae7/b51e6d0e-00a5-476f-90ba-ee7b50c38ae7.mp4"
 },
@@ -23401,6 +23438,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/61e2cd17-be25-4ff2-a0f7-fcbc6bc77f5b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47642207",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/5e158a96-5377-4e9a-b7b3-6fe052c9aeed/5e158a96-5377-4e9a-b7b3-6fe052c9aeed.mp4"
 },
@@ -23510,6 +23548,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cff70509-1717-4994-8228-e722bc30b1f6/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47642620",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/221cb596-a590-4ac3-a0e9-c1cd6febf2a9/221cb596-a590-4ac3-a0e9-c1cd6febf2a9.mp4"
 },
@@ -23619,6 +23658,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c7216b1b-c557-40e3-ace6-8319b243ffe7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47642751",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/f6fc7aa1-be2d-4192-9d14-5158a8de494f/f6fc7aa1-be2d-4192-9d14-5158a8de494f.mp4"
 },
@@ -23728,6 +23768,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5e454ef7-65b6-4d8a-b2d5-7dded2cda7e4/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47642792",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0117/8079184e-9bbc-4c6c-aa04-0c1f98d3276a/8079184e-9bbc-4c6c-aa04-0c1f98d3276a.mp4"
 },
@@ -23805,8 +23846,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24374,7 +24414,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2022-11-28T22:03Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2241.png",
@@ -24385,7 +24425,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2022-11-28T22:04Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }

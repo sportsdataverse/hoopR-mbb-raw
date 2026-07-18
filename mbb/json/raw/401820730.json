@@ -2107,10 +2107,10 @@
 "id": "97"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2191,10 +2191,10 @@
 "id": "97"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2284,10 +2284,10 @@
 "id": "97"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2497,10 +2497,10 @@
 "id": "152"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2642,7 +2642,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2693,7 +2693,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33607223%3Foutcomes%3D0ML83341767_1",
 "text": "Home Bet",
@@ -2707,7 +2707,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33607223%3Foutcomes%3D0ML83341767_3",
 "text": "Away Bet",
@@ -2871,7 +2871,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5393,7 +5393,7 @@
 "uid": "s:40~l:41~e:401820730",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5983,6 +5983,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6027,30 +6028,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6079,6 +6071,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6117,6 +6119,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24744,6 +24765,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/87869b80-cc31-48eb-af24-894bd3a4e840/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47882637",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/54909673-56a4-43f6-a80d-7b22e89e320e/54909673-56a4-43f6-a80d-7b22e89e320e.mp4"
 },
@@ -24809,10 +24831,10 @@
 {
 "id": 737880,
 "type": "athlete",
-"uid": "s:40~l:41~a:5101761",
+"uid": "s:40~l:46~a:5101761",
 "guid": "2db2923f-89bb-30ea-8406-5f92a2b24636",
 "description": "Mikel Brown Jr",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5101761,
 "athlete": {
 "id": 5101761,
@@ -24820,12 +24842,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5101761/mikel-brown-jr"
+"href": "https://www.espn.com/nba/player/_/id/5101761/mikel-brown-jr"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5101761/mikel-brown-jr"
+"href": "https://www.espn.com/nba/player/_/id/5101761/mikel-brown-jr"
 }
 }
 }
@@ -24842,6 +24864,8 @@
 "team": {
 "id": 152,
 "description": "NC State Wolfpack",
+"abbreviation": "NCSU",
+"shortDisplayName": "NC State",
 "links": {
 "web": {
 "teams": {
@@ -24893,6 +24917,8 @@
 "team": {
 "id": 97,
 "description": "Louisville Cardinals",
+"abbreviation": "LOU",
+"shortDisplayName": "Louisville",
 "links": {
 "web": {
 "teams": {
@@ -24916,7 +24942,9 @@
 "teamId": 152,
 "team": {
 "id": 152,
-"description": "North Carolina State University"
+"description": "North Carolina State University",
+"abbreviation": "NC State",
+"shortDisplayName": "NC State"
 }
 },
 {
@@ -24928,7 +24956,9 @@
 "teamId": 97,
 "team": {
 "id": 97,
-"description": "University of Louisville"
+"description": "University of Louisville",
+"abbreviation": "Louisville",
+"shortDisplayName": "Louisville"
 }
 },
 {
@@ -25053,6 +25083,8 @@
 "team": {
 "id": 97,
 "description": "Louisville Cardinals",
+"abbreviation": "LOU",
+"shortDisplayName": "Louisville",
 "links": {
 "web": {
 "teams": {
@@ -25078,6 +25110,8 @@
 "team": {
 "id": 152,
 "description": "NC State Wolfpack",
+"abbreviation": "NCSU",
+"shortDisplayName": "NC State",
 "links": {
 "web": {
 "teams": {
@@ -25205,6 +25239,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/502ef1b2-ecec-4617-b345-aea83aa5dc21/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47882636",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/6472d049-f3ea-4d4f-978d-f19f88738926/6472d049-f3ea-4d4f-978d-f19f88738926.mp4"
 },
@@ -25314,6 +25349,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2bcba711-ae45-4dd4-b2af-40d366a65f79/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881481",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/1835b4be-b71e-46e4-91a6-49b9814ef8ad/1835b4be-b71e-46e4-91a6-49b9814ef8ad.mp4"
 },
@@ -25423,6 +25459,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e7cfad58-6902-425b-b316-955fdb232833/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881556",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/61920d4d-bc4e-4b0b-a5d2-39649c90e004/61920d4d-bc4e-4b0b-a5d2-39649c90e004.mp4"
 },
@@ -25532,6 +25569,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/6701cad7-1224-4234-9eb5-1cefdf50962d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881561",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/69b7d590-bfc3-4670-8b78-bfbd0c1138fd/69b7d590-bfc3-4670-8b78-bfbd0c1138fd.mp4"
 },
@@ -25641,6 +25679,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5186d994-1974-4987-8e96-2fc7823ed605/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881656",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/2558bedc-5871-4d96-9054-5516f8090c4e/2558bedc-5871-4d96-9054-5516f8090c4e.mp4"
 },
@@ -25750,6 +25789,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/126b062e-c783-460f-b4e2-953f443aeb01/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881744",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/684e289e-f4a6-4505-89d9-10b84e818623/684e289e-f4a6-4505-89d9-10b84e818623.mp4"
 },
@@ -25859,6 +25899,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/65d2b116-6a9d-43f8-bde9-73e232d4a49f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47881799",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/d6083413-fdea-4fcf-b547-01fd983580f0/d6083413-fdea-4fcf-b547-01fd983580f0.mp4"
 },
@@ -25968,6 +26009,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/527c1602-0d41-4d81-9413-5a9903a1cd2f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47882005",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/2f757f66-5b61-4a0c-8d16-442ca6bb836a/2f757f66-5b61-4a0c-8d16-442ca6bb836a.mp4"
 },
@@ -26077,6 +26119,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d6d5c492-a3db-408e-aa92-99f831741a01/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47882276",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/df5901a5-fed7-4665-b404-d976dafb532e/df5901a5-fed7-4665-b404-d976dafb532e.mp4"
 },
@@ -26186,6 +26229,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/79fc8a47-3cf5-44fe-9456-1d997566bfe5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47882323",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0210/29beffbe-3d2f-4913-995a-d35d11c94f0d/29beffbe-3d2f-4913-995a-d35d11c94f0d.mp4"
 },
@@ -26263,8 +26307,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

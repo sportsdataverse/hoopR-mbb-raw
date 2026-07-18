@@ -2506,7 +2506,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2557,7 +2557,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33753744%3Foutcomes%3D0ML83712924_1",
 "text": "Home Bet",
@@ -2571,7 +2571,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33753744%3Foutcomes%3D0ML83712924_3",
 "text": "Away Bet",
@@ -2735,7 +2735,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4417,7 +4417,7 @@
 "uid": "s:40~l:41~e:401804958",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5006,6 +5006,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5050,30 +5051,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5102,6 +5094,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5140,6 +5142,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -17357,6 +17378,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/67faf6e3-6768-44ca-bc86-8673964fecc8/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48116668",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/db2b2e2c-23e3-4764-8458-c98f7c0a4b62/db2b2e2c-23e3-4764-8458-c98f7c0a4b62.mp4"
 },
@@ -17430,6 +17452,8 @@
 "team": {
 "id": 2335,
 "description": "Liberty Flames",
+"abbreviation": "LIB",
+"shortDisplayName": "Liberty",
 "links": {
 "web": {
 "teams": {
@@ -17453,7 +17477,9 @@
 "teamId": 2335,
 "team": {
 "id": 2335,
-"description": "Liberty University"
+"description": "Liberty University",
+"abbreviation": "Liberty",
+"shortDisplayName": "Liberty"
 }
 },
 {
@@ -17467,6 +17493,8 @@
 "team": {
 "id": 2348,
 "description": "Louisiana Tech Bulldogs",
+"abbreviation": "LT",
+"shortDisplayName": "Louisiana Tech",
 "links": {
 "web": {
 "teams": {
@@ -17490,7 +17518,9 @@
 "teamId": 2348,
 "team": {
 "id": 2348,
-"description": "Louisiana Tech University"
+"description": "Louisiana Tech University",
+"abbreviation": "Louisiana Tech",
+"shortDisplayName": "Louisiana Tech"
 }
 },
 {
@@ -17773,6 +17803,8 @@
 "team": {
 "id": 2335,
 "description": "Liberty Flames",
+"abbreviation": "LIB",
+"shortDisplayName": "Liberty",
 "links": {
 "web": {
 "teams": {
@@ -17796,7 +17828,9 @@
 "teamId": 2335,
 "team": {
 "id": 2335,
-"description": "Liberty University"
+"description": "Liberty University",
+"abbreviation": "Liberty",
+"shortDisplayName": "Liberty"
 }
 },
 {
@@ -17810,6 +17844,8 @@
 "team": {
 "id": 2348,
 "description": "Louisiana Tech Bulldogs",
+"abbreviation": "LT",
+"shortDisplayName": "Louisiana Tech",
 "links": {
 "web": {
 "teams": {
@@ -17833,7 +17869,9 @@
 "teamId": 2348,
 "team": {
 "id": 2348,
-"description": "Louisiana Tech University"
+"description": "Louisiana Tech University",
+"abbreviation": "Louisiana Tech",
+"shortDisplayName": "Louisiana Tech"
 }
 },
 {
@@ -17959,6 +17997,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b48d4e6a-1fde-490e-8b49-065f0cb1d0af/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48115863",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/088d8c20-59d6-4d11-a4bd-86a7fc8cda09/088d8c20-59d6-4d11-a4bd-86a7fc8cda09.mp4"
 },
@@ -18068,6 +18107,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f3a13c62-faec-4624-9854-5427b06a1bea/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48115948",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/426370bd-2dbd-4c94-823e-f29d35ec8f44/426370bd-2dbd-4c94-823e-f29d35ec8f44.mp4"
 },
@@ -18177,6 +18217,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/661ca86a-64cc-4ec9-b2e1-d90f92b3cf7a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48116278",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/9e7557ce-9779-47c9-965e-7107ddbf1629/9e7557ce-9779-47c9-965e-7107ddbf1629.mp4"
 },
@@ -18286,6 +18327,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ef5eb3b-f4c6-43d5-92a9-7929b86ad5e0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48116279",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/3ab559f0-b830-4fa8-a3a3-f9add92215d1/3ab559f0-b830-4fa8-a3a3-f9add92215d1.mp4"
 },
@@ -18395,6 +18437,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cad0cc55-53cd-40e0-85ae-25a517c28b47/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48116430",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/1d360d8a-17b9-4cab-b341-1c50f910c55d/1d360d8a-17b9-4cab-b341-1c50f910c55d.mp4"
 },
@@ -18472,8 +18515,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -19144,8 +19186,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 10.0,
-"displayValue": "10"
+"value": 8.0,
+"displayValue": "8"
 },
 {
 "id": "9",
@@ -19169,7 +19211,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2638.png",
@@ -19180,7 +19222,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

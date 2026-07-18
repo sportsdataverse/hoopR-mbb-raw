@@ -2573,7 +2573,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2772,7 +2772,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5304,7 +5304,7 @@
 "uid": "s:40~l:41~e:401813295",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5886,6 +5886,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5930,30 +5931,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5982,6 +5974,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6020,6 +6022,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24671,6 +24692,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d27fdca4-d5cb-4b3e-b14b-a5c767a51889/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47352688",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/fdd96042-19ed-4813-ab32-2053f5731ac7/fdd96042-19ed-4813-ab32-2053f5731ac7.mp4"
 },
@@ -24742,7 +24764,9 @@
 "teamId": 197,
 "team": {
 "id": 197,
-"description": "Oklahoma State University"
+"description": "Oklahoma State University",
+"abbreviation": "Oklahoma State",
+"shortDisplayName": "Oklahoma State"
 }
 },
 {
@@ -24754,7 +24778,9 @@
 "teamId": 140,
 "team": {
 "id": 140,
-"description": "University of Missouri-Kansas City"
+"description": "University of Missouri-Kansas City",
+"abbreviation": "Kansas City",
+"shortDisplayName": "Kansas City"
 }
 },
 {
@@ -24793,6 +24819,8 @@
 "team": {
 "id": 140,
 "description": "Kansas City Roos",
+"abbreviation": "KC",
+"shortDisplayName": "Kansas City",
 "links": {
 "web": {
 "teams": {
@@ -24875,6 +24903,8 @@
 "team": {
 "id": 197,
 "description": "Oklahoma State Cowboys",
+"abbreviation": "OKST",
+"shortDisplayName": "Oklahoma St",
 "links": {
 "web": {
 "teams": {
@@ -25062,6 +25092,8 @@
 "team": {
 "id": 197,
 "description": "Oklahoma State Cowboys",
+"abbreviation": "OKST",
+"shortDisplayName": "Oklahoma St",
 "links": {
 "web": {
 "teams": {
@@ -25087,6 +25119,8 @@
 "team": {
 "id": 140,
 "description": "Kansas City Roos",
+"abbreviation": "KC",
+"shortDisplayName": "Kansas City",
 "links": {
 "web": {
 "teams": {
@@ -25221,6 +25255,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dc2546d8-a32f-4489-b714-8400754f49d0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47351303",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/7788932a-23b2-473a-93e5-6d3771e49d8f/7788932a-23b2-473a-93e5-6d3771e49d8f.mp4"
 },
@@ -25333,6 +25368,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/36ef3713-c08d-481e-8293-f54b52d0334e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47351343",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/125f29f5-816a-4916-a98e-9209a682a152/125f29f5-816a-4916-a98e-9209a682a152.mp4"
 },
@@ -25445,6 +25481,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c7f7f1c1-a212-4e65-8b5d-aeb007d37489/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47351416",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/6ddac0de-d9ae-450a-91c4-29bfd685d9fb/6ddac0de-d9ae-450a-91c4-29bfd685d9fb.mp4"
 },
@@ -25557,6 +25594,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9aa2a5ac-a3a4-4391-a820-4a959de6de7d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47351562",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/3e3b0fe7-78c4-49bf-a5e9-e174bcc60bc7/3e3b0fe7-78c4-49bf-a5e9-e174bcc60bc7.mp4"
 },
@@ -25669,6 +25707,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/458dd0a4-0e89-4c7a-b957-08b47f85cbde/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47352389",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1219/0319a48d-785d-4d74-ab1a-836244dbec1f/0319a48d-785d-4d74-ab1a-836244dbec1f.mp4"
 },
@@ -25746,8 +25785,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25995,7 +26033,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-20T22:36Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/233.png",
@@ -26006,7 +26044,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-20T22:35Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26098,8 +26136,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 6.0,
-"displayValue": "6"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "id": "9",
@@ -26123,7 +26161,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-03-01T14:17Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2172.png",
@@ -26134,7 +26172,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-03-01T14:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26646,7 +26684,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -26657,7 +26695,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

@@ -2590,7 +2590,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2789,7 +2789,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5006,7 +5006,7 @@
 "uid": "s:40~l:41~e:401814602",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5595,6 +5595,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5639,30 +5640,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5691,6 +5683,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5729,6 +5731,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21960,6 +21981,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/755829dc-54fa-45ab-ae8e-55f71b1fc669/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126788",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0307/c69a4361-2af3-4fee-b1fe-7f8449b03bc4/c69a4361-2af3-4fee-b1fe-7f8449b03bc4.mp4"
 },
@@ -22033,6 +22055,8 @@
 "team": {
 "id": 2006,
 "description": "Akron Zips",
+"abbreviation": "AKR",
+"shortDisplayName": "Akron",
 "links": {
 "web": {
 "teams": {
@@ -22056,7 +22080,9 @@
 "teamId": 2006,
 "team": {
 "id": 2006,
-"description": "University of Akron"
+"description": "University of Akron",
+"abbreviation": "Akron",
+"shortDisplayName": "Akron"
 }
 },
 {
@@ -22202,6 +22228,8 @@
 "team": {
 "id": 2459,
 "description": "Northern Illinois Huskies",
+"abbreviation": "NIU",
+"shortDisplayName": "N Illinois",
 "links": {
 "web": {
 "teams": {
@@ -22225,32 +22253,22 @@
 "teamId": 2459,
 "team": {
 "id": 2459,
-"description": "Northern Illinois University"
+"description": "Northern Illinois University",
+"abbreviation": "Northern Illinois",
+"shortDisplayName": "Northern Illinois"
 }
 },
 {
 "id": 570945,
 "type": "athlete",
-"uid": "s:40~l:41~a:5108060",
+"uid": "s:40~l:63~a:5108060",
 "guid": "0f937ab1-3250-3725-bd7d-8a2b802dd114",
 "description": "Amani Lyles",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5108060,
 "athlete": {
 "id": 5108060,
-"description": "Amani Lyles",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5108060/amani-lyles"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5108060/amani-lyles"
-}
-}
-}
+"description": "Amani Lyles"
 }
 },
 {
@@ -22405,6 +22423,8 @@
 "team": {
 "id": 2006,
 "description": "Akron Zips",
+"abbreviation": "AKR",
+"shortDisplayName": "Akron",
 "links": {
 "web": {
 "teams": {
@@ -22428,7 +22448,9 @@
 "teamId": 2006,
 "team": {
 "id": 2006,
-"description": "University of Akron"
+"description": "University of Akron",
+"abbreviation": "Akron",
+"shortDisplayName": "Akron"
 }
 },
 {
@@ -22442,6 +22464,8 @@
 "team": {
 "id": 2459,
 "description": "Northern Illinois Huskies",
+"abbreviation": "NIU",
+"shortDisplayName": "N Illinois",
 "links": {
 "web": {
 "teams": {
@@ -22465,7 +22489,9 @@
 "teamId": 2459,
 "team": {
 "id": 2459,
-"description": "Northern Illinois University"
+"description": "Northern Illinois University",
+"abbreviation": "Northern Illinois",
+"shortDisplayName": "Northern Illinois"
 }
 },
 {
@@ -22591,6 +22617,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/aeb6b632-54ae-4795-a424-eed96c64469a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126076",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/f1abfb05-91d0-4038-b9da-f6c9652fab02/f1abfb05-91d0-4038-b9da-f6c9652fab02.mp4"
 },
@@ -22700,6 +22727,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/67ade2ef-ab14-4c2b-94d4-c931bcfd59bf/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126190",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/0b930b28-eb39-4e82-a0d8-6cebc3ed8a72/0b930b28-eb39-4e82-a0d8-6cebc3ed8a72.mp4"
 },
@@ -22809,6 +22837,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c17c02f8-1467-4145-b711-34ee0dc5a5ea/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126197",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0306/c20fabee-54a6-486d-8bf5-36b3f354f550/c20fabee-54a6-486d-8bf5-36b3f354f550.mp4"
 },
@@ -22918,6 +22947,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2914deda-0ab2-4f19-8dfe-b5512f5a095e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126542",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0307/298fba48-1614-4cce-a58d-f98e20fd4397/298fba48-1614-4cce-a58d-f98e20fd4397.mp4"
 },
@@ -23027,6 +23057,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c87030ed-49ff-435f-b99a-858bcec1eaa7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48126574",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0307/91162bff-b4bf-4049-8b82-5f4709e2d5c1/91162bff-b4bf-4049-8b82-5f4709e2d5c1.mp4"
 },
@@ -23104,8 +23135,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -23481,7 +23511,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/195.png",
@@ -23492,7 +23522,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23865,7 +23895,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2199.png",
@@ -23876,7 +23906,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23904,8 +23934,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",

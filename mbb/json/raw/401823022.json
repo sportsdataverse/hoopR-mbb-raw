@@ -2159,10 +2159,10 @@
 "id": "269"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2465,10 +2465,10 @@
 "id": "84"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2549,10 +2549,10 @@
 "id": "84"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2642,10 +2642,10 @@
 "id": "84"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5399,7 +5399,7 @@
 "uid": "s:40~l:41~e:401823022",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5981,6 +5981,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6025,30 +6026,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6077,6 +6069,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6115,6 +6117,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -26117,6 +26138,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/90ec2801-447b-447c-8fe2-df04e25e0832/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46907733",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1109/dca79953-b910-44c1-adb5-0a7839be7ea0/dca79953-b910-44c1-adb5-0a7839be7ea0.mp4"
 },
@@ -26190,6 +26212,8 @@
 "team": {
 "id": 84,
 "description": "Indiana Hoosiers",
+"abbreviation": "IU",
+"shortDisplayName": "Indiana",
 "links": {
 "web": {
 "teams": {
@@ -26238,32 +26262,22 @@
 "teamId": 269,
 "team": {
 "id": 269,
-"description": "Marquette University"
+"description": "Marquette University",
+"abbreviation": "Marquette",
+"shortDisplayName": "Marquette"
 }
 },
 {
 "id": 568689,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105876",
+"uid": "s:40~l:63~a:5105876",
 "guid": "51a17dea-5fc2-3016-87c4-c15dc97c6196",
 "description": "Lamar Wilkerson",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5105876,
 "athlete": {
 "id": 5105876,
-"description": "Lamar Wilkerson",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105876/lamar-wilkerson"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105876/lamar-wilkerson"
-}
-}
-}
+"description": "Lamar Wilkerson"
 }
 },
 {
@@ -26277,6 +26291,8 @@
 "team": {
 "id": 269,
 "description": "Marquette Golden Eagles",
+"abbreviation": "MARQ",
+"shortDisplayName": "Marquette",
 "links": {
 "web": {
 "teams": {
@@ -26320,26 +26336,14 @@
 {
 "id": 568624,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105598",
+"uid": "s:40~l:23170~a:5105598",
 "guid": "bef99ff0-64c7-3f57-971c-43f69f9fca6f",
 "description": "Chase Ross",
-"sportId": 41,
+"sportId": 23170,
 "athleteId": 5105598,
 "athlete": {
 "id": 5105598,
-"description": "Chase Ross",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105598/chase-ross"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105598/chase-ross"
-}
-}
-}
+"description": "Chase Ross"
 }
 },
 {
@@ -26357,7 +26361,9 @@
 "teamId": 84,
 "team": {
 "id": 84,
-"description": "Indiana University"
+"description": "Indiana University",
+"abbreviation": "Indiana",
+"shortDisplayName": "Indiana"
 }
 },
 {
@@ -26539,6 +26545,8 @@
 "team": {
 "id": 84,
 "description": "Indiana Hoosiers",
+"abbreviation": "IU",
+"shortDisplayName": "Indiana",
 "links": {
 "web": {
 "teams": {
@@ -26564,6 +26572,8 @@
 "team": {
 "id": 269,
 "description": "Marquette Golden Eagles",
+"abbreviation": "MARQ",
+"shortDisplayName": "Marquette",
 "links": {
 "web": {
 "teams": {
@@ -26724,6 +26734,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8111baa4-1547-4114-9d5b-607b2b7d16bb/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46906952",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1109/ece48a4a-14cb-450d-85e9-fd047a1ff2c4/ece48a4a-14cb-450d-85e9-fd047a1ff2c4.mp4"
 },
@@ -26835,6 +26846,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/404cef04-01a7-461f-b7c1-39dec4cbd200/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46907117",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1109/b86510b7-1eb0-40c7-8645-4db79a33d171/b86510b7-1eb0-40c7-8645-4db79a33d171.mp4"
 },
@@ -26946,6 +26958,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ed1a6cb-97e0-4ae2-9adb-084f1a0d0de2/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46907343",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1109/e635baf9-b66d-468a-8110-d06fa2be322b/e635baf9-b66d-468a-8110-d06fa2be322b.mp4"
 },
@@ -27057,6 +27070,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/fb4d3a30-559a-4949-b0ce-713a252a9053/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46907345",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1109/59788b59-d38c-4873-8810-70fe430951ec/59788b59-d38c-4873-8810-70fe430951ec.mp4"
 },
@@ -27133,8 +27147,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -27446,7 +27459,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -27457,7 +27470,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -28022,7 +28035,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -28033,7 +28046,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -28086,7 +28099,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -28097,7 +28110,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

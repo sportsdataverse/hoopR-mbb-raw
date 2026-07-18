@@ -2259,10 +2259,10 @@
 "id": "202"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2488,7 +2488,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2539,7 +2539,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33882206%3Foutcomes%3D0ML84041837_3",
 "text": "Home Bet",
@@ -2553,7 +2553,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33882206%3Foutcomes%3D0ML84041837_1",
 "text": "Away Bet",
@@ -2717,7 +2717,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5154,7 +5154,7 @@
 "uid": "s:40~l:41~e:401858361",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 3
 },
 "timeValid": true,
@@ -5736,6 +5736,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5780,30 +5781,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5832,6 +5824,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5870,6 +5872,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23739,6 +23760,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/92fb8f05-2a65-47a4-ac43-15cd6439dd8f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381883",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/db6179f9-4dc5-44d9-b766-fb778fc4bee0/db6179f9-4dc5-44d9-b766-fb778fc4bee0.mp4"
 },
@@ -23812,6 +23834,8 @@
 "team": {
 "id": 167,
 "description": "New Mexico Lobos",
+"abbreviation": "UNM",
+"shortDisplayName": "New Mexico",
 "links": {
 "web": {
 "teams": {
@@ -23835,7 +23859,9 @@
 "teamId": 167,
 "team": {
 "id": 167,
-"description": "University of New Mexico"
+"description": "University of New Mexico",
+"abbreviation": "New Mexico",
+"shortDisplayName": "New Mexico"
 }
 },
 {
@@ -23849,6 +23875,8 @@
 "team": {
 "id": 202,
 "description": "Tulsa Golden Hurricane",
+"abbreviation": "TLSA",
+"shortDisplayName": "Tulsa",
 "links": {
 "web": {
 "teams": {
@@ -23872,7 +23900,9 @@
 "teamId": 202,
 "team": {
 "id": 202,
-"description": "University of Tulsa"
+"description": "University of Tulsa",
+"abbreviation": "Tulsa",
+"shortDisplayName": "Tulsa"
 }
 },
 {
@@ -24043,6 +24073,8 @@
 "team": {
 "id": 167,
 "description": "New Mexico Lobos",
+"abbreviation": "UNM",
+"shortDisplayName": "New Mexico",
 "links": {
 "web": {
 "teams": {
@@ -24066,7 +24098,9 @@
 "teamId": 167,
 "team": {
 "id": 167,
-"description": "University of New Mexico"
+"description": "University of New Mexico",
+"abbreviation": "New Mexico",
+"shortDisplayName": "New Mexico"
 }
 },
 {
@@ -24080,6 +24114,8 @@
 "team": {
 "id": 202,
 "description": "Tulsa Golden Hurricane",
+"abbreviation": "TLSA",
+"shortDisplayName": "Tulsa",
 "links": {
 "web": {
 "teams": {
@@ -24103,7 +24139,9 @@
 "teamId": 202,
 "team": {
 "id": 202,
-"description": "University of Tulsa"
+"description": "University of Tulsa",
+"abbreviation": "Tulsa",
+"shortDisplayName": "Tulsa"
 }
 },
 {
@@ -24233,6 +24271,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/859807a8-3503-45ae-9445-99213267a1cb/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381335",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0402/dd5e2cb0-e9da-48c8-bcfe-aa1948e8b530/dd5e2cb0-e9da-48c8-bcfe-aa1948e8b530.mp4"
 },
@@ -24342,6 +24381,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4907ce93-5d6e-4af7-846c-71c270488ee6/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381419",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0402/5ecd8057-0866-492e-ad39-980dd30ad55d/5ecd8057-0866-492e-ad39-980dd30ad55d.mp4"
 },
@@ -24451,6 +24491,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/12a0b564-8cb4-455e-93fd-d1aabb060668/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381481",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/050bf67c-b78d-4d05-92be-d8239f9fab75/050bf67c-b78d-4d05-92be-d8239f9fab75.mp4"
 },
@@ -24560,6 +24601,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/935fb2b5-bb79-4352-b46a-ab3100c4b90c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381483",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/cee682ec-0997-4a89-ad21-0291e012520a/cee682ec-0997-4a89-ad21-0291e012520a.mp4"
 },
@@ -24669,6 +24711,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/42e8a43f-6ca2-408f-895e-7ffed3f35f6e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381550",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/1538024a-5b36-4dc3-9e00-ee93eb61c61d/1538024a-5b36-4dc3-9e00-ee93eb61c61d.mp4"
 },
@@ -24778,6 +24821,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/83c9288f-6eee-4302-833a-75edb1032a6c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381617",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/2f65edb2-411a-4493-9f36-911f5afcde31/2f65edb2-411a-4493-9f36-911f5afcde31.mp4"
 },
@@ -24887,6 +24931,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d82a3fa1-a206-404b-ab33-84de314fbf50/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381619",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/6eb0765d-a27b-4657-b8fb-13f971b59fac/6eb0765d-a27b-4657-b8fb-13f971b59fac.mp4"
 },
@@ -24996,6 +25041,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/db8483d2-6a40-4a72-9311-d7f33c61f7e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48381769",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0403/c3165f0b-4f07-40ca-9ae9-1a269b743e2e/c3165f0b-4f07-40ca-9ae9-1a269b743e2e.mp4"
 },
@@ -25073,8 +25119,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25130,7 +25175,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/58.png",
@@ -25141,7 +25186,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25322,7 +25367,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/5.png",
@@ -25333,7 +25378,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25514,7 +25559,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2429.png",
@@ -25525,7 +25570,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25706,7 +25751,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/235.png",
@@ -25717,7 +25762,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25770,7 +25815,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/242.png",
@@ -25781,7 +25826,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26229,7 +26274,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2440.png",
@@ -26240,7 +26285,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26293,7 +26338,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/68.png",
@@ -26304,7 +26349,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26485,7 +26530,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2751.png",
@@ -26496,7 +26541,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

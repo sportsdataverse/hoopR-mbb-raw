@@ -2221,10 +2221,10 @@
 "id": "259"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5011,7 +5011,7 @@
 "uid": "s:40~l:41~e:401817519",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5593,6 +5593,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5637,30 +5638,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5689,6 +5681,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5727,6 +5729,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23520,6 +23541,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9efc5e82-44ec-4a47-ada0-99fa63126883/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948594",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/e7a1e4e5-352e-4062-b9da-162758dd869c/e7a1e4e5-352e-4062-b9da-162758dd869c.mp4"
 },
@@ -23618,6 +23640,8 @@
 "team": {
 "id": 2603,
 "description": "Saint Joseph's Hawks",
+"abbreviation": "JOES",
+"shortDisplayName": "Saint Joseph's",
 "links": {
 "web": {
 "teams": {
@@ -23643,6 +23667,8 @@
 "team": {
 "id": 259,
 "description": "Virginia Tech Hokies",
+"abbreviation": "VT",
+"shortDisplayName": "Virginia Tech",
 "links": {
 "web": {
 "teams": {
@@ -23692,7 +23718,9 @@
 "teamId": 2603,
 "team": {
 "id": 2603,
-"description": "Saint Joseph's University (PA)"
+"description": "Saint Joseph's University (PA)",
+"abbreviation": "Saint Joseph's",
+"shortDisplayName": "Saint Joseph's"
 }
 },
 {
@@ -23760,16 +23788,18 @@
 "teamId": 259,
 "team": {
 "id": 259,
-"description": "Virginia Tech"
+"description": "Virginia Tech",
+"abbreviation": "Virginia Tech",
+"shortDisplayName": "Virginia Tech"
 }
 },
 {
 "id": 569061,
 "type": "athlete",
-"uid": "s:40~l:41~a:5106040",
+"uid": "s:40~l:46~a:5106040",
 "guid": "258b9d7d-74d2-3ade-a46e-d7b225c87dfa",
 "description": "Tobi Lawal",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5106040,
 "athlete": {
 "id": 5106040,
@@ -23777,12 +23807,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5106040/tobi-lawal"
+"href": "https://www.espn.com/nba/player/_/id/5106040/tobi-lawal"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5106040/tobi-lawal"
+"href": "https://www.espn.com/nba/player/_/id/5106040/tobi-lawal"
 }
 }
 }
@@ -23884,6 +23914,8 @@
 "team": {
 "id": 259,
 "description": "Virginia Tech Hokies",
+"abbreviation": "VT",
+"shortDisplayName": "Virginia Tech",
 "links": {
 "web": {
 "teams": {
@@ -23909,6 +23941,8 @@
 "team": {
 "id": 2603,
 "description": "Saint Joseph's Hawks",
+"abbreviation": "JOES",
+"shortDisplayName": "Saint Joseph's",
 "links": {
 "web": {
 "teams": {
@@ -24069,6 +24103,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cf370d92-078e-4e24-8f01-15bf055ad111/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46947203",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/03469fb0-4758-4f87-a7b8-0a8de8a4233b/03469fb0-4758-4f87-a7b8-0a8de8a4233b.mp4"
 },
@@ -24180,6 +24215,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8f768f8a-47ad-4557-8d44-35d999824f16/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46947483",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/0cfc52d8-0087-4291-9c41-dd54d02c52e8/0cfc52d8-0087-4291-9c41-dd54d02c52e8.mp4"
 },
@@ -24291,6 +24327,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/44a6bf64-f437-4e75-8246-c295fb6db4e7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46948306",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/de1f8f4d-e22e-49ed-b58f-733e774c7647/de1f8f4d-e22e-49ed-b58f-733e774c7647.mp4"
 },
@@ -24367,8 +24404,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24936,7 +24972,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2230.png",
@@ -24947,7 +24983,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

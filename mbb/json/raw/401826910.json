@@ -4745,7 +4745,7 @@
 "uid": "s:40~l:41~e:401826910",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5131,6 +5131,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5175,30 +5176,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5227,6 +5219,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5265,6 +5267,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -22495,6 +22516,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/bfad66d3-5d95-4e96-b68e-ec421e54f8fc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47439803",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1229/a7b253e6-0693-4208-afac-6a2e07bbacee/a7b253e6-0693-4208-afac-6a2e07bbacee.mp4"
 },
@@ -22607,6 +22629,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a1f76d5e-4dbe-4115-b1f7-0e6735edbd84/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47439086",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1229/ebf682e1-bb59-42dc-a6f9-68fd47ab2346/ebf682e1-bb59-42dc-a6f9-68fd47ab2346.mp4"
 },
@@ -22719,6 +22742,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/900488fb-97ed-44f5-9ffa-de6fdf90c510/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47439159",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1229/d9a3beb9-96aa-4ec0-9fe4-5826d04684c0/d9a3beb9-96aa-4ec0-9fe4-5826d04684c0.mp4"
 },
@@ -22831,6 +22855,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9cd2c944-7eba-4938-9bc8-118bf23ec625/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47439488",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1229/b674075b-ee14-4eba-b233-c4c2b9f9ac79/b674075b-ee14-4eba-b233-c4c2b9f9ac79.mp4"
 },
@@ -22943,6 +22968,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ef73cb28-275b-44e5-874c-ab3c2e704542/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47439629",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1229/b782b533-8937-4746-9360-948da8cf7857/b782b533-8937-4746-9360-948da8cf7857.mp4"
 },
@@ -23020,8 +23046,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

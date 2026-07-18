@@ -1957,10 +1957,10 @@
 "id": "2390"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2041,10 +2041,10 @@
 "id": "2390"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5039,7 +5039,7 @@
 "uid": "s:40~l:41~e:401809417",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5621,6 +5621,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5665,30 +5666,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5717,6 +5709,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5755,6 +5757,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24354,6 +24375,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c2848b22-d0da-41c9-9e2c-35fd44578858/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47042442",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/84a0dd9c-c0ac-45d3-9fdb-2e82ffc0e95a/84a0dd9c-c0ac-45d3-9fdb-2e82ffc0e95a.mp4"
 },
@@ -24452,6 +24474,8 @@
 "team": {
 "id": 2390,
 "description": "Miami Hurricanes",
+"abbreviation": "MIA",
+"shortDisplayName": "Miami",
 "links": {
 "web": {
 "teams": {
@@ -24477,6 +24501,8 @@
 "team": {
 "id": 2210,
 "description": "Elon Phoenix",
+"abbreviation": "ELON",
+"shortDisplayName": "Elon",
 "links": {
 "web": {
 "teams": {
@@ -24551,26 +24577,14 @@
 {
 "id": 568784,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105798",
+"uid": "s:40~l:63~a:5105798",
 "guid": "e46d900d-019d-3235-8352-10d0c38fb635",
 "description": "Malik Reneau",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5105798,
 "athlete": {
 "id": 5105798,
-"description": "Malik Reneau",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105798/malik-reneau"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105798/malik-reneau"
-}
-}
-}
+"description": "Malik Reneau"
 }
 },
 {
@@ -24582,7 +24596,9 @@
 "teamId": 2210,
 "team": {
 "id": 2210,
-"description": "Elon College"
+"description": "Elon College",
+"abbreviation": "Elon",
+"shortDisplayName": "Elon"
 }
 },
 {
@@ -24656,7 +24672,9 @@
 "teamId": 2390,
 "team": {
 "id": 2390,
-"description": "University of Miami"
+"description": "University of Miami",
+"abbreviation": "Miami",
+"shortDisplayName": "Miami"
 }
 },
 {
@@ -24774,6 +24792,8 @@
 "team": {
 "id": 2390,
 "description": "Miami Hurricanes",
+"abbreviation": "MIA",
+"shortDisplayName": "Miami",
 "links": {
 "web": {
 "teams": {
@@ -24799,6 +24819,8 @@
 "team": {
 "id": 2210,
 "description": "Elon Phoenix",
+"abbreviation": "ELON",
+"shortDisplayName": "Elon",
 "links": {
 "web": {
 "teams": {
@@ -24933,6 +24955,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/21bb7d26-8c9d-4024-93dd-12591b659101/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47041891",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/179ea393-0d28-454e-bc75-0441b4e9cacd/179ea393-0d28-454e-bc75-0441b4e9cacd.mp4"
 },
@@ -25045,6 +25068,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e2876f16-5fec-439c-886e-ad5f36f8b095/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47042075",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1121/dcc21233-70fe-4190-aa4f-4971a5bba564/dcc21233-70fe-4190-aa4f-4971a5bba564.mp4"
 },
@@ -25122,8 +25146,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25755,7 +25778,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-12-26T13:41Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2261.png",
@@ -25766,7 +25789,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-12-26T13:41Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

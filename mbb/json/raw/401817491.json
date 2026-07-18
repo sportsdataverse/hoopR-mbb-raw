@@ -165,8 +165,8 @@
 "abbreviation": "UVA",
 "displayName": "Virginia Cavaliers",
 "shortDisplayName": "Virginia",
-"color": "f84c1e",
-"alternateColor": "232d4b",
+"color": "232d4b",
+"alternateColor": "f84c1e",
 "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png"
 },
 "statistics": [
@@ -1097,8 +1097,8 @@
 "abbreviation": "UVA",
 "displayName": "Virginia Cavaliers",
 "shortDisplayName": "Virginia",
-"color": "f84c1e",
-"alternateColor": "232d4b",
+"color": "232d4b",
+"alternateColor": "f84c1e",
 "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png"
 },
 "statistics": [
@@ -1995,10 +1995,10 @@
 "id": "258"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2172,10 +2172,10 @@
 "id": "258"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2478,10 +2478,10 @@
 "id": "2086"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5250,7 +5250,7 @@
 "uid": "s:40~l:41~e:401817491",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5288,8 +5288,8 @@
 "nickname": "Virginia",
 "abbreviation": "UVA",
 "displayName": "Virginia Cavaliers",
-"color": "f84c1e",
-"alternateColor": "232d4b",
+"color": "232d4b",
+"alternateColor": "f84c1e",
 "logos": [
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
@@ -5832,6 +5832,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5876,30 +5877,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5928,6 +5920,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5966,6 +5968,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -25971,6 +25992,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9d37d6b7-235c-4389-ace2-0370463789eb/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47076175",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1123/8a4760e9-08db-4192-be48-9a51c5299557/8a4760e9-08db-4192-be48-9a51c5299557.mp4"
 },
@@ -26042,7 +26064,9 @@
 "teamId": 258,
 "team": {
 "id": 258,
-"description": "University of Virginia"
+"description": "University of Virginia",
+"abbreviation": "Virginia",
+"shortDisplayName": "Virginia"
 }
 },
 {
@@ -26081,6 +26105,8 @@
 "team": {
 "id": 2086,
 "description": "Butler Bulldogs",
+"abbreviation": "BUT",
+"shortDisplayName": "Butler",
 "links": {
 "web": {
 "teams": {
@@ -26098,10 +26124,10 @@
 {
 "id": 569107,
 "type": "athlete",
-"uid": "s:40~l:41~a:5037878",
+"uid": "s:40~l:46~a:5037878",
 "guid": "6a87526a-06c8-36c8-8504-1c470e962bd8",
 "description": "Ugonna Onyenso",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5037878,
 "athlete": {
 "id": 5037878,
@@ -26109,12 +26135,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5037878/ugonna-onyenso"
+"href": "https://www.espn.com/nba/player/_/id/5037878/ugonna-onyenso"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5037878/ugonna-onyenso"
+"href": "https://www.espn.com/nba/player/_/id/5037878/ugonna-onyenso"
 }
 }
 }
@@ -26155,7 +26181,9 @@
 "teamId": 2086,
 "team": {
 "id": 2086,
-"description": "Butler University"
+"description": "Butler University",
+"abbreviation": "Butler",
+"shortDisplayName": "Butler"
 }
 },
 {
@@ -26192,26 +26220,14 @@
 {
 "id": 634526,
 "type": "athlete",
-"uid": "s:40~l:41~a:5176517",
+"uid": "s:40~l:63~a:5176517",
 "guid": "99463582-a72b-3cb1-a10a-12a42a9e38f7",
 "description": "Michael Ajayi",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5176517,
 "athlete": {
 "id": 5176517,
-"description": "Michael Ajayi",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5176517/michael-ajayi"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5176517/michael-ajayi"
-}
-}
-}
+"description": "Michael Ajayi"
 }
 },
 {
@@ -26225,6 +26241,8 @@
 "team": {
 "id": 258,
 "description": "Virginia Cavaliers",
+"abbreviation": "UVA",
+"shortDisplayName": "Virginia",
 "links": {
 "web": {
 "teams": {
@@ -26391,6 +26409,8 @@
 "team": {
 "id": 258,
 "description": "Virginia Cavaliers",
+"abbreviation": "UVA",
+"shortDisplayName": "Virginia",
 "links": {
 "web": {
 "teams": {
@@ -26416,6 +26436,8 @@
 "team": {
 "id": 2086,
 "description": "Butler Bulldogs",
+"abbreviation": "BUT",
+"shortDisplayName": "Butler",
 "links": {
 "web": {
 "teams": {
@@ -26550,6 +26572,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9e154c81-30ae-4d5f-a561-47025666ab97/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47074353",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1123/75562eee-0bc8-44d2-8bfd-0194a4751598/75562eee-0bc8-44d2-8bfd-0194a4751598.mp4"
 },
@@ -26662,6 +26685,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/6af9d715-b871-4cd6-bf54-763128a20e00/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47074614",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1123/cdea7321-b15b-4c18-bda1-1887e2648dd0/cdea7321-b15b-4c18-bda1-1887e2648dd0.mp4"
 },
@@ -26774,6 +26798,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/b1ec6cbc-620a-456e-9b24-02b8ddf4fbfe/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47074623",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1123/4aa3db94-8727-4626-b18d-542c719b10b5/4aa3db94-8727-4626-b18d-542c719b10b5.mp4"
 },
@@ -26851,8 +26876,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

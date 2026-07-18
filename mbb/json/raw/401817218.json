@@ -2122,10 +2122,10 @@
 "id": "25"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5219,7 +5219,7 @@
 "uid": "s:40~l:41~e:401817218",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5800,6 +5800,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5844,30 +5845,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5896,6 +5888,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5934,6 +5936,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24629,6 +24650,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/546f1e3a-aa8a-487e-adb5-426fdecbfa78/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46842059",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/923cb1e5-e021-4cce-b264-430a09e9e350/923cb1e5-e021-4cce-b264-430a09e9e350.mp4"
 },
@@ -24752,6 +24774,8 @@
 "team": {
 "id": 25,
 "description": "California Golden Bears",
+"abbreviation": "CAL",
+"shortDisplayName": "California",
 "links": {
 "web": {
 "teams": {
@@ -24802,6 +24826,8 @@
 "team": {
 "id": 2934,
 "description": "Cal State Bakersfield Roadrunners",
+"abbreviation": "CSUB",
+"shortDisplayName": "Bakersfield",
 "links": {
 "web": {
 "teams": {
@@ -24851,7 +24877,9 @@
 "teamId": 25,
 "team": {
 "id": 25,
-"description": "University of California"
+"description": "University of California",
+"abbreviation": "California",
+"shortDisplayName": "California"
 }
 },
 {
@@ -24863,26 +24891,14 @@
 {
 "id": 508582,
 "type": "athlete",
-"uid": "s:40~l:41~a:4684155",
+"uid": "s:40~l:63~a:4684155",
 "guid": "ca94e17c-3386-3688-9b66-5685e01c2d49",
 "description": "John Camden",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4684155,
 "athlete": {
 "id": 4684155,
-"description": "John Camden",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4684155/john-camden"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4684155/john-camden"
-}
-}
-}
+"description": "John Camden"
 }
 },
 {
@@ -24894,7 +24910,9 @@
 "teamId": 2934,
 "team": {
 "id": 2934,
-"description": "Cal State Bakersfield"
+"description": "Cal State Bakersfield",
+"abbreviation": "Cal State Bakersfield",
+"shortDisplayName": "Cal State Bakersfield"
 }
 },
 {
@@ -25047,6 +25065,8 @@
 "team": {
 "id": 25,
 "description": "California Golden Bears",
+"abbreviation": "CAL",
+"shortDisplayName": "California",
 "links": {
 "web": {
 "teams": {
@@ -25072,6 +25092,8 @@
 "team": {
 "id": 2934,
 "description": "Cal State Bakersfield Roadrunners",
+"abbreviation": "CSUB",
+"shortDisplayName": "Bakersfield",
 "links": {
 "web": {
 "teams": {
@@ -25207,6 +25229,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/35c70749-c5c6-4ed7-bcbd-f91e04b2aea7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46840494",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/750337e8-e3af-4144-8ef5-42a660ede250/750337e8-e3af-4144-8ef5-42a660ede250.mp4"
 },
@@ -25318,6 +25341,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e6dce788-ca80-4dac-a4d4-3fbd8b014a22/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46840530",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/6c4cc6cc-ebd1-4d4c-a4fc-efcf50d5bab6/6c4cc6cc-ebd1-4d4c-a4fc-efcf50d5bab6.mp4"
 },
@@ -25429,6 +25453,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/099e7d47-603a-4705-8d11-e6677d53a759/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46840584",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/dd171c5a-ed48-4bfa-b419-9e3c1938d1fe/dd171c5a-ed48-4bfa-b419-9e3c1938d1fe.mp4"
 },
@@ -25505,8 +25530,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

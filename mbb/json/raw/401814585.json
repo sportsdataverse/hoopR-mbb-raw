@@ -2155,10 +2155,10 @@
 "id": "189"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2628,7 +2628,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2679,7 +2679,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33696132%3Foutcomes%3D0ML83567219_1",
 "text": "Home Bet",
@@ -2693,7 +2693,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33696132%3Foutcomes%3D0ML83567219_3",
 "text": "Away Bet",
@@ -2857,7 +2857,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5324,7 +5324,7 @@
 "uid": "s:40~l:41~e:401814585",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5913,6 +5913,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5957,30 +5958,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6009,6 +6001,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6047,6 +6049,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24105,6 +24126,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/31aecd5a-cee0-408e-9452-dc00ae50048d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48027493",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0225/407bbc85-c8a8-4815-8d1f-922241361175/407bbc85-c8a8-4815-8d1f-922241361175.mp4"
 },
@@ -24228,6 +24250,8 @@
 "team": {
 "id": 189,
 "description": "Bowling Green Falcons",
+"abbreviation": "BGSU",
+"shortDisplayName": "Bowling Green",
 "links": {
 "web": {
 "teams": {
@@ -24297,6 +24321,8 @@
 "team": {
 "id": 2711,
 "description": "Western Michigan Broncos",
+"abbreviation": "WMU",
+"shortDisplayName": "W Michigan",
 "links": {
 "web": {
 "teams": {
@@ -24370,7 +24396,9 @@
 "teamId": 189,
 "team": {
 "id": 189,
-"description": "Bowling Green State University"
+"description": "Bowling Green State University",
+"abbreviation": "Bowling Green",
+"shortDisplayName": "Bowling Green"
 }
 },
 {
@@ -24382,7 +24410,9 @@
 "teamId": 2711,
 "team": {
 "id": 2711,
-"description": "Western Michigan University"
+"description": "Western Michigan University",
+"abbreviation": "Western Michigan",
+"shortDisplayName": "Western Michigan"
 }
 },
 {
@@ -24521,6 +24551,8 @@
 "team": {
 "id": 189,
 "description": "Bowling Green Falcons",
+"abbreviation": "BGSU",
+"shortDisplayName": "Bowling Green",
 "links": {
 "web": {
 "teams": {
@@ -24546,6 +24578,8 @@
 "team": {
 "id": 2711,
 "description": "Western Michigan Broncos",
+"abbreviation": "WMU",
+"shortDisplayName": "W Michigan",
 "links": {
 "web": {
 "teams": {
@@ -24673,6 +24707,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1bc68ebc-e48c-44ae-adcc-bf45ec0f67bd/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48026567",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0225/04f29f18-5f72-4201-bdba-4a7b5d9118b6/04f29f18-5f72-4201-bdba-4a7b5d9118b6.mp4"
 },
@@ -24782,6 +24817,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9b48eea7-73ce-44b0-8b05-02a0919b7206/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48027067",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0225/f81a05b9-d181-4031-9010-d4846e3ed713/f81a05b9-d181-4031-9010-d4846e3ed713.mp4"
 },
@@ -24891,6 +24927,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c210eea2-9db9-41de-9df1-71ea53667869/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48027068",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0225/6eeb581d-150b-420b-8d5e-b942925750a9/6eeb581d-150b-420b-8d5e-b942925750a9.mp4"
 },
@@ -25000,6 +25037,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/79592811-8a15-4c5a-bece-78127801fe27/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=48027150",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0225/cb55ccdb-978f-4a0d-a204-0cbb8691096c/cb55ccdb-978f-4a0d-a204-0cbb8691096c.mp4"
 },
@@ -25077,8 +25115,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25454,7 +25491,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/195.png",
@@ -25465,7 +25502,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25838,7 +25875,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2199.png",
@@ -25849,7 +25886,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25877,8 +25914,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",

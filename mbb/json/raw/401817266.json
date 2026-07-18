@@ -2377,10 +2377,10 @@
 "id": "153"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2554,10 +2554,10 @@
 "id": "153"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5417,7 +5417,7 @@
 "uid": "s:40~l:41~e:401817266",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6000,6 +6000,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6044,30 +6045,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6096,6 +6088,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6134,6 +6136,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24555,6 +24576,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/90e7f3c8-ec61-4fa0-a858-e2ba2d571432/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016536",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/00259d02-969b-4452-8698-7ac360a03ff2/00259d02-969b-4452-8698-7ac360a03ff2.mp4"
 },
@@ -24710,6 +24732,8 @@
 "team": {
 "id": 153,
 "description": "North Carolina Tar Heels",
+"abbreviation": "UNC",
+"shortDisplayName": "North Carolina",
 "links": {
 "web": {
 "teams": {
@@ -24752,10 +24776,10 @@
 {
 "id": 737951,
 "type": "athlete",
-"uid": "s:40~l:41~a:5095151",
+"uid": "s:40~l:46~a:5095151",
 "guid": "69d193b9-51f6-3971-aaca-b223be886f21",
 "description": "Caleb Wilson",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5095151,
 "athlete": {
 "id": 5095151,
@@ -24763,12 +24787,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5095151/caleb-wilson"
+"href": "https://www.espn.com/nba/player/_/id/5095151/caleb-wilson"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5095151/caleb-wilson"
+"href": "https://www.espn.com/nba/player/_/id/5095151/caleb-wilson"
 }
 }
 }
@@ -24797,6 +24821,8 @@
 "team": {
 "id": 2426,
 "description": "Navy Midshipmen",
+"abbreviation": "NAVY",
+"shortDisplayName": "Navy",
 "links": {
 "web": {
 "teams": {
@@ -24820,7 +24846,9 @@
 "teamId": 2426,
 "team": {
 "id": 2426,
-"description": "United States Naval Academy"
+"description": "United States Naval Academy",
+"abbreviation": "Navy",
+"shortDisplayName": "Navy"
 }
 },
 {
@@ -24832,7 +24860,9 @@
 "teamId": 153,
 "team": {
 "id": 153,
-"description": "University of North Carolina"
+"description": "University of North Carolina",
+"abbreviation": "North Carolina",
+"shortDisplayName": "North Carolina"
 }
 },
 {
@@ -24948,6 +24978,8 @@
 "team": {
 "id": 153,
 "description": "North Carolina Tar Heels",
+"abbreviation": "UNC",
+"shortDisplayName": "North Carolina",
 "links": {
 "web": {
 "teams": {
@@ -24999,6 +25031,8 @@
 "team": {
 "id": 2426,
 "description": "Navy Midshipmen",
+"abbreviation": "NAVY",
+"shortDisplayName": "Navy",
 "links": {
 "web": {
 "teams": {
@@ -25133,6 +25167,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c59a0085-2c0d-4f02-b81c-46a7fc26068a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47015458",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/355e492f-879e-418f-9b3a-7dff46776ee2/355e492f-879e-418f-9b3a-7dff46776ee2.mp4"
 },
@@ -25245,6 +25280,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c8ccd199-17bb-4e92-a59d-01833c8f7641/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47015537",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/474a8c9b-971b-4f26-ae93-a7b25c254d64/474a8c9b-971b-4f26-ae93-a7b25c254d64.mp4"
 },
@@ -25357,6 +25393,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/43c4af7f-07a8-4353-b794-f3d8d9a662bd/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47015717",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/d8da087c-4653-4f1c-893e-cb9c825218d3/d8da087c-4653-4f1c-893e-cb9c825218d3.mp4"
 },
@@ -25469,6 +25506,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7a3dc581-01ae-4d41-b79a-73489ac02734/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47016177",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1119/3fe9de17-7283-4941-94d1-c4e775ca738d/3fe9de17-7283-4941-94d1-c4e775ca738d.mp4"
 },
@@ -25546,8 +25584,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -25987,7 +26024,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/322.png",
@@ -25998,7 +26035,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

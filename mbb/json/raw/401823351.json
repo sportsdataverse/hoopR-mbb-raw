@@ -5180,7 +5180,7 @@
 "uid": "s:40~l:41~e:401823351",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5606,7 +5606,7 @@
 "slug": "ncaa-division-i"
 },
 "isConference": true,
-"slug": "asun-conference"
+"slug": "atlantic-sun-conference"
 },
 "links": [
 {
@@ -5761,6 +5761,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5805,30 +5806,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5857,6 +5849,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5895,6 +5897,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -25559,6 +25580,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3bed4506-5699-40b3-9899-25f2532d1bc7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46865691",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1106/12ba7e6e-3af2-4359-a81d-e4d73ec60f4e/12ba7e6e-3af2-4359-a81d-e4d73ec60f4e.mp4"
 },
@@ -25689,6 +25711,8 @@
 "team": {
 "id": 2453,
 "description": "North Alabama Lions",
+"abbreviation": "UNA",
+"shortDisplayName": "North Alabama",
 "links": {
 "web": {
 "teams": {
@@ -25762,7 +25786,9 @@
 "teamId": 344,
 "team": {
 "id": 344,
-"description": "Mississippi State University"
+"description": "Mississippi State University",
+"abbreviation": "Mississippi State",
+"shortDisplayName": "Mississippi State"
 }
 },
 {
@@ -25774,7 +25800,9 @@
 "teamId": 2453,
 "team": {
 "id": 2453,
-"description": "University of North Alabama"
+"description": "University of North Alabama",
+"abbreviation": "North Alabama",
+"shortDisplayName": "North Alabama"
 }
 },
 {
@@ -25788,6 +25816,8 @@
 "team": {
 "id": 344,
 "description": "Mississippi State Bulldogs",
+"abbreviation": "MSST",
+"shortDisplayName": "Mississippi St",
 "links": {
 "web": {
 "teams": {
@@ -25923,6 +25953,8 @@
 "team": {
 "id": 2453,
 "description": "North Alabama Lions",
+"abbreviation": "UNA",
+"shortDisplayName": "North Alabama",
 "links": {
 "web": {
 "teams": {
@@ -25973,6 +26005,8 @@
 "team": {
 "id": 344,
 "description": "Mississippi State Bulldogs",
+"abbreviation": "MSST",
+"shortDisplayName": "Mississippi St",
 "links": {
 "web": {
 "teams": {
@@ -26108,6 +26142,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/445d9308-8e2c-4c7d-8665-db05dd429034/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46864803",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1106/9052c90e-f26b-4109-8c20-2152fcfd5d92/9052c90e-f26b-4109-8c20-2152fcfd5d92.mp4"
 },
@@ -26219,6 +26254,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4ae405a5-12c8-44b9-88ae-ddde53341355/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46864917",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1106/6c538d71-f31d-43a9-b795-d680ccfbe5d3/6c538d71-f31d-43a9-b795-d680ccfbe5d3.mp4"
 },
@@ -26295,8 +26331,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -26327,8 +26362,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -26391,8 +26426,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 0.0,
-"displayValue": "-"
+"value": -1.0,
+"displayValue": "+1"
 },
 {
 "id": "9",
@@ -26647,8 +26682,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -26903,8 +26938,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 8.0,
-"displayValue": "8"
+"value": 7.0,
+"displayValue": "7"
 },
 {
 "id": "9",
@@ -27031,8 +27066,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 11.0,
-"displayValue": "11"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",
@@ -27073,11 +27108,11 @@
 }
 ]
 },
-"header": "2025-26 ASUN Conference Standings",
+"header": "2025-26 Atlantic Sun Conference Standings",
 "href": "https://www.espn.com/mens-college-basketball/standings/_/group/46",
 "conferenceHeader": "NCAA Division I",
-"divisionHeader": "ASUN Conference",
-"shortDivisionHeader": "ASUN"
+"divisionHeader": "Atlantic Sun Conference",
+"shortDivisionHeader": "Atlantic Sun"
 },
 {
 "standings": {

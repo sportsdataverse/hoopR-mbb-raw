@@ -2090,10 +2090,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2541,7 +2541,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2715,7 +2715,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4837,7 +4837,7 @@
 "uid": "s:40~l:41~e:401822359",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5420,6 +5420,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5464,30 +5465,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5516,6 +5508,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5554,6 +5556,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21141,6 +21162,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/6dd4e887-03dc-4579-8351-5cf1c6f616dc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47129058",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/54eda6d6-4860-401f-b0bc-22e4eb959e09/54eda6d6-4860-401f-b0bc-22e4eb959e09.mp4"
 },
@@ -21231,26 +21253,14 @@
 {
 "id": 568704,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105853",
+"uid": "s:40~l:63~a:5105853",
 "guid": "7b9cbe2a-8b80-391c-9403-febd5902f886",
 "description": "Fletcher Loyer",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5105853,
 "athlete": {
 "id": 5105853,
-"description": "Fletcher Loyer",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105853/fletcher-loyer"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105853/fletcher-loyer"
-}
-}
-}
+"description": "Fletcher Loyer"
 }
 },
 {
@@ -21314,6 +21324,8 @@
 "team": {
 "id": 2197,
 "description": "Eastern Illinois Panthers",
+"abbreviation": "EIU",
+"shortDisplayName": "E Illinois",
 "links": {
 "web": {
 "teams": {
@@ -21339,6 +21351,8 @@
 "team": {
 "id": 2509,
 "description": "Purdue Boilermakers",
+"abbreviation": "PUR",
+"shortDisplayName": "Purdue",
 "links": {
 "web": {
 "teams": {
@@ -21394,7 +21408,9 @@
 "teamId": 2197,
 "team": {
 "id": 2197,
-"description": "Eastern Illinois University"
+"description": "Eastern Illinois University",
+"abbreviation": "Eastern Illinois",
+"shortDisplayName": "Eastern Illinois"
 }
 },
 {
@@ -21406,7 +21422,9 @@
 "teamId": 2509,
 "team": {
 "id": 2509,
-"description": "Purdue University"
+"description": "Purdue University",
+"abbreviation": "Purdue",
+"shortDisplayName": "Purdue"
 }
 },
 {
@@ -21424,10 +21442,10 @@
 {
 "id": 568707,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105854",
+"uid": "s:40~l:46~a:5105854",
 "guid": "a609551a-802c-382d-bbdb-4bbe1d8d556e",
 "description": "Braden Smith",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5105854,
 "athlete": {
 "id": 5105854,
@@ -21435,12 +21453,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105854/braden-smith"
+"href": "https://www.espn.com/nba/player/_/id/5105854/braden-smith"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105854/braden-smith"
+"href": "https://www.espn.com/nba/player/_/id/5105854/braden-smith"
 }
 }
 }
@@ -21561,6 +21579,8 @@
 "team": {
 "id": 2509,
 "description": "Purdue Boilermakers",
+"abbreviation": "PUR",
+"shortDisplayName": "Purdue",
 "links": {
 "web": {
 "teams": {
@@ -21586,6 +21606,8 @@
 "team": {
 "id": 2197,
 "description": "Eastern Illinois Panthers",
+"abbreviation": "EIU",
+"shortDisplayName": "E Illinois",
 "links": {
 "web": {
 "teams": {
@@ -21720,6 +21742,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/8ce1fbd3-c235-449b-a3ff-800c49f416da/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47128385",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/28e0f6b4-f724-4658-9d87-11d86e0e448a/28e0f6b4-f724-4658-9d87-11d86e0e448a.mp4"
 },
@@ -21832,6 +21855,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/80a520e5-8a86-4ab6-9187-94e80e6804aa/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47128486",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/9fbfcec5-2bdf-4a3f-be6a-2e02a059c738/9fbfcec5-2bdf-4a3f-be6a-2e02a059c738.mp4"
 },
@@ -21944,6 +21968,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/605c5728-b441-4617-afdb-0897a9c3d343/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47128676",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/106553d6-b3f5-4153-8da3-b22898838e4b/106553d6-b3f5-4153-8da3-b22898838e4b.mp4"
 },
@@ -22056,6 +22081,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/921d3068-e3fb-4494-aff8-c30282569822/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47128743",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/a7f20b85-d525-4840-995c-8151a408ed1b/a7f20b85-d525-4840-995c-8151a408ed1b.mp4"
 },
@@ -22168,6 +22194,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f41e3015-1083-43ee-809b-7124b32bea27/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47128752",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1128/3eaf8859-663d-4087-8252-3bbf43ca44d9/3eaf8859-663d-4087-8252-3bbf43ca44d9.mp4"
 },
@@ -22245,8 +22272,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -22686,7 +22712,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -22697,7 +22723,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -22725,8 +22751,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -22750,7 +22776,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2635.png",
@@ -22761,7 +22787,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -22942,7 +22968,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2710.png",
@@ -22953,7 +22979,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }
@@ -23273,7 +23299,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -23284,7 +23310,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23849,7 +23875,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -23860,7 +23886,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23913,7 +23939,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -23924,7 +23950,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

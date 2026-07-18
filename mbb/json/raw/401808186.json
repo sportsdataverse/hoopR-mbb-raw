@@ -2437,10 +2437,10 @@
 "id": "2"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2666,7 +2666,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2717,7 +2717,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33492866%3Foutcomes%3D0ML83060610_1",
 "text": "Home Bet",
@@ -2731,7 +2731,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33492866%3Foutcomes%3D0ML83060610_3",
 "text": "Away Bet",
@@ -2895,7 +2895,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5452,7 +5452,7 @@
 "uid": "s:40~l:41~e:401808186",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6041,6 +6041,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6085,30 +6086,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6137,6 +6129,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6175,6 +6177,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -24870,6 +24891,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7fee6845-49af-4e62-b6be-dcc476e7f8bf/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47677943",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0121/917488d8-2a6c-4a8b-b620-dad4d040d591/917488d8-2a6c-4a8b-b620-dad4d040d591.mp4"
 },
@@ -24968,6 +24990,8 @@
 "team": {
 "id": 2,
 "description": "Auburn Tigers",
+"abbreviation": "AUB",
+"shortDisplayName": "Auburn",
 "links": {
 "web": {
 "teams": {
@@ -25019,6 +25043,8 @@
 "team": {
 "id": 145,
 "description": "Ole Miss Rebels",
+"abbreviation": "MISS",
+"shortDisplayName": "Ole Miss",
 "links": {
 "web": {
 "teams": {
@@ -25048,7 +25074,9 @@
 "teamId": 2,
 "team": {
 "id": 2,
-"description": "Auburn"
+"description": "Auburn",
+"abbreviation": "Auburn",
+"shortDisplayName": "Auburn"
 }
 },
 {
@@ -25060,7 +25088,9 @@
 "teamId": 145,
 "team": {
 "id": 145,
-"description": "University of Mississippi"
+"description": "University of Mississippi",
+"abbreviation": "Ole Miss",
+"shortDisplayName": "Ole Miss"
 }
 },
 {
@@ -25189,6 +25219,8 @@
 "team": {
 "id": 145,
 "description": "Ole Miss Rebels",
+"abbreviation": "MISS",
+"shortDisplayName": "Ole Miss",
 "links": {
 "web": {
 "teams": {
@@ -25214,6 +25246,8 @@
 "team": {
 "id": 2,
 "description": "Auburn Tigers",
+"abbreviation": "AUB",
+"shortDisplayName": "Auburn",
 "links": {
 "web": {
 "teams": {
@@ -25341,6 +25375,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/13cbab67-6ab8-4465-9fc4-e74939f053d0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47677986",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0121/62b50a19-c447-4e06-b6c3-45f06cb264b4/62b50a19-c447-4e06-b6c3-45f06cb264b4.mp4"
 },
@@ -25450,6 +25485,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/7a8eb7a7-634a-4f50-a69b-d657a4a0ab13/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47677065",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0121/988ab759-fe35-43d2-8e25-43c726c6affb/988ab759-fe35-43d2-8e25-43c726c6affb.mp4"
 },
@@ -25559,6 +25595,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e0755391-b66f-464b-87ea-5a8037e6d5e8/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47677279",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0121/62922fb7-f13f-4f9c-991c-e1afbc658315/62922fb7-f13f-4f9c-991c-e1afbc658315.mp4"
 },
@@ -25668,6 +25705,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a91d27ae-bef5-480c-950a-f063cbfcb4fc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47677716",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0121/d101789b-9035-4a01-81ea-5e493b295949/d101789b-9035-4a01-81ea-5e493b295949.mp4"
 },
@@ -25745,8 +25783,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

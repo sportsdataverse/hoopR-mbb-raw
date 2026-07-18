@@ -2119,10 +2119,10 @@
 "id": "245"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2676,7 +2676,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2875,7 +2875,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5807,7 +5807,7 @@
 "uid": "s:40~l:41~e:401829428",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6388,6 +6388,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6432,30 +6433,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6484,6 +6476,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6522,6 +6524,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -28285,6 +28306,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/dd469aa1-1ace-42ff-a398-b6a1574ab54a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47383868",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1221/7001effb-23a5-4cd4-b89f-4782bf8a5606/7001effb-23a5-4cd4-b89f-4782bf8a5606.mp4"
 },
@@ -28381,7 +28403,9 @@
 "teamId": 245,
 "team": {
 "id": 245,
-"description": "Texas A&M University"
+"description": "Texas A&M University",
+"abbreviation": "Texas A&M",
+"shortDisplayName": "Texas A&M"
 }
 },
 {
@@ -28420,6 +28444,8 @@
 "team": {
 "id": 245,
 "description": "Texas A&M Aggies",
+"abbreviation": "TA&M",
+"shortDisplayName": "Texas A&M",
 "links": {
 "web": {
 "teams": {
@@ -28437,26 +28463,14 @@
 {
 "id": 410286,
 "type": "athlete",
-"uid": "s:40~l:41~a:4593815",
+"uid": "s:40~l:63~a:4593815",
 "guid": "2160ed64-ba24-392c-8f11-bae2a80177e1",
 "description": "Rashaun Agee",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4593815,
 "athlete": {
 "id": 4593815,
-"description": "Rashaun Agee",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4593815/rashaun-agee"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4593815/rashaun-agee"
-}
-}
-}
+"description": "Rashaun Agee"
 }
 },
 {
@@ -28550,7 +28564,9 @@
 "teamId": 2837,
 "team": {
 "id": 2837,
-"description": "East Texas A&M University"
+"description": "East Texas A&M University",
+"abbreviation": "East Texas A&M",
+"shortDisplayName": "East Texas A&M"
 }
 },
 {
@@ -28564,6 +28580,8 @@
 "team": {
 "id": 2837,
 "description": "East Texas A&M Lions",
+"abbreviation": "ETAM",
+"shortDisplayName": "E Texas A&M",
 "links": {
 "web": {
 "teams": {
@@ -28705,6 +28723,8 @@
 "team": {
 "id": 245,
 "description": "Texas A&M Aggies",
+"abbreviation": "TA&M",
+"shortDisplayName": "Texas A&M",
 "links": {
 "web": {
 "teams": {
@@ -28730,6 +28750,8 @@
 "team": {
 "id": 2837,
 "description": "East Texas A&M Lions",
+"abbreviation": "ETAM",
+"shortDisplayName": "E Texas A&M",
 "links": {
 "web": {
 "teams": {
@@ -28864,6 +28886,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3e36ebd8-19df-4c13-b30f-93c5b9ca1570/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47383244",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1221/77572526-313f-468a-81cf-8bb057bb4e0a/77572526-313f-468a-81cf-8bb057bb4e0a.mp4"
 },
@@ -28976,6 +28999,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ee2092f2-a350-4f03-8559-9542f5c4aad0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47383262",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1221/8c919c90-fe68-44a7-80e3-34c713842c13/8c919c90-fe68-44a7-80e3-34c713842c13.mp4"
 },
@@ -29053,8 +29077,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -29110,7 +29133,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2617.png",
@@ -29121,7 +29144,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

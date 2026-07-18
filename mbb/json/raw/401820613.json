@@ -5073,7 +5073,7 @@
 "uid": "s:40~l:41~e:401820613",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5655,6 +5655,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5699,30 +5700,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5751,6 +5743,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5789,6 +5791,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -22720,6 +22741,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9733b4ad-c8fc-4e99-9606-070163aff2cc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46839856",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/3a1e3578-d79b-46d7-b3b9-84ab04fdce5f/3a1e3578-d79b-46d7-b3b9-84ab04fdce5f.mp4"
 },
@@ -22793,6 +22815,8 @@
 "team": {
 "id": 2803,
 "description": "Bryant Bulldogs",
+"abbreviation": "BRY",
+"shortDisplayName": "Bryant",
 "links": {
 "web": {
 "teams": {
@@ -22923,7 +22947,9 @@
 "teamId": 2803,
 "team": {
 "id": 2803,
-"description": "Bryant University"
+"description": "Bryant University",
+"abbreviation": "Bryant",
+"shortDisplayName": "Bryant"
 }
 },
 {
@@ -22937,6 +22963,8 @@
 "team": {
 "id": 2561,
 "description": "Siena Saints",
+"abbreviation": "SIE",
+"shortDisplayName": "Siena",
 "links": {
 "web": {
 "teams": {
@@ -23010,7 +23038,9 @@
 "teamId": 2561,
 "team": {
 "id": 2561,
-"description": "Siena College"
+"description": "Siena College",
+"abbreviation": "Siena",
+"shortDisplayName": "Siena"
 }
 },
 {
@@ -23113,6 +23143,8 @@
 "team": {
 "id": 2803,
 "description": "Bryant Bulldogs",
+"abbreviation": "BRY",
+"shortDisplayName": "Bryant",
 "links": {
 "web": {
 "teams": {
@@ -23138,6 +23170,8 @@
 "team": {
 "id": 2561,
 "description": "Siena Saints",
+"abbreviation": "SIE",
+"shortDisplayName": "Siena",
 "links": {
 "web": {
 "teams": {
@@ -23298,6 +23332,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/9733b4ad-c8fc-4e99-9606-070163aff2cc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46839856",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1104/3a1e3578-d79b-46d7-b3b9-84ab04fdce5f/3a1e3578-d79b-46d7-b3b9-84ab04fdce5f.mp4"
 },
@@ -23374,8 +23409,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

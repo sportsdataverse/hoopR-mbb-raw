@@ -2124,10 +2124,10 @@
 "id": "2305"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2430,10 +2430,10 @@
 "id": "2132"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2575,7 +2575,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2626,7 +2626,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33674026%3Foutcomes%3D0ML83510701_1",
 "text": "Home Bet",
@@ -2640,7 +2640,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33674026%3Foutcomes%3D0ML83510701_3",
 "text": "Away Bet",
@@ -2804,7 +2804,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4946,7 +4946,7 @@
 "uid": "s:40~l:41~e:401827696",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5536,6 +5536,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5580,30 +5581,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5632,6 +5624,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5670,6 +5672,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21324,6 +21345,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3c0feadc-53f3-4116-9222-10c9adb2c3df/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47997072",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0221/74d4a19a-0907-42e5-99e0-5fa7a85db400/74d4a19a-0907-42e5-99e0-5fa7a85db400.mp4"
 },
@@ -21447,6 +21469,8 @@
 "team": {
 "id": 2132,
 "description": "Cincinnati Bearcats",
+"abbreviation": "CIN",
+"shortDisplayName": "Cincinnati",
 "links": {
 "web": {
 "teams": {
@@ -21464,26 +21488,14 @@
 {
 "id": 633324,
 "type": "athlete",
-"uid": "s:40~l:41~a:5175032",
+"uid": "s:40~l:63~a:5175032",
 "guid": "918c25eb-8665-3487-b36c-310ee921c6cb",
 "description": "Day Day Thomas",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5175032,
 "athlete": {
 "id": 5175032,
-"description": "Day Day Thomas",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5175032/day-day-thomas"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5175032/day-day-thomas"
-}
-}
-}
+"description": "Day Day Thomas"
 }
 },
 {
@@ -21529,6 +21541,8 @@
 "team": {
 "id": 2305,
 "description": "Kansas Jayhawks",
+"abbreviation": "KU",
+"shortDisplayName": "Kansas",
 "links": {
 "web": {
 "teams": {
@@ -21589,7 +21603,9 @@
 "teamId": 2132,
 "team": {
 "id": 2132,
-"description": "University of Cincinnati"
+"description": "University of Cincinnati",
+"abbreviation": "Cincinnati",
+"shortDisplayName": "Cincinnati"
 }
 },
 {
@@ -21601,7 +21617,9 @@
 "teamId": 2305,
 "team": {
 "id": 2305,
-"description": "University of Kansas"
+"description": "University of Kansas",
+"abbreviation": "Kansas",
+"shortDisplayName": "Kansas"
 }
 },
 {
@@ -21740,6 +21758,8 @@
 "team": {
 "id": 2305,
 "description": "Kansas Jayhawks",
+"abbreviation": "KU",
+"shortDisplayName": "Kansas",
 "links": {
 "web": {
 "teams": {
@@ -21765,6 +21785,8 @@
 "team": {
 "id": 2132,
 "description": "Cincinnati Bearcats",
+"abbreviation": "CIN",
+"shortDisplayName": "Cincinnati",
 "links": {
 "web": {
 "teams": {
@@ -21892,6 +21914,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4d4dd998-be3c-4f6e-aa68-2188b100f077/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47996171",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0221/396ec03a-39ed-4717-9c61-8492033f885e/396ec03a-39ed-4717-9c61-8492033f885e.mp4"
 },
@@ -22001,6 +22024,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c34e9db4-e29f-49f0-a533-210520072b8d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47996254",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0221/0e205f43-850f-4505-a30d-e9080aecf59f/0e205f43-850f-4505-a30d-e9080aecf59f.mp4"
 },
@@ -22110,6 +22134,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d44a5485-d584-41f1-af98-a25c4a8b7f58/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47996430",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0221/904ceb8c-c142-4371-899b-2c21daa4fbe3/904ceb8c-c142-4371-899b-2c21daa4fbe3.mp4"
 },
@@ -22219,6 +22244,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ba718d5a-abb8-4771-991f-ea215a876baf/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47996493",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2026/0221/9d0e07d9-7c6a-4d41-835b-c9554141e327/9d0e07d9-7c6a-4d41-835b-c9554141e327.mp4"
 },
@@ -22296,8 +22322,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -22609,7 +22634,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -22620,7 +22645,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

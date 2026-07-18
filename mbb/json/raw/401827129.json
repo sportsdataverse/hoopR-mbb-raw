@@ -2032,10 +2032,10 @@
 "id": "238"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2209,10 +2209,10 @@
 "id": "238"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5259,7 +5259,7 @@
 "uid": "s:40~l:41~e:401827129",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5841,6 +5841,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5885,30 +5886,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5937,6 +5929,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5975,6 +5977,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -25660,6 +25681,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4eece0a2-6ddd-476c-8d80-48583b7a4e58/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46978888",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/e91d25f5-b1a9-452b-b342-40312f6e3c9c/e91d25f5-b1a9-452b-b342-40312f6e3c9c.mp4"
 },
@@ -25733,6 +25755,8 @@
 "team": {
 "id": 2029,
 "description": "Arkansas-Pine Bluff Golden Lions",
+"abbreviation": "UAPB",
+"shortDisplayName": "AR-Pine Bluff",
 "links": {
 "web": {
 "teams": {
@@ -25783,6 +25807,8 @@
 "team": {
 "id": 238,
 "description": "Vanderbilt Commodores",
+"abbreviation": "VAN",
+"shortDisplayName": "Vanderbilt",
 "links": {
 "web": {
 "teams": {
@@ -25806,7 +25832,9 @@
 "teamId": 2029,
 "team": {
 "id": 2029,
-"description": "University of Arkansas - Pine Bluff"
+"description": "University of Arkansas - Pine Bluff",
+"abbreviation": "Arkansas-Pine Bluff",
+"shortDisplayName": "Arkansas-Pine Bluff"
 }
 },
 {
@@ -25838,10 +25866,10 @@
 {
 "id": 454092,
 "type": "athlete",
-"uid": "s:40~l:41~a:4702049",
+"uid": "s:40~l:46~a:4702049",
 "guid": "e830e6ed-b4c3-3c18-b1bc-e92e55a20365",
 "description": "Duke Miles",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 4702049,
 "athlete": {
 "id": 4702049,
@@ -25849,12 +25877,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4702049/duke-miles"
+"href": "https://www.espn.com/nba/player/_/id/4702049/duke-miles"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4702049/duke-miles"
+"href": "https://www.espn.com/nba/player/_/id/4702049/duke-miles"
 }
 }
 }
@@ -25875,32 +25903,22 @@
 "teamId": 238,
 "team": {
 "id": 238,
-"description": "Vanderbilt University"
+"description": "Vanderbilt University",
+"abbreviation": "Vanderbilt",
+"shortDisplayName": "Vanderbilt"
 }
 },
 {
 "id": 508135,
 "type": "athlete",
-"uid": "s:40~l:41~a:4791227",
+"uid": "s:40~l:63~a:4791227",
 "guid": "3c209be3-6d0f-3087-a10e-5449cf41bf89",
 "description": "Devin McGlockton",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4791227,
 "athlete": {
 "id": 4791227,
-"description": "Devin McGlockton",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4791227/devin-mcglockton"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4791227/devin-mcglockton"
-}
-}
-}
+"description": "Devin McGlockton"
 }
 },
 {
@@ -26024,6 +26042,8 @@
 "team": {
 "id": 2029,
 "description": "Arkansas-Pine Bluff Golden Lions",
+"abbreviation": "UAPB",
+"shortDisplayName": "AR-Pine Bluff",
 "links": {
 "web": {
 "teams": {
@@ -26049,6 +26069,8 @@
 "team": {
 "id": 238,
 "description": "Vanderbilt Commodores",
+"abbreviation": "VAN",
+"shortDisplayName": "Vanderbilt",
 "links": {
 "web": {
 "teams": {
@@ -26209,6 +26231,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4eece0a2-6ddd-476c-8d80-48583b7a4e58/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46978888",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/e91d25f5-b1a9-452b-b342-40312f6e3c9c/e91d25f5-b1a9-452b-b342-40312f6e3c9c.mp4"
 },
@@ -26285,8 +26308,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -26534,7 +26556,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2010.png",
@@ -26545,7 +26567,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

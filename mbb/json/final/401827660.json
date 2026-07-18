@@ -28057,7 +28057,7 @@
 "uid": "s:40~l:41~e:401827660",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -29012,6 +29012,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -29056,30 +29057,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -29108,6 +29100,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -29146,6 +29148,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -29260,8 +29281,7 @@
 "playByPlaySource": "full",
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -29573,7 +29593,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2641.png",
@@ -29584,7 +29604,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -30314,13 +30334,22 @@
 "headline": "Yessoufou scores 27, Baylor beats Colorado 86-67",
 "description": "\u2014 Tounde Yessoufou scored 27 points, and Baylor rolled to an 86-67 win over Colorado on Wednesday in Big 12 play.",
 "linkText": "Yessoufou scores 27, Baylor beats Colorado 86-67",
-"categorized": "2026-02-05T03:22:21Z",
+"categorized": "2026-07-02T18:48:25Z",
 "originallyPosted": "2026-02-05T03:22:16Z",
 "lastModified": "2026-02-05T03:22:20Z",
 "published": "2026-02-05T03:22:16Z",
 "section": "Men's College Basketball",
 "source": "AP",
-"images": [],
+"images": [
+{
+"type": "Media",
+"name": "James Nnaji skies for big flush",
+"caption": "James Nnaji rocks the rim with powerful flush",
+"height": 324,
+"width": 576,
+"url": "https://a.espncdn.com/media/motion/wsc/2026/0205/5124b40b-0f09-4ccd-9ed4-295ecf53e15d/5124b40b-0f09-4ccd-9ed4-295ecf53e15d.jpg"
+}
+],
 "video": [],
 "categories": [
 {
@@ -30360,6 +30389,8 @@
 "team": {
 "id": 239,
 "description": "Baylor Bears",
+"abbreviation": "BAY",
+"shortDisplayName": "Baylor",
 "links": {
 "web": {
 "teams": {
@@ -30375,6 +30406,20 @@
 }
 },
 {
+"id": 239,
+"type": "team",
+"guid": "8f0deb82-f6b1-34ef-b835-d95f4f6689ec",
+"description": "Baylor University",
+"sportId": 3170,
+"teamId": 239,
+"team": {
+"id": 239,
+"description": "Baylor University",
+"abbreviation": "Baylor",
+"shortDisplayName": "Baylor"
+}
+},
+{
 "id": 3215,
 "type": "team",
 "uid": "s:40~l:41~t:38",
@@ -30385,6 +30430,8 @@
 "team": {
 "id": 38,
 "description": "Colorado Buffaloes",
+"abbreviation": "COLO",
+"shortDisplayName": "Colorado",
 "links": {
 "web": {
 "teams": {
@@ -30397,6 +30444,20 @@
 }
 }
 }
+}
+},
+{
+"id": 38,
+"type": "team",
+"guid": "d439b445-3761-3105-bf3d-6979c31db3d0",
+"description": "University of Colorado",
+"sportId": 3170,
+"teamId": 38,
+"team": {
+"id": 38,
+"description": "University of Colorado",
+"abbreviation": "Colorado",
+"shortDisplayName": "Colorado"
 }
 },
 {
@@ -30438,7 +30499,15 @@
 },
 {
 "type": "guid",
+"guid": "8f0deb82-f6b1-34ef-b835-d95f4f6689ec"
+},
+{
+"type": "guid",
 "guid": "198a3ea9-48d0-27a9-a90c-a9c250beecfd"
+},
+{
+"type": "guid",
+"guid": "d439b445-3761-3105-bf3d-6979c31db3d0"
 },
 {
 "type": "guid",
@@ -30448,7 +30517,9 @@
 "keywords": [
 "NCAA Men's Basketball",
 "Baylor Bears",
+"Baylor University",
 "Colorado Buffaloes",
+"University of Colorado",
 "Colorado Buffaloes @ Baylor Bears"
 ],
 "story": "WACO, Texas -- \u2014 <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5095152/tounde-yessoufou\">Tounde Yessoufou</a> scored 27 points, and Baylor rolled to an 86-67 win over Colorado on Wednesday in Big 12 play.\n\n\r\n              Baylor (13-9, 3-7 Big 12) dominated the first half, jumping out to a 45-21 lead behind hot shooting and a barrage of early 3-pointers. Yessoufou went 10 of 16 from the field and added seven rebounds as the Bears shot 53% overall and 42% from behind the arc.\n\n\r\n              <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5113969/cameron-carr\">Cameron Carr</a> and <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5241273/obi-agbim\">Obi Agbim</a> each scored 19 points for the Bears, combining for six 3-pointers. Carr added eight rebounds and six assists, while Agbim finished with six assists. Baylor made 20 of 25 free throws and outrebounded the Buffaloes 32-26.\n\n\r\n              Colorado (13-10, 3-7) never cut the deficit to single digits in the second half despite a late push from its bench. <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5237434/ian-inman\">Ian Inman</a> scored 10 points on 4-for-6 shooting, including a pair of 3-pointers, and <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/5152729/jalin-holland\">Jalin Holland</a> added 12. <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/4712832/barrington-hargress\">Barrington Hargress</a> scored 11, and <a href=\"http://www.espn.com/mens-college-basketball/player/_/id/3083347/isaiah-johnson\">Isaiah Johnson</a> finished with 10 points and four assists.\n\n\r\n              The Buffaloes shot 40% from the field and 41% from 3 but outscored the Bears 46-41 after halftime. Baylor answered every run, stretching the margin to 70-41 on a Carr jumper with 8:27 remaining and maintained control the rest of the way.\n\n\r\n              <hl2>Up Next</hl2>\r\n              Baylor travels to No. 7 Iowa State on Saturday.\n\n\r\n              Colorado hosts Arizona State this Saturday.\n\n\r\n              ------ Get poll alerts and updates on the AP Top 25 throughout the season. Sign up <a href=\"https://www.apnews.com/newsletters\">here</a> and <a href=\"https://apnews.com/ap-newsletters\">here</a> (AP News mobile app). AP college basketball: <a href=\"https://apnews.com/hub/ap-top-25-college-basketball-poll\">https://apnews.com/hub/ap-top-25-college-basketball-poll</a> and <a href=\"https://apnews.com/hub/college-basketball\">https://apnews.com/hub/college-basketball</a>",
@@ -30645,10 +30716,10 @@
 "id": "239"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -30738,10 +30809,10 @@
 "id": "239"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -31112,7 +31183,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -31163,7 +31234,7 @@
 "home",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33583237%3Foutcomes%3D0ML83282201_1",
 "text": "Home Bet",
@@ -31177,7 +31248,7 @@
 "away",
 "desktop",
 "bets",
-"draft-kings"
+"draftkings"
 ],
 "href": "https://sportsbook.draftkings.com/gateway?s=__s__&wpcid=__wpcid__&wpsrc=413&wpcn=ESPN&wpscn=Widget&wpcrn=BetSlipDeepLink&wpscid=__wpscid__&wpcrid=xx&preurl=https%3A%2F%2Fsportsbook.draftkings.com%2Fevent%2F33583237%3Foutcomes%3D0ML83282201_3",
 "text": "Away Bet",
@@ -31341,7 +31412,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -32368,7 +32439,7 @@
 },
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 }
 }

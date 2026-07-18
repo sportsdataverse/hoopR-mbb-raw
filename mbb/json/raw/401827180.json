@@ -2048,10 +2048,10 @@
 "id": "356"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -4706,7 +4706,7 @@
 "uid": "s:40~l:41~e:401827180",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5289,6 +5289,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5333,30 +5334,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5385,6 +5377,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5423,6 +5425,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21468,6 +21489,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e5f72461-74f6-496d-af10-63b4de20bf4b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46970990",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/dfc5ee7d-13fa-4f8e-a8ba-0ea2e181b4b3/dfc5ee7d-13fa-4f8e-a8ba-0ea2e181b4b3.mp4"
 },
@@ -21566,6 +21588,8 @@
 "team": {
 "id": 356,
 "description": "Illinois Fighting Illini",
+"abbreviation": "ILL",
+"shortDisplayName": "Illinois",
 "links": {
 "web": {
 "teams": {
@@ -21615,7 +21639,9 @@
 "teamId": 2142,
 "team": {
 "id": 2142,
-"description": "Colgate University"
+"description": "Colgate University",
+"abbreviation": "Colgate",
+"shortDisplayName": "Colgate"
 }
 },
 {
@@ -21677,10 +21703,10 @@
 {
 "id": 737695,
 "type": "athlete",
-"uid": "s:40~l:41~a:5254165",
+"uid": "s:40~l:46~a:5254165",
 "guid": "3cbd8826-197e-3847-ab40-ddead19f1fb1",
 "description": "Keaton Wagler",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 5254165,
 "athlete": {
 "id": 5254165,
@@ -21688,12 +21714,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5254165/keaton-wagler"
+"href": "https://www.espn.com/nba/player/_/id/5254165/keaton-wagler"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5254165/keaton-wagler"
+"href": "https://www.espn.com/nba/player/_/id/5254165/keaton-wagler"
 }
 }
 }
@@ -21710,6 +21736,8 @@
 "team": {
 "id": 2142,
 "description": "Colgate Raiders",
+"abbreviation": "COLG",
+"shortDisplayName": "Colgate",
 "links": {
 "web": {
 "teams": {
@@ -21758,7 +21786,9 @@
 "teamId": 356,
 "team": {
 "id": 356,
-"description": "University of Illinois"
+"description": "University of Illinois",
+"abbreviation": "Illinois",
+"shortDisplayName": "Illinois"
 }
 },
 {
@@ -21890,6 +21920,8 @@
 "team": {
 "id": 356,
 "description": "Illinois Fighting Illini",
+"abbreviation": "ILL",
+"shortDisplayName": "Illinois",
 "links": {
 "web": {
 "teams": {
@@ -21915,6 +21947,8 @@
 "team": {
 "id": 2142,
 "description": "Colgate Raiders",
+"abbreviation": "COLG",
+"shortDisplayName": "Colgate",
 "links": {
 "web": {
 "teams": {
@@ -22075,6 +22109,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/efded298-c9cb-453f-add4-a6204b6d2328/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46970020",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/ac89aabc-d89b-4735-954f-2a9281cf81af/ac89aabc-d89b-4735-954f-2a9281cf81af.mp4"
 },
@@ -22186,6 +22221,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/79255715-82be-4c27-8d41-7e4c11fe0c20/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46970447",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1115/9bf42d98-0c10-43a4-a797-01f5573b5933/9bf42d98-0c10-43a4-a797-01f5573b5933.mp4"
 },
@@ -22262,8 +22298,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -22703,7 +22738,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/322.png",
@@ -22714,7 +22749,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23226,7 +23261,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -23237,7 +23272,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23802,7 +23837,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -23813,7 +23848,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -23866,7 +23901,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -23877,7 +23912,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

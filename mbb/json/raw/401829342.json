@@ -5172,7 +5172,7 @@
 "uid": "s:40~l:41~e:401829342",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5754,6 +5754,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5798,30 +5799,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5850,6 +5842,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5888,6 +5890,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -25084,6 +25105,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/32803048-3c5a-4cba-bd9f-aa834de4b778/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46884596",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/9c8a00fa-4421-4821-8e48-268ba3eacc14/9c8a00fa-4421-4821-8e48-268ba3eacc14.mp4"
 },
@@ -25157,6 +25179,8 @@
 "team": {
 "id": 2636,
 "description": "UTSA Roadrunners",
+"abbreviation": "UTSA",
+"shortDisplayName": "UTSA",
 "links": {
 "web": {
 "teams": {
@@ -25182,6 +25206,8 @@
 "team": {
 "id": 2565,
 "description": "SIU Edwardsville Cougars",
+"abbreviation": "SIUE",
+"shortDisplayName": "SIUE",
 "links": {
 "web": {
 "teams": {
@@ -25230,7 +25256,9 @@
 "teamId": 2636,
 "team": {
 "id": 2636,
-"description": "UTSA"
+"description": "UTSA",
+"abbreviation": "UTSA",
+"shortDisplayName": "UTSA"
 }
 },
 {
@@ -25324,7 +25352,9 @@
 "teamId": 2565,
 "team": {
 "id": 2565,
-"description": "Southern Illinois Edwardsville"
+"description": "Southern Illinois Edwardsville",
+"abbreviation": "SIU Edwardsville",
+"shortDisplayName": "SIU Edwardsville"
 }
 },
 {
@@ -25477,6 +25507,8 @@
 "team": {
 "id": 2636,
 "description": "UTSA Roadrunners",
+"abbreviation": "UTSA",
+"shortDisplayName": "UTSA",
 "links": {
 "web": {
 "teams": {
@@ -25502,6 +25534,8 @@
 "team": {
 "id": 2565,
 "description": "SIU Edwardsville Cougars",
+"abbreviation": "SIUE",
+"shortDisplayName": "SIUE",
 "links": {
 "web": {
 "teams": {
@@ -25662,6 +25696,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a3d2d00a-bae3-4953-bc95-b20469d8465f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46883589",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/ce7c1977-c28d-4bd5-ac50-d8b0f1485421/ce7c1977-c28d-4bd5-ac50-d8b0f1485421.mp4"
 },
@@ -25773,6 +25808,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3890a5e5-f7e7-4a44-a852-9667d4057d34/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46883804",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/ed3bc9ad-e008-4052-84ac-f08a986b604a/ed3bc9ad-e008-4052-84ac-f08a986b604a.mp4"
 },
@@ -25849,8 +25885,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -26290,7 +26325,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -26301,7 +26336,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -26329,8 +26364,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -26354,7 +26389,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2635.png",
@@ -26365,7 +26400,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26546,7 +26581,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2710.png",
@@ -26557,7 +26592,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }
@@ -26621,7 +26656,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/58.png",
@@ -26632,7 +26667,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26813,7 +26848,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/5.png",
@@ -26824,7 +26859,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27005,7 +27040,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2429.png",
@@ -27016,7 +27051,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27197,7 +27232,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/235.png",
@@ -27208,7 +27243,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27261,7 +27296,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/242.png",
@@ -27272,7 +27307,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T22:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

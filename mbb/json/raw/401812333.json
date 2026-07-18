@@ -4776,7 +4776,7 @@
 "uid": "s:40~l:41~e:401812333",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5356,6 +5356,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5400,30 +5401,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5452,6 +5444,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5490,6 +5492,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21705,6 +21726,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cce9e345-a3f3-4239-87e7-118d5d8eaea8/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46876785",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/2702ad27-0dbe-4a16-9964-8b1e10481931/2702ad27-0dbe-4a16-9964-8b1e10481931.mp4"
 },
@@ -21776,7 +21798,9 @@
 "teamId": 2752,
 "team": {
 "id": 2752,
-"description": "Xavier University"
+"description": "Xavier University",
+"abbreviation": "Xavier",
+"shortDisplayName": "Xavier"
 }
 },
 {
@@ -21815,6 +21839,8 @@
 "team": {
 "id": 2752,
 "description": "Xavier Musketeers",
+"abbreviation": "XAV",
+"shortDisplayName": "Xavier",
 "links": {
 "web": {
 "teams": {
@@ -21891,6 +21917,8 @@
 "team": {
 "id": 2330,
 "description": "Le Moyne Dolphins",
+"abbreviation": "LEM",
+"shortDisplayName": "Le Moyne",
 "links": {
 "web": {
 "teams": {
@@ -22007,7 +22035,9 @@
 "teamId": 2330,
 "team": {
 "id": 2330,
-"description": "Le Moyne College"
+"description": "Le Moyne College",
+"abbreviation": "Le Moyne",
+"shortDisplayName": "Le Moyne"
 }
 },
 {
@@ -22149,6 +22179,8 @@
 "team": {
 "id": 2752,
 "description": "Xavier Musketeers",
+"abbreviation": "XAV",
+"shortDisplayName": "Xavier",
 "links": {
 "web": {
 "teams": {
@@ -22174,6 +22206,8 @@
 "team": {
 "id": 2330,
 "description": "Le Moyne Dolphins",
+"abbreviation": "LEM",
+"shortDisplayName": "Le Moyne",
 "links": {
 "web": {
 "teams": {
@@ -22283,6 +22317,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/d43b831e-7ed2-45c0-8d69-d5a712786c9c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46875641",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/532ca580-9cc7-4813-996f-a871db007fb5/532ca580-9cc7-4813-996f-a871db007fb5.mp4"
 },
@@ -22394,6 +22429,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a3fd17ea-3c22-40b5-aeae-2cb27b53ea57/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46876180",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1107/f9ac4712-fd2a-4421-8981-40f2d4360f19/f9ac4712-fd2a-4421-8981-40f2d4360f19.mp4"
 },
@@ -22470,8 +22506,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -22527,7 +22562,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-01-25T21:34Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/112358.png",
@@ -22538,7 +22573,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-01-25T21:35Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -22783,7 +22818,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-09-05T19:03Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2441.png",
@@ -22794,7 +22829,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-09-05T19:03Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -22992,7 +23027,6 @@
 },
 {
 "team": "Saint Francis",
-"link": "https://www.espn.com/mens-college-basketball/team/_/id/2598/saint-francis-red-flash",
 "id": "2598",
 "uid": "s:40~l:41~t:2598",
 "stats": [

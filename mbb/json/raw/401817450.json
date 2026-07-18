@@ -1953,10 +1953,10 @@
 "id": "221"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2130,10 +2130,10 @@
 "id": "221"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2510,7 +2510,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2709,7 +2709,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -4911,7 +4911,7 @@
 "uid": "s:40~l:41~e:401817450",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5493,6 +5493,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5537,30 +5538,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5589,6 +5581,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5627,6 +5629,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -21767,6 +21788,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e86ce2cc-1f9b-4eca-bae2-f7c88fd5c5a4/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47341630",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/dd91e6ca-4b4e-4b52-b5c3-5c5ae575fe8a/dd91e6ca-4b4e-4b52-b5c3-5c5ae575fe8a.mp4"
 },
@@ -21865,6 +21887,8 @@
 "team": {
 "id": 2066,
 "description": "Binghamton Bearcats",
+"abbreviation": "BING",
+"shortDisplayName": "Binghamton",
 "links": {
 "web": {
 "teams": {
@@ -21882,26 +21906,14 @@
 {
 "id": 598645,
 "type": "athlete",
-"uid": "s:40~l:41~a:4683675",
+"uid": "s:40~l:63~a:4683675",
 "guid": "0406293a-00b5-317b-a715-6b449ba09148",
 "description": "Barry Dunning Jr",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 4683675,
 "athlete": {
 "id": 4683675,
-"description": "Barry Dunning Jr",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4683675/barry-dunning-jr"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4683675/barry-dunning-jr"
-}
-}
-}
+"description": "Barry Dunning Jr"
 }
 },
 {
@@ -21915,6 +21927,8 @@
 "team": {
 "id": 221,
 "description": "Pittsburgh Panthers",
+"abbreviation": "PITT",
+"shortDisplayName": "Pitt",
 "links": {
 "web": {
 "teams": {
@@ -21964,7 +21978,9 @@
 "teamId": 2066,
 "team": {
 "id": 2066,
-"description": "Binghamton University"
+"description": "Binghamton University",
+"abbreviation": "Binghamton",
+"shortDisplayName": "Binghamton"
 }
 },
 {
@@ -21976,7 +21992,9 @@
 "teamId": 221,
 "team": {
 "id": 221,
-"description": "University of Pittsburgh"
+"description": "University of Pittsburgh",
+"abbreviation": "Pittsburgh",
+"shortDisplayName": "Pittsburgh"
 }
 },
 {
@@ -22216,6 +22234,8 @@
 "team": {
 "id": 221,
 "description": "Pittsburgh Panthers",
+"abbreviation": "PITT",
+"shortDisplayName": "Pitt",
 "links": {
 "web": {
 "teams": {
@@ -22241,6 +22261,8 @@
 "team": {
 "id": 2066,
 "description": "Binghamton Bearcats",
+"abbreviation": "BING",
+"shortDisplayName": "Binghamton",
 "links": {
 "web": {
 "teams": {
@@ -22375,6 +22397,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3a828e8f-1b99-4ba2-ad83-1f15f9cefde0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47340442",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/5d9eb8d6-2175-4a3a-a5df-210197d35e6c/5d9eb8d6-2175-4a3a-a5df-210197d35e6c.mp4"
 },
@@ -22487,6 +22510,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4595c4f5-eb36-4c39-858c-8c0ffb9fb1f6/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47340465",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/01fd8825-5b41-440c-81ce-ddb7e801ad49/01fd8825-5b41-440c-81ce-ddb7e801ad49.mp4"
 },
@@ -22599,6 +22623,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/5bb02a52-4950-4c97-96e5-82744221c178/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47340467",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/591f74fb-76ec-492d-8cb4-c758ebd01241/591f74fb-76ec-492d-8cb4-c758ebd01241.mp4"
 },
@@ -22711,6 +22736,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17883cd2-3851-438d-acd8-fba1bce6e7a4/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47340504",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/e31798e8-7772-4ea3-801e-388250c16cb9/e31798e8-7772-4ea3-801e-388250c16cb9.mp4"
 },
@@ -22823,6 +22849,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a25fa95a-f28a-4bcd-bd48-206818a87800/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47341206",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1218/973cdd31-561a-40b1-818c-8e86ed226e7c/973cdd31-561a-40b1-818c-8e86ed226e7c.mp4"
 },
@@ -22900,8 +22927,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [

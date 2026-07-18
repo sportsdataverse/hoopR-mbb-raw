@@ -2132,10 +2132,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2216,10 +2216,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2309,10 +2309,10 @@
 "id": "2509"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5362,7 +5362,7 @@
 "uid": "s:40~l:41~e:401820598",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5945,6 +5945,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5989,30 +5990,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6041,6 +6033,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6079,6 +6081,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -26012,6 +26033,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/f1b102bb-a14c-4aeb-b473-80fdf682a801/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46994641",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/c5e32897-8ac8-43f0-8124-cfde8d828d7f/c5e32897-8ac8-43f0-8124-cfde8d828d7f.mp4"
 },
@@ -26102,26 +26124,14 @@
 {
 "id": 633421,
 "type": "athlete",
-"uid": "s:40~l:41~a:5174973",
+"uid": "s:40~l:63~a:5174973",
 "guid": "7e414c64-5804-36a3-b0ac-a193b77a80df",
 "description": "Oscar Cluff",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5174973,
 "athlete": {
 "id": 5174973,
-"description": "Oscar Cluff",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5174973/oscar-cluff"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5174973/oscar-cluff"
-}
-}
-}
+"description": "Oscar Cluff"
 }
 },
 {
@@ -26135,6 +26145,8 @@
 "team": {
 "id": 2006,
 "description": "Akron Zips",
+"abbreviation": "AKR",
+"shortDisplayName": "Akron",
 "links": {
 "web": {
 "teams": {
@@ -26185,6 +26197,8 @@
 "team": {
 "id": 2509,
 "description": "Purdue Boilermakers",
+"abbreviation": "PUR",
+"shortDisplayName": "Purdue",
 "links": {
 "web": {
 "teams": {
@@ -26234,7 +26248,9 @@
 "teamId": 2006,
 "team": {
 "id": 2006,
-"description": "University of Akron"
+"description": "University of Akron",
+"abbreviation": "Akron",
+"shortDisplayName": "Akron"
 }
 },
 {
@@ -26246,10 +26262,10 @@
 {
 "id": 509024,
 "type": "athlete",
-"uid": "s:40~l:41~a:4897438",
+"uid": "s:40~l:46~a:4897438",
 "guid": "9100e842-c240-3173-94f5-3303637e5eb4",
 "description": "Trey Kaufman-Renn",
-"sportId": 41,
+"sportId": 46,
 "athleteId": 4897438,
 "athlete": {
 "id": 4897438,
@@ -26257,12 +26273,12 @@
 "links": {
 "web": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897438/trey-kaufman-renn"
+"href": "https://www.espn.com/nba/player/_/id/4897438/trey-kaufman-renn"
 }
 },
 "mobile": {
 "athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/4897438/trey-kaufman-renn"
+"href": "https://www.espn.com/nba/player/_/id/4897438/trey-kaufman-renn"
 }
 }
 }
@@ -26277,7 +26293,9 @@
 "teamId": 2509,
 "team": {
 "id": 2509,
-"description": "Purdue University"
+"description": "Purdue University",
+"abbreviation": "Purdue",
+"shortDisplayName": "Purdue"
 }
 },
 {
@@ -26405,6 +26423,8 @@
 "team": {
 "id": 2006,
 "description": "Akron Zips",
+"abbreviation": "AKR",
+"shortDisplayName": "Akron",
 "links": {
 "web": {
 "teams": {
@@ -26430,6 +26450,8 @@
 "team": {
 "id": 2509,
 "description": "Purdue Boilermakers",
+"abbreviation": "PUR",
+"shortDisplayName": "Purdue",
 "links": {
 "web": {
 "teams": {
@@ -26590,6 +26612,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/367f0092-6352-4bea-8589-dc2eb8ddc2f5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993470",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/e21de49a-4e7d-44ea-b980-8815c3a4629f/e21de49a-4e7d-44ea-b980-8815c3a4629f.mp4"
 },
@@ -26701,6 +26724,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/74c413b4-7518-4938-8151-8bf1d95920f0/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46993619",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/385e19c5-8114-436b-9bcf-9cc95a6f953d/385e19c5-8114-436b-9bcf-9cc95a6f953d.mp4"
 },
@@ -26812,6 +26836,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/e2b02efd-8827-4949-9508-864070446c76/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46994286",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1117/c9ecbe4c-34b9-46c2-90af-b92b427f9dc6/c9ecbe4c-34b9-46c2-90af-b92b427f9dc6.mp4"
 },
@@ -26888,8 +26913,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -27265,7 +27289,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/195.png",
@@ -27276,7 +27300,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27649,7 +27673,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2199.png",
@@ -27660,7 +27684,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -27688,8 +27712,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 14.0,
-"displayValue": "14"
+"value": 10.0,
+"displayValue": "10"
 },
 {
 "id": "9",
@@ -28044,7 +28068,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -28055,7 +28079,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -28620,7 +28644,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -28631,7 +28655,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -28684,7 +28708,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -28695,7 +28719,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

@@ -2193,10 +2193,10 @@
 "id": "154"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -5375,7 +5375,7 @@
 "uid": "s:40~l:41~e:401817528",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5957,6 +5957,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6001,30 +6002,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6053,6 +6045,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6091,6 +6093,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -26830,6 +26851,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/74cafd96-72ef-4328-8a38-940015ecf445/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46887240",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1108/58e61c89-b0a5-401c-985b-45ba6d77a9b9/58e61c89-b0a5-401c-985b-45ba6d77a9b9.mp4"
 },
@@ -26903,6 +26925,8 @@
 "team": {
 "id": 2413,
 "description": "Morehead State Eagles",
+"abbreviation": "MORE",
+"shortDisplayName": "Morehead St",
 "links": {
 "web": {
 "teams": {
@@ -26920,26 +26944,14 @@
 {
 "id": 634935,
 "type": "athlete",
-"uid": "s:40~l:41~a:5176758",
+"uid": "s:40~l:63~a:5176758",
 "guid": "16794ff0-e2fa-3434-9a38-2739376cdb40",
 "description": "Tre'Von Spillers",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5176758,
 "athlete": {
 "id": 5176758,
-"description": "Tre'Von Spillers",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5176758/trevon-spillers"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5176758/trevon-spillers"
-}
-}
-}
+"description": "Tre'Von Spillers"
 }
 },
 {
@@ -27010,6 +27022,8 @@
 "team": {
 "id": 154,
 "description": "Wake Forest Demon Deacons",
+"abbreviation": "WAKE",
+"shortDisplayName": "Wake Forest",
 "links": {
 "web": {
 "teams": {
@@ -27058,7 +27072,9 @@
 "teamId": 154,
 "team": {
 "id": 154,
-"description": "Wake Forest University"
+"description": "Wake Forest University",
+"abbreviation": "Wake Forest",
+"shortDisplayName": "Wake Forest"
 }
 },
 {
@@ -27070,7 +27086,9 @@
 "teamId": 2413,
 "team": {
 "id": 2413,
-"description": "Morehead State University"
+"description": "Morehead State University",
+"abbreviation": "Morehead State",
+"shortDisplayName": "Morehead State"
 }
 },
 {
@@ -27194,6 +27212,8 @@
 "team": {
 "id": 154,
 "description": "Wake Forest Demon Deacons",
+"abbreviation": "WAKE",
+"shortDisplayName": "Wake Forest",
 "links": {
 "web": {
 "teams": {
@@ -27219,6 +27239,8 @@
 "team": {
 "id": 2413,
 "description": "Morehead State Eagles",
+"abbreviation": "MORE",
+"shortDisplayName": "Morehead St",
 "links": {
 "web": {
 "teams": {
@@ -27379,6 +27401,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/6a562548-388e-4477-837e-2dea8e5e40b9/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46886569",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1108/c20a1bbe-744f-4a97-87ae-85f1591e576f/c20a1bbe-744f-4a97-87ae-85f1591e576f.mp4"
 },
@@ -27490,6 +27513,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/eeca8d7f-53f6-47ca-a492-c93332bdd467/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46886694",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1108/437e3461-05ee-4b15-b9fc-7ff792975a9a/437e3461-05ee-4b15-b9fc-7ff792975a9a.mp4"
 },
@@ -27566,8 +27590,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -28007,7 +28030,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2031.png",
@@ -28018,7 +28041,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-16T17:09Z"
 }
 ]
 },
@@ -28046,8 +28069,8 @@
 "description": "Games Back",
 "abbreviation": "GB",
 "type": "vsconf_gamesbehind",
-"value": 7.0,
-"displayValue": "7"
+"value": 6.0,
+"displayValue": "6"
 },
 {
 "id": "9",
@@ -28071,7 +28094,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2635.png",
@@ -28082,7 +28105,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2019-08-12T21:43Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -28263,7 +28286,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2710.png",
@@ -28274,7 +28297,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2018-06-05T12:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }

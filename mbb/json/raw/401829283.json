@@ -2069,10 +2069,10 @@
 "id": "2633"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2153,10 +2153,10 @@
 "id": "2633"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2604,7 +2604,7 @@
 {
 "provider": {
 "id": "100",
-"name": "Draft Kings",
+"name": "DraftKings",
 "priority": 1,
 "logos": [
 {
@@ -2803,7 +2803,7 @@
 "text": "Game Odds"
 },
 "footer": {
-"disclaimer": "Odds by DraftKings\nGAMBLING PROBLEM? CALL 1-800-GAMBLER, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY).\nPlease Gamble Responsibly. 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD).\n21+ and present in most states. (18+ DC/KY/NH/WY). Void in ONT/OR/NH. Eligibility restrictions apply. On behalf of Boot Hill Casino & Resort (KS). Terms: sportsbook.draftkings.com/promos."
+"disclaimer": "GAMBLING PROBLEM? CALL 1-800-GAMBLER or 1-800-MY-RESET, (800) 327-5050 or visit gamblinghelplinema.org (MA). Call 877-8-HOPENY/text HOPENY (467369) (NY). Call 888-789-7777/visit ccpg.org (CT), or visit www.mdgamblinghelp.org (MD), 1-800-981-0023 (PR). 21+ and present in most states. (18+ DC/KY/NH/PR/WY). Void in ONT. Eligibility restrictions apply. Terms: draftkings.com/sportsbook. On behalf of Boot Hill Casino (KS). Pass-thru of per wager tax may apply in IL."
 }
 }
 ],
@@ -5570,7 +5570,7 @@
 "uid": "s:40~l:41~e:401829283",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -6109,6 +6109,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -6153,30 +6154,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -6205,6 +6197,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -6243,6 +6245,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -26639,6 +26660,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1c5a8c65-20ca-47d1-9a0e-06577cb1b18f/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459606",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/2025/1230/dm_251230_SEC_NCB_Highlight_Tennessee_vs_South_Carolina_State_251230/dm_251230_SEC_NCB_Highlight_Tennessee_vs_South_Carolina_State_251230.mp4"
 },
@@ -26714,6 +26736,8 @@
 "team": {
 "id": 2633,
 "description": "Tennessee Volunteers",
+"abbreviation": "TENN",
+"shortDisplayName": "Tennessee",
 "links": {
 "web": {
 "teams": {
@@ -26788,7 +26812,9 @@
 "teamId": 2633,
 "team": {
 "id": 2633,
-"description": "University of Tennessee"
+"description": "University of Tennessee",
+"abbreviation": "Tennessee",
+"shortDisplayName": "Tennessee"
 }
 },
 {
@@ -26868,6 +26894,8 @@
 "team": {
 "id": 2633,
 "description": "Tennessee Volunteers",
+"abbreviation": "TENN",
+"shortDisplayName": "Tennessee",
 "links": {
 "web": {
 "teams": {
@@ -26893,6 +26921,8 @@
 "team": {
 "id": 2569,
 "description": "South Carolina State Bulldogs",
+"abbreviation": "SCST",
+"shortDisplayName": "SC State",
 "links": {
 "web": {
 "teams": {
@@ -27027,6 +27057,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/6bfcfafd-4280-45ab-98bd-bd887a6e6a6d/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459441",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/dc791350-bea3-4c07-b239-0afdec05c984/dc791350-bea3-4c07-b239-0afdec05c984.mp4"
 },
@@ -27139,6 +27170,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/c1db1e1e-55f0-46d0-bebf-aa335b4f71f5/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47458682",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/7f7d1119-4cf1-4559-a286-30dfb6c3734b/7f7d1119-4cf1-4559-a286-30dfb6c3734b.mp4"
 },
@@ -27251,6 +27283,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/a048a1e0-4637-45c5-af2a-c94925131c4e/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47458795",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/12e05861-fb15-484a-a687-6432915d4949/12e05861-fb15-484a-a687-6432915d4949.mp4"
 },
@@ -27363,6 +27396,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/17fe6d35-f942-40bb-9da8-38baf5e9a17b/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47458868",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/868eb6fd-bedb-4849-9faa-136c28cbd8cc/868eb6fd-bedb-4849-9faa-136c28cbd8cc.mp4"
 },
@@ -27475,6 +27509,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/52a5899a-02fe-4df7-abda-af3df68a7cc7/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459121",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/78afaa12-d431-4cf8-8682-1dc7eb8fbde2/78afaa12-d431-4cf8-8682-1dc7eb8fbde2.mp4"
 },
@@ -27587,6 +27622,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/32d451e3-a6a1-4213-b7da-803e19affc1a/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459270",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/4f467192-c8d7-4925-a6fe-5f97a125b0ce/4f467192-c8d7-4925-a6fe-5f97a125b0ce.mp4"
 },
@@ -27699,6 +27735,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/ca51ed33-0a23-49e2-b7c7-abd079ed092c/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459335",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/fd8d5f9c-917a-4773-83a0-415931c7e0db/fd8d5f9c-917a-4773-83a0-415931c7e0db.mp4"
 },
@@ -27811,6 +27848,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1ba46880-21bd-49c3-a029-2f074a0caf25/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459417",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1231/6f479ada-9fba-4dc1-b93e-69628a5e5e9c/6f479ada-9fba-4dc1-b93e-69628a5e5e9c.mp4"
 },
@@ -27923,6 +27961,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/cd0e3c79-e140-4ed7-8f84-1b693cf54313/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47459526",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/2025/1230/dm_251230_SEC_NCB_Interview_Gillespie_Tennessee_251230/dm_251230_SEC_NCB_Interview_Gillespie_Tennessee_251230.mp4"
 },
@@ -27994,8 +28033,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -28051,7 +28089,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2023-03-15T19:32Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/47.png",
@@ -28062,7 +28100,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2023-03-15T19:32Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

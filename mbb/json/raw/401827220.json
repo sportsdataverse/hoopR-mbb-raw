@@ -2041,10 +2041,10 @@
 "id": "127"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -2218,10 +2218,10 @@
 "id": "127"
 },
 "status": {
-"id": "1",
-"name": "Active",
-"type": "active",
-"abbreviation": "Active"
+"id": "2",
+"name": "Inactive",
+"type": "inactive",
+"abbreviation": "Inactive"
 }
 },
 "statistics": [
@@ -4941,7 +4941,7 @@
 "uid": "s:40~l:41~e:401827220",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5524,6 +5524,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5568,30 +5569,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5620,6 +5612,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5658,6 +5660,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23055,6 +23076,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3e09844d-f5eb-4f9c-bf54-ba6dbee86039/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46959189",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1114/b9bf573f-72c2-4586-b471-adf384fe2a17/b9bf573f-72c2-4586-b471-adf384fe2a17.mp4"
 },
@@ -23126,7 +23148,9 @@
 "teamId": 23,
 "team": {
 "id": 23,
-"description": "San Jos\u00e9 State University"
+"description": "San Jos\u00e9 State University",
+"abbreviation": "San Jos\u00e9 State",
+"shortDisplayName": "San Jos\u00e9 State"
 }
 },
 {
@@ -23165,6 +23189,8 @@
 "team": {
 "id": 23,
 "description": "San Jos\u00e9 State Spartans",
+"abbreviation": "SJSU",
+"shortDisplayName": "San Jos\u00e9 St",
 "links": {
 "web": {
 "teams": {
@@ -23241,6 +23267,8 @@
 "team": {
 "id": 127,
 "description": "Michigan State Spartans",
+"abbreviation": "MSU",
+"shortDisplayName": "Michigan St",
 "links": {
 "web": {
 "teams": {
@@ -23264,26 +23292,14 @@
 {
 "id": 568767,
 "type": "athlete",
-"uid": "s:40~l:41~a:5105815",
+"uid": "s:40~l:63~a:5105815",
 "guid": "e806d69e-39b2-39f5-b7de-2824512a4a60",
 "description": "Jaxon Kohler",
-"sportId": 41,
+"sportId": 63,
 "athleteId": 5105815,
 "athlete": {
 "id": 5105815,
-"description": "Jaxon Kohler",
-"links": {
-"web": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105815/jaxon-kohler"
-}
-},
-"mobile": {
-"athletes": {
-"href": "https://www.espn.com/mens-college-basketball/player/_/id/5105815/jaxon-kohler"
-}
-}
-}
+"description": "Jaxon Kohler"
 }
 },
 {
@@ -23332,7 +23348,9 @@
 "teamId": 127,
 "team": {
 "id": 127,
-"description": "Michigan State University"
+"description": "Michigan State University",
+"abbreviation": "Michigan State",
+"shortDisplayName": "Michigan State"
 }
 },
 {
@@ -23419,6 +23437,8 @@
 "team": {
 "id": 23,
 "description": "San Jos\u00e9 State Spartans",
+"abbreviation": "SJSU",
+"shortDisplayName": "San Jos\u00e9 St",
 "links": {
 "web": {
 "teams": {
@@ -23444,6 +23464,8 @@
 "team": {
 "id": 127,
 "description": "Michigan State Spartans",
+"abbreviation": "MSU",
+"shortDisplayName": "Michigan St",
 "links": {
 "web": {
 "teams": {
@@ -23604,6 +23626,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/1c8c7389-b6d2-4a64-8277-b805b5f631c8/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958194",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/8eae2afe-d376-4275-a8ce-03a17f56ba88/8eae2afe-d376-4275-a8ce-03a17f56ba88.mp4"
 },
@@ -23715,6 +23738,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/577e7bb8-2689-4e43-b4aa-5cb7aec381e4/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958208",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/b0aa4548-7175-4389-bd27-26bfc7fb497b/b0aa4548-7175-4389-bd27-26bfc7fb497b.mp4"
 },
@@ -23826,6 +23850,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/0ef2115e-6467-4466-9182-52f4cd29b199/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958285",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1113/9109c54f-dbcd-44d0-a316-72707a80dbbc/9109c54f-dbcd-44d0-a316-72707a80dbbc.mp4"
 },
@@ -23937,6 +23962,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/26911ce0-329f-4dba-bd8f-34a66f5bd1c4/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958455",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1114/30535da5-b798-4844-b37c-cb93baa2051b/30535da5-b798-4844-b37c-cb93baa2051b.mp4"
 },
@@ -24048,6 +24074,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/2af5e98a-64c0-4b79-af37-414875d5d8a3/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958812",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1114/94e3b8e2-f53f-45ea-bb1f-5eaa3b03e940/94e3b8e2-f53f-45ea-bb1f-5eaa3b03e940.mp4"
 },
@@ -24159,6 +24186,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/fe032a22-e47c-444d-8aca-53c8110a91fc/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958834",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1114/0189c2da-64b6-4866-958e-578c7fd20e62/0189c2da-64b6-4866-958e-578c7fd20e62.mp4"
 },
@@ -24270,6 +24298,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/3744def4-0c0d-4092-ae4b-35b565173aa1/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=46958861",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1114/26c40b3d-b4e7-4f3b-a026-daed24fb2bd1/26c40b3d-b4e7-4f3b-a026-daed24fb2bd1.mp4"
 },
@@ -24346,8 +24375,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24659,7 +24687,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2440.png",
@@ -24670,7 +24698,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -24723,7 +24751,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/68.png",
@@ -24734,7 +24762,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:18Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -24915,7 +24943,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2751.png",
@@ -24926,7 +24954,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-24T20:19Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -25438,7 +25466,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/275.png",
@@ -25449,7 +25477,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26014,7 +26042,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/164.png",
@@ -26025,7 +26053,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T01:44Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },
@@ -26078,7 +26106,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/77.png",
@@ -26089,7 +26117,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2025-12-23T02:08Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 },

@@ -4757,7 +4757,7 @@
 "uid": "s:40~l:41~e:401827057",
 "season": {
 "year": 2026,
-"current": true,
+"current": false,
 "type": 2
 },
 "timeValid": true,
@@ -5181,6 +5181,7 @@
 "uid": "s:40~l:41",
 "name": "NCAA Men's Basketball",
 "abbreviation": "NCAAM",
+"shortName": "NCAAM",
 "midsizeName": "NCAAM Basketball",
 "slug": "mens-college-basketball",
 "isTournament": false,
@@ -5225,30 +5226,21 @@
 },
 {
 "rel": [
-"standings",
-"desktop",
-"league"
-],
-"href": "https://www.espn.com/mens-college-basketball/standings",
-"text": "Standings"
-},
-{
-"rel": [
-"standings",
-"sportscenter",
-"app",
-"league"
-],
-"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=standings",
-"text": "Standings"
-},
-{
-"rel": [
 "rankings",
 "desktop",
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/rankings",
+"text": "Rankings"
+},
+{
+"rel": [
+"rankings",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=rankings",
 "text": "Rankings"
 },
 {
@@ -5277,6 +5269,16 @@
 "league"
 ],
 "href": "https://www.espn.com/mens-college-basketball/stats",
+"text": "Stats"
+},
+{
+"rel": [
+"stats",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=stats",
 "text": "Stats"
 },
 {
@@ -5315,6 +5317,25 @@
 ],
 "href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=odds",
 "text": "Odds"
+},
+{
+"rel": [
+"playoff-bracket",
+"desktop",
+"league"
+],
+"href": "https://www.espn.com/mens-college-basketball/bracket",
+"text": "Bracket"
+},
+{
+"rel": [
+"playoff-bracket",
+"sportscenter",
+"app",
+"league"
+],
+"href": "sportscenter://x-callback-url/showClubhouse?uid=s:40~l:41&section=bracket",
+"text": "Bracket"
 },
 {
 "rel": [
@@ -23083,6 +23104,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/45133ad5-8b77-4cc1-8b9a-bf507ad4eeda/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47437485",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1228/01296ce0-168b-4a6c-989a-5c32f0267eda/01296ce0-168b-4a6c-989a-5c32f0267eda.mp4"
 },
@@ -23154,7 +23176,9 @@
 "teamId": 2344,
 "team": {
 "id": 2344,
-"description": "Longwood College"
+"description": "Longwood College",
+"abbreviation": "Longwood",
+"shortDisplayName": "Longwood"
 }
 },
 {
@@ -23300,6 +23324,8 @@
 "team": {
 "id": 2344,
 "description": "Longwood Lancers",
+"abbreviation": "LONG",
+"shortDisplayName": "Longwood",
 "links": {
 "web": {
 "teams": {
@@ -23483,6 +23509,8 @@
 "team": {
 "id": 2344,
 "description": "Longwood Lancers",
+"abbreviation": "LONG",
+"shortDisplayName": "Longwood",
 "links": {
 "web": {
 "teams": {
@@ -23507,7 +23535,9 @@
 "teamId": 2047,
 "team": {
 "id": 2047,
-"description": "Averett Cougars"
+"description": "Averett Cougars",
+"abbreviation": "AVER",
+"shortDisplayName": "Averett"
 }
 },
 {
@@ -23626,6 +23656,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/255dab60-d371-4811-a62e-182ddc2cf256/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47437079",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1228/b842cdd4-a842-475d-acdc-146a9e1bd3a3/b842cdd4-a842-475d-acdc-146a9e1bd3a3.mp4"
 },
@@ -23738,6 +23769,7 @@
 }
 },
 "mobile": {
+"href": "https://watch.auth.api.espn.com/video/auth/brightcove/4fe01565-a852-4879-8c26-79fec8889085/asset?UMADPARAMreferer=https://www.espn.com/video/clip?id=47437172",
 "source": {
 "href": "https://media.video-cdn.espn.com/motion/wsc/2025/1228/80cf75ab-aa61-48ee-9900-28025a3f7482/80cf75ab-aa61-48ee-9900-28025a3f7482.mp4"
 },
@@ -23815,8 +23847,7 @@
 ],
 "standings": {
 "fullViewLink": {
-"text": "Full Standings",
-"href": "https://www.espn.com/mens-college-basketball/standings"
+"text": "Full Standings"
 },
 "header": "2025-26 Standings",
 "groups": [
@@ -24384,7 +24415,7 @@
 "full",
 "default"
 ],
-"lastUpdated": "2022-11-28T22:03Z"
+"lastUpdated": "2026-07-01T04:35Z"
 },
 {
 "href": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2241.png",
@@ -24395,7 +24426,7 @@
 "full",
 "dark"
 ],
-"lastUpdated": "2022-11-28T22:04Z"
+"lastUpdated": "2026-07-01T04:34Z"
 }
 ]
 }
