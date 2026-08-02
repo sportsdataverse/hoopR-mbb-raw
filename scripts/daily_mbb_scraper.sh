@@ -56,6 +56,7 @@ do
         run_scraper standings    python3 python/scrape_mbb_standings.py    -s $i -e $i -r $RESCRAPE
         run_scraper game_rosters python3 python/scrape_mbb_game_rosters.py -s $i -e $i -r $RESCRAPE
         run_scraper player_stats python3 python/scrape_mbb_player_stats.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  python3 python/scrape_mbb_player_core.py  -s $i -e $i -r $RESCRAPE
         run_scraper team_stats   python3 python/scrape_mbb_team_stats.py   -s $i -e $i -r $RESCRAPE
         run_scraper team_rosters python3 python/scrape_mbb_team_rosters.py -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null

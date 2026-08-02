@@ -44,6 +44,7 @@ python3 python/scrape_mbb_json.py         -s 2025 -e 2025 -r false
 python3 python/scrape_mbb_standings.py    -s 2025 -e 2025 -r false
 python3 python/scrape_mbb_game_rosters.py -s 2025 -e 2025 -r false
 python3 python/scrape_mbb_player_stats.py -s 2025 -e 2025 -r false
+python3 python/scrape_mbb_player_core.py  -s 2025 -e 2025 -r false
 python3 python/scrape_mbb_team_stats.py   -s 2025 -e 2025 -r false
 python3 python/scrape_mbb_team_rosters.py -s 2025 -e 2025 -r false
 
@@ -62,7 +63,7 @@ Output paths the scrapers write under:
 - `mbb/json/final/{game_id}.json` — clean payload, consumed by `hoopR-mbb-data`
 - `mbb/json/raw/{game_id}.json`   — raw ESPN response (kept for forensics)
 - `mbb/errors/`                   — failed-game records (`path_to_errors` in `scrape_mbb_json.py`)
-- `mbb/{standings,game_rosters,player_season_stats,team_stats,team_rosters}/` — per-dataset payloads
+- `mbb/{standings,game_rosters,player_season_stats,player_core,team_stats,team_rosters}/` — per-dataset payloads
 - `logs/hoopR_mbb_raw_logfile_{year}.log` — per-season run log, committed separately
 
 ## Project Structure
@@ -74,12 +75,13 @@ python/
   scrape_mbb_standings.py      # -> mbb/standings/
   scrape_mbb_game_rosters.py   # -> mbb/game_rosters/
   scrape_mbb_player_stats.py   # -> mbb/player_season_stats/
+  scrape_mbb_player_core.py    # -> mbb/player_core/json/{athlete_id}.json
   scrape_mbb_team_stats.py     # -> mbb/team_stats/
   scrape_mbb_team_rosters.py   # -> mbb/team_rosters/
   process_mbb_schedules.py     # Schedule post-processing (helper, not in daily flow)
   add_game_links_to_schedule.py
 scripts/
-  daily_mbb_scraper.sh         # CI entry point — per-season loop over 7 scrapers
+  daily_mbb_scraper.sh         # CI entry point — per-season loop over 8 scrapers
 mbb/                           # Committed scraped output (consumed downstream)
 .github/workflows/
   hoopR_mbb_data_trigger.yaml  # Fires repository_dispatch on push
