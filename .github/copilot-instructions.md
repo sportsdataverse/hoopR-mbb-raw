@@ -30,8 +30,8 @@ companion: `hoopR-mbb-data`.
 
 ```sh
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_schedules.py -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_json.py      -s 2025 -e 2025 -r false
+python3 python/espn_mbb_01_schedules_scrape.py -s 2025 -e 2025 -r false
+python3 python/espn_mbb_02_pbp_scrape.py       -s 2025 -e 2025 -r false
 python3 python/process_mbb_schedules.py
 python3 python/add_game_links_to_schedule.py
 ```

@@ -17,7 +17,7 @@ mkdir -p logs
 
 # Scraper failures used to be swallowed: each scraper ran bare, so a crash left
 # the loop running, the partial day got committed, and the job still exited 0.
-# scrape_mbb_player_stats.py sat dead for two sportsdataverse-py release cycles
+# espn_mbb_06_player_stats_scrape.py sat dead for two sportsdataverse-py release cycles
 # that way -- aborting at import on a removed symbol, every day, silently green.
 #
 # run_scraper keeps that resilience (one dead scraper must not stop the others,
@@ -51,14 +51,14 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        run_scraper schedules    python3 python/scrape_mbb_schedules.py    -s $i -e $i -r $RESCRAPE
-        run_scraper json         python3 python/scrape_mbb_json.py         -s $i -e $i -r $RESCRAPE
-        run_scraper standings    python3 python/scrape_mbb_standings.py    -s $i -e $i -r $RESCRAPE
-        run_scraper game_rosters python3 python/scrape_mbb_game_rosters.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_stats python3 python/scrape_mbb_player_stats.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_core  python3 python/scrape_mbb_player_core.py  -s $i -e $i -r $RESCRAPE
-        run_scraper team_stats   python3 python/scrape_mbb_team_stats.py   -s $i -e $i -r $RESCRAPE
-        run_scraper team_rosters python3 python/scrape_mbb_team_rosters.py -s $i -e $i -r $RESCRAPE
+        run_scraper schedules    python3 python/espn_mbb_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper json         python3 python/espn_mbb_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
+        run_scraper standings    python3 python/espn_mbb_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper game_rosters python3 python/espn_mbb_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_stats python3 python/espn_mbb_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  python3 python/espn_mbb_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
+        run_scraper team_stats   python3 python/espn_mbb_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
+        run_scraper team_rosters python3 python/espn_mbb_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add mbb/* >> /dev/null
         git add mbb/mbb_schedule_master.* >> /dev/null

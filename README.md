@@ -15,7 +15,7 @@
 flowchart TB;
     subgraph A[hoopR-mbb-raw];
         direction TB;
-        A1[python/scrape_mbb_schedules.py]-->A2[python/scrape_mbb_json.py];
+        A1[python/espn_mbb_01_schedules_scrape.py]-->A2[python/espn_mbb_02_pbp_scrape.py];
     end;
 
     subgraph B[hoopR-mbb-data];
@@ -37,6 +37,10 @@ flowchart TB;
     B-->C3;
 
 ```
+
+Script numbers are run order — `01` writes the season schedule that `02` reads
+to enumerate games. `05` (draft) is an intentional hole: the stage numbering is
+shared across the nba/mbb/wnba raw repos, and MBB has no draft dataset.
 
 [hoopR-nba-raw data repository (source: ESPN)](https://github.com/sportsdataverse/hoopR-nba-raw)
 

@@ -39,14 +39,14 @@ season is `2025`).
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
 
 # Or call any scraper directly when iterating
-python3 python/scrape_mbb_schedules.py    -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_json.py         -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_standings.py    -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_game_rosters.py -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_player_stats.py -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_player_core.py  -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_team_stats.py   -s 2025 -e 2025 -r false
-python3 python/scrape_mbb_team_rosters.py -s 2025 -e 2025 -r false
+python3 python/espn_mbb_01_schedules_scrape.py    -s 2025 -e 2025 -r false
+python3 python/espn_mbb_02_pbp_scrape.py          -s 2025 -e 2025 -r false
+python3 python/espn_mbb_03_standings_scrape.py    -s 2025 -e 2025 -r false
+python3 python/espn_mbb_04_game_rosters_scrape.py -s 2025 -e 2025 -r false
+python3 python/espn_mbb_06_player_stats_scrape.py -s 2025 -e 2025 -r false
+python3 python/espn_mbb_07_team_stats_scrape.py   -s 2025 -e 2025 -r false
+python3 python/espn_mbb_08_team_rosters_scrape.py -s 2025 -e 2025 -r false
+python3 python/espn_mbb_09_player_core_scrape.py  -s 2025 -e 2025 -r false
 
 # Helpers (not part of the daily flow)
 python3 python/process_mbb_schedules.py
@@ -62,23 +62,27 @@ Output paths the scrapers write under:
 - `mbb/mbb_schedule_master.parquet` — concatenated cross-season master schedule
 - `mbb/json/final/{game_id}.json` — clean payload, consumed by `hoopR-mbb-data`
 - `mbb/json/raw/{game_id}.json`   — raw ESPN response (kept for forensics)
-- `mbb/errors/`                   — failed-game records (`path_to_errors` in `scrape_mbb_json.py`)
+- `mbb/errors/`                   — failed-game records (`path_to_errors` in `espn_mbb_02_pbp_scrape.py`)
 - `mbb/{standings,game_rosters,player_season_stats,player_core,team_stats,team_rosters}/` — per-dataset payloads
 - `logs/hoopR_mbb_raw_logfile_{year}.log` — per-season run log, committed separately
 
 ## Project Structure
 
+Script numbers are run order; `05` (draft) is an intentional hole — the
+canonical cross-repo stage numbering reserves it for leagues with a draft
+dataset (e.g. NBA/WNBA), so MBB skips it rather than compacting.
+
 ```
 python/
-  scrape_mbb_schedules.py      # ESPN schedule scrape -> mbb/schedules/
-  scrape_mbb_json.py           # Per-game JSON scrape -> mbb/json/final/{game_id}.json
-  scrape_mbb_standings.py      # -> mbb/standings/
-  scrape_mbb_game_rosters.py   # -> mbb/game_rosters/
-  scrape_mbb_player_stats.py   # -> mbb/player_season_stats/
-  scrape_mbb_player_core.py    # -> mbb/player_core/json/{athlete_id}.json
-  scrape_mbb_team_stats.py     # -> mbb/team_stats/
-  scrape_mbb_team_rosters.py   # -> mbb/team_rosters/
-  process_mbb_schedules.py     # Schedule post-processing (helper, not in daily flow)
+  espn_mbb_01_schedules_scrape.py    # ESPN schedule scrape -> mbb/schedules/
+  espn_mbb_02_pbp_scrape.py          # Per-game JSON scrape -> mbb/json/final/{game_id}.json
+  espn_mbb_03_standings_scrape.py    # -> mbb/standings/
+  espn_mbb_04_game_rosters_scrape.py # -> mbb/game_rosters/
+  espn_mbb_06_player_stats_scrape.py # -> mbb/player_season_stats/
+  espn_mbb_07_team_stats_scrape.py   # -> mbb/team_stats/
+  espn_mbb_08_team_rosters_scrape.py # -> mbb/team_rosters/
+  espn_mbb_09_player_core_scrape.py  # -> mbb/player_core/json/{athlete_id}.json
+  process_mbb_schedules.py           # Schedule post-processing (helper, not in daily flow)
   add_game_links_to_schedule.py
 scripts/
   daily_mbb_scraper.sh         # CI entry point — per-season loop over 8 scrapers
@@ -121,7 +125,7 @@ dispatches `daily_mbb_data` to `hoopR-mbb-data`.
 
 ## Project-Specific Gotchas
 
-- `python/scrape_mbb_json.py` writes JSON under `mbb/json/final/{game_id}.json`. Downstream `hoopR-mbb-data` reads from `https://raw.githubusercontent.com/sportsdataverse/hoopR-mbb-raw/main/mbb/...`, so the file paths and commit-to-main are load-bearing.
+- `python/espn_mbb_02_pbp_scrape.py` writes JSON under `mbb/json/final/{game_id}.json`. Downstream `hoopR-mbb-data` reads from `https://raw.githubusercontent.com/sportsdataverse/hoopR-mbb-raw/main/mbb/...`, so the file paths and commit-to-main are load-bearing.
 - The per-push `hoopR_mbb_data_trigger.yaml` workflow only fires on `push` and `workflow_dispatch`. Force-pushes can land changes without firing downstream jobs — push normally.
 - Large additions of `mbb/json/final/*.json` files inflate the repo. Don't reorganize the `mbb/` tree without coordinating the change in `hoopR-mbb-data`'s creation scripts (`R/espn_mbb_0[1-3]_*.R`).
 - ESPN JSON schema drift is handled in `sportsdataverse-py` (the call boundary). If a scraper starts dropping fields, fix the SDK first; this repo should stay thin.
@@ -134,8 +138,8 @@ Use [Conventional Commits](https://www.conventionalcommits.org/) for
 manual / feature commits:
 
 ```
-feat(scrape): handle NCAA Tournament bracket ID range in scrape_mbb_schedules.py
-fix(scrape): retry HTTP 429s in scrape_mbb_json with backoff
+feat(scrape): handle NCAA Tournament bracket ID range in espn_mbb_01_schedules_scrape.py
+fix(scrape): retry HTTP 429s in espn_mbb_02_pbp_scrape with backoff
 chore(deps): bump sportsdataverse-py pin in requirements.txt
 ci: tighten secret scoping in hoopR_mbb_data_trigger.yaml
 ```
