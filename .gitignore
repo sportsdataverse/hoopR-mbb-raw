@@ -40,3 +40,10 @@ vignettes/*.pdf
 
 # omc session state
 .omc/
+
+# Per-run scraper logfiles (written to the repo root by logging.basicConfig).
+# Unanchored so the daily driver's `git add .` can never sweep them -- at the
+# root or after being tucked into logs/. The already-tracked root logfiles and
+# the tracked per-season logs/*.log are unaffected (ignore rules never apply
+# to tracked files).
+*_logfile.txt
