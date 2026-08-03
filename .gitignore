@@ -47,3 +47,12 @@ vignettes/*.pdf
 # the tracked per-season logs/*.log are unaffected (ignore rules never apply
 # to tracked files).
 *_logfile.txt
+
+# Driver stdout redirects are runtime artifacts (the daily driver runs `git add .`).
+/*.out
+
+# Python bytecode. The sibling hoopR-nba-raw has ignored these since its own
+# cleanup; this repo did not, and its daily driver runs `git add .` -- so the
+# only thing keeping bytecode out of the archive was luck.
+__pycache__/
+*.pyc
