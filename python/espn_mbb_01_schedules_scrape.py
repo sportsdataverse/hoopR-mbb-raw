@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument("--start_year", "-s", type=int, required=True, help="Start year of MBB Schedule period (YYYY)")
     parser.add_argument("--end_year", "-e", type=int, help="End year of MBB Schedule period (YYYY)")
     parser.add_argument(
-        "--rescrape", "-r", type=str2bool, default=True, help="Rescrape all games in the schedule period"
+        "--rescrape", "-r", type=str2bool, default=False, help="Rescrape all games in the schedule period"
     )
     args = parser.parse_args()
 
