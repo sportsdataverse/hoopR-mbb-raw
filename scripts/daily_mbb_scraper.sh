@@ -15,6 +15,21 @@ RESCRAPE=${RESCRAPE:-TRUE}
 echo "Rescrape set to: $RESCRAPE"
 mkdir -p logs
 
+# Resolve the interpreter. The project is uv-managed (pyproject.toml +
+# uv.lock), so `uv run` gets the exact locked environment -- including the
+# sdv-py commit the lock pins, which is the whole point of moving off the
+# ambient install. Falls back to system python3 where uv is not present yet, so
+# this driver keeps working on a host mid-migration.
+if command -v uv >/dev/null 2>&1; then
+    uv sync --quiet || echo "WARN: uv sync failed; continuing with the existing venv"
+    PY="uv run --no-sync python"
+    echo "Interpreter: uv-managed project venv"
+else
+    PY="python3"
+    echo "WARN: uv not found; using system python3. Install uv for the locked env:"
+    echo "      curl -LsSf https://astral.sh/uv/install.sh | sh"
+fi
+
 # Fail fast on a stale sportsdataverse, BEFORE any scraping.
 #
 # This repo has already lost a stage to exactly that -- see the note below:
@@ -24,7 +39,7 @@ mkdir -p logs
 # names the fix. wehoop-wnba-raw lost three weeks of in-season scraping to the
 # same class on 2026-08-02: a persistent runner sat on sportsdataverse 0.0.50
 # because pip does not upgrade an already-satisfied `>=` requirement.
-if ! python3 - <<'PY'
+if ! $PY - <<'PY'
 from sportsdataverse.dl_utils import download  # noqa: F401
 from sportsdataverse.scrape.espn.cli import str2bool  # noqa: F401
 from sportsdataverse.scrape.espn.persist import write_payload  # noqa: F401
@@ -32,12 +47,16 @@ import sportsdataverse.mbb  # noqa: F401
 PY
 then
     echo "FATAL: the sportsdataverse surface these scrapers need is missing."
-    echo "       Fix: pip install --upgrade -r requirements.txt"
-    echo "         && pip install --force-reinstall --no-deps \\"
-    echo "            'sportsdataverse @ git+https://github.com/sportsdataverse/sportsdataverse-py@main'"
-    echo "       The second line is required, not belt-and-braces: pip decides"
-    echo "       satisfaction by VERSION, so a git branch whose version string"
-    echo "       has not changed is a silent no-op even with --upgrade."
+    echo "       Fix (uv-managed project):  uv sync --upgrade-package sportsdataverse"
+    echo ""
+    echo "       If uv is unavailable and you are falling back to pip, note that"
+    echo "       --upgrade alone is NOT enough: pip decides satisfaction by"
+    echo "       VERSION, so a git branch whose version string has not changed"
+    echo "       is a silent no-op. You need:"
+    echo "         pip install --force-reinstall --no-deps \\"
+    echo "           'sportsdataverse @ git+https://github.com/sportsdataverse/sportsdataverse-py@main'"
+    echo "       uv does not have that failure mode, which is why this repo"
+    echo "       moved to pyproject.toml + uv.lock."
     exit 1
 fi
 
@@ -77,14 +96,14 @@ do
         git pull >> /dev/null
         git config --local user.email "action@github.com"
         git config --local user.name "Github Action"
-        run_scraper schedules    python3 python/espn_mbb_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
-        run_scraper json         python3 python/espn_mbb_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
-        run_scraper standings    python3 python/espn_mbb_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
-        run_scraper game_rosters python3 python/espn_mbb_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_stats python3 python/espn_mbb_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
-        run_scraper player_core  python3 python/espn_mbb_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
-        run_scraper team_stats   python3 python/espn_mbb_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
-        run_scraper team_rosters python3 python/espn_mbb_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper schedules    $PY python/espn_mbb_01_schedules_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper json         $PY python/espn_mbb_02_pbp_scrape.py          -s $i -e $i -r $RESCRAPE
+        run_scraper standings    $PY python/espn_mbb_03_standings_scrape.py    -s $i -e $i -r $RESCRAPE
+        run_scraper game_rosters $PY python/espn_mbb_04_game_rosters_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_stats $PY python/espn_mbb_06_player_stats_scrape.py -s $i -e $i -r $RESCRAPE
+        run_scraper player_core  $PY python/espn_mbb_09_player_core_scrape.py  -s $i -e $i -r $RESCRAPE
+        run_scraper team_stats   $PY python/espn_mbb_07_team_stats_scrape.py   -s $i -e $i -r $RESCRAPE
+        run_scraper team_rosters $PY python/espn_mbb_08_team_rosters_scrape.py -s $i -e $i -r $RESCRAPE
         git pull >> /dev/null
         git add mbb/* >> /dev/null
         git add mbb/mbb_schedule_master.* >> /dev/null
