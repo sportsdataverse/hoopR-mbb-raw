@@ -12,24 +12,10 @@ import time
 import traceback
 from itertools import repeat
 from pathlib import Path
+from sportsdataverse.scrape.espn.cli import str2bool
 
 
 _STR2BOOL_TRUE = frozenset({"1", "true", "t", "yes", "y", "on"})
-
-
-def str2bool(value):
-    """Parse a shell-supplied boolean flag.
-
-    ``argparse(type=bool)`` is a trap: bash hands over the *string*
-    ``"false"``, and ``bool("false")`` is ``True`` -- so ``-r false``
-    silently forced a full re-scrape. Parse the text; never cast it.
-    Unrecognised text is False, because the expensive mistake is
-    re-scraping the archive, not skipping a run (mirrors the house
-    ``str2bool`` in wehoop-wbb-raw's ``wbb_raw_scrape.cli``).
-    """
-    if isinstance(value, bool):
-        return value
-    return str(value).strip().lower() in _STR2BOOL_TRUE
 
 
 logging.basicConfig(level=logging.INFO, filename="hoopR_mbb_raw_logfile.txt")
