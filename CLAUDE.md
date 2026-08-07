@@ -140,7 +140,7 @@ manual / feature commits:
 ```
 feat(scrape): handle NCAA Tournament bracket ID range in espn_mbb_01_schedules_scrape.py
 fix(scrape): retry HTTP 429s in espn_mbb_02_pbp_scrape with backoff
-chore(deps): bump sportsdataverse-py pin in requirements.txt
+chore(deps): bump the sportsdataverse pin in pyproject.toml + re-lock
 ci: tighten secret scoping in hoopR_mbb_data_trigger.yaml
 ```
 
