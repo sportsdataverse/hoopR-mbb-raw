@@ -30,10 +30,10 @@ companion: `hoopR-mbb-data`.
 
 ```sh
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
-python3 python/espn_mbb_01_schedules_scrape.py -s 2025 -e 2025 -r false
-python3 python/espn_mbb_02_pbp_scrape.py       -s 2025 -e 2025 -r false
-python3 python/process_mbb_schedules.py
-python3 python/add_game_links_to_schedule.py
+uv run python python/espn_mbb_01_schedules_scrape.py -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_02_pbp_scrape.py       -s 2025 -e 2025 -r false
+uv run python python/process_mbb_schedules.py
+uv run python python/add_game_links_to_schedule.py
 ```
 
 `-r true` forces re-scrape; `-r false` skips files already on disk.
@@ -55,7 +55,8 @@ Outputs:
   and persist its output. Schedule scrape uses
   `sdv.mbb.espn_mbb_calendar()` + `sdv.mbb.espn_mbb_schedule()`; JSON
   scrape uses `sdv.mbb.espn_mbb_pbp(game_id, raw=True)`.
-- Keep `requirements.txt` minimal.
+- Deps are uv-managed (`pyproject.toml` + `uv.lock`); `uv sync` to install.
+  There is no `requirements.txt`.
 - Filter `season_type ∈ {2, 3}` when assembling schedules (regular
   season + postseason; preseason and exhibitions excluded).
 - Game IDs are integers as strings; do not zero-pad.

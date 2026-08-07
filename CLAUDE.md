@@ -29,33 +29,35 @@ fires `repository_dispatch` event-type `daily_mbb_data` against
 ## Build & Development Commands
 
 The repo is driven by `scripts/daily_mbb_scraper.sh`, which loops the
-season range and runs **seven** scrapers per season (schedules, json,
-standings, game_rosters, player_stats, team_stats, team_rosters), then
-commits + pushes. Seasons are integer end-years (e.g. the 2024–25 NCAA MBB
+season range and runs **eight** scrapers per season (schedules, json,
+standings, game_rosters, player_stats, player_core, team_stats,
+team_rosters), then commits + pushes. Seasons are integer end-years (e.g. the 2024–25 NCAA MBB
 season is `2025`).
 
 ```sh
 # Full daily flow for one or more seasons (CI entry point)
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
 
-# Or call any scraper directly when iterating
-python3 python/espn_mbb_01_schedules_scrape.py    -s 2025 -e 2025 -r false
-python3 python/espn_mbb_02_pbp_scrape.py          -s 2025 -e 2025 -r false
-python3 python/espn_mbb_03_standings_scrape.py    -s 2025 -e 2025 -r false
-python3 python/espn_mbb_04_game_rosters_scrape.py -s 2025 -e 2025 -r false
-python3 python/espn_mbb_06_player_stats_scrape.py -s 2025 -e 2025 -r false
-python3 python/espn_mbb_07_team_stats_scrape.py   -s 2025 -e 2025 -r false
-python3 python/espn_mbb_08_team_rosters_scrape.py -s 2025 -e 2025 -r false
-python3 python/espn_mbb_09_player_core_scrape.py  -s 2025 -e 2025 -r false
+# Or call any scraper directly when iterating (deps are uv-managed;
+# bare python3 has none of them)
+uv run python python/espn_mbb_01_schedules_scrape.py    -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_02_pbp_scrape.py          -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_03_standings_scrape.py    -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_04_game_rosters_scrape.py -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_06_player_stats_scrape.py -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_07_team_stats_scrape.py   -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_08_team_rosters_scrape.py -s 2025 -e 2025 -r false
+uv run python python/espn_mbb_09_player_core_scrape.py  -s 2025 -e 2025 -r false
 
 # Helpers (not part of the daily flow)
-python3 python/process_mbb_schedules.py
-python3 python/add_game_links_to_schedule.py
+uv run python python/process_mbb_schedules.py
+uv run python python/add_game_links_to_schedule.py
 ```
 
 `-r true` forces re-scrape of games already on disk; `-r false` skips
-existing files. **The `-r` flag defaults to `TRUE`** when unset
-(`RESCRAPE=${RESCRAPE:-TRUE}`), so CI always passes `-r false` explicitly.
+existing files. The Python entrypoints default `--rescrape` to **false**
+(the archive is the checkpoint); the shell driver's env fallback is still
+`RESCRAPE=${RESCRAPE:-TRUE}`, so CI always passes `-r false` explicitly.
 Output paths the scrapers write under:
 
 - `mbb/schedules/{rds,parquet}/mbb_schedule_{year}.{ext}`
