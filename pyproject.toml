@@ -13,12 +13,15 @@ dependencies = [
     "pyarrow>=15.0",
     "pyreadr>=0.4.7",
     "tqdm>=4.66",
+    # Reads the raw payload schemas shipped by sportsdataverse.schemas, which
+    # imports yaml lazily precisely because it is not an sdv-py runtime dep.
+    "pyyaml>=6.0",
 ]
 
 [dependency-groups]
-# Declared, not assumed: `uv run ruff` executes inside the synced project env,
-# which has no access to a globally-installed tool.
-dev = ["ruff>=0.6"]
+# Declared, not assumed: `uv run ruff`/`uv run pytest` execute inside the
+# synced project env, which has no access to a globally-installed tool.
+dev = ["pytest>=8.0", "ruff>=0.6"]
 
 # The scrapers import sportsdataverse.scrape.espn, the shared ESPN raw engine,
 # which lands on main ahead of PyPI.
@@ -36,6 +39,16 @@ sportsdataverse = { git = "https://github.com/sportsdataverse/sportsdataverse-py
 # with no importable package beside them. uv still manages the venv and lock.
 [tool.uv]
 package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["python"]
+markers = [
+    # Reads the committed mbb/ archive. Deselected in PR CI (`-m "not archive"`),
+    # which sparse-checkouts the code only -- a full checkout of the archive
+    # tree spends minutes cloning and never reaches the tests.
+    "archive: requires the committed mbb/ payload tree",
+]
 
 [tool.ruff]
 line-length = 100
