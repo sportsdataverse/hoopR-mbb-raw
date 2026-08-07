@@ -48,12 +48,10 @@ import logging
 import time
 from pathlib import Path
 
-from tqdm import tqdm
-
-from sportsdataverse.mbb import espn_mbb_player_core
 from sportsdataverse.dl_utils import download
+from sportsdataverse.mbb import espn_mbb_player_core
 from sportsdataverse.scrape.espn.persist import write_payload
-
+from tqdm import tqdm
 
 logging.basicConfig(
     level=logging.INFO,

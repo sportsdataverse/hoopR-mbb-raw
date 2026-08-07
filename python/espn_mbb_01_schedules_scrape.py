@@ -1,16 +1,16 @@
 import argparse
 import concurrent.futures
+import gc
 import logging
 import os
-import pyreadr
-import pandas as pd
-import sportsdataverse as sdv
 import time
-import gc
 from itertools import repeat
 from pathlib import Path
-from sportsdataverse.scrape.espn.cli import str2bool
 
+import pandas as pd
+import pyreadr
+import sportsdataverse as sdv
+from sportsdataverse.scrape.espn.cli import str2bool
 
 _STR2BOOL_TRUE = frozenset({"1", "true", "t", "yes", "y", "on"})
 
@@ -77,7 +77,7 @@ def main():
         glued_data = pd.concat([glued_data, x], axis=0)
     glued_data["status_display_clock"] = glued_data["status_display_clock"].astype(str)
     glued_data.to_parquet(final_file_name, index=False)
-    gcol = gc.collect()
+    gc.collect()
 
 
 if __name__ == "__main__":

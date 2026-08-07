@@ -3,17 +3,17 @@ import concurrent.futures
 import gc
 import json
 import logging
-import numpy as np
 import os
-import pyreadr
-import pandas as pd
-import sportsdataverse as sdv
 import time
 import traceback
 from itertools import repeat
 from pathlib import Path
-from sportsdataverse.scrape.espn.cli import str2bool
 
+import numpy as np
+import pandas as pd
+import pyreadr
+import sportsdataverse as sdv
+from sportsdataverse.scrape.espn.cli import str2bool
 
 _STR2BOOL_TRUE = frozenset({"1", "true", "t", "yes", "y", "on"})
 
@@ -48,19 +48,19 @@ def download_game(game, process, path_to_raw, path_to_final):
         g = sdv.mbb.espn_mbb_pbp(game_id=game, raw=True)
         with open(f"{path_to_raw_json}{game}.json", "w") as f:
             json.dump(g, f, indent=0, sort_keys=False)
-    except TypeError as e:
+    except TypeError:
         logger.exception(f"TypeError: game_id = {game}\n {traceback.format_exc()}")
         pass
-    except IndexError as e:
+    except IndexError:
         logger.exception(f"IndexError:  game_id = {game}\n {traceback.format_exc()}")
         pass
-    except KeyError as e:
+    except KeyError:
         logger.exception(f"KeyError: game_id =  game_id = {game}\n {traceback.format_exc()}")
         pass
-    except ValueError as e:
+    except ValueError:
         logger.exception(f"DecodeError: game_id = {game}\n {traceback.format_exc()}")
         pass
-    except AttributeError as e:
+    except AttributeError:
         logger.exception(f"AttributeError: game_id = {game}\n {traceback.format_exc()}")
         pass
     if process == True:
@@ -71,22 +71,22 @@ def download_game(game, process, path_to_raw, path_to_final):
             fp = f"{path_to_final_json}{game}.json"
             with open(fp, "w") as f:
                 json.dump(result, f, indent=0, sort_keys=False)
-        except FileNotFoundError as e:
+        except FileNotFoundError:
             logger.exception(f"FileNotFoundError: game_id = {game}\n {traceback.format_exc()}")
             pass
-        except TypeError as e:
+        except TypeError:
             logger.exception(f"TypeError: game_id = {game}\n {traceback.format_exc()}")
             pass
-        except IndexError as e:
+        except IndexError:
             logger.exception(f"IndexError:  game_id = {game}\n {traceback.format_exc()}")
             pass
-        except KeyError as e:
+        except KeyError:
             logger.exception(f"KeyError: game_id =  game_id = {game}\n {traceback.format_exc()}")
             pass
-        except ValueError as e:
+        except ValueError:
             logger.exception(f"DecodeError: game_id = {game}\n {traceback.format_exc()}")
             pass
-        except AttributeError as e:
+        except AttributeError:
             logger.exception(f"AttributeError: game_id = {game}\n {traceback.format_exc()}")
             pass
 
@@ -116,7 +116,6 @@ def main():
         end_year = start_year
     else:
         end_year = args.end_year
-    process = args.process
     years_arr = range(start_year, end_year + 1)
 
     for year in years_arr:
@@ -136,7 +135,6 @@ def main():
         schedule = schedule[schedule["season"] >= 2002]
 
         logger.info(f"Scraping MBB PBP for {year}...")
-        games = schedule[(schedule["season"] == year)].reset_index()["game_id"].tolist()
 
         # if len(games) == 0:
         #     logger.info(f"{len(games)} Games to be scraped, skipping")

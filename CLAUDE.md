@@ -49,8 +49,7 @@ uv run python python/espn_mbb_07_team_stats_scrape.py   -s 2025 -e 2025 -r false
 uv run python python/espn_mbb_08_team_rosters_scrape.py -s 2025 -e 2025 -r false
 uv run python python/espn_mbb_09_player_core_scrape.py  -s 2025 -e 2025 -r false
 
-# Helpers (not part of the daily flow)
-uv run python python/process_mbb_schedules.py
+# Helper (not part of the daily flow)
 uv run python python/add_game_links_to_schedule.py
 ```
 
@@ -84,7 +83,6 @@ python/
   espn_mbb_07_team_stats_scrape.py   # -> mbb/team_stats/
   espn_mbb_08_team_rosters_scrape.py # -> mbb/team_rosters/
   espn_mbb_09_player_core_scrape.py  # -> mbb/player_core/json/{athlete_id}.json
-  process_mbb_schedules.py           # Schedule post-processing (helper, not in daily flow)
   add_game_links_to_schedule.py
 scripts/
   daily_mbb_scraper.sh         # CI entry point — per-season loop over 8 scrapers

@@ -32,7 +32,6 @@ companion: `hoopR-mbb-data`.
 bash scripts/daily_mbb_scraper.sh -s 2025 -e 2025 -r false
 uv run python python/espn_mbb_01_schedules_scrape.py -s 2025 -e 2025 -r false
 uv run python python/espn_mbb_02_pbp_scrape.py       -s 2025 -e 2025 -r false
-uv run python python/process_mbb_schedules.py
 uv run python python/add_game_links_to_schedule.py
 ```
 
