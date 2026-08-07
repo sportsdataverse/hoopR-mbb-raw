@@ -19,6 +19,7 @@
 
 # RStudio files
 .Rproj.user/
+**/.Rproj.user/
 
 # produced vignettes
 vignettes/*.html
@@ -38,8 +39,17 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# omc session state
+# Tool scratch directories (bare and nested). `*_cache/` above coincidentally
+# also matches .ruff_cache/.pytest_cache, but relying on that coincidence is
+# fragile -- list them explicitly per the template convention.
 .omc/
+**/.omc/
+.ruff_cache/
+**/.ruff_cache/
+.pytest_cache/
+**/.pytest_cache/
+.understand-anything/
+**/.understand-anything/
 
 # Per-run scraper logfiles (written to the repo root by logging.basicConfig).
 # Unanchored so the daily driver's `git add .` can never sweep them -- at the
@@ -59,3 +69,4 @@ __pycache__/
 
 # uv-managed project virtualenv.
 .venv/
+**/.venv/
