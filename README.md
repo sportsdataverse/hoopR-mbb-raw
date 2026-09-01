@@ -107,6 +107,16 @@ Stage numbers are stable cross-repo identifiers, so holes are expected —
 
 [hoopR-kp-data repository (source: KenPom, dormant)](https://github.com/sportsdataverse/hoopR-kp-data)
 
+## Reports & explainers
+
+<!-- BEGIN GENERATED: reports -->
+
+| Report | What it is | Last updated |
+|---|---|---|
+| _none yet_ | — | — |
+
+<!-- END GENERATED: reports -->
+
 ## Automation & status
 
 <!-- BEGIN GENERATED: status -->
