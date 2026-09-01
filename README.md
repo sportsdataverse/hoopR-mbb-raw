@@ -107,6 +107,45 @@ Stage numbers are stable cross-repo identifiers, so holes are expected —
 
 [hoopR-kp-data repository (source: KenPom, dormant)](https://github.com/sportsdataverse/hoopR-kp-data)
 
+## Repository layout
+
+<!-- BEGIN GENERATED: layout -->
+
+```
+hoopR-mbb-raw/
+├── logs/   # per-run logs (gitignored where large)
+├── mbb/
+│   ├── game_rosters/
+│   ├── json/
+│   ├── player_core/
+│   ├── player_season_stats/
+│   ├── schedules/
+│   ├── standings/
+│   ├── team_rosters/
+│   └── team_stats/
+├── python/   # Python pipeline stages, numbered in build order
+│   ├── add_game_links_to_schedule.py
+│   ├── espn_mbb_01_schedules_scrape.py
+│   ├── espn_mbb_02_pbp_scrape.py
+│   ├── espn_mbb_03_standings_scrape.py
+│   ├── espn_mbb_04_game_rosters_scrape.py
+│   ├── espn_mbb_06_player_stats_scrape.py
+│   ├── espn_mbb_07_team_stats_scrape.py
+│   ├── espn_mbb_08_team_rosters_scrape.py
+│   └── espn_mbb_09_player_core_scrape.py
+├── scripts/   # bash drivers (the daily/weekly entry points)
+│   ├── _venv.sh
+│   └── daily_mbb_scraper.sh
+└── tests/   # test suite
+    ├── test_cli_contract.py
+    ├── test_payload_schemas.py
+    ├── test_persist_guard.py
+    ├── test_scripts_importable.py
+    └── test_stage_numbering.py
+```
+
+<!-- END GENERATED: layout -->
+
 ## Reports & explainers
 
 <!-- BEGIN GENERATED: reports -->
