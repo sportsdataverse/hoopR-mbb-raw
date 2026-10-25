@@ -11,8 +11,8 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-import pyreadr
 import sportsdataverse as sdv
+from espn_mbb_01_schedules_scrape import write_schedule
 from sportsdataverse.scrape.espn.cli import str2bool
 
 _STR2BOOL_TRUE = frozenset({"1", "true", "t", "yes", "y", "on"})
@@ -151,8 +151,11 @@ def main():
         logger.info(f"Finished MBB PBP for {year}...")
 
         schedule = add_game_to_schedule(schedule)
-        schedule.to_parquet(f"mbb/schedules/parquet/mbb_schedule_{year}.parquet", index=None)
-        pyreadr.write_rds(f"mbb/schedules/rds/mbb_schedule_{year}.rds", schedule, compress="gzip")
+        write_schedule(
+            schedule,
+            f"mbb/schedules/parquet/mbb_schedule_{year}.parquet",
+            f"mbb/schedules/rds/mbb_schedule_{year}.rds",
+        )
 
     gc.collect()
 
